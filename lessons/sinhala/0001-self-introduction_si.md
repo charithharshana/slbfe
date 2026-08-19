@@ -1,388 +1,454 @@
-# Lesson 0001 — මගේ මුල් තත්පර 60: The 5-Step Self-Introduction
+# Lesson 0001 — My First 60 Seconds: ඩිලාන්ගේ කතාව (Dilan's Story)
 
-> **Mission link:** මේක තමයි interview එකේ ඔබේ **opening move** එක. ඔබේ පළමු තත්පර 60 ඇතුළත ඔබ පාවිච්චි කරන්නේ මේ sentences ම තමයි. මෙතනදී අසාර්ථක වුවහොත් = automatic rejection (Section 8, Don't #1).
+> **Mission link:** මෙය Interview එකේ ඔබේ **opening move** (ආරම්භක පියවර) එකයි. ඔබේ පළමු තත්පර 60 (first 60 seconds) තුළ ඔබ භාවිතා කරන්නේ හරියටම මේ වාක්‍යයන්ය. මෙතැනදී අසාර්ථක වීම = interview එකෙන් ඉවත් වීමට (rejection) හේතුවක් විය හැක.
 
----
+> **Strict Comprehensible Input mode:** මෙම පාඩම Stephen Krashen ගේ Input Hypothesis සහ 4-Week Plan අනුගමනය කරයි. **මුලින්ම තේරුම වටහා ගැනීම (Meaning first), Grammar බාධාවක් කර නොගැනීම, අඩු මානසික පීඩනය (low anxiety), උපරිම input ලබාගැනීම, කතා කිරීම (output) අවසානයේදී පමණක් සිදු කිරීම.** Grammar කොටස පහළ ඇති *Optional Monitor Appendix* එක තුළ වෙනම දක්වා ඇත — ඔබට අවශ්‍ය නම් පමණක් එය බලන්න, එය අනිවාර්ය නැත.
 
-## Learning Outcomes (ඉගෙනුම් ඵල)
-මෙම lesson එක අවසානයේදී, ඔබට මේ දේවල් කිරීමට හැකි වනු ඇත:
-1. තත්පර 60 කට අඩු කාලයකදී චතුර ලෙස **5-step self-introduction** එකක් deliver කිරීම.
-2. පැටලීමකින් තොරව වැදගත්ම number-pairs 8 (13/30, 15/50, 14/40, 18/80) නිවැරදිව pronounce කිරීම.
-3. Template options දෙකටම ඔබේ **own personal details** (Dilan Harshana, age 28, Tangalle) ආදේශ (substitute) කිරීම.
-4. මුළු course එක පුරාම නැවත නැවත recycle වන **ප්‍රධාන මතක සූත්‍ර (Memory Keys)** හඳුනාගෙන භාවිතා කිරීම.
-
-**Estimated time (ඇස්තමේන්තුගත කාලය):** විනාඩි 35 (විනාඩි 5–10 බැගින් වූ micro-blocks 4 කට වෙන් කර ඇත).
-**Comprehensible Input level:** *i + 1* — ඔබ දැනටමත් basic English දන්නවා; මෙම lesson එකෙන් ඒ මත interview-specific structure එකක් ගොඩනගනවා.
+> **භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):** **Dilan Harshana**, වයස **28**, අවිවාහකයි (not married, no children), පදිංචිය **47/1, පහලගොඩ, තංගල්ල, ශ්‍රී ලංකාව**. ඔහුට supermarket සහ retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්දක් (more than five years of experience) ඇත — මෙයට Keells Supermarket හි මාස 3ක සේවය සහ තංගල්ලේ retail supermarket එකක් පවත්වාගෙන යාමේ පළපුරුද්ද ඇතුළත් වේ. මීට අමතරව forklift operator course එකක් සම්පූර්ණ කර **David Pieris Motors Company (Bajaj)** හි පුහුණුව ලබා ඇත.
 
 ---
 
-## The Big Idea (Comprehensible Input hook — මුලින්ම English වලින් කියවන්න)
+## Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)
+මෙම පාඩම අවසානයේ — **කටපාඩම් කිරීමෙන් තොරව, Input මඟින්ම** — ඔබට හැකිවනු ඇත:
+1. ඔබගේ interview self-introduction එකේ කොටස් 5 (5 parts) ඇසෙන විට ඒවා **හඳුනා ගැනීමට (Recognize - input)**.
+2. ඔබේ කතාවේ පළමු වාක්‍ය 3 ඇසූ පසු ඊළඟට එන වාක්‍යය **අනුමාන කිරීමට (Predict - comprehension)**.
+3. ඔබේ සැබෑ තොරතුරු යොදාගනිමින් තත්පර 60 කතාව **සෙමෙන් මිමිණීමට (Whisper - gentle output)**.
+4. පැටලෙන සංඛ්‍යා යුගල 4 (killer number pairs) ඇසෙන විට ඒවා එකිනෙකින් **වෙන්කර හඳුනා ගැනීමට (Distinguish - recognition)**.
+5. ඔබේම 3-Words-a-Day vocabulary journal එකක් (Ramindu Randeni method) **ආරම්භ කිරීමට (Start)**.
+6. පාඩම් 12 පුරාම නැවත නැවත මතක් වන මතක ආධාරක (mnemonics / anchors) 6ක් **මතකයේ රඳවා ගැනීමට (Hold)**.
 
-> *Imagine you walk into a small, bright room in Colombo. Three people sit behind a long table — two Sri Lankans and one Israeli in a dark blue suit. A camera on a tripod is recording you. One panel member smiles and says:* **"Good morning. Please, tell us about yourself."**
+**ගතවන ඇස්තමේන්තුගත කාලය:** මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ **micro-blocks 5කට** බෙදා, අතරමැද මිනිත්තු 5ක විවේක (breaks - glass-of-water rule) සහිතව.
+**Comprehensible Input මට්ටම:** *i + 1* — ඔබට දැනටමත් මූලික ඉංග්‍රීසි දැනුම ඇත; මෙම පාඩම මඟින් ඔබ දැනට දන්නා දේ මත interview structure එක ගොඩනඟයි.
+
+---
+
+## ආවරණය වන ප්‍රධාන මාතෘකා (Topics Covered)
+- **Interview Skills:** 5-Step Self-Introduction, Industry Templates, Delivery Tips, Opening Panic මඟහරවා ගැනීම
+- **Learning Techniques:** Ebbinghaus Forgetting Curve, Cornell Notes ක්‍රමය, Retrieval Practice, **Comprehensible Input Theory (Stephen Krashen)**, Mindset & Confidence, 3-Words-a-Day ක්‍රමය, 4-Week Immersion Plan
+
+---
+
+## The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — සිතින් මවාගන්න / picture it in your head)
+
+> *Imagine a small bright room in Colombo. Three people sit behind a long table — two Sri Lankans and one Israeli in a dark blue suit. A camera on a tripod is recording. One panel member smiles and says:* **"Good morning. Please, tell us about yourself."**
 >
-> *ඊළඟ තත්පර 60 ඇතුළත ඔබ මොනවද කියන්නේ?*
+> *What do you say in the next 60 seconds?*
 
-බොහෝ candidates ලා panic වෙනවා. සමහරු තමන්ගේ name එක සහ hometown එක විතරක් කියනවා. තවත් සමහරු විනාඩි පහක් තිස්සේ තමන්ගේ මුළු ජීවිත කතාවම කියවනවා. ඔවුන්ගේ සැබෑ skills ගැන කතා කරන්නත් කලින්ම interview එක ඉවර වෙනවා.
+බොහෝ අපේක්ෂකයින් මෙතැනදී කලබල (panic) වේ. සමහරු පවසන්නේ නම සහ ගම පමණි. තවත් සමහරු තමන්ගේ මුළු ජීවිත කතාවම විනාඩි පහක් තිස්සේ කියවති. ඔවුන්ගේ සැබෑ දක්ෂතා (real skills) ගැන කතා කිරීමටත් පෙරම interview එක අවසන් වේ.
 
-මෙම lesson එකේදී, ඔබ **කෙටි, ශක්තිමත් speech එකක්** ඉගෙන ගන්නවා — එනම් *speech-with-a-skeleton* එකක්. මේ skeleton එකට **bones 5 ක්** තියෙනවා. මේ bones ටික මතක තියාගත්තොත්, ඔබේම වචන ඒකට එකතු කරලා කිසිදා freeze නොවී (නොනැවතී) කතා කරන්න පුළුවන්.
+මේ පාඩමේදී ඔබ හමුවන්නේ **ඔබවමය** — ඩිලාන් හර්ෂණ (Dilan Harshana). ඔබ ඔබේම කතාව ආකාර තුනකින් **තුන් වතාවක් (three times)** අසනු ඇත. තුන්වන වතාව වන විට, ඔබ කලින් අසා ඇති ගීතයක් මෙන් මේ වචන ඔබට ඉතා හුරුපුරුදු වනු ඇත. ඉන්පසු, කිසිදු පීඩනයකින් තොරව ඉතා සැහැල්ලුවෙන්, ඔබම එය ශබ්ද නඟා පවසනු ඇත.
 
-> **Sinhala කෙටි පැහැදිලි කිරීම:** මේක ඉතාම සරලයි. ඔබේ හඳුන්වාදීම කොටස් 5 කින් හැදිලා තියෙනවා — ඒක මතක තියාගත්තම, ඔබේ විස්තර ඒකට දාන්න පුළුවන්. සෑම පාඩමකදීම අපි **Comprehensible Input** ක්‍රමය අනුව ඉගෙන ගන්නවා — පළමුව තේරුම, ඊට පස්සේ grammar.
+> **කෙටි පැහැදිලි කිරීම:** Krashen පවසන්නේ ඔබ **ව්‍යාකරණ හැදෑරීමෙන් (rules පාඩම් කිරීමෙන්) නොව, අර්ථවත් ලෙස ඇසීමෙන් සහ කියවීමෙන් (comprehensible input) භාෂාව ඉගෙන ගන්නා බවයි**. ඒ නිසා මේ පාඩමේදී අපි පළමුව **ඔබේම කතාව කිහිප වතාවක් අසනවා / කියවනවා**. පසුව ඔබම එය **සැහැල්ලුවෙන්** ප්‍රකාශ කරනවා. **වැරදි ගැන බිය වෙන්න එපා — වැරදි සිදුවීම ඉගෙනීමේ සාමාන්‍ය ක්‍රියාවලියකි.**
 
 ---
 
-## The 5-Bone Skeleton (P-E-S-M-S)
+## Micro-Block 1 — Pure Immersion (විනාඩි 8)
 
-ඔබේ ඇඟිලි වලින් මේවා ගණන් කරන්න. මේ order එක හොඳින් memorise කරගන්න. නින්දෙන් ඇහුවත් ඔබට මේක කියන්න පුළුවන් වෙන්න ඕන.
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** 4-Week Plan හි පළමු සතිය = Pure Immersion (සම්පූර්ණ ගිල්වීම). **සටහන් ලිවීමක් නැත. කතා කිරීමක් නැත. Grammar නැත. පරිවර්තනයක් නැත.** සවන් දෙන්න පමණි. ඔබේ මොළය ඒ අනුව ක්‍රියාත්මක වේ.
+
+### 1A. Watch — Don't Write (විනාඩි 5)
+
+YouTube වෙත ගොස් පහත සඳහන් දේවලින් එකක් search කරන්න (English subtitles ON කරගන්න):
+- **"Israel supermarket interview English"**
+- **"SLBFE interview sample"**
+- **"tell me about yourself interview English simple"**
+
+කෙටි වීඩියෝවක් (මිනිත්තු 3–5) **එකක්** තෝරාගන්න. English subtitles සමඟ එය එක් වරක් නරඹන්න. **කිසිවක් ලියන්න එපා.** වචන සටහන් කරගැනීමට වීඩියෝව නවත්වන්න (pause) එපා. එහි රිද්මය (rhythm) පමණක් **තේරුම් ගැනීමට උත්සාහ කරන්න (feel the rhythm)**.
+
+> මෙය ඔබේ **first input** එකයි. Krashen පවසන පරිදි භාෂාව තේරුම් ගැනීමේ සැබෑ ආරම්භය සිදුවන්නේ මෙතැනදීය.
+
+### 1B. Notice — නිරීක්ෂණය කරන්න (විනාඩි 3)
+නැරඹීමෙන් පසු, විනාඩි 1ක් නිහඬව සිටින්න. ඉන්පසු **ඔබට මතක ඇති කරුණු 3ක්** ලියන්න — එය ඕනෑම දෙයක් විය හැක. වචනයක් (word), මුහුණක් (face), හැඟීමක් (feeling), හෝ ශබ්දයක් (sound).
+
+<details>
+<summary>මෙය සාර්ථක වීමට හේතුව (Why this works)</summary>
+
+ඔබේ මොළය දැනටමත් Krashen හඳුන්වන **acquisition (භාෂාව ස්වභාවිකව උකහා ගැනීම)** ක්‍රියාවලිය ආරම්භ කර ඇත — ඔබටත් නොදැනීම ස්නායුක සම්බන්ධතා (neural connections) ගොඩනැගේ. ඔබට "වැඩි දෙයක් තේරුණේ නෑ" කියා සිතුනත්, ඔබේ යටි සිත (subconscious) තුළ English rhythm, intonation සහ වචන කිහිපයක රටා තැන්පත් වී හමාරයි. කුඩා කාලයේදී ඔබ සිංහල භාෂාව ඉගෙන ගත්තේද හරියටම මේ ආකාරයටයි — **පළමුව හොඳින් ඇසීමෙන්**, පසුව කතා කිරීමෙන්.
+
+</details>
+
+---
+
+## Micro-Block 2 — Meet Dilan: ඩිලාන්ව හඳුනාගනිමු (විනාඩි 8)
+
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** අලුත් භාෂාවක් ඉදිරිපත් කරනු ලබන්නේ **අර්ථවත් සන්දර්භයක් (meaningful context)** තුළිනි — Krashen ගේ German experiment එකේදී "Kopf, Augen, Ohren" කියමින් Mr. Spock ගේ රූපය ඇඳ පෙන්වූ ආකාරයටයි. මෙහිදී අපි ඔබට ලබාදෙන්නේ ඔබ දැනටමත් හොඳින් දන්නා ස්ථාන, රැකියා සහ හැඟීම් සහිත **ඔබ ගැනම වූ කතාවකි**.
+
+### 2A. Dilan's Story (Read or Listen) (විනාඩි 6)
+
+> **මෙම කතාව මිතුරෙකුට පවසන ආකාරයෙන් සෙමෙන්, ශබ්ද නඟා කියවන්න.** මෙය **ඔබේම** කතාවයි. පරිවර්තනය කිරීමට හෝ analyze කිරීමට උත්සාහ නොකරන්න. අදහස පමණක් දැනෙන්නට හරින්න.
+
+📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old**, **not married, and has no children**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
+
+🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He worked at **Keells Supermarket for three months**, and he also ran a **retail supermarket in Tangalle**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
+
+💪 **What kind of man is Dilan?** He is **honest**, **hardworking**, and always **on time**. People say he is the **most reliable worker**. His body is **strong** — he can lift heavy things all day. He is comfortable in **cold storage** and with **long shifts**.
+
+🌍 **Why does he want to go to Israel?** Dilan wants to work in Israel because he wants to **gain international experience**, develop his skills, and build a better future. He is confident he can do the job well.
+
+🙏 **End of story.** Dilan bows his head slightly and says: **"That is all about me, thank you, sir."**
+
+### 2B. Picture This — සිතින් මවාගන්න (විනාඩි 2)
+
+ඔබේ ඇස් පියාගන්න. කතාව තුළ ඔබවම මවාගන්න:
+- 👨 **Dilan Harshana** (28, from Pahalagoda, Tangalle)
+- 🛒 Supermarket සහ retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්ද (More than five years in supermarket and retail work)
+- 💪 අවංක, විශ්වාසදායක, ශක්තිමත් (Honest, reliable, strong)
+- 🌍 ජාත්‍යන්තර පළපුරුද්ද සහ වෘත්තීය දියුණුව සඳහා Israel යාමට බලාපොරොත්තු වේ (Wants Israel for international experience + professional development)
+
+<details>
+<summary>පින්තූර මඟින් උපකාර වන ආකාරය (Krashen's German experiment)</summary>
+
+Krashen ජර්මානු වචන පවසමින් Mr. Spock ගේ රූපය ඇඳ පෙන්වූ විට, අසන්නන්ට එම අලුත් වචන **ක්ෂණිකවම** තේරුම් ගත හැකි විය. Pictures + words = comprehension (අවබෝධය). ඔබේ මොළය ඔබේම කතාව සම්බන්ධයෙන්ද කරන්නේ එම ක්‍රියාවලියයි. මෙම කතාව මඟින් ඔබට **පුද්ගලයෙක් (person), ස්ථානයක් (place), රැකියාවක් (job), සහ අරමුණක් (reason)** ලබා දී ඇත — මේ සියල්ල English ස්වභාවිකව දැනීමට අවශ්‍ය context එක සපයයි.
+
+</details>
+
+---
+
+## Micro-Block 3 — Three Encounters with Dilan (ඩිලාන් සමඟ හමුවීම් 3ක්) (විනාඩි 10)
+
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** **Repetition with variation (වෙනස්කම් සහිතව නැවත නැවත යෙදීම).** **ඔබ ගැනම** වූ එකම කරුණු, වෙනස් සන්දර්භයන් 3ක් යටතේ. සෑම අවස්ථාවකදීම භාෂාවේ ප්‍රකාශන රටාව මඳක් පොහොසත් වේ (i+1, i+2, i+3). ළමයින් භාෂාව උකහා ගන්නේද මෙලෙසිනි — ඔවුන් එකම කතාව විවිධ ආකාරයෙන් නැවත නැවත අසයි.
+
+### Encounter 1 — Dilan Speaks to the Panel (සම්පූර්ණ කතාව / the full speech)
+
+> *එක් වරක් ශබ්ද නඟා කියවන්න. ඔබ මෙය Israeli interview panel එකට පවසන ආකාරය සිතින් මවාගන්න.*
+
+> *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, I am not married, and I have no children. I am from Pahalagoda, Tangalle, in Sri Lanka. I have more than five years of experience in the supermarket and retail field. I worked at Keells Supermarket for three months, and I also ran a retail supermarket in Tangalle. My responsibilities included helping customers, arranging and checking stock, keeping the supermarket clean and organized, and supporting the daily operation of the business. I have also completed a forklift operator course and trained at David Pieris Motors Company, which is a Bajaj company. I am hardworking, honest, reliable, and physically fit. I always try to arrive on time and complete my work carefully. I want to work in Israel to gain international experience and develop my skills. I am confident that my experience and positive attitude will contribute to your team. That is all about me. Thank you, sir."*
+
+### Encounter 2 — A Friend Describes Dilan (මිතුරෙකු ඩිලාන් ගැන පවසන අයුරු)
+
+> *මෙය කියවන්න. මෙහි ඇත්තේ **එම කරුණුමයි (same facts)**, නමුත් වෙනස් වචන වලින්.*
+
+> *"So Dilan is my friend. He is 28 and comes from Pahalagoda, Tangalle, in southern Sri Lanka. He has more than five years of experience in supermarket and retail work. He worked at Keells Supermarket for three months and later ran a retail supermarket in Tangalle. He knows how to help customers, manage stock, keep a shop organized, and support daily business activities. He has also completed a forklift operator course and trained at David Pieris Motors Company, a Bajaj company. He is not married and has no children. He is hardworking, honest, and reliable, and he wants to go to Israel to gain international experience and develop his skills. That is Dilan."*
+
+### Encounter 3 — Dilan's CV (නිල සාරාංශය / formal summary)
+
+> *මෙය කියවන්න. එම කරුණුම වාක්‍ය 4කින් දක්වා ඇති ආකාරය නිරීක්ෂණය කරන්න.*
+
+> *"Dilan Harshana, 28, Pahalagoda, Tangalle, Sri Lanka. Not married, with no children. More than five years of supermarket and retail experience, including three months at Keells Supermarket and experience running a retail supermarket in Tangalle. Completed a forklift operator course and trained at David Pieris Motors Company (Bajaj). Strengths: hardworking, honest, reliable, physically fit, and experienced in customer service and stock handling. Objective: a supermarket or retail position in Israel to gain international experience and develop his skills."*
+
+### Comprehension Check — තේරුම් ගැනීම පරීක්ෂා කරමු (විනාඩි 3)
+
+ඉහත හමුවීම් 3 කියවීමෙන් පසු, **නැවත ආපසු නොබලා** පහත ප්‍රශ්නවලට පිළිතුරු දෙන්න:
+
+<details>
+<summary>Where is Dilan from? (ඩිලාන් කොහෙන්ද?)</summary>
+
+**Pahalagoda, Tangalle, Sri Lanka.**
+
+</details>
+
+<details>
+<summary>How old is Dilan? (ඩිලාන්ගේ වයස කීයද?)</summary>
+
+**28 years old.**
+
+</details>
+
+<details>
+<summary>How many years of experience does he have? (ඔහුට වසර කීයක පළපුරුද්දක් තිබේද?)</summary>
+
+**More than five years.**
+
+</details>
+
+<details>
+<summary>Name three things he did at work. (ඔහු රැකියාවේදී කළ දේවල් 3ක් නම් කරන්න.)</summary>
+
+**Helping customers, arranging and checking stock, and keeping the supermarket clean and organized.**
+
+</details>
+
+<details>
+<summary>Why does he want to go to Israel? (ඔහුට Israel යාමට අවශ්‍ය ඇයි?)</summary>
+
+**International experience + professional development.**
+
+</details>
+
+<details>
+<summary>What kind of person is he? (ඔහු මොන වගේ පුද්ගලයෙක්ද?)</summary>
+
+**Honest, hardworking, reliable, physically strong, on time.**
+
+</details>
+
+> 🎯 ඔබට මෙයින් 4ක් හෝ 5ක් නිවැරදිව පැවසිය හැකි වූයේ නම්, ඔබේ මොළය දැනටමත් මෙම කරුණු උකහාගෙන ඇත (acquired). **පිළිතුරු නැවත පාඩම් කිරීමට යන්න එපා.** එම acquisition ක්‍රියාවලිය කෙරෙහි විශ්වාසය තබන්න.
+
+---
+
+## Micro-Block 4 — The 5 Bones Emerge: ප්‍රධාන කොටස් 5 හඳුනාගැනීම (විනාඩි 6)
+
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** අපි ඔබට මේ කොටස් 5 කටපාඩම් කිරීමට උගන්වන්නේ නැත. Encounter 1 හි ඇති රටාව (pattern) බලා **ඔබ විසින්ම එය සොයාගනු ඇත**.
+
+### 4A. Find the Pattern — රටාව සොයාගන්න (විනාඩි 3)
+
+Encounter 1 (ඩිලාන්ගේ කතාව) නැවත කියවන්න. ඔහුගේ කතාවේ සෑම විටම එකම අනුපිළිවෙලට එන **කොටස් 5ක් (5 parts / 5 bones)** ඇති ආකාරය බලන්න. කොටු තුළ ඇති කොටස් නිරීක්ෂණය කරන්න:
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│   P   E   S   M   S                                      │
-│   │   │   │   │   │                                      │
-│   │   │   │   │   └─ 5. Sign-off (close strongly)        │
-│   │   │   │   └──── 4. Motivation (why this job?)        │
-│   │   │   └──────── 3. Strengths (soft + physical)       │
-│   │   └────────── 2. Experience (years + duties)         │
-│   └────────────── 1. Profile (name + age + hometown)     │
-└──────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│   1. GREETING + PROFILE                                      │
+│   ──────────────────────                                     │
+│   "Good morning, sir. My name is Dilan Harshana.            │
+│    I am 28 years old, not married, and I have no children.    │
+│    I am from Pahalagoda, Tangalle, in Sri Lanka."            │
+│                                                              │
+│   2. EXPERIENCE                                              │
+│   ──────────────                                             │
+│   "I have more than five years of experience in the           │
+│    supermarket and retail field. I helped customers,          │
+│    arranged and checked stock, and kept the supermarket       │
+│    clean and organized. I also have forklift training."       │
+│                                                              │
+│   3. STRENGTHS                                               │
+│   ───────────                                                │
+│   "I am a hardworking, honest, and highly reliable          │
+│    worker who always arrives on time. I am physically        │
+│    strong and comfortable with heavy lifting and working     │
+│    inside cold storage environments."                          │
+│                                                              │
+│   4. MOTIVATION                                              │
+│   ─────────────                                              │
+│   "I want to work in Israel to gain international experience │
+│    and develop my skills. I am confident that my experience  │
+│    and positive attitude will contribute to your team."      │
+│                                                              │
+│   5. SIGN-OFF                                                │
+│   ──────────                                                 │
+│   "That is all about me, thank you, sir."                    │
+└──────────────────────────────────────────────────────────────┘
 ```
 
-### 🎵 මතක උපක්‍රමය #1 — "PESMS"
-මේක එක වචනයක් වගේ හයියෙන් කියවන්න: **PESMS** ("sms" වගේ rhyme වෙනවා). සෑම letter එකක්ම = ඔබේ speech එකේ එක bone එකක්.
+**කිසිවෙකු කියාදීමට පෙර ඔබ විසින්ම මේ කොටස් 5 දුටුවාද?** එසේ නම් — එය තමයි acquisition. කිසිවෙකු නීති කියා නොදුන්නත් ඔබේ මොළය එම ව්‍යුහය (structure) හඳුනාගෙන ඇත.
 
-### 🎵 මතක උපක්‍රමය #2 — "5 Finger Salute"
-ඔබේ අත දිගු කරන්න:
-- **Pinky / සුළැඟිල්ල** (1) = **P**rofile (Dilan Harshana, 28, Tangalle)
-- **Ring finger / වෙදැඟිල්ල** (2) = **E**xperience
-- **Middle finger / මැදැඟිල්ල** (3) = **S**trengths
-- **Index finger / දබරැඟිල්ල** (4) = **M**otivation
-- **Thumb / මහපටැඟිල්ල** (5) = **S**ign-off
+### 4B. The Mnemonic Anchors (මතක ආධාරක) (විනාඩි 3)
 
-සෑම step එකක්ම කියන ගමන් අදාළ ඇඟිල්ලට tap කරමින් practise කරන්න. දවස් දෙකක් යද්දී ඔබේ අතට මේක ඉබේම මතක හිටිනවා.
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** Mnemonics යනු grammar නීති නොවේ, **මතකය පහසු කරන ආධාරක (memory aids)** වේ. ඔබේ මොළය දැනටමත් උකහාගත් දේ පහසුවෙන් නැවත මතක් කරගැනීමට (recall) ඒවා උපකාරී වේ.
 
----
+#### 🎵 Mnemonic #1 — **PESMS** ("SMS" ශබ්දයට සමාන වේ)
+| Letter | Bone (කොටස) |
+|---|---|
+| **P** | Profile (නම, වයස, විස්තර) |
+| **E** | Experience (පළපුරුද්ද) |
+| **S** | Strengths (දක්ෂතා හා හැකියාවන්) |
+| **M** | Motivation (යන්නට අවශ්‍ය හේතුව) |
+| **S** | Sign-off (අවසානය) |
 
-## Reading — The Model Speech (input මුලින්, grammar පසුව)
+#### 🤚 Mnemonic #2 — The 5-Finger Salute (ඇඟිලි 5 ආධාරකය)
+ඔබේ අත ඔසවන්න. එක් එක් කොටස කියන විට එක් ඇඟිල්ලක් නමන්න:
+- **සුළැඟිල්ල (Pinky)** පහළට = **P**rofile (ඔබ කවුද)
+- **වෙදැඟිල්ල (Ring)** පහළට = **E**xperience (ඔබ කළ දේ)
+- **මැදඟිල්ල (Middle)** පහළට = **S**trengths (ඔබ දක්ෂ දේ)
+- **දබරැඟිල්ල (Index)** පහළට = **M**otivation (ඔබට මෙය අවශ්‍ය ඇයි)
+- **මාපටැඟිල්ල (Thumb)** පහළට = **S**ign-off (ශක්තිමත් අවසානය)
 
-> මෙය තුන් වරක් හයියෙන් කියවන්න (Read aloud 3 times). Translate කරන්න යන්න එපා. Rhythm එක පමණක් තේරුම් ගන්න.
+> ✍️ **Action:** කුඩා sticky note එකක "**PESMS**" ලෙස ලියා එය ඔබගේ phone එකේ අලවා ගන්න. ඔබ phone එක unlock කරන සෑම අවස්ථාවකම, ඔබේ සිතින් මේ කොටස් 5 නිහඬව පවසන්න.
 
-> *"Good morning, sir. **My name is Dilan Harshana**. I am **28 years old**, and I am from **Tangalle in Sri Lanka**. I have **five years of experience** working in the supermarket sector. In my previous role, I was responsible for **stocking display shelves, performing FIFO stock rotation, and helping customers locate items**. I also have experience handling **cashier payments**. I am a **hardworking, honest, and highly reliable worker** who always arrives on time. I am **physically strong** and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to **gain valuable international experience** and earn money to **provide a better future for my family**. I am confident that my skills will contribute to your team. **That is all about me, thank you, sir.**"*
+#### 🧠 Mnemonic #3 — The 3-Duty Rule (රාජකාරි 3 නීතිය)
+ඩිලාන්ට රැකියාවේ ප්‍රධාන රාජකාරි **තුනක් (three main duties)** ඇත. ඔහුගේ work badge එකේ ඇති කෙටි ලැයිස්තුවක් ලෙස ඒවා සිතින් මවාගන්න: **Duty 1 • Duty 2 • Duty 3**. රාජකාරි 3 = badge එකේ ඇති වචන 3.
 
-🔍 **Quick check (බලන්න කලින් මතකයෙන් answer කරන්න උත්සාහ කරන්න):**
-
-<details>
-<summary>Q1. How many years of experience does Dilan have? (දිලාන්ට supermarket experience කීයක් තියෙනවද?)</summary>
-
-**Five years** in the supermarket sector.
-
-</details>
-
-<details>
-<summary>Q2. What does Dilan do inside the supermarket? (දිලාන් supermarket එක ඇතුළේ කරන්නේ මොනවාද?)</summary>
-
-He stocks shelves, rotates stock (FIFO), helps customers, and handles cashier payments.
-
-</details>
-
-<details>
-<summary>Q3. Why does Dilan want to work in Israel? (දිලාන් Israel වල වැඩ කරන්න කැමති ඇයි?)</summary>
-
-To gain international experience and earn a better future for his family.
-
-</details>
+> 🟢 මෙම mnemonic එක Lesson 5 (Supermarket Q&A) හිදී නැවත **භාවිතා වනු ඇත (recycle)**.
 
 ---
 
-## Vocabulary in Context (ඔබ දැන් ඇසූ වචන)
+## Micro-Block 5 — Vocabulary, Numbers & Your Story (විනාඩි 8)
 
-සෑම පේළියක්ම හයියෙන් කියවන්න (Read aloud). මෙහි **example** එක ලෙස දී ඇත්තේ model speech එකේ ඇති sentence එකමයි, එවිට ඔබට real English වලින් වචනය භාවිතා වන ආකාරය පෙනේ.
+### 5A. 3-Words-a-Day Journal — Setup (විනාඩි 3)
 
-| Word / Phrase | Easy meaning (සරල තේරුම) | Example from the model |
-| --- | --- | --- |
-| **experience** (noun) | ඔබ වැඩ කරපු කාලය / the years you have worked | *I have **five years of experience** in the supermarket sector.* |
-| **responsible for** | ඔබේ වැඩ / your job duty | *I was **responsible for stocking** display shelves.* |
-| **stocking** | බඩු තැබීම / putting products on shelves | *Stocking display shelves.* |
-| **FIFO stock rotation** | පරණ බඩු ඉදිරිපිට දැමීම / old stock to the front | *Performing FIFO stock rotation.* |
-| **handling cashier payments** | මුදල් ගනුදෙනු කිරීම / taking money at the till | *Handling cashier payments.* |
-| **reliable** | විශ්වාසදායක / people can trust you | *Highly reliable worker.* |
-| **physically strong** | ශරීරයෙන් ශක්තිමත් / your body is strong | *I am physically strong.* |
-| **cold storage** | සීතල කාමරය / very cold room (dairy, frozen food) | *Working inside cold storage environments.* |
-| **gain** | ලබා ගැනීම / to get something valuable | *Gain valuable international experience.* |
-| **provide** | සපයනවා / to give (something needed) | *Provide a better future for my family.* |
-| **confident** | විශ්වාසය / you believe you can do it | *I am confident that my skills will contribute.* |
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** Ramindu Randeni ගේ 3-Words-a-Day ක්‍රමය. වචන ලැයිස්තුවක් ලෙස කටපාඩම් කරනවාට වඩා, ඒවා **ස්වභාවික වාක්‍යයක් තුළ (natural sentence)** ඉගෙන ගත් විට මතකයේ හොඳින් රැඳේ.
 
-### 🎵 මතක උපක්‍රමය #3 — "Stock-Rotate-Cash"
-මේවා තමයි දිලාන්ගේ duties තුන. **Stock rotation cash register** එකක් මවාගන්න: ඔබ shelf එක **stock** කරනවා, FIFO අනුව **rotate** කරනවා, මුදල් **cash** කරනවා. Duties තුන = three Rs (Stock-Rotate-cash register). 5 වතාවක් හයියෙන් repeat කරන්න.
+📓 **ඔබට සැබෑ පොතක් (physical notebook) අවශ්‍ය වේ.** Phone එක නොව. පෑන සහ කඩදාසි — German experiment හි මෙන්, ඉන්ද්‍රිය කිහිපයක් එකවර යෙදවෙන (multi-sensory) ඉගෙනීම මතකයේ හොඳින් රැඳේ.
 
----
+**පොත විවෘත කරන්න. අද දිනය ලියන්න. මාතෘකාව ලෙස ලියන්න:** *Lesson 1 — Dilan's Story.*
 
-## Pronunciation — Numbers Are a Pass/Fail Trigger (ඉලක්කම් උච්චාරණය ඉතා වැදගත්)
+**දැන් Encounter 1, 2, හෝ 3 වෙතින් අදට පෙර ඔබ නොදැන සිටි නව වචන 3ක් (3 NEW words) තෝරාගන්න.** එක් එක් වචනය සඳහා මෙසේ ලියන්න:
 
-> *Sinhala note:* ඉලක්කම් වැරදියට කිව්වොත් panel එකට ඔබ කෙරෙහි ඇති විශ්වාසය බිඳ වැටෙනවා. "පහළොව" (15) කියන්න "fifty" (50) කියලා වැරදියට කිව්වොත්, ඔබේ experience හෝ වයස ගැන panel එක විශ්වාස කරන්නේ නැහැ. සතියක් (1 week) යනතුරු මේ pairs හැමදාම drill කරන්න.
+```
+┌─────────────────────────────────────────────────────────┐
+│  WORD: _______________                                   │
+│  MEANING (English): _______________________              │
+│  FULL SENTENCE (copy from the encounter):                │
+│  ___________________________________________________     │
+│  ___________________________________________________     │
+└─────────────────────────────────────────────────────────┘
+```
 
-### The 4 Killer Pairs (ප්‍රධාන Pairs 4)
+> 💡 ඔබට තනිවම වචන සොයාගැනීමට අපහසු නම් **යෝජිත වචන 3** (මේවා ඔබේ කතාවෙන්ම ලබාගත් ඒවාය):
+> - **reliable** (*Dilan is a reliable worker — විශ්වාසදායක*)
+> - **responsible for** (*I am responsible for… — මගේ වගකීම*)
+> - **cold storage** (*the very cold room — ශීතාගාරය / සීතල කාමරය*)
 
-| Number 1 | Number 2 | Trick to hear the difference (වෙනස අඳුනාගන්නා ක්‍රමය) |
-| --- | --- | --- |
-| **THIR**-teen (13) | **THIR**-ty (30) | **teen** ශබ්දයේ අගට තියුණු "n" ශබ්දයක් දෙන්න (fingers point up — youth). **ty** කියද්දී soft "ee" සහ "t" ශබ්දයක් දෙන්න (flat hand — older, calmer). |
-| **FIF**-teen (15) | **FIF**-ty (50) | ඒ trick එකමයි. **teen** = sharp, high energy. **ty** = soft, lower. |
-| **FOR**-teen (14) | **FOR**-ty (40) | **Forty** හි "t" අකුරට කලින් **"r" ශබ්දයක් නැත**. ලංකාවේ බොහෝ දෙනෙක් "for-ty" කියද්දී "r" ශබ්දයක් දානවා — එහෙම කරන්න එපා. |
-| **EYE**-teen (18) | **EYE**-ty (80) | **Eighty** හි මැද පැහැදිලි "t" ශබ්දයක් ඇත. **Eighteen** හි අගට "n" ශබ්දයක් ඇත. |
+#### සෑම වචනයක්ම ශබ්ද නඟා **5 සිට 7 වතාවක්** පවසන්න (Ramindu Randeni method). ඔබේ දිව යනු මාංශ පේශියකි (muscle). එයට පුහුණුව (reps) අවශ්‍ය වේ.
 
-### 🎵 මතක උපක්‍රමය #4 — "Teen = N-teen / Ty = T-y"
-- **teen** අවසන් වන්නේ **N** ශබ්දයෙන් (sounds like a kid — short, sharp).
-- **ty** අවසන් වන්නේ **T** ශබ්දයෙන් (sounds flat, like a calm grown-up).
+### 5B. Numbers as a Song — Listen First (විනාඩි 5)
 
-### Drill (අද දින 5 වතාවක් කරන්න, ඉන්පසු සතියක් යනතුරු ყოველ උදෑසනකම 3 වතාවක් කරන්න)
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** සංඛ්‍යා යනු **i+1** වේ, මන්ද සිංහල සහ ඉංග්‍රීසි සංඛ්‍යා ක්‍රමවල teen සහ ty අතර උච්චාරණ වෙනසක් ඇති බැවිනි. අපි ඒවා ගීතයක් මෙන් සලකමු — පළමුව අසන්න, පසුව එක්ව ගයන්න, පරීක්ෂණ නොකරන්න.
 
-සෑම pair එකක්ම **3 වතාවක් හයියෙන් repeat කරන්න**, ඉන්පසු sentence එකක් ඇතුළත කියන්න:
+🎵 **Mnemonic #4 — "Teen = ළමයෙකු මෙන් තියුණුයි (sharp like a kid), Ty = සන්සුන් වැඩිහිටියෙකු මෙන් පැතලියි (flat like a calm grown-up)"**
+- **Teen** අවසන් වන්නේ **N** ශබ්දයෙන් — කෙටි, තියුණු, ජවසම්පන්නයි (teenager).
+- **Ty** අවසන් වන්නේ **T** ශබ්දයෙන් — මෘදු, පැතලි, පරිණතයි (fifty යනු සන්සුන් මැදිවියේ අංකයකි).
+
+#### 🎧 Listen-then-Sing Drill (අසා නැවත කීමේ අභ්‍යාසය)
+
+ඔබේ phone එකේ Google Translate විවෘත කරන්න. එක් එක් වචනය type කර, 🔊 මත click කර, අසා, **ඉන්පසු එය නැවත කියන්න**:
 
 1. thirteen / thirty
 2. fifteen / fifty
-3. fourteen / forty
+3. fourteen / forty ("r" අකුරක් නැත!)
 4. eighteen / eighty
 
-ඉන්පසු:
-- *"I am **thirty** years old."* (NOT thirteen)
-- *"I have **fifteen** years of experience."* (NOT fifty)
-- *"My weight is **eighty** kilograms."* (NOT eighteen)
-- *"I worked for **forty** hours last week."* (NOT fourteen)
+දැන් **ඩිලාන් සැබවින්ම පවසන වාක්‍ය සමඟ** එය පුහුණු වන්න:
 
-🎤 **Self-recording tip:** ඔබේ phone එකේ voice recorder එක open කරන්න. මේ pairs හතර 5 වතාව බැගින් කියවන්න. ඇවිදින අතරතුර එය play කර අහන්න. කියවනවාට වඩා ඔබේ කනට ඔබේම වැරදි ඉක්මනින් අසුවනු ඇත.
+| Number | Sentence Dilan might say (ඩිලාන් පැවසිය හැකි වාක්‍ය) |
+|---|---|
+| **28** (twenty-eight) | *I am twenty-eight years old.* |
+| **More than five** years | *I have more than five years of experience.* |
+| **15** (fifteen) | *I worked fifteen hours yesterday.* |
+| **50** (fifty) | *The crate weighs fifty kilograms.* |
 
----
+🤚 **TPR ක්‍රීඩාව (Total Physical Response):** නැගී සිටින්න. ඔබේ සහායකයෙකු ඉංග්‍රීසියෙන් ශබ්ද නඟා අංකයක් කියයි. **"teen" සඳහා ඇඟිලි තුඩුවලින් ඉහළට එසවෙන්න (tiptoes), "ty" සඳහා පහතට නැමෙන්න (crouch down).** මෙය ශබ්ද ඔබේ ශරීරය තුළ රඳවා තබයි. (තනිවම සිටී නම්, හිස ඉහළට/පහළට වනන්න.)
 
-## Grammar in Context (තේරුම අවබෝධ කරගත් පසු පමණක්)
-
-> *CI rule: අපි grammar පෙන්වන්නේ ඔබ meaning එක තේරුම් ගත්තාට පසුවයි.* Model speech එක දෙස බලන්න. මෙම patterns හොඳින් නිරීක්ෂණය කරන්න — මේවා **සෑම** interview answer එකකම පාහේ දකින්න ලැබෙනවා.
-
-### Pattern 1 — *"My name is ___."*
-Subject + verb + identity.
-- *My name is Dilan Harshana.*
-- *My name is Dilan.*
-
-### Pattern 2 — *"I am from ___."*
-Subject + be + place.
-- *I am from Tangalle.*
-- *I am from Sri Lanka.*
-
-### Pattern 3 — *"I have ___ years of experience."*
-Subject + have + number + noun.
-- *I have five years of experience.*
-- *I have three years of experience.*
-
-### Pattern 4 — *"I was responsible for ___."*
-Subject + was + adjective + for + verb-ing.
-- *I was responsible for **stocking** shelves.*
-- *I was responsible for **handling** payments.*
-
-### Pattern 5 — *"I am ___."*
-Subject + be + adjective. (Strong, honest, hardworking, punctual, reliable.)
-- *I am **honest**.*
-- *I am **physically strong**.*
-
-> **Sinhala note:** මේ patterns 5 නිතරම repeat වෙනවා. Pattern 1 සෑම introduction එකකම, Pattern 3 සෑම experience answer එකකම භාවිතා වෙනවා. මේවා හොඳින් මතක තබා ගන්න — එවිට ඔබට කිසිදා පැකිලීමකින් තොරව නිවැරදි පිළිතුරක් ලබා දීමට හැකි වේ.
+> 🟢 මෙම number drill එක Lesson 3 (Number Power) හිදී නැවත **භාවිතා වනු ඇත (recycle)**.
 
 ---
 
-## Comprehensible Input Activities (ක්‍රියාකාරකම්)
+## Micro-Block 6 — Dilan's Story, Spoken by Dilan (පීඩනයකින් තොර සැහැල්ලු කතා කිරීම / Gentle Output) (විනාඩි 5)
 
-### Activity A — Cloze Listening (input)
-අඩු වී ඇති වචන සහිත මෙම **model speech එක** නැවත කියවන්න. මතකයෙන් හිස්තැන් පුරවන්න.
+> **භාවිතා වන CI මූලධර්මය (CI principle applied):** **The Silent Period is sacred (නිහඬ කාල පරිච්ඡේදය අතිශයින් වැදගත්ය).** Krashen පවසන්නේ: මුල් කාලයේදීම බලහත්කාරයෙන් කතා කරවීමට උත්සාහ නොකරන්න. අපි read → whisper → speak යන සැහැල්ලු පියවර 3 ඔස්සේ ඉදිරියට යන්නෙමු.
 
-> *"Good morning, sir. My ______ is Dilan Harshana. I am ______ years old, and I am from ______ in Sri Lanka. I have five years of ______ working in the supermarket sector. In my previous role, I was ______ for stocking display shelves, performing FIFO stock rotation, and helping customers locate items. I also have experience ______ cashier payments. I am a hardworking, honest, and highly reliable worker who always arrives on ______. I am physically ______ and comfortable with heavy lifting and working inside ______ storage environments. I want to work in an Israeli supermarket to gain valuable international ______ and earn money to provide a ______ future for my family. I am ______ that my skills will contribute to your team. That is all about me, thank you, sir."*
+### Step 1 — Read your version: ඔබේ අනුවාදය කියවන්න (විනාඩි 2)
 
-<details>
-<summary>Answer key (මුලින්ම උත්සාහ කරන්න, පසුව click කරන්න)</summary>
+සම්පූර්ණ කතාව සෙමෙන්, එක් වරක් ශබ්ද නඟා කියවන්න. මෙම අනුවාදය ඔබේ සැබෑ තොරතුරු භාවිතා කරයි.
 
-1. **name**
-2. **28**
-3. **Tangalle**
-4. **experience**
-5. **responsible**
-6. **handling**
-7. **time**
-8. **strong**
-9. **cold**
-10. **experience**
-11. **better**
-12. **confident**
+> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old**, **not married**, and I have **no children**. I am from **Pahalagoda, Tangalle**, in Sri Lanka. I have **more than five years of experience** in the **supermarket and retail** field. I worked at **Keells Supermarket for three months**, and I also ran a **retail supermarket in Tangalle**. My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**. I am a **hardworking, honest, reliable, and physically fit worker**. I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team. **That is all about me. Thank you, sir.**"*
 
-</details>
+### Step 2 — Whisper it: සෙමෙන් මිමිණීම (විනාඩි 1)
+කතාව එක් වරක් රහසින් මෙන් සෙමෙන් මිමිණන්න (whisper). Whispering යනු නිහඬව කියවීම සහ සම්පූර්ණයෙන් කතා කිරීම අතර පියවරකි — අන් අයට ඇසීමේ පීඩනයකින් තොරව ඔබේ කටහඬ ස්නායු (vocal cords) සූදානම් වේ.
 
-### Activity B — Substitution Drill (output)
-Model speech එක ගෙන, එය ඔබට ගැලපෙන පරිදි **ඔබේ personal details වලට වෙනස් කරන්න**. මෙම template එක භාවිතා කරන්න — හිස්තැන් පුරවා, ඉන්පසු 3 වතාවක් හයියෙන් කියවන්න (read aloud 3 times).
+### Step 3 — Say it aloud: ශබ්ද නඟා කියන්න (විනාඩි 2)
+එක් වරක් ශබ්ද නඟා කියන්න. **අද කිසිවෙකු ඔබව record කරන්නේ නැත.** වැරදි සිදුවීම කිසිසේත්ම ගැටලුවක් නොවේ — මොළය ඉගෙන ගන්නේ එලෙසිනි (Krashen ගේ Monitor hypothesis පවසන්නේ කතා කරන අතරතුර නීති ගැන සිතීමෙන් මානසික ආතතිය ඇතිවන බවයි; ඒ නිසා නිදහසේ ගලායන්නට ඉඩ දෙන්න).
 
-| Slot | Your answer (මෙහි ලියන්න) |
-| --- | --- |
-| Your full name (ඔබේ සම්පූර්ණ නම) | Dilan Harshana |
-| Your age (ඔබේ වයස) | 28 years old |
-| Marital status (විවාහක/අවිවාහක බව) | _________________ |
-| Your hometown (ඔබේ ගම/නගරය) | Tangalle, Sri Lanka |
-| Years of experience (පළපුරුදු වසර ගණන) | _________________ |
-| Your sector (supermarket / manufacturing / warehouse) | _________________ |
-| Three duties you do (ඔබ කරන duties 3ක්) | _________________ |
-| Two soft strengths (ඔබේ soft strengths 2ක්) | _________________ |
-| One physical strength (එක් physical strength එකක්) | _________________ |
-| Why you want Israel (reason 1 - හේතුව 1) | _________________ |
-| Why you want Israel (reason 2 - හේතුව 2) | _________________ |
-
-### Activity C — Listen & Repeat (pronunciation)
-1. ඔබේ phone එකේ Google Translate open කරන්න.
-2. Model speech එක type කරන්න (හෝ paste කරන්න).
-3. Speaker icon එක press කරන්න — **slow speed** එකෙන් සවන් දෙන්න (⚙️ settings → slow).
-4. Rhythm එක අනුකරණය කරමින් **sentence by sentence** repeat කරන්න.
-5. ඉන්පසු **normal speed** එකෙන් 2 වතාවක් repeat කරන්න.
+> 💛 **Affective Filter පරීක්ෂාව (Krashen):** ඔබට බියක් හෝ ආතතියක් දැනුණාද? එසේ නම්, කතා කිරීමට පෙර ගැඹුරු හුස්ම 3ක් ගන්න. ඔබේ බිය සහ ආතතිය අඩු වන තරමට (low anxiety), භාෂාව උකහා ගැනීම වේගවත් වේ. **Interview panel එක ඉන්නේ ඔබට උදව් කිරීමටයි** — ඔවුන්ට අවශ්‍ය ඔබ සාර්ථක වනු දැකීමටයි.
 
 ---
 
-## Speaking Practice — The 5-Bone Speech (දැන්ම deliver කරන්න)
-කෙළින් හිටගන්න. Camera එක දෙස බලන්න (නැතහොත් interviewer කෙනෙක් ඉදිරියේ සිටින බව සිතන්න). මදක් සිනහවෙන්න. **Slowly and clearly** (හෙමින් සහ පැහැදිලිව) කතා කරන්න.
+## Cornell Notes — Capture Today's Lesson (අද පාඩම සටහන් කරගනිමු) (විනාඩි 5, optional but powerful)
 
-> 💡 **Pacing rule:** සෑම sentence එකකටම පසු **තත්පර 1 ක් (1 second)** pause කරන්න. සන්සුන්ව සිතීමට ඔබේ මොළයට ඒ තත්පරය අවශ්‍ය වේ.
-
-මෙය පස් වතාවක් කියන්න. සෑම අවස්ථාවකදීම, එක් කුඩා විස්තරයක් වෙනස් කරන්න (ඔබේ years, sector ආදිය) — එවිට ඔබ වචන කටපාඩම් කිරීමෙන් මිදී speech එක **තමන්ගේම එකක් කරගැනීමට (owning)** පටන් ගනී.
-
-**Self-check checklist (සෑම take එකකටම පසු පරීක්ෂා කරන්න):**
-- [ ] Camera / interviewer දෙස බැලුවා (පහළ බැලුවේ නැත).
-- [ ] මුලින්ම "Good morning, sir" කිව්වා.
-- [ ] Bones 5 ම නියම පිළිවෙළට ආවා (P-E-S-M-S).
-- [ ] තත්පර 60 කට අඩුවෙන් කතා කළා (අද දින එක් වරක් time කර බලන්න).
-- [ ] Numbers පැටලීමක් සිදු වුණේ නැත (13 vs 30, 15 vs 50).
-- [ ] **"That is all about me, thank you, sir."** කියමින් අවසන් කළා.
-
----
-
-## Listening Practice — Number Discrimination (ඉලක්කම් නිවැරදිව වෙන්කර හඳුනාගැනීම)
-යහළුවෙකුට, පවුලේ සාමාජිකයෙකුට හෝ voice-recorder එකකට මෙම sentences කියවීමට සලස්වන්න. ඔබ අදාළ number එක ලියන්න:
-
-1. *"He worked there for ___ years."* → 15 / 30 / 13 / 50
-2. *"I am ___ years old."* → 18 / 80 / 50 / 14
-3. *"The crate weighs ___ kilograms."* → 14 / 40 / 50 / 18
-4. *"My salary was ___ thousand rupees."* → 15 / 50 / 13 / 30
-
-<details>
-<summary>Answer key (පිළිතුරු)</summary>
-
-1. **30** (context: working experience සාමාන්‍යයෙන් විශාල අගයකි)
-2. **18 / 80** — context එක පැහැදිලි නැතිනම් දෙකම පිළිගත හැක; තරුණ සේවකයෙක් නම් = 18, වැඩිහිටි නම් = 80
-3. **40** (crate එකක් බරයි — 40 kg වඩාත් realistic වේ)
-4. **50** (salary සාමාන්‍යයෙන් වැඩි අගයක් ගනී)
-
-ඔබේ interview එකේදී ඔබ සැබවින්ම පවසන real numbers යොදාගෙන නැවත drill කරන්න.
-
-</details>
-
----
-
-## Reading Practice — Two Templates (Templates දෙකක්)
-Options **දෙකම** හයියෙන් කියවන්න (Read aloud). ඔබේ සැබෑ background එකට ගැලපෙන එක තෝරාගන්න — ඉදිරි lessons සඳහා ඔබේ **home template** එක වන්නේ එයයි.
-
-### Template A — Candidates WITH Retail Experience (Retail/Supermarket අත්දැකීම් ඇති අය සඳහා)
-> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old**, and I am from **Tangalle in Sri Lanka**. I have [five] years of experience working in the supermarket sector. In my previous role, I was responsible for systematically stocking display shelves, performing FIFO stock rotation, and helping customers locate items. I also have experience handling cashier payments. I am a hardworking, honest, and highly reliable worker who always arrives on time. I am physically strong and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to gain valuable international experience and earn money to provide a better future for my family. I am confident that my skills will contribute to your team. That is all about me, thank you sir."*
-
-### Template B — Candidates WITHOUT Direct Retail Experience (සෘජු Retail අත්දැකීම් නැති අය සඳහා)
-> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old**, and I live in **Tangalle in Sri Lanka**. Although I do not have direct supermarket experience, I have [three] years of experience in logistics and warehouse operations. My daily duties included receiving goods, checking counts, and systematically arranging stock in the warehouse. I am a very fast learner and can adapt to supermarket duties quickly. I am physically fit, healthy, and accustomed to hard manual labor. I collaborate exceptionally well with multicultural teams, respect company rules, and am completely comfortable working night shifts and overtime. I am highly motivated to work in Israel to improve my professional skills in a developed country while supporting my family's economy. I believe I can do an excellent job for your supermarket. That is all about me, thank you."*
-
-> *Sinhala note:* ඔබට supermarket අත්දැකීම් නැත්නම්, "fast learner" කියන පදය ඔබේ ප්‍රබලතම ආයුධයයි. **"Although I do not have direct experience... I am a fast learner."** — මේ structure එක මතක තියාගන්න. Lesson 4 වලදී මේක ගැඹුරින් practise කරනවා.
-
----
-
-## Writing Practice — Build Your Real Script (ඔබේ සැබෑ Script එක ලියන්න)
-කොළයක ලියන්න:
+> **Cornell Notes ක්‍රමය:** Cornell Notes මඟින් මොළයේ බර (cognitive load) අඩු කර කරුණු සංස්ලේෂණය කරයි. CI mode එකේදී වුවද, සැහැල්ලු සටහන් තබාගැනීම දිගුකාලීන මතකයට (long-term memory) බෙහෙවින් උපකාරී වේ.
 
 | Section | What to write (ලිවිය යුතු දේ) |
-| --- | --- |
-| **Cues (වම)** | Labels 5: Profile, Experience, Strengths, Motivation, Sign-off |
-| **Notes (දකුණ)** | Full sentences වලින් ඔබේ සැබෑ details |
-| **Summary (පහළ)** | Sentences 2 ක summary එකක්: *"I am Dilan Harshana, 28 years old, from Tangalle. I have __ years of experience in ___."* |
-
-මෙය ඔබේ **personal script** එක බවට පත්වේ — මෙය ළඟ තබා ගන්න. දින 7ක් පුරා දිනකට 3 වතාවක් මෙය කියවන්න (Recite 3× a day).
+|---|---|
+| **Cues (වම් තීරුව, ~25%)** | PESMS, 3-Duty Rule, Teen = N / Ty = T, ඩිලාන්ගේ කරුණු 5 (Dilan's 5 facts), ඔබ තෝරාගත් නව වචන 3 |
+| **Notes (දකුණු තීරුව, ~75%)** | ඩිලාන්ගේ කතාව පිළිබඳ කෙටි කරුණු; ඔබේ සැබෑ තොරතුරු; ඔබේ නව වචන 3 වාක්‍ය සමඟ |
+| **Summary (පහළ කොටස)** | වාක්‍ය 2ක සාරාංශයක්: *"The interview speech has 5 bones: Profile, Experience, Strengths, Motivation, Sign-off. My version: Dilan Harshana, 28, from Pahalagoda Tangalle, with more than five years of supermarket and retail experience, applying for a supermarket or retail position."* |
 
 ---
 
-## Memory Techniques (සැමදා මතක තබා ගැනීමට උපක්‍රම)
+## 📓 Spaced Repetition — The 1-1-1-1 Lock (Ebbinghaus ක්‍රමය)
 
-### 🎵 මතක උපක්‍රමය #1 — PESMS (the 5 bones)
-Pinky–Ring–Middle–Index–Thumb = **P**rofile, **E**xperience, **S**trengths, **M**otivation, **S**ign-off. ඔබේ phone එකේ කුඩා sticker එකක් අලවා ගන්න: **PESMS**.
+> **Ebbinghaus Forgetting Curve:** නැවත මතක් කිරීමකින් තොරව, පැය 1ක් ඇතුළත ~50%ක්ද, දිනක් ඇතුළත ~70%ක්ද අමතක වේ. වාර 4ක ස්ථාවර මතක් කිරීමක් මඟින් එය මතකයේ තදින් තැන්පත් වේ.
 
-### 🎵 මතක උපක්‍රමය #2 — 5-Finger Salute
-එක් එක් කොටස පවසන විට ඔබේ අතේ අදාළ ඇඟිල්ලට physically tap කරන්න. ඔබේ ශරීරයටම එය මතක හිටිනු ඇත.
+| When (කවදාද) | What you do (මිනිත්තු 5ක් තුළ කරන දේ) |
+|---|---|
+| **+ පැය 1කට පසු (+ 1 hour)** | ඩිලාන්ගේ කතාව එක් වරක් කියවන්න. ඔබේ අනුවාදය එක් වරක් whisper කරන්න. |
+| **+ පැය 24කට පසු (+ 24 hours)** | ඔබේ කතාව 2 වතාවක් ශබ්ද නඟා කියන්න. ඔබේ 3-words journal විවෘත කර, එක් එක් වචනය 5 වතාවක් කියන්න. |
+| **+ සතියකට පසු (+ 1 week)** | කාලය මැන බලන්න (time yourself) — තත්පර 60ට අඩුවෙන් ඔබේ කතාව කියන්න. Cornell notes හි summary පේළිය නැවත ලියන්න. |
+| **+ මාසයකට පසු (+ 1 month)** | Camera එකක් ඉදිරියේ full mock interview එකක් කරන්න. අද කළ whisper එක සමඟ සංසන්දනය කරන්න. |
 
-### 🎵 මතක උපක්‍රමය #3 — Stock-Rotate-Cash
-Supermarket worker කෙනෙකුගේ ප්‍රධාන duties තුන. "Cash register" එකක් stock rotate කරන ආකාරය මවාගන්න — පරණ stock ඉදිරියට ගෙන එයි (FIFO).
-
-### 🎵 මතක උපක්‍රමය #4 — Teen = N-teen / Ty = T-y
-Teen ශබ්දය තියුණු සහ කෙටි වේ (තරුණ කෙනෙක් මෙන්). Ty ශබ්දය flat සහ සන්සුන් වේ (වැඩිහිටියෙක් මෙන්).
-
-### 🎵 මතක උපක්‍රමය #5 — "Although I do not have... I am a fast learner"
-සෘජු අත්දැකීම් නොමැති candidates ලා සඳහා **3-1 sentence formula** එක:
-- Duty facts පිළිබඳ කෙටි sentences 3ක්.
-- ප්‍රබල "fast learner" closing sentence 1ක්.
+> 🎯 ඔබගේ phone එකේ "**1-1-1-1 Lock**" නමින් alarms 4ක් සකසා ගන්න.
 
 ---
 
-## Comprehensible Input Method — මෙය සාර්ථක වන්නේ ඇයි?
+## Gentle Progress Criteria — ඔබ Lesson 2 සඳහා සූදානම්ද?
 
-> *Sinhala note:* ඔබේ මොළයට English **ස්වාභාවිකව** ග්‍රහණය කරගැනීමට, අපි **Comprehensible Input (CI)** ක්‍රමය අනුගමනය කරනවා. එය **නීති 5ක් (5 rules)** මත පදනම් වේ:
+ඔබ සූදානම් වන්නේ **මේවා පරිපූර්ණ වූ විට නොව, ඔබට මේවා ස්වභාවිකව දැනෙන විටදීය**:
 
-1. **Meaning first, grammar second (මුලින්ම තේරුම, පසුව grammar).** Grammar patterns නම් කිරීමට *පෙර* ඔබ speech එක තේරුම් ගත්තා. ඒක තමයි CI.
-2. **i + 1.** සෑම lesson එකකින්ම ඔබ දැනටමත් දන්නා දේ මත කුඩා අලුත් කොටසක් එකතු කරයි.
-3. **Recycling.** ඉදිරි සෑම lesson එකකදීම PESMS, Stock-Rotate-Cash, සහ teen/ty tricks නැවත දකින්නට ලැබේ.
-4. **Low anxiety (අඩු පීඩනය).** Grammar tests නැත, pressure එකක් නැත — speak කරන්න, repeat කරන්න, ක්‍රමයෙන් build කරන්න.
-5. **Repetition with variation (වෙනස්කම් සහිතව පුනරාවර්තනය).** ඔබ අද speech එක 5 වතාවක් කිව්වා, නමුත් සෑම වතාවකදීම එක් detail එකක් වෙනස් වුණා. එවිට ඔබේ මොළය නිශ්චිත වචන වෙනුවට structure එක මතක තබා ගනී.
+- [ ] ඔබට නොබලා ප්‍රධාන කොටස් 5 (PESMS) මතක් කරගත හැක.
+- [ ] ඩිලාන්ගේ කරුණු 5 මතකයෙන් පැවසිය හැක (නම, වයස, ගම, වසර ගණන, Israel යාමට හේතුව).
+- [ ] "thirteen" සහ "thirty" වෙනස ඇසෙන විට හඳුනාගත හැක.
+- [ ] ඔබේ සැබෑ සටහන් පොතේ අදාළ වාක්‍ය සමඟ නව වචන 3ක් ලියා ඇත.
+- [ ] බියෙන් ගොත ගැසීමකින් තොරව ඔබේ කතාව එක් වරක් whisper කිරීමට හෝ ශබ්ද නඟා කීමට හැකි විය.
+- [ ] Interview එක ගැන ඔබට **සැහැල්ලුවක් සහ සන්සුන් බවක් (calm)** දැනේ (පරිපූර්ණ විය යුතු නැත — සන්සුන් විය යුතුය).
 
-> 🎯 *"Language is a vehicle for communication — the goal is getting your message across clearly, not flawless perfection."* ඔබේ grammar වල යම් අඩුපාඩු තිබුණත් ඔබේ 5-bone speech එක සාර්ථකව ක්‍රියාත්මක වේ — මන්ද එහි structure එක පැහැදිලි සහ confident බැවිනි.
-
----
-
-## Spaced-Repetition Review Plan (1-1-1-1 Lock)
-
-> ඔබේ phone එකේ alarms 4 ක් set කරගන්න. එක් alarm එකක් = විනාඩි 5 ක review එකක්.
-
-| When (කවදාද) | What to review (Review කළ යුතු දේ) | Time (කාලය) |
-| --- | --- | --- |
-| **Today + 1 hour (අද + පැය 1)** | Model speech එක එක් වරක් නැවත කියවන්න. දෙවරක් හයියෙන් කියන්න. | 5 min |
-| **Tomorrow + 24 hours (හෙට + පැය 24)** | Activity A cloze එක මතකයෙන් පුරවන්න. ඔබේ own script එක 2× කියන්න. | 5 min |
-| **+ 1 week (+ සතිය 1)** | Time කර බලන්න — speech එක deliver කරන්න, කාලය <60 sec විය යුතුය. Cornell notes වල summary row එක ලියන්න. | 10 min |
-| **+ 1 month (+ මාස 1)** | (Interview එකට පෙර) — camera එක සමඟ full mock interview එකක් කරන්න. | 15 min |
-
-> 🎵 මතක උපක්‍රමය #6 — **1-1-1-1 Lock** = "**1** Hour, **1** Day, **1** Week, **1** Month." මෙම anchors හතර මඟින් තොරතුරු long-term memory එක තුළ lock කරයි.
+> ⚠️ **වැදගත්:** "පරිපූර්ණත්වයට" (perfect) වඩා "සන්සුන් බව" (calm) වැදගත් වේ (Krashen: low affective filter = better acquisition). කිසියම් කොටුවක් සම්පූර්ණ නොවූයේ නම්, හෙට දිනයේ Micro-Blocks 3 සහ 5 නැවත එක් වරක් කරන්න. බලපෑම් නොකරන්න.
 
 ---
 
-## Progress Criteria — ඔබට Lesson 2 වෙත යා හැක්කේ කවදාද?
+## Homework — Acquisition Style (අද දිනට මුළු කාලය විනාඩි 15යි)
 
-ඔබ Lesson 2 සඳහා සූදානම් වන්නේ මෙම **boxes 6 ම** tick කිරීමට හැකි වූ විට පමණි:
+> **4-Week Plan සතිය 1:** **පළමුව immersion (සවන් දීම/කියවීම), අවසානයට output (කතා කිරීම).**
 
-- [ ] මට බලාගෙන කියවීමකින් තොරව **තත්පර 60 කට අඩු කාලයකදී** මගේ 5-bone speech එක deliver කළ හැක.
-- [ ] මට 13/30, 15/50, 14/40, 18/80 යන සංඛ්‍යා **සෑම අවස්ථාවකදීම** නිවැරදිව pronounce කළ හැක.
-- [ ] මම මතක උපක්‍රම 5 ම දනිමි (PESMS, 5-Finger, Stock-Rotate-Cash, Teen/Ty, 3-1 formula).
-- [ ] මම කොළයක මගේ සැබෑ script එක ලියා ඇත්තෙමි.
-- [ ] මම මගේ හඬ එක් වරක් record කර නැවත අසා බැලුවෙමි — මම අවම වශයෙන් එක් නිවැරදි කිරීමක් (fix) හඳුනා ගත්තෙමි.
-- [ ] මට freeze නොවී Template A සහ Template B දෙකටම මගේ සැබෑ details substitute කළ හැක.
+| # | Task (කාර්යය) | Time (කාලය) |
+|---|---|---|
+| 1 | ඔබේ **physical 3-Words-a-Day notebook** සකසා ගන්න. සම්පූර්ණ වාක්‍ය සමඟ අද දින වචන 3 ලියන්න. | විනාඩි 5 |
+| 2 | Lesson 1 සඳහා ඔබේ **Cornell Notes** පිටුව ලියන්න. | විනාඩි 5 |
+| 3 | YouTube වෙතින් තවත් **විනාඩි 3–5ක English interview clip එකක්** සොයාගන්න. English subtitles සමඟ නරඹන්න. සටහන් නොලියන්න. | විනාඩි 5 |
+| 4 | (Optional) නින්දට පෙර ඔබේ කතාව එක් වරක් whisper කරන්න. | — |
 
-**කිසියම් box එකක් unchecked නම්**, Activities A සහ C මෙන්ම cloze drill එක නැවත කරන්න. ඉන්පසු ඉදිරියට යන්න.
-
----
-
-## Homework (අද දින විනාඩි 20 ක mission එක)
-
-> *Sinhala note:* මේ පාඩම අද ඉගෙන ගෙන අවසන් වූ පසු, පහත දේ කරන්න. හෙට උදේ අවදි වූ පසු පළමු කාර්යය මෙයයි.
-
-1. **[5 min] Write:** කොළයක ඔබේ script එක ලියන්න. ඔබේ නම (**Dilan Harshana**), වයස (**28**), ගම (**Tangalle**), years of experience භාවිතා කරන්න.
-2. **[5 min] Record:** speech එක deliver කරන ආකාරය 3 වතාවක් record කරන්න. හොඳම එක save කරගන්න.
-3. **[5 min] Listen:** recording එකට සවන් දෙන්න. **දියුණු කරගත යුතු කරුණු 3ක් (3 things to improve)** ලියාගන්න (උදා: "spoke too fast," "forgot sign-off," "said 13 instead of 30").
-4. **[5 min] Say it again:** එම fixes 3 සහිතව නැවත speech එක කියන්න. තවත් එක් වරක් record කරන්න.
-
-දැන්ම ඔබේ **+1 hour** alarm එක set කරගන්න.
+> 🎯 **මුළු සක්‍රීය කාලය: විනාඩි 15යි.** දිනපතා ගමන් බිමන් යන අතරතුර (bus/train) හෝ නිදහස් වේලාවක විනාඩි 10–15ක් වැය කිරීම ප්‍රමාණවත්ය.
 
 ---
 
-## Reminder for the Next Session (ඊළඟ Session එක සඳහා මතක් කිරීම්)
+## Quick Reference — ඔබට දැන් ලැබී ඇති දේ
 
-ඔබ නැවත පැමිණෙන විට, මේවා රැගෙන එන්න:
-- ඔබේ recorded audio file එක (හෝ තත්පර 30 ක clip එකක්).
-- ඔබ දියුණු කරගැනීමට බලාපොරොත්තු වූ කරුණු 3 (3 things to improve).
-- Progress-criteria boxes 6 න් checked කළ සහ unchecked වූ දේවල්.
+- ✅ ඔබේ මනසේ රැඳී ඇති **කතාවක්** (ඩිලාන් — ඔබේම කතාව).
+- ✅ ඔබ විසින්ම සොයාගත් **කොටස් 5ක සැකිල්ල** (PESMS skeleton).
+- ✅ ඔබේ සටහන් පොතේ ඇති **නව වචන 3ක්**.
+- ✅ වෙන්කර හඳුනාගත හැකි **සංඛ්‍යා යුගල 4ක්**.
+- ✅ ඔබේ කතාවේ **whispered version එකක්**.
+- ✅ **1-1-1-1 review කාලසටහනක්**.
+- ✅ **මතක ආධාරක (mnemonics) 6ක්** (PESMS, 5-Finger, 3-Duty Rule, Teen/Ty, "Fast Learner" formula, 1-1-1-1 Lock) — මෙයින් **5ක් ඉදිරි පාඩම්වලදීද නැවත භාවිත වේ**.
 
-ඔබ **apply කරන sector එක** (supermarket, warehouse, හෝ manufacturing) සහ සැබෑ වැඩ පළපුරුද්ද (years of experience & duties) තහවුරු කරන්න — එවිට Lesson 2 ඔබට 100% ක් ගැලපෙන පරිදි සකස් කළ හැක.
+---
+
+## Optional Monitor Appendix — ඔබට අවශ්‍ය නම් පමණක් කියවන්න
+
+> **Krashen ගේ Monitor hypothesis:** සිහියෙන් යුතුව ව්‍යාකරණ නීති (grammar rules) සිහිපත් කිරීම ප්‍රයෝජනවත් වන්නේ ඔබට සිතීමට කාලය ඇති විට, නීතිය හොඳින් දන්නා විට සහ ව්‍යාකරණ කෙරෙහි අවධානය යොමු කළ හැකි විට **පමණි**. සැබෑ interview සංවාදයකදී, මොළයේ Monitor එක මඟින් **ඔබේ කතා කිරීම ප්‍රමාද කර මානසික ආතතිය වැඩි කරයි**. එම නිසා මෙම කොටස **අනිවාර්ය නොවේ (optional)**. එක් වරක් කියවන්න. පසුව එය අමතක කරන්න. ඔබ දැනටමත් සිදු කර ඇති ස්වභාවික උකහා ගැනීම (acquisition) කෙරෙහි විශ්වාසය තබන්න.
+
+### Pattern A — "My name is ___." (අනන්‍යතාවය / identity)
+- *My name is Dilan Harshana.*
+
+### Pattern B — "I am from ___." (පැමිණි ස්ථානය / origin)
+- *I am from Pahalagoda, Tangalle.*
+
+### Pattern C — "I have ___ years of experience." (කාලය / duration)
+- *I have more than five years of experience.*
+
+### Pattern D — "I am + adjective." (ගුණාංග / quality)
+- *I am honest. I am reliable. I am physically strong.*
+
+### Pattern E — "I am responsible for ___ing." (රාජකාරිය / duty)
+- *I am responsible for stocking shelves.*
+- *I am responsible for handling payments.*
+
+> 💛 **මේ රටා (patterns) කටපාඩම් කරන්න එපා.** හමුවීම් 3 ඔස්සේ ඔබේ මොළය දැනටමත් මේවා උකහාගෙන ඇත. ඔබ ගැන විශ්වාසය තබන්න.
+
+---
+
+## Reminder for the Next Session (මීළඟ පාඩම සඳහා මතක් කිරීම)
+
+ඔබේ පුද්ගලික කතාව එක් වරක් නැවත කියවා බලන්න, ඉන්පසු සෑම වචනයක්ම එකින් එක කියවීමකින් තොරව එය ස්වභාවිකව පැවසීමට පුහුණු වන්න. ඔබේ අවධානය ප්‍රධාන කොටස් පහ කෙරෙහි රඳවා ගන්න: Profile, Experience, Strengths, Motivation, සහ Sign-off.
+
+---
+
+## 📌 මෙම පාඩම තුළ ක්‍රමවේදයන් යොදාගෙන ඇති ආකාරය (How Techniques Are Applied in This Lesson)
+
+| # | Technique (ක්‍රමවේදය) | Where in this lesson (පාඩම තුළ යොදාගත් තැන) |
+|---|---|---|
+| 1 | **Comprehensible Input / Krashen's Input Hypothesis** | මුළු පාඩම පුරාම — input පළමුව, grammar අවසානයේ optional appendix එකේ |
+| 2 | **Acquisition vs. Learning** | Micro-Blocks 1–4 = acquisition; appendix = learning; output අවසානයට |
+| 3 | **i + 1 level** | ඩිලාන්ගේ කතාව = ඔබ දන්නා තොරතුරු + අලුත් interview වචන = i+1 |
+| 4 | **German experiment (දෘශ්‍ය සන්දර්භය / visual context)** | Micro-Block 2 හි emojis, ස්ථාන සහ චරිත විස්තර "පින්තූර" ලෙස යොදාගැනීම |
+| 5 | **3-Words-a-Day Vocabulary Journal** | Micro-Block 5A හි පැහැදිලිව සකස් කිරීම |
+| 6 | **4-Week Speaking Plan (Week 1 = Pure Immersion)** | Micro-Block 1 සම්පූර්ණ immersion වේ; Micro-Block 6 වන තෙක් output බල නොකෙරේ |
+| 7 | **Forgetting Curve & Spaced Repetition** | 1-1-1-1 Lock කොටස |
+| 8 | **Cornell Notes** | Cornell Notes කොටස |
+| 9 | **Retrieval Practice (සක්‍රීයව මතක් කිරීම)** | හමුවීම් 3ට පසු Comprehension check කොටස |
+| 10 | **Affective Filter (අඩු මානසික ආතතිය)** | අද recording නැත; කතා කිරීමට පෙර whisper කිරීම; "calm > perfect" සංකල්පය |
+| 11 | **Drop Perfectionism (පරිපූර්ණත්වයේ පීඩනයෙන් මිදීම)** | Affective filter check + Monitor කොටස optional appendix වෙත ගෙනයාම |
+| 12 | **දිනපතා විනාඩි 10–15** | Homework දිනකට විනාඩි 15කට සීමා කිරීම |
+| 13 | **3,000 words = 98% of spoken English** | මුළු කතාව සඳහාම සරල, සුලභ වචන පමණක් යොදාගැනීම |
+| 14 | **Mnemonics for storage strength** | ඇඟිලි, ශරීරය සහ ශබ්ද ආශ්‍රිතව mnemonics 6ක් සම්බන්ධ කිරීම |
+
+---
+
+*ක්‍රමවේද ආශ්‍රය:* Krashen (1982), *Principles and Practice in Second Language Acquisition*; Dunlosky et al. (2013); Ramindu Randeni, 3-Words-a-Day method.
