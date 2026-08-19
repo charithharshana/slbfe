@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 0001 — My First 60 Seconds | English · Sinhala · Memory Keys</title>
+<meta name="description" content="Three interactive versions of Lesson 0001: Pure English, Pure Sinhala, and Memory Keys." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b1020;
+    --bg-2:#0f1530;
+    --surface:#141b3a;
+    --surface-2:#1b2350;
+    --line:rgba(255,255,255,.08);
+    --text:#eaf0ff;
+    --muted:#9aa6c8;
+    --accent:#7c5cff;
+    --accent-2:#22d3ee;
+    --accent-3:#34d399;
+    --warn:#fbbf24;
+    --danger:#f87171;
+    --orange:#fb923c;
+    --green:#34d399;
+    --cyan:#22d3ee;
+    --purple:#a78bfa;
+    --radius:14px;
+    --shadow:0 20px 60px -20px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  body{
+    background:
+      radial-gradient(1000px 500px at 90% -10%, rgba(124,92,255,.15), transparent 60%),
+      radial-gradient(800px 400px at -10% 20%, rgba(34,211,238,.10), transparent 60%),
+      var(--bg);
+    min-height:100vh;
+  }
+  .sinhala,.si{font-family:'Noto Sans Sinhala','Inter',sans-serif}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+
+  /* ====== TOP NAV ====== */
+  .topnav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,16,32,.85);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .topnav-inner{
+    max-width:1240px;margin:0 auto;padding:10px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .brand{
+    display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.01em;font-size:.95rem;
+  }
+  .brand .logo{
+    width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b1020;font-weight:900;
+  }
+  .crumbs{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:.85rem;flex-wrap:wrap}
+  .crumbs a:hover{color:var(--accent)}
+  .crumbs .sep{opacity:.4}
+  .spacer{flex:1}
+
+  .lesson-jump{
+    position:relative;display:inline-flex;align-items:center;gap:6px;
+  }
+  .nav-btn{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+    background:var(--surface);border:1px solid var(--line);color:var(--text);
+    transition:all .15s ease;
+  }
+  .nav-btn:hover{background:var(--surface-2);border-color:var(--accent);transform:translateY(-1px)}
+  .nav-btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+  .jump-trigger{
+    padding:8px 12px;border-radius:9px;background:var(--surface);border:1px solid var(--line);
+    color:var(--text);font-weight:600;font-size:.85rem;display:inline-flex;align-items:center;gap:6px;
+  }
+  .jump-trigger:hover{border-color:var(--accent)}
+  .jump-menu{
+    position:absolute;top:calc(100% + 6px);right:0;min-width:280px;
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow);padding:6px;display:none;max-height:340px;overflow:auto;
+    z-index:60;
+  }
+  .jump-menu.open{display:block}
+  .jump-item{
+    display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;
+    color:var(--text);font-size:.9rem;
+  }
+  .jump-item:hover{background:rgba(124,92,255,.15)}
+  .jump-item .pill{
+    margin-left:auto;font-size:.7rem;padding:2px 8px;border-radius:999px;
+    background:rgba(52,211,153,.18);color:#6ee7b7;border:1px solid rgba(52,211,153,.3);font-weight:700;
+  }
+  .jump-item.disabled{opacity:.45;cursor:not-allowed}
+  .jump-item.disabled:hover{background:transparent}
+  .jump-item .num{
+    width:46px;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:.78rem;
+  }
+
+  /* ====== HERO ====== */
+  .hero{
+    max-width:1080px;margin:0 auto;padding:36px 24px 8px;
+  }
+  .hero .badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:5px 12px;border-radius:999px;
+    background:var(--surface);border:1px solid var(--line);
+    color:#cdd5f0;font-size:.75rem;font-weight:600;
+  }
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 10px var(--accent-3)}
+  .hero h1{
+    font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:6px 0 10px;font-weight:800;letter-spacing:-.02em;
+  }
+  .hero .lede{color:var(--muted);max-width:760px;font-size:1rem}
+  .hero .meta-row{
+    display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;color:var(--muted);font-size:.88rem;
+  }
+  .hero .meta-row b{color:#cdd5f0}
+
+  /* ====== VERSION SWITCHER ====== */
+  .switcher-wrap{
+    max-width:1080px;margin:24px auto 0;padding:0 24px;
+  }
+  .switcher{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;
+    background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);
+  }
+  .seg{
+    border:0;background:transparent;color:var(--muted);padding:14px 12px;border-radius:11px;
+    font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;gap:8px;
+    transition:all .2s ease;
+  }
+  .seg .key{
+    font-family:'JetBrains Mono',monospace;font-size:.7rem;
+    background:rgba(255,255,255,.06);color:var(--muted);padding:2px 6px;border-radius:5px;margin-left:4px;
+  }
+  .seg:hover{color:var(--text);background:rgba(255,255,255,.04)}
+  .seg.active{
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    color:#0b1020;box-shadow:0 8px 24px -8px rgba(124,92,255,.6);
+  }
+  .seg.active .key{background:rgba(0,0,0,.18);color:rgba(0,0,0,.75)}
+
+  /* ====== PROGRESS BAR ====== */
+  .progress-wrap{
+    position:fixed;top:0;left:0;right:0;height:3px;background:transparent;z-index:60;pointer-events:none;
+  }
+  .progress-bar{
+    height:100%;width:0%;
+    background:linear-gradient(90deg,var(--accent),var(--accent-2),var(--accent-3));
+    transition:width .1s linear;
+  }
+
+  /* ====== MAIN ====== */
+  main{max-width:1080px;margin:0 auto;padding:28px 24px 80px}
+  .version{display:none;animation:fade .25s ease}
+  .version.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+  /* ====== CONTENT BLOCKS ====== */
+  .block{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;margin-bottom:18px;box-shadow:0 1px 0 rgba(255,255,255,.02) inset;
+  }
+  .block h2{
+    margin:0 0 6px;font-size:1.35rem;font-weight:800;letter-spacing:-.01em;
+    display:flex;align-items:center;gap:10px;
+  }
+  .block h2 .num-badge{
+    font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted);
+    background:var(--surface-2);border:1px solid var(--line);padding:3px 8px;border-radius:6px;font-weight:600;
+  }
+  .block h3{margin:18px 0 8px;font-size:1.05rem;font-weight:700;color:#fff}
+  .block p{margin:8px 0;color:#dde3f7}
+  .block ul,.block ol{padding-left:20px;margin:8px 0}
+  .block li{margin:4px 0}
+  .block code{
+    font-family:'JetBrains Mono',monospace;font-size:.88em;
+    background:var(--surface-2);padding:2px 6px;border-radius:5px;color:#cdd5f0;border:1px solid var(--line);
+  }
+  .block pre{
+    background:#0a0f24;border:1px solid var(--line);border-radius:10px;
+    padding:16px;overflow-x:auto;font-size:.88rem;line-height:1.5;color:#cdd5f0;
+    font-family:'JetBrains Mono',monospace;
+  }
+  .block blockquote{
+    margin:12px 0;padding:12px 16px;border-left:3px solid var(--accent);
+    background:rgba(124,92,255,.08);border-radius:0 10px 10px 0;color:#dde3f7;
+  }
+  .block details{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;
+  }
+  .block details summary{cursor:pointer;font-weight:600;color:#cdd5f0;user-select:none}
+  .block details summary:hover{color:var(--accent-2)}
+  .block details[open] summary{margin-bottom:8px}
+  .block table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.92rem}
+  .block th,.block td{
+    text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;
+  }
+  .block th{background:var(--surface-2);font-weight:700;color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+  .block tr:hover td{background:rgba(124,92,255,.04)}
+
+  /* speech box */
+  .speech{
+    background:linear-gradient(135deg,#10183d,#0c1230);border:1px solid var(--line);
+    border-radius:12px;padding:16px 18px;margin:10px 0;font-size:1rem;color:#eaf0ff;
+    position:relative;
+  }
+  .speech::before{
+    content:'“';position:absolute;top:-10px;left:10px;font-size:3.5rem;color:var(--accent);opacity:.3;font-family:Georgia,serif;line-height:1;
+  }
+  .speech b{color:var(--accent-2)}
+
+  /* check list */
+  .checklist{list-style:none;padding:0;margin:8px 0}
+  .checklist li{
+    display:flex;align-items:flex-start;gap:10px;padding:8px 12px;border-radius:8px;
+    background:var(--surface-2);border:1px solid var(--line);margin:6px 0;cursor:pointer;
+    transition:all .15s ease;
+  }
+  .checklist li:hover{border-color:var(--accent)}
+  .checklist li input{margin-top:4px;accent-color:var(--accent-3)}
+  .checklist li.done{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.4)}
+  .checklist li.done span{color:var(--muted);text-decoration:line-through}
+
+  /* highlight cards */
+  .hi-card{
+    background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(34,211,238,.08));
+    border:1px solid rgba(124,92,255,.3);border-radius:12px;padding:14px 16px;margin:10px 0;
+  }
+  .hi-card.green{background:linear-gradient(135deg,rgba(52,211,153,.12),rgba(34,211,238,.06));border-color:rgba(52,211,153,.35)}
+  .hi-card.amber{background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(251,146,60,.06));border-color:rgba(251,191,36,.35)}
+  .hi-card h4{margin:0 0 6px;font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px}
+  .hi-card h4 .emoji{font-size:1.1rem}
+  .hi-card p{margin:4px 0;color:#dde3f7}
+
+  /* ASCII art container */
+  .ascii{
+    background:#07091a;border:1px solid var(--line);border-radius:10px;
+    padding:16px;font-family:'JetBrains Mono',monospace;font-size:.85rem;line-height:1.35;
+    color:#9aa6c8;overflow-x:auto;white-space:pre;
+  }
+
+  /* vocab grid */
+  .vocab-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin:10px 0;
+  }
+  .vocab{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+  }
+  .vocab .w{font-weight:700;color:var(--accent-2);font-size:1rem}
+  .vocab .m{color:var(--muted);font-size:.85rem;margin-top:4px}
+  .vocab .ex{color:#dde3f7;font-size:.9rem;margin-top:6px;font-style:italic}
+
+  /* key takeaways */
+  .keys{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:14px 0}
+  .key-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:14px;
+    position:relative;overflow:hidden;
+  }
+  .key-card::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(200px 80px at 10% 0%, rgba(124,92,255,.15), transparent 70%);
+    pointer-events:none;
+  }
+  .key-card .kn{
+    display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;
+    color:var(--accent-2);text-transform:uppercase;letter-spacing:.06em;
+  }
+  .key-card .kt{font-weight:800;color:#fff;margin:6px 0 4px;font-size:1.05rem;line-height:1.3}
+  .key-card .kb{color:#cdd5f0;font-size:.88rem}
+  .key-card .kv{margin-top:10px;color:var(--muted);font-size:.8rem;display:flex;flex-wrap:wrap;gap:6px}
+  .key-card .kv span{
+    background:rgba(124,92,255,.12);border:1px solid var(--line);
+    padding:3px 8px;border-radius:6px;color:#cdd5f0;
+  }
+
+  /* skeleton diagram */
+  .skel{
+    background:linear-gradient(135deg,#0a0f24,#10183d);
+    border:1px solid var(--line);border-radius:14px;padding:18px;
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+  }
+  .bone{
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    color:#0b1020;font-weight:800;padding:12px 16px;border-radius:10px;min-width:90px;text-align:center;
+    box-shadow:0 8px 20px -8px rgba(124,92,255,.5);
+  }
+  .bone small{display:block;font-weight:600;font-size:.7rem;opacity:.85;margin-top:2px}
+
+  /* practice card */
+  .practice{
+    background:linear-gradient(135deg,rgba(34,211,238,.08),rgba(124,92,255,.05));
+    border:1px solid rgba(34,211,238,.3);border-radius:14px;padding:18px;margin:12px 0;
+  }
+  .practice h4{margin:0 0 8px;color:var(--accent-2);font-size:1.05rem}
+
+  /* footer */
+  .end-nav{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;
+    margin-top:32px;padding-top:24px;border-top:1px solid var(--line);
+  }
+  .end-nav .nav-card{
+    flex:1;min-width:240px;display:flex;align-items:center;gap:14px;
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+    transition:all .2s ease;
+  }
+  .end-nav .nav-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .end-nav .nav-card.next{text-align:right;flex-direction:row-reverse}
+  .end-nav .nav-card .arrow{font-size:1.6rem;color:var(--accent)}
+  .end-nav .nav-card .lbl{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+  .end-nav .nav-card .ttl{font-weight:700;color:#fff;font-size:1rem;margin-top:2px}
+  .end-nav .nav-card.disabled{opacity:.4;pointer-events:none}
+
+  .footer-tip{
+    margin-top:30px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    color:var(--muted);font-size:.85rem;text-align:center;
+  }
+  .footer-tip kbd{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:5px;padding:2px 6px;
+    font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#cdd5f0;margin:0 2px;
+  }
+
+  /* responsive */
+  @media (max-width:720px){
+    .switcher{grid-template-columns:1fr}
+    .seg{padding:11px}
+    .end-nav{flex-direction:column}
+    .end-nav .nav-card.next{flex-direction:row;text-align:left}
+  }
+  @media print{
+    .topnav,.switcher-wrap,.progress-wrap,.end-nav,.footer-tip{display:none!important}
+    body{background:#fff;color:#000}
+    .block{background:#fff;border:1px solid #ccc;color:#000;break-inside:avoid;page-break-inside:avoid}
+    .block p,.block li{color:#000}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="logo">L</span>
+      <span>Lesson Library</span>
+    </a>
+    <span class="crumbs">
+      <a href="index.html">Home</a>
+      <span class="sep">›</span>
+      <span>Lesson 0001</span>
+    </span>
+    <span class="spacer"></span>
+    <div class="lesson-jump">
+      <button class="nav-btn" id="prevBtn" title="Previous lesson (←)" aria-label="Previous lesson">←</button>
+      <button class="jump-trigger" id="jumpTrigger" aria-haspopup="true" aria-expanded="false">
+        <span>Lessons</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <button class="nav-btn" id="nextBtn" title="Next lesson (→)" aria-label="Next lesson">→</button>
+      <div class="jump-menu" id="jumpMenu" role="menu"></div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="badge-row">
+    <span class="badge"><span class="dot"></span> Lesson 0001</span>
+    <span class="badge">⏱ 35 min</span>
+    <span class="badge">🎯 5 Memory Keys</span>
+    <span class="badge">📈 Beginner · i + 1</span>
+  </div>
+  <h1>My First 60 Seconds — The 5-Step Self-Introduction</h1>
+  <p class="lede">Your opening move in the interview. A short, strong, five-part speech you can deliver in under 60 seconds. Three views available — switch anytime using the tabs below, the keyboard, or the floating switcher.</p>
+  <div class="meta-row">
+    <span><b>3</b> interactive views</span>
+    <span><b>5</b> grammar patterns to lock in</span>
+    <span><b>4</b> number pairs to master</span>
+    <span><b>1</b> mission: deliver &lt; 60 sec</span>
+  </div>
+</header>
+
+<div class="switcher-wrap">
+  <div class="switcher" role="tablist" aria-label="Lesson version switcher">
+    <button class="seg active" role="tab" aria-selected="true" data-version="en">
+      🇬🇧 English <span class="key">1</span>
+    </button>
+    <button class="seg" role="tab" aria-selected="false" data-version="si">
+      🇱🇰 Sinhala <span class="key">2</span>
+    </button>
+    <button class="seg" role="tab" aria-selected="false" data-version="keys">
+      🧠 Memory Keys <span class="key">3</span>
+    </button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ ENGLISH VERSION ============ -->
+  <section class="version active" id="v-en" data-version="en">
+
+    <div class="block">
+      <h2>Learning Outcomes <span class="num-badge">GOALS</span></h2>
+      <p>By the end of this lesson, you will be able to:</p>
+      <ol>
+        <li>Deliver a fluent <b>5-step self-introduction</b> in under 60 seconds.</li>
+        <li>Pronounce the 8 critical number-pairs (13/30, 15/50, 14/40, 18/80) without confusing them.</li>
+        <li>Substitute your <b>own personal details</b> (name, age, hometown, experience) into both template options.</li>
+        <li>Recognise and use the <b>core memory keys</b> that recycle through the whole course.</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h2>The Big Idea <span class="num-badge">HOOK</span></h2>
+      <blockquote>
+        <i>Imagine you walk into a small, bright room in Colombo. Three people sit behind a long table — two Sri Lankans and one Israeli in a dark blue suit. A camera on a tripod is recording you. One panel member smiles and says:</i>
+        <b style="display:block;margin-top:8px">"Good morning. Please, tell us about yourself."</b>
+        <i style="display:block;margin-top:6px">What do you say in the next 60 seconds?</i>
+      </blockquote>
+      <p>Most candidates panic. Some say only their name and hometown. Others tell their life story for five minutes. The interview ends before they ever talk about their real skills.</p>
+      <p>In this lesson, you will learn <b>one short, strong speech</b> — a <i>speech-with-a-skeleton</i>. The skeleton has <b>five bones</b>. If you remember the bones, you can fill in your own words and never freeze.</p>
+    </div>
+
+    <div class="block">
+      <h2>The 5-Bone Skeleton — P-E-S-M-S <span class="num-badge">STRUCTURE</span></h2>
+      <p>Count them on your fingers. Memorise this order. You will say them in your sleep.</p>
+      <div class="ascii">
+┌──────────────────────────────────────────────────────────┐
+│   P   E   S   M   S                                      │
+│   │   │   │   │   │                                      │
+│   │   │   │   │   └─ 5. Sign-off (close strongly)        │
+│   │   │   │   └──── 4. Motivation (why this job?)        │
+│   │   │   └──────── 3. Strengths (soft + physical)       │
+│   │   └────────── 2. Experience (years + duties)         │
+│   └────────────── 1. Profile (name + age + hometown)     │
+└──────────────────────────────────────────────────────────┘
+      </div>
+      <div class="skel" style="margin-top:14px">
+        <div class="bone">P<b>rofile</b><small>1 · name</small></div>
+        <div class="bone">E<b>xperience</b><small>2 · years</small></div>
+        <div class="bone">S<b>trengths</b><small>3 · soft + body</small></div>
+        <div class="bone">M<b>otivation</b><small>4 · why here</small></div>
+        <div class="bone">S<b>ign-off</b><small>5 · close strong</small></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Reading — The Model Speech <span class="num-badge">INPUT</span></h2>
+      <p>Read this aloud three times. Do <b>not</b> translate. Just feel the rhythm.</p>
+      <div class="speech">
+        <i>"Good morning, sir.</i> <b>My name is Nimal Perera</b>. <i>I am</i> <b>28 years old</b><i>, married, and I have one child. I am from</i> <b>Kandy in Sri Lanka</b><i>. I have</i> <b>five years of experience</b> <i>working in the supermarket sector. In my previous role, I was responsible for</i> <b>stocking display shelves, performing FIFO stock rotation, and helping customers locate items</b><i>. I also have experience handling</i> <b>cashier payments</b><i>. I am a</i> <b>hardworking, honest, and highly reliable worker</b> <i>who always arrives on time. I am</i> <b>physically strong</b> <i>and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to</i> <b>gain valuable international experience</b> <i>and earn money to</i> <b>provide a better future for my family</b><i>. I am confident that my skills will contribute to your team.</i> <b>That is all about me, thank you, sir.</b><i>"</i>
+      </div>
+      <details>
+        <summary>🔍 Quick check — answer from memory first</summary>
+        <ol>
+          <li><b>How many years of experience?</b> Five years in the supermarket sector.</li>
+          <li><b>What does Nimal do inside the supermarket?</b> Stocks shelves, rotates stock (FIFO), helps customers, handles cashier payments.</li>
+          <li><b>Why does Nimal want to work in Israel?</b> To gain international experience and earn a better future for his family.</li>
+        </ol>
+      </details>
+    </div>
+
+    <div class="block">
+      <h2>Vocabulary in Context <span class="num-badge">WORDS</span></h2>
+      <p>Read each card aloud. The <b>example</b> is the same sentence from the model speech — so you see the word in real English.</p>
+      <div class="vocab-grid">
+        <div class="vocab"><div class="w">experience</div><div class="m">the years you have worked</div><div class="ex">"I have <b>five years of experience</b> in the supermarket sector."</div></div>
+        <div class="vocab"><div class="w">responsible for</div><div class="m">your job duty</div><div class="ex">"I was <b>responsible for stocking</b> display shelves."</div></div>
+        <div class="vocab"><div class="w">stocking</div><div class="m">putting products on shelves</div><div class="ex">"Stocking display shelves."</div></div>
+        <div class="vocab"><div class="w">FIFO stock rotation</div><div class="m">old stock to the front</div><div class="ex">"Performing FIFO stock rotation."</div></div>
+        <div class="vocab"><div class="w">handling cashier payments</div><div class="m">taking money at the till</div><div class="ex">"Handling cashier payments."</div></div>
+        <div class="vocab"><div class="w">reliable</div><div class="m">people can trust you</div><div class="ex">"Highly reliable worker."</div></div>
+        <div class="vocab"><div class="w">physically strong</div><div class="m">your body is strong</div><div class="ex">"I am physically strong."</div></div>
+        <div class="vocab"><div class="w">cold storage</div><div class="m">very cold room (dairy, frozen food)</div><div class="ex">"Working inside cold storage environments."</div></div>
+        <div class="vocab"><div class="w">gain</div><div class="m">to get something valuable</div><div class="ex">"Gain valuable international experience."</div></div>
+        <div class="vocab"><div class="w">provide</div><div class="m">to give (something needed)</div><div class="ex">"Provide a better future for my family."</div></div>
+        <div class="vocab"><div class="w">confident</div><div class="m">you believe you can do it</div><div class="ex">"I am confident that my skills will contribute."</div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Pronunciation — Numbers Are a Pass/Fail Trigger <span class="num-badge">SOUND</span></h2>
+      <p>If you say <code>fifteen</code> when you mean <code>fifty</code>, the panel stops trusting your numbers. Drill these four pairs every day for one week.</p>
+      <table>
+        <thead><tr><th>Number 1</th><th>Number 2</th><th>Trick to hear the difference</th></tr></thead>
+        <tbody>
+          <tr><td><b>THIR</b>-teen (13)</td><td><b>THIR</b>-ty (30)</td><td>Say <b>teen</b> with a sharp "n" at the end. Say <b>ty</b> with a soft "ee" and "t".</td></tr>
+          <tr><td><b>FIF</b>-teen (15)</td><td><b>FIF</b>-ty (50)</td><td>Same trick. <b>teen</b> = sharp, high energy. <b>ty</b> = soft, lower.</td></tr>
+          <tr><td><b>FOR</b>-teen (14)</td><td><b>FOR</b>-ty (40)</td><td><b>Forty has no "r"</b> before the "t". Many Sri Lankans say "for-ty" with an "r" — don't.</td></tr>
+          <tr><td><b>EYE</b>-teen (18)</td><td><b>EYE</b>-ty (80)</td><td><b>Eighty</b> has a clear "t" in the middle. <b>Eighteen</b> ends with "n".</td></tr>
+        </tbody>
+      </table>
+      <div class="practice">
+        <h4>🎤 Drill — do this 5 times today, then 3 times every morning for 1 week</h4>
+        <p>Repeat each pair <b>3 times aloud</b>, then in a sentence:</p>
+        <ol>
+          <li><i>"I am <b>thirty</b> years old."</i> (NOT thirteen)</li>
+          <li><i>"I have <b>fifteen</b> years of experience."</i> (NOT fifty)</li>
+          <li><i>"My weight is <b>eighty</b> kilograms."</i> (NOT eighteen)</li>
+          <li><i>"I worked for <b>forty</b> hours last week."</i> (NOT fourteen)</li>
+        </ol>
+        <p style="margin-top:10px"><b>Self-recording tip:</b> Open your phone voice recorder. Say the four pairs 5 times each. Play it back while walking. Your ear will catch your own mistakes faster than reading.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Grammar in Context <span class="num-badge">PATTERNS</span></h2>
+      <p>Look at the model speech. Notice these patterns — they appear in <b>every</b> interview answer.</p>
+      <h3>Pattern 1 — <i>"My name is ___."</i></h3>
+      <p>Subject + verb + identity. <i>"My name is Nimal."</i></p>
+      <h3>Pattern 2 — <i>"I am from ___."</i></h3>
+      <p>Subject + be + place. <i>"I am from Kandy."</i></p>
+      <h3>Pattern 3 — <i>"I have ___ years of experience."</i></h3>
+      <p>Subject + have + number + noun. <i>"I have five years of experience."</i></p>
+      <h3>Pattern 4 — <i>"I was responsible for ___."</i></h3>
+      <p>Subject + was + adjective + for + verb-ing. <i>"I was responsible for stocking shelves."</i></p>
+      <h3>Pattern 5 — <i>"I am ___."</i></h3>
+      <p>Subject + be + adjective. <i>"I am honest."</i> · <i>"I am physically strong."</i></p>
+    </div>
+
+    <div class="block">
+      <h2>Reading Practice — Two Templates <span class="num-badge">CHOOSE</span></h2>
+      <p>Read <b>both</b> options aloud. Pick the one that matches your real background — that is your <b>home template</b> for the next 12 lessons.</p>
+      <h3>Template A — Candidates WITH Retail Experience</h3>
+      <div class="speech">
+        <i>"Good morning, sir. My name is [Your Name]. I am [Age] years old, married, and I have two children. I am from [Your Town] in Sri Lanka. I have [five] years of experience working in the supermarket sector. In my previous role, I was responsible for systematically stocking display shelves, performing FIFO stock rotation, and helping customers locate items. I also have experience handling cashier payments. I am a hardworking, honest, and highly reliable worker who always arrives on time. I am physically strong and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to gain valuable international experience and earn money to provide a better future for my family. I am confident that my skills will contribute to your team. That is all about me, thank you sir."</i>
+      </div>
+      <h3>Template B — Candidates WITHOUT Direct Retail Experience</h3>
+      <div class="speech">
+        <i>"Good morning, sir. My name is [Your Name]. I am [Age] years old, single, and live with my parents in [Your Town]. Although I do not have direct supermarket experience, I have [three] years of experience in logistics and warehouse operations. My daily duties included receiving goods, checking counts, and systematically arranging stock in the warehouse. I am a very fast learner and can adapt to supermarket duties quickly. I am physically fit, healthy, and accustomed to hard manual labor. I collaborate exceptionally well with multicultural teams, respect company rules, and am completely comfortable working night shifts and overtime. I am highly motivated to work in Israel to improve my professional skills in a developed country while supporting my family's economy. I believe I can do an excellent job for your supermarket. That is all about me, thank you."</i>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Speaking Practice — Deliver It Now <span class="num-badge">OUTPUT</span></h2>
+      <p>Stand up. Look at the camera (or imagine an interviewer). Smile gently. Speak <b>slowly and clearly</b>.</p>
+      <blockquote>💡 <b>Pacing rule:</b> Pause for <b>1 second</b> after every sentence. Your brain needs that 1 second to feel calm.</blockquote>
+      <p>Say it five times. Each time, change one small detail (your age, your city, your years) so you stop memorising and start <b>owning</b> the speech.</p>
+      <h3>Self-check checklist</h3>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Looked at the camera / interviewer (not down).</span></label></li>
+        <li><label><input type="checkbox"><span>Said "Good morning, sir" first.</span></label></li>
+        <li><label><input type="checkbox"><span>All 5 bones came out in order (P-E-S-M-S).</span></label></li>
+        <li><label><input type="checkbox"><span>Spoke under 60 seconds (time yourself once today).</span></label></li>
+        <li><label><input type="checkbox"><span>No number-confusion (13 vs 30, 15 vs 50).</span></label></li>
+        <li><label><input type="checkbox"><span>Closed with "That is all about me, thank you, sir."</span></label></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Homework — Today's 20-Minute Mission <span class="num-badge">DO IT</span></h2>
+      <ol>
+        <li><b>[5 min] Write</b> your script on paper. Use your <b>real</b> name, age, hometown, years of experience.</li>
+        <li><b>[5 min] Record</b> yourself delivering the speech 3 times. Save the best one.</li>
+        <li><b>[5 min] Listen</b> to the recording. Write down <b>3 things to improve</b>.</li>
+        <li><b>[5 min] Say it again</b> with those 3 fixes. Record once more.</li>
+      </ol>
+      <p>Set your <b>+1 hour</b> alarm now.</p>
+    </div>
+
+    <div class="block">
+      <h2>Progress Criteria — Move to Lesson 2? <span class="num-badge">CHECK</span></h2>
+      <p>You are ready for Lesson 2 only when you can tick <b>all boxes</b>:</p>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>I can deliver my 5-bone speech under 60 seconds without reading.</span></label></li>
+        <li><label><input type="checkbox"><span>I can pronounce 13/30, 15/50, 14/40, 18/80 correctly every time.</span></label></li>
+        <li><label><input type="checkbox"><span>I know the 5 memory keys (PESMS, 5-Finger, Stock-Rotate-Cash, Teen/Ty, 3-1 formula).</span></label></li>
+        <li><label><input type="checkbox"><span>I have written my real Cornell-notes script on paper.</span></label></li>
+        <li><label><input type="checkbox"><span>I have recorded myself once and listened back — I noticed at least one fix.</span></label></li>
+        <li><label><input type="checkbox"><span>I can substitute my real details into both Template A and Template B without freezing.</span></label></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ============ SINHALA VERSION ============ -->
+  <section class="version si" id="v-si" data-version="si">
+
+    <div class="block">
+      <h2>ඉගෙනුම් ඵල (Learning Outcomes) <span class="num-badge">GOALS</span></h2>
+      <p>මෙම lesson එක අවසානයේදී, ඔබට මේ දේවල් කිරීමට හැකි වනු ඇත:</p>
+      <ol>
+        <li>තත්පර 60 කට අඩු කාලයකදී චතුර ලෙස <b>5-step self-introduction</b> එකක් deliver කිරීම.</li>
+        <li>පැටලීමකින් තොරව වැදගත්ම number-pairs 8 (13/30, 15/50, 14/40, 18/80) නිවැරදිව pronounce කිරීම.</li>
+        <li>Template options දෙකටම ඔබේ <b>own personal details</b> (Dilan Harshana, age 28, Tangalle) substitute කිරීම.</li>
+        <li>මුළු course එක පුරාම නැවත නැවත recycle වන <b>ප්‍රධාන මතක සූත්‍ර (Memory Keys)</b> හඳුනාගෙන භාවිතා කිරීම.</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h2>මූලික සංකල්පය (The Big Idea) <span class="num-badge">HOOK</span></h2>
+      <blockquote>
+        <i>Imagine you walk into the interview room. The panel smiles and asks:</i>
+        <b style="display:block;margin-top:6px">"Good morning. Please, tell us about yourself."</b>
+        <i style="display:block;margin-top:6px">ඊළඟ තත්පර 60 ඇතුළත ඔබ මොනවද කියන්නේ?</i>
+      </blockquote>
+      <p>බොහෝ candidates ලා panic වෙනවා. සමහරු තමන්ගේ name එක සහ hometown එක විතරක් කියනවා. තවත් සමහරු විනාඩි පහක් තිස්සේ තමන්ගේ මුළු ජීවිත කතාවම කියවනවා. ඔවුන්ගේ සැබෑ skills ගැන කතා කරන්නත් කලින්ම interview එක ඉවර වෙනවා.</p>
+      <p>මෙම lesson එකේදී, ඔබ <b>කෙටි, ශක්තිමත් speech එකක්</b> ඉගෙන ගන්නවා — එනම් <i>speech-with-a-skeleton</i> එකක්. මේ skeleton එකට <b>bones 5 ක්</b> තියෙනවා. මේ bones ටික මතක තියාගත්තොත්, ඔබේම වචන ඒකට එකතු කරලා කිසිදා freeze නොවී කතා කරන්න පුළුවන්.</p>
+    </div>
+
+    <div class="block">
+      <h2>5-Bone Skeleton (P-E-S-M-S) <span class="num-badge">STRUCTURE</span></h2>
+      <p>ඔබේ ඇඟිලි වලින් මේවා ගණන් කරන්න. මේ order එක හොඳින් memorise කරගන්න.</p>
+      <div class="ascii">
+┌──────────────────────────────────────────────────────────┐
+│   P   E   S   M   S                                      │
+│   │   │   │   │   │                                      │
+│   │   │   │   │   └─ 5. Sign-off (ප්‍රබල අවසානය)         │
+│   │   │   │   └──── 4. Motivation (මේ රැකියාව තෝරාගත් හේතුව)│
+│   │   │   └──────── 3. Strengths (දක්ෂතා + ශක්තිය)        │
+│   │   └────────── 2. Experience (පළපුරුද්ද + duties)      │
+│   └────────────── 1. Profile (නම, වයස, ගම)                │
+└──────────────────────────────────────────────────────────┘
+      </div>
+      <div class="skel" style="margin-top:14px">
+        <div class="bone">P<b>rofile</b><small>Dilan, 28, Tangalle</small></div>
+        <div class="bone">E<b>xperience</b><small>වසර + duties</small></div>
+        <div class="bone">S<b>trengths</b><small>විශ්වාසදායක + ශක්තිමත්</small></div>
+        <div class="bone">M<b>otivation</b><small>Israel හේතුව</small></div>
+        <div class="bone">S<b>ign-off</b><small>"thank you, sir"</small></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>ආදර්ශ කථාව (The Model Speech) <span class="num-badge">INPUT</span></h2>
+      <p>මෙය තුන් වරක් හයියෙන් කියවන්න. Translate කරන්න යන්න එපා. Rhythm එක පමණක් තේරුම් ගන්න.</p>
+      <div class="speech">
+        <i>"Good morning, sir.</i> <b>My name is Dilan Harshana</b>. <i>I am</i> <b>28 years old</b><i>, and I am from</i> <b>Tangalle in Sri Lanka</b><i>. I have</i> <b>five years of experience</b> <i>working in the supermarket sector. In my previous role, I was responsible for</i> <b>stocking display shelves, performing FIFO stock rotation, and helping customers locate items</b><i>. I also have experience handling</i> <b>cashier payments</b><i>. I am a</i> <b>hardworking, honest, and highly reliable worker</b> <i>who always arrives on time. I am</i> <b>physically strong</b> <i>and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to</i> <b>gain valuable international experience</b> <i>and earn money to</i> <b>provide a better future for my family</b><i>. I am confident that my skills will contribute to your team.</i> <b>That is all about me, thank you, sir.</b><i>"</i>
+      </div>
+      <details>
+        <summary>🔍 ඉක්මන් ප්‍රශ්නාවලිය — මතකයෙන් උත්සාහ කරන්න</summary>
+        <ol>
+          <li><b>Dilan ට experience කීයක් තියෙනවද?</b> Supermarket sector එකේ වසර පහයි.</li>
+          <li><b>Dilan supermarket ඇතුළේ මොනවද කරනවද?</b> Shelves stock කරනවා, stock rotate කරනවා (FIFO), customers ට help කරනවා, cashier payments handle කරනවා.</li>
+          <li><b>Dilan ට Israel වල වැඩ කරන්න ඇයි ඕන?</b> International experience ලබාගන්න සහ තමන්ගේ family ට හොඳ අනාගතයක් සලසා දෙන්න.</li>
+        </ol>
+      </details>
+    </div>
+
+    <div class="block">
+      <h2>වචන මාලාව (Vocabulary in Context) <span class="num-badge">WORDS</span></h2>
+      <p>සෑම card එකක්ම හයියෙන් කියවන්න. <b>Example</b> එක ලෙස model speech එකේ sentence එකම දී ඇත.</p>
+      <div class="vocab-grid">
+        <div class="vocab"><div class="w">experience</div><div class="m">ඔබ වැඩ කරපු කාලය</div><div class="ex">"I have <b>five years of experience</b> in the supermarket sector."</div></div>
+        <div class="vocab"><div class="w">responsible for</div><div class="m">ඔබේ වැඩ / රාජකාරිය</div><div class="ex">"I was <b>responsible for stocking</b> display shelves."</div></div>
+        <div class="vocab"><div class="w">stocking</div><div class="m">බඩු තැබීම</div><div class="ex">"Stocking display shelves."</div></div>
+        <div class="vocab"><div class="w">FIFO stock rotation</div><div class="m">පරණ බඩු ඉදිරිපිට දැමීම</div><div class="ex">"Performing FIFO stock rotation."</div></div>
+        <div class="vocab"><div class="w">handling cashier payments</div><div class="m">මුදල් ගනුදෙනු කිරීම</div><div class="ex">"Handling cashier payments."</div></div>
+        <div class="vocab"><div class="w">reliable</div><div class="m">විශ්වාසදායක</div><div class="ex">"Highly reliable worker."</div></div>
+        <div class="vocab"><div class="w">physically strong</div><div class="m">ශරීරයෙන් ශක්තිමත්</div><div class="ex">"I am physically strong."</div></div>
+        <div class="vocab"><div class="w">cold storage</div><div class="m">සීතල කාමරය</div><div class="ex">"Working inside cold storage environments."</div></div>
+        <div class="vocab"><div class="w">gain</div><div class="m">ලබා ගැනීම</div><div class="ex">"Gain valuable international experience."</div></div>
+        <div class="vocab"><div class="w">provide</div><div class="m">සපයනවා</div><div class="ex">"Provide a better future for my family."</div></div>
+        <div class="vocab"><div class="w">confident</div><div class="m">විශ්වාසය</div><div class="ex">"I am confident that my skills will contribute."</div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>උච්චාරණය — ඉලක්කම් (Pronunciation — Numbers) <span class="num-badge">SOUND</span></h2>
+      <p>ඉලක්කම් වැරදියට කිව්වොත් panel එකට ඔබ කෙරෙහි ඇති විශ්වාසය බිඳ වැටෙනවා. සතියක් (1 week) යනතුරු මේ pairs හැමදාම drill කරන්න.</p>
+      <table>
+        <thead><tr><th>Number 1</th><th>Number 2</th><th>වෙනස අඳුනාගන්නා ක්‍රමය</th></tr></thead>
+        <tbody>
+          <tr><td><b>THIR</b>-teen (13)</td><td><b>THIR</b>-ty (30)</td><td><b>teen</b> ශබ්දයේ අගට තියුණු "n" ශබ්දයක් දෙන්න. <b>ty</b> කියද්දී soft "ee" සහ "t" ශබ්දයක් දෙන්න.</td></tr>
+          <tr><td><b>FIF</b>-teen (15)</td><td><b>FIF</b>-ty (50)</td><td>ඒ trick එකමයි. <b>teen</b> = sharp, high energy. <b>ty</b> = soft, lower.</td></tr>
+          <tr><td><b>FOR</b>-teen (14)</td><td><b>FOR</b>-ty (40)</td><td><b>Forty</b> හි "t" අකුරට කලින් <b>"r" ශබ්දයක් නැත</b>. "for-ty" කියද්දී "r" ශබ්දයක් දාන්න එපා.</td></tr>
+          <tr><td><b>EYE</b>-teen (18)</td><td><b>EYE</b>-ty (80)</td><td><b>Eighty</b> හි මැද පැහැදිලි "t" ශබ්දයක් ඇත. <b>Eighteen</b> හි අගට "n" ශබ්දයක් ඇත.</td></tr>
+        </tbody>
+      </table>
+      <div class="practice">
+        <h4>🎤 Drill — අද දින 5 වතාවක්, ඉන්පසු සතියක් යනතුරු උදෑසනකම 3 වතාවක්</h4>
+        <p>සෑම pair එකක්ම <b>3 වතාවක් හයියෙන්</b> repeat කරන්න, ඉන්පසු sentence එකක් ඇතුළත:</p>
+        <ol>
+          <li><i>"I am <b>thirty</b> years old."</i> (NOT thirteen)</li>
+          <li><i>"I have <b>fifteen</b> years of experience."</i> (NOT fifty)</li>
+          <li><i>"My weight is <b>eighty</b> kilograms."</i> (NOT eighteen)</li>
+          <li><i>"I worked for <b>forty</b> hours last week."</i> (NOT fourteen)</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Grammar in Context (තේරුම තේරුම් කරගත් පසු) <span class="num-badge">PATTERNS</span></h2>
+      <p>Model speech එක දෙස බලන්න. මෙම patterns හොඳින් නිරීක්ෂණය කරන්න — මේවා <b>සෑම</b> interview answer එකකම පාහේ දකින්න ලැබෙනවා.</p>
+      <h3>Pattern 1 — <i>"My name is ___."</i></h3>
+      <p>Subject + verb + identity. <i>"My name is Dilan Harshana."</i></p>
+      <h3>Pattern 2 — <i>"I am from ___."</i></h3>
+      <p>Subject + be + place. <i>"I am from Tangalle."</i></p>
+      <h3>Pattern 3 — <i>"I have ___ years of experience."</i></h3>
+      <p>Subject + have + number + noun. <i>"I have five years of experience."</i></p>
+      <h3>Pattern 4 — <i>"I was responsible for ___."</i></h3>
+      <p>Subject + was + adjective + for + verb-ing. <i>"I was responsible for stocking shelves."</i></p>
+      <h3>Pattern 5 — <i>"I am ___."</i></h3>
+      <p>Subject + be + adjective. <i>"I am honest."</i> · <i>"I am physically strong."</i></p>
+      <div class="hi-card amber">
+        <h4><span class="emoji">🔁</span> මතක තබා ගන්න</h4>
+        <p>මේ patterns 5 නිතරම repeat වෙනවා. Pattern 1 සෑම introduction එකකම, Pattern 3 සෑම experience answer එකකම භාවිතා වෙනවා. මේවා හොඳින් මතක තබා ගන්න.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Templates දෙක (Two Templates) <span class="num-badge">CHOOSE</span></h2>
+      <p>Options <b>දෙකම</b> හයියෙන් කියවන්න. ඔබේ සැබෑ background එකට ගැලපෙන එක තෝරාගන්න — ඉදිරි lessons සඳහා ඔබේ <b>home template</b> එක වන්නේ එයයි.</p>
+      <h3>Template A — Retail/Supermarket අත්දැකීම් ඇති අය සඳහා</h3>
+      <div class="speech">
+        <i>"Good morning, sir. My name is</i> <b>Dilan Harshana</b><i>. I am</i> <b>28 years old</b><i>, and I am from</i> <b>Tangalle in Sri Lanka</b><i>. I have [five] years of experience working in the supermarket sector. In my previous role, I was responsible for systematically stocking display shelves, performing FIFO stock rotation, and helping customers locate items. I also have experience handling cashier payments. I am a hardworking, honest, and highly reliable worker who always arrives on time. I am physically strong and comfortable with heavy lifting and working inside cold storage environments. I want to work in an Israeli supermarket to gain valuable international experience and earn money to provide a better future for my family. I am confident that my skills will contribute to your team. That is all about me, thank you sir."</i>
+      </div>
+      <h3>Template B — සෘජු Supermarket අත්දැකීම් නැති අය සඳහා</h3>
+      <div class="speech">
+        <i>"Good morning, sir. My name is</i> <b>Dilan Harshana</b><i>. I am</i> <b>28 years old</b><i>, and I live in</i> <b>Tangalle in Sri Lanka</b><i>. Although I do not have direct supermarket experience, I have [three] years of experience in logistics and warehouse operations. My daily duties included receiving goods, checking counts, and systematically arranging stock in the warehouse. I am a very fast learner and can adapt to supermarket duties quickly. I am physically fit, healthy, and accustomed to hard manual labor. I collaborate exceptionally well with multicultural teams, respect company rules, and am completely comfortable working night shifts and overtime. I am highly motivated to work in Israel to improve my professional skills in a developed country while supporting my family's economy. I believe I can do an excellent job for your supermarket. That is all about me, thank you."</i>
+      </div>
+      <div class="hi-card amber">
+        <h4><span class="emoji">💡</span> Sinhala note</h4>
+        <p>ඔබට supermarket අත්දැකීම් නැත්නම්, "fast learner" කියන පදය ඔබේ ප්‍රබලතම ආයුධයයි. <b>"Although I do not have direct experience... I am a fast learner."</b> — මේ structure එක මතක තියාගන්න.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>කතා කිරීමේ පුහුණුව (Speaking Practice) <span class="num-badge">OUTPUT</span></h2>
+      <p>කෙළින් හිටගන්න. Camera එක දෙස බලන්න (නැතහොත් interviewer කෙනෙක් ඉදිරියේ සිටින බව සිතන්න). මදක් සිනහවෙන්න. <b>හෙමින් සහ පැහැදිලිව</b> කතා කරන්න.</p>
+      <blockquote>💡 <b>Pacing rule:</b> සෑම sentence එකකටම පසු <b>තත්පර 1 ක් (1 second)</b> pause කරන්න. සන්සුන්ව සිතීමට ඔබේ මොළයට ඒ තත්පරය අවශ්‍ය වේ.</blockquote>
+      <p>මෙය පස් වතාවක් කියන්න. සෑම අවස්ථාවකදීම, එක් කුඩා විස්තරයක් වෙනස් කරන්න (ඔබේ years, sector ආදිය).</p>
+      <h3>Self-check checklist</h3>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Camera / interviewer දෙස බැලුවා (පහළ බැලුවේ නැත).</span></label></li>
+        <li><label><input type="checkbox"><span>මුලින්ම "Good morning, sir" කිව්වා.</span></label></li>
+        <li><label><input type="checkbox"><span>Bones 5 ම නියම පිළිවෙළට ආවා (P-E-S-M-S).</span></label></li>
+        <li><label><input type="checkbox"><span>තත්පර 60 කට අඩුවෙන් කතා කළා.</span></label></li>
+        <li><label><input type="checkbox"><span>Numbers පැටලීමක් සිදු වුණේ නැත.</span></label></li>
+        <li><label><input type="checkbox"><span>"That is all about me, thank you, sir." ලෙස අවසන් කළා.</span></label></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>අද දින මෙහෙයුම (Today's Homework) <span class="num-badge">DO IT</span></h2>
+      <ol>
+        <li><b>[5 min] ලියන්න:</b> ඔබේ script එක කොළයක ලියන්න. ඔබේ නම, වයස, ගම, years of experience භාවිතා කරන්න.</li>
+        <li><b>[5 min] Record:</b> speech එක deliver කරන ආකාරය 3 වතාවක් record කරන්න.</li>
+        <li><b>[5 min] Listen:</b> recording එකට සවන් දෙන්න. <b>දියුණු කරගත යුතු කරුණු 3ක්</b> ලියාගන්න.</li>
+        <li><b>[5 min] නැවත කියන්න:</b> එම fixes 3 සහිතව නැවත speech එක කියන්න.</li>
+      </ol>
+      <p>දැන්ම ඔබේ <b>+1 hour</b> alarm එක set කරගන්න.</p>
+    </div>
+
+    <div class="block">
+      <h2>Lesson 2 වෙත යා හැක්කේ කවදාද? <span class="num-badge">CHECK</span></h2>
+      <p>ඔබ Lesson 2 සඳහා සූදානම් වන්නේ මෙම <b>boxes 6 ම</b> tick කිරීමට හැකි වූ විට පමණි:</p>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>මට බලාගෙන කියවීමකින් තොරව තත්පර 60 කට අඩු කාලයකදී මගේ 5-bone speech එක deliver කළ හැක.</span></label></li>
+        <li><label><input type="checkbox"><span>මට 13/30, 15/50, 14/40, 18/80 යන සංඛ්‍යා සෑම අවස්ථාවකදීම නිවැරදිව pronounce කළ හැක.</span></label></li>
+        <li><label><input type="checkbox"><span>මම මතක උපක්‍රම 5 ම දනිමි (PESMS, 5-Finger, Stock-Rotate-Cash, Teen/Ty, 3-1 formula).</span></label></li>
+        <li><label><input type="checkbox"><span>මම කොළයක මගේ සැබෑ script එක ලියා ඇත්තෙමි.</span></label></li>
+        <li><label><input type="checkbox"><span>මම මගේ හඬ එක් වරක් record කර නැවත අසා බැලුවෙමි.</span></label></li>
+        <li><label><input type="checkbox"><span>මට freeze නොවී Template A සහ Template B දෙකටම මගේ සැබෑ details substitute කළ හැක.</span></label></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ============ MEMORY KEYS VERSION ============ -->
+  <section class="version" id="v-keys" data-version="keys">
+
+    <div class="block">
+      <h2>Memory Keys — At a Glance <span class="num-badge">QUICK</span></h2>
+      <p>This view is your pocket-sized reference. Five memory keys, one number-pair trick, and the 1-1-1-1 review schedule. Open this view right before your interview for a final mental warm-up.</p>
+    </div>
+
+    <div class="block">
+      <h2>The 5 Memory Keys <span class="num-badge">LOCK THESE</span></h2>
+      <div class="keys">
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #1</div>
+          <div class="kt">PESMS — the 5 bones</div>
+          <div class="kb">Profile · Experience · Strengths · Motivation · Sign-off. One word, said aloud like "sms".</div>
+          <div class="kv"><span>👆 Say daily</span><span>📱 Sticker on phone</span></div>
+        </div>
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #2</div>
+          <div class="kt">5-Finger Salute</div>
+          <div class="kb">Pinky → Profile · Ring → Experience · Middle → Strengths · Index → Motivation · Thumb → Sign-off. Tap each finger as you say it.</div>
+          <div class="kv"><span>✋ Body memory</span><span>⏱ 2 days to lock</span></div>
+        </div>
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #3</div>
+          <div class="kt">Stock – Rotate – Cash</div>
+          <div class="kb">The 3 duties of a supermarket worker. <b>S</b>tock the shelf, <b>R</b>otate FIFO, <b>C</b>ash at the register.</div>
+          <div class="kv"><span>🛒 Duties</span><span>🔁 Repeat ×5</span></div>
+        </div>
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #4</div>
+          <div class="kt">Teen = N-teen · Ty = T-y</div>
+          <div class="kb">-teen ends in <b>N</b> (sharp, like a kid). -ty ends in <b>T</b> (flat, like a calm grown-up).</div>
+          <div class="kv"><span>🔢 Numbers</span><span>🎯 Pass every time</span></div>
+        </div>
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #5</div>
+          <div class="kt">3 + 1 Formula</div>
+          <div class="kb">No direct experience? Say <b>3 short duty facts</b> + <b>1 powerful closing</b>: "Although I do not have direct experience… I am a fast learner."</div>
+          <div class="kv"><span>⚡ Fast learner</span><span>🛡 Backup plan</span></div>
+        </div>
+
+        <div class="key-card">
+          <div class="kn">🔑 Key #6</div>
+          <div class="kt">1-1-1-1 Lock</div>
+          <div class="kb"><b>1</b> Hour · <b>1</b> Day · <b>1</b> Week · <b>1</b> Month. Four review anchors that lock information into long-term memory.</div>
+          <div class="kv"><span>⏰ 4 alarms</span><span>🧠 Ebbinghaus</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Skeleton in 5 Seconds <span class="num-badge">RECALL</span></h2>
+      <div class="skel">
+        <div class="bone">P<b>rofile</b><small>Name · Age · Town</small></div>
+        <div class="bone">E<b>xperience</b><small>Years · 3 Duties</small></div>
+        <div class="bone">S<b>trengths</b><small>Honest · Strong</small></div>
+        <div class="bone">M<b>otivation</b><small>Why Israel</small></div>
+        <div class="bone">S<b>ign-off</b><small>Thank you, sir</small></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>The 4 Killer Number Pairs <span class="num-badge">SOUND</span></h2>
+      <table>
+        <thead><tr><th>Pair</th><th>Hearing trick</th><th>Sample sentence</th></tr></thead>
+        <tbody>
+          <tr><td><b>13</b> · <b>30</b></td><td>teen = sharp <b>N</b> · ty = soft <b>T</b></td><td>"I am <b>thirty</b> years old."</td></tr>
+          <tr><td><b>15</b> · <b>50</b></td><td>teen = sharp <b>N</b> · ty = soft <b>T</b></td><td>"I have <b>fifteen</b> years of experience."</td></tr>
+          <tr><td><b>14</b> · <b>40</b></td><td><b>Forty</b> has no "r" before the "t"</td><td>"I worked for <b>forty</b> hours last week."</td></tr>
+          <tr><td><b>18</b> · <b>80</b></td><td><b>Eighteen</b> ends with "n"; <b>eighty</b> has clear "t" in the middle</td><td>"My weight is <b>eighty</b> kilograms."</td></tr>
+        </tbody>
+      </table>
+      <div class="hi-card green" style="margin-top:14px">
+        <h4><span class="emoji">🧠</span> One-line rule</h4>
+        <p><b>-teen</b> ends with <b>N</b> (young, sharp). <b>-ty</b> ends with <b>T</b> (calm, flat). Say it 5 times this morning.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>5 Grammar Patterns — Skeleton Sentences <span class="num-badge">PATTERNS</span></h2>
+      <div class="vocab-grid">
+        <div class="vocab"><div class="w">Pattern 1</div><div class="m">Identity</div><div class="ex"><b>My name is</b> Dilan Harshana.</div></div>
+        <div class="vocab"><div class="w">Pattern 2</div><div class="m">Place</div><div class="ex"><b>I am from</b> Tangalle in Sri Lanka.</div></div>
+        <div class="vocab"><div class="w">Pattern 3</div><div class="m">Experience</div><div class="ex"><b>I have five years of experience</b> in the supermarket sector.</div></div>
+        <div class="vocab"><div class="w">Pattern 4</div><div class="m">Responsibility</div><div class="ex"><b>I was responsible for stocking</b> display shelves.</div></div>
+        <div class="vocab"><div class="w">Pattern 5</div><div class="m">Strengths</div><div class="ex"><b>I am</b> hardworking, honest, and physically strong.</div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>1-1-1-1 Lock Schedule <span class="num-badge">REVIEW</span></h2>
+      <table>
+        <thead><tr><th>When</th><th>What to review</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td><b>+ 1 Hour</b></td><td>Re-read the model speech once. Say it aloud twice.</td><td>5 min</td></tr>
+          <tr><td><b>+ 1 Day</b></td><td>Fill Activity A cloze from memory. Say your script 2×.</td><td>5 min</td></tr>
+          <tr><td><b>+ 1 Week</b></td><td>Time yourself — deliver speech under 60 sec.</td><td>10 min</td></tr>
+          <tr><td><b>+ 1 Month</b></td><td>Full mock interview with camera.</td><td>15 min</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="block">
+      <h2>Final Checklist — Print This <span class="num-badge">PRINT</span></h2>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>I can say the 5-bone speech under 60 seconds, from memory.</span></label></li>
+        <li><label><input type="checkbox"><span>I know all 5 memory keys (PESMS, 5-Finger, Stock-Rotate-Cash, Teen/Ty, 3-1 formula).</span></label></li>
+        <li><label><input type="checkbox"><span>I can pronounce 13/30, 15/50, 14/40, 18/80 correctly.</span></label></li>
+        <li><label><input type="checkbox"><span>I have written my real personal details into Template A or B.</span></label></li>
+        <li><label><input type="checkbox"><span>I have recorded myself once and found at least one fix.</span></label></li>
+        <li><label><input type="checkbox"><span>I have set all four 1-1-1-1 review alarms.</span></label></li>
+        <li><label><input type="checkbox"><span>I know my closing line: "That is all about me, thank you, sir."</span></label></li>
+      </ul>
+      <p style="text-align:center;color:var(--muted);margin-top:14px"><i>Tip: press <kbd style="background:var(--surface-2);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-family:'JetBrains Mono',monospace">Ctrl/Cmd + P</kbd> to print this view.</i></p>
+    </div>
+
+  </section>
+
+  <!-- ====== END NAV ====== -->
+  <div class="end-nav">
+    <a class="nav-card prev" href="#" id="prevCard">
+      <span class="arrow">←</span>
+      <div>
+        <div class="lbl">Previous lesson</div>
+        <div class="ttl" id="prevTitle">No previous lesson</div>
+      </div>
+    </a>
+    <a class="nav-card next" href="#" id="nextCard">
+      <span class="arrow">→</span>
+      <div>
+        <div class="lbl">Next lesson</div>
+        <div class="ttl" id="nextTitle">No upcoming lesson</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer-tip">
+    Tip: keyboard shortcuts — <kbd>1</kbd> English · <kbd>2</kbd> Sinhala · <kbd>3</kbd> Memory Keys · <kbd>←</kbd> / <kbd>→</kbd> jump lessons · <kbd>j</kbd> open the lesson menu. Your view is remembered on this device.
+  </div>
+</main>
+
+<script>
+  // ===== Lessons registry (kept in sync with index.html) =====
+  const LESSONS = [
+    { id:"0001", title:"My First 60 Seconds — The 5-Step Self-Introduction", status:"published", file:"lesson-0001.html" },
+  ];
+  const CURRENT_ID = "0001";
+  const currentIdx = LESSONS.findIndex(l => l.id === CURRENT_ID);
+  const prev = currentIdx > 0 ? LESSONS[currentIdx - 1] : null;
+  const next = currentIdx >= 0 && currentIdx < LESSONS.length - 1 ? LESSONS[currentIdx + 1] : null;
+
+  // ===== Nav: prev / next =====
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevCard = document.getElementById('prevCard');
+  const nextCard = document.getElementById('nextCard');
+  const prevTitle = document.getElementById('prevTitle');
+  const nextTitle = document.getElementById('nextTitle');
+
+  if(prev){
+    prevBtn.disabled = false; prevCard.href = prev.file;
+    prevTitle.textContent = prev.title;
+  } else {
+    prevBtn.disabled = true; prevCard.classList.add('disabled');
+  }
+  if(next){
+    nextBtn.disabled = false; nextCard.href = next.file;
+    nextTitle.textContent = next.title;
+  } else {
+    nextBtn.disabled = true; nextCard.classList.add('disabled');
+    nextCard.querySelector('.lbl').textContent = 'More lessons coming';
+  }
+
+  prevBtn.addEventListener('click', ()=>{ if(prev) location.href = prev.file; });
+  nextBtn.addEventListener('click', ()=>{ if(next) location.href = next.file; });
+
+  // ===== Jump menu =====
+  const jumpTrigger = document.getElementById('jumpTrigger');
+  const jumpMenu = document.getElementById('jumpMenu');
+  function buildJumpMenu(){
+    jumpMenu.innerHTML = '';
+    LESSONS.forEach(l => {
+      const a = document.createElement('a');
+      a.className = 'jump-item' + (l.status !== 'published' ? ' disabled' : '');
+      a.href = l.status === 'published' ? l.file : '#';
+      a.dataset.id = l.id;
+      a.innerHTML = `<span class="num">L-${l.id}</span><span>${l.title}</span>` + (l.status==='published' ? '<span class="pill">Open</span>' : '<span class="pill" style="background:rgba(251,191,36,.18);color:#fcd34d;border-color:rgba(251,191,36,.4)">Soon</span>');
+      if(l.id === CURRENT_ID){ a.style.background = 'rgba(124,92,255,.18)'; a.style.fontWeight = '700'; }
+      jumpMenu.appendChild(a);
+    });
+  }
+  buildJumpMenu();
+  jumpTrigger.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    const open = jumpMenu.classList.toggle('open');
+    jumpTrigger.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', (e)=>{
+    if(!jumpMenu.contains(e.target) && !jumpTrigger.contains(e.target)) jumpMenu.classList.remove('open');
+  });
+
+  // ===== Version switcher =====
+  const segs = document.querySelectorAll('.seg');
+  const versions = document.querySelectorAll('.version');
+  function setVersion(v){
+    segs.forEach(s=>{ const active = s.dataset.version===v; s.classList.toggle('active', active); s.setAttribute('aria-selected', active); });
+    versions.forEach(x=>x.classList.toggle('active', x.dataset.version===v));
+    try{ localStorage.setItem('lastVersion', v); }catch(e){}
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  segs.forEach(s=>s.addEventListener('click', ()=>setVersion(s.dataset.version)));
+
+  // Restore last version
+  try{
+    const saved = localStorage.getItem('lastVersion');
+    if(saved && ['en','si','keys'].includes(saved)) setVersion(saved);
+  }catch(e){}
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e)=>{
+    if(e.target.matches('input,textarea')) return;
+    if(e.key === '1'){ setVersion('en'); }
+    else if(e.key === '2'){ setVersion('si'); }
+    else if(e.key === '3'){ setVersion('keys'); }
+    else if(e.key === 'ArrowLeft' && prev){ location.href = prev.file; }
+    else if(e.key === 'ArrowRight' && next){ location.href = next.file; }
+    else if(e.key.toLowerCase() === 'j'){ jumpTrigger.click(); }
+  });
+
+  // ===== Reading progress bar =====
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll', ()=>{
+    const h = document.documentElement;
+    const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+  }, {passive:true});
+
+  // ===== Checklists persist per lesson =====
+  document.querySelectorAll('.checklist').forEach(list => {
+    const key = 'checklist-' + CURRENT_ID + '-' + Array.from(list.closest('.version').classList).join('-');
+    // init
+    list.querySelectorAll('li').forEach((li,i)=>{
+      const cb = li.querySelector('input');
+      try{
+        const saved = JSON.parse(localStorage.getItem(key) || '{}');
+        if(saved[i]){ cb.checked = true; li.classList.add('done'); }
+      }catch(e){}
+      cb.addEventListener('change', ()=>{
+        li.classList.toggle('done', cb.checked);
+        const state = {};
+        list.querySelectorAll('li').forEach((l,j)=>{ state[j] = l.querySelector('input').checked; });
+        try{ localStorage.setItem(key, JSON.stringify(state)); }catch(e){}
+      });
+    });
+  });
+
+  // Remember last opened lesson
+  try{ localStorage.setItem('lastLessonView', location.pathname.split('/').pop()); }catch(e){}
+</script>
+
+</body>
+</html>
