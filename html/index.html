@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interview English සඳහා Sinhala-English blend lesson book එක.">
+  <title>Interview English | පාඩම් පොත</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body class="index-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Interview English පාඩම් පොතේ මුල් පිටුව">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>පාඩම් පොත</small><span>Interview English</span></span>
+    </a>
+    <div class="top-actions">
+      <label class="sr-only" for="indexLessonSelect">පාඩමකට යන්න</label>
+      <select class="lesson-select" id="indexLessonSelect" data-lesson-select>
+        <option value="">පාඩමකට යන්න...</option><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="index-wrap">
+    <section class="index-hero" aria-labelledby="book-title">
+      <div>
+        <div class="eyebrow">Interview සහ workplace English practice</div>
+        <h1 id="book-title">Interview එකට confident වෙන්න, step by step.</h1>
+        <p class="index-intro">මේ lesson book එකෙන් interview preparation එක මුල සිට අවසානය දක්වා practice කරන්න. සෑම lesson එකකම Pure English reading එකක්, Pure Sinhala reading එකක් සහ quick recall guide එකක් තියෙනවා. Lesson එකක් open කළාම index එකට ආපසු නොගොස් ඊළඟ පාඩමට යන්නත් පුළුවන්.</p>
+      </div>
+      <div class="index-count"><strong>12</strong>පාඩම්<br>reading modes 3ක්</div>
+    </section>
+
+    <section class="index-tools" aria-label="පාඩම් tools">
+      <label for="lessonSearch">පාඩමක් සොයන්න<input class="search" id="lessonSearch" type="search" placeholder="topic, number හෝ skill එකක් type කරන්න"></label>
+      <div class="progress-label">HTML පාඩම් පොත · print-ready</div>
+    </section>
+
+    <div class="index-note"><strong>භාවිතා කරන flow එක:</strong> මුලින් English panel එක කියවන්න. Support එකක් ඕනේ නම් Sinhala panel එකට switch වෙන්න. අවසානයේ recall guide එකෙන් quick review එකක් කරන්න. ඔබ තෝරන reading mode එක lessons අතර move වෙද්දී remember වෙනවා.</div>
+
+    <section class="lesson-grid" aria-label="සියලු පාඩම්">
+            <article class="lesson-card" data-lesson-card data-search="0001 my first 60 seconds dilan&#x27;s story and a calm interview opening build a clear first-minute self-introduction with profile, experience, strengths, motivation, and a confident close.">
+              <div class="lesson-number">පාඩම 0001</div>
+              <h2>My First 60 Seconds</h2>
+              <div class="lesson-subtitle">Dilan&#x27;s story and a calm interview opening</div>
+              <p class="lesson-description">Interview එකේ පළමු තත්පර 60ට calm, clear self-introduction එකක් හදාගන්න. Profile, experience, strengths සහ confident closing එක practice කරන්න.</p>
+              <a class="button" href="0001-self-introduction.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0002 first impressions dilan&#x27;s perfect file prepare a professional appearance, organize your documents, and enter the interview room with control.">
+              <div class="lesson-number">පාඩම 0002</div>
+              <h2>First Impressions</h2>
+              <div class="lesson-subtitle">Dilan&#x27;s perfect file</div>
+              <p class="lesson-description">Professional appearance එකක්, documents file එකක් සහ interview room එකට confident entry එකක් සූදානම් කරගන්න.</p>
+              <a class="button" href="0002-first-impressions-documents.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0003 number power and precision clear quantities, dates, and figures practice the numbers that matter in interviews, work instructions, dates, measurements, and salary conversations.">
+              <div class="lesson-number">පාඩම 0003</div>
+              <h2>Number Power and Precision</h2>
+              <div class="lesson-subtitle">Clear quantities, dates, and figures</div>
+              <p class="lesson-description">Interview එකේදී වැදගත් numbers, dates, quantities, measurements සහ salary figures පැහැදිලිව කියන්න practice කරන්න.</p>
+              <a class="button" href="0003-number-power-precision.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0004 supermarket operations fifo, merchandising, and customer care learn the everyday language of stock rotation, safe shelves, cold storage, spills, and helpful service.">
+              <div class="lesson-number">පාඩම 0004</div>
+              <h2>Supermarket Operations</h2>
+              <div class="lesson-subtitle">FIFO, merchandising, and customer care</div>
+              <p class="lesson-description">FIFO, stock rotation, safe shelves, cold storage, spills සහ helpful customer service ගැන practical English ඉගෙනගන්න.</p>
+              <a class="button" href="0004-supermarket-fifo-merchandising.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0005 factory operations ppe, machine safety, and stamina describe safe factory habits, protective equipment, emergency actions, and steady physical work.">
+              <div class="lesson-number">පාඩම 0005</div>
+              <h2>Factory Operations</h2>
+              <div class="lesson-subtitle">PPE, machine safety, and stamina</div>
+              <p class="lesson-description">Factory එකේ PPE, machine safety, emergency actions සහ steady physical work ගැන clear answers හදාගන්න.</p>
+              <a class="button" href="0005-factory-operations-ppe-stamina.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0006 warehouse logistics machinery, loading, and cargo handling build practical language for pallet jacks, forklifts, loading docks, stock movement, and safe cargo handling.">
+              <div class="lesson-number">පාඩම 0006</div>
+              <h2>Warehouse Logistics</h2>
+              <div class="lesson-subtitle">Machinery, loading, and cargo handling</div>
+              <p class="lesson-description">Pallet jack, forklift, loading dock, stock movement සහ safe cargo handling සඳහා භාවිතා වන workplace English practice කරන්න.</p>
+              <a class="button" href="0006-warehouse-logistics-machinery.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0007 israel, culture, and shabbat place, customs, currency, and respect get ready to speak about israel&#x27;s geography, daily customs, currency, cultural awareness, and shabbat.">
+              <div class="lesson-number">පාඩම 0007</div>
+              <h2>Israel, Culture, and Shabbat</h2>
+              <div class="lesson-subtitle">Place, customs, currency, and respect</div>
+              <p class="lesson-description">Israel ගැන geography, currency, daily customs සහ cultural respect එක්ක කතා කරන්න සූදානම් වෙන්න.</p>
+              <a class="button" href="0007-israel-geography-culture-shabbat.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0008 direct workplace communication dugri, clarification, and feedback understand direct communication at work and use clear phrases when receiving instructions or feedback.">
+              <div class="lesson-number">පාඩම 0008</div>
+              <h2>Direct Workplace Communication</h2>
+              <div class="lesson-subtitle">Dugri, clarification, and feedback</div>
+              <p class="lesson-description">Dugri communication style එක තේරුම්ගෙන instructions, clarification සහ feedback සඳහා clear phrases භාවිතා කරන්න.</p>
+              <a class="button" href="0008-dugri-workplace-communication.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0009 adaptability and shifts weather, long hours, and shared living explain how you adapt to weather, long shifts, new routines, multicultural housing, and workplace change.">
+              <div class="lesson-number">පාඩම 0009</div>
+              <h2>Adaptability and Shifts</h2>
+              <div class="lesson-subtitle">Weather, long hours, and shared living</div>
+              <p class="lesson-description">Weather changes, long shifts, new routines සහ multicultural shared living වලට adapt වෙන ආකාරය explain කරන්න.</p>
+              <a class="button" href="0009-adaptability-shifts-living.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0010 visa compliance and plans rules, commitment, and the future practice responsible answers about b1 visa rules, contract commitment, and long-term plans.">
+              <div class="lesson-number">පාඩම 0010</div>
+              <h2>Visa Compliance and Plans</h2>
+              <div class="lesson-subtitle">Rules, commitment, and the future</div>
+              <p class="lesson-description">B1 visa rules, contract commitment සහ Sri Lanka වල future plans ගැන responsible answers practice කරන්න.</p>
+              <a class="button" href="0010-visa-compliance-future-plans.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0011 airport immigration drill arrival, questions, and customs rehearse the arrival conversation, immigration questions, document answers, and customs expectations.">
+              <div class="lesson-number">පාඩම 0011</div>
+              <h2>Airport Immigration Drill</h2>
+              <div class="lesson-subtitle">Arrival, questions, and customs</div>
+              <p class="lesson-description">Ben Gurion arrival එකේ immigration questions, documents සහ customs ගැන confident answers rehearse කරන්න.</p>
+              <a class="button" href="0011-airport-immigration-drill.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="lesson-card" data-lesson-card data-search="0012 comprehensive mock interview rapid-fire practice and final review bring the course together with a full mock board interview and a final readiness checklist.">
+              <div class="lesson-number">පාඩම 0012</div>
+              <h2>Comprehensive Mock Interview</h2>
+              <div class="lesson-subtitle">Rapid-fire practice and final review</div>
+              <p class="lesson-description">Lessons 12ම එකට ගෙන full mock interview එකක් කරන්න. Rapid-fire questions සහ final readiness checklist එක complete කරන්න.</p>
+              <a class="button" href="0012-mock-interview.html"><span>පාඩම open කරන්න</span><span aria-hidden="true">→</span></a>
+            </article>
+            </section>
+    <p class="no-results" id="noResults">මේ search එකට match වෙන පාඩමක් නැහැ.</p>
+  </main>
+  <script>
+    (() => {
+      const search = document.querySelector('#lessonSearch');
+      const cards = [...document.querySelectorAll('[data-lesson-card]')];
+      const empty = document.querySelector('#noResults');
+      search.addEventListener('input', () => {
+        const query = search.value.trim().toLowerCase();
+        let visible = 0;
+        cards.forEach(card => {
+          const matches = !query || card.dataset.search.includes(query);
+          card.hidden = !matches;
+          if (matches) visible += 1;
+        });
+        empty.classList.toggle('visible', visible === 0);
+      });
+      document.querySelectorAll('[data-lesson-select]').forEach(select => select.addEventListener('change', event => {
+        if (event.target.value) window.location.href = event.target.value;
+      }));
+    })();
+  </script>
+</body>
+</html>

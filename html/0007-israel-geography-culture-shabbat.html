@@ -1,0 +1,1130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Israel, Culture, and Shabbat: Get ready to speak about Israel&#x27;s geography, daily customs, currency, cultural awareness, and Shabbat.">
+  <title>Lesson 0007 | Israel, Culture, and Shabbat</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0007</small><span>Israel, Culture, and Shabbat</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html" selected>0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">07 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0007</div>
+            <h1>Israel, Culture, and Shabbat</h1>
+            <p class="hero-lead">Get ready to speak about Israel&#x27;s geography, daily customs, currency, cultural awareness, and Shabbat.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0007 — Israel: Geography, Culture, Economy &amp; Shabbat Mastery</h1>
+<blockquote>
+<p><strong>Mission link:</strong> Israeli representatives always test whether a candidate has genuine knowledge about Israel or is applying blindly. If you do not know the <strong>capital city (Jerusalem)</strong>, the <strong>currency (New Israeli Shekel)</strong>, the <strong>borders</strong>, or what <strong>Shabbat</strong> means, the panel will assume you lack seriousness and cultural adaptability. This lesson ensures you answer all country-specific questions effortlessly.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> You will explore Israel with Dilan across three narrative scenes: looking at a regional map, exploring the commercial hub of Tel Aviv, and experiencing the weekly rhythm of Shabbat. Comprehension and visualization precede gentle speaking drills. Grammar rules are kept in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, from <strong>Pahalagoda, Tangalle</strong>, preparing for legal overseas employment under the official Israel-Sri Lanka G2G bilateral program.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>comprehensible input, not mechanical memorization</strong> — you will be able to:<br />
+1. <strong>Name Israel's geographic location, sea coast, and 4 border countries</strong> (Lebanon, Syria, Jordan, Egypt).<br />
+2. <strong>Identify the capital (Jerusalem), economic hub (Tel Aviv), and currency (New Israeli Shekel / NIS)</strong>.<br />
+3. <strong>Explain Israel's economic reputation as the "Startup Nation"</strong> (advanced technology &amp; agriculture).<br />
+4. <strong>Describe the Jewish rest day (Shabbat)</strong> and explain the Israeli workweek (Sunday to Thursday).<br />
+5. <strong>Hold 2 core cultural memory formulas:</strong> <strong>B.O.R.D.E.R.</strong> and <strong>S.H.A.B.B.A.T.</strong></p>
+<p><strong>Estimated time:</strong> 40 minutes, split into <strong>5 micro-blocks</strong> of ~8 min each.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — basic world geography elevated to <strong>concise, factual interview English</strong>.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §5 (Israel — Country, Culture, and Visa Regulations: Q1–Q4), §6 Q13, §8.1 Don't #4</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input Theory), Part I §3 (Spaced Repetition &amp; 1-1-1-1 Lock), Part II §2 (3-Words-a-Day)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — visualize the map)</h2>
+<blockquote>
+<p><em>The Israeli interviewer leans forward and asks:</em><br />
+<strong>"What can you tell me about Israel? What is its capital and what currency is used there?"</strong>  </p>
+<p><em>Dilan smiles calmly, looks into the camera, and answers clearly:</em><br />
+<strong>"Israel is located in the Middle East along the Mediterranean Sea, Sir. The capital is Jerusalem, and the main commercial hub is Tel Aviv. The currency is the New Israeli Shekel. Israel is known worldwide as the 'Startup Nation' for its advanced technology."</strong>  </p>
+<p><em>The panel nods approvingly. Dilan is knowledgeable, respectful, and prepared.</em></p>
+</blockquote>
+<p>Knowledge of the host country demonstrates <strong>respect, commitment, and intelligence</strong>.</p>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Map of Israel (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Pre-input immersion through visual mental mapping ($i+1$).</p>
+</blockquote>
+<h3>1A. Scene 1 — Exploring the Map (4 min)</h3>
+<p>Read this story slowly. Visualize the map in your mind:</p>
+<blockquote>
+<p>Dilan looks at a map of the <strong>Middle East</strong>.<br />
+He sees Israel situated along the eastern coastline of the <strong>Mediterranean Sea</strong>.  </p>
+<p>He traces the four land borders surrounding Israel:<br />
+- To the <strong>North</strong>: <strong>Lebanon</strong><br />
+- To the <strong>Northeast</strong>: <strong>Syria</strong><br />
+- To the <strong>East</strong>: <strong>Jordan</strong><br />
+- To the <strong>Southwest</strong>: <strong>Egypt</strong></p>
+<p>In the center-east hills sits <strong>Jerusalem</strong>, the ancient historic capital.<br />
+Along the sunny western coast sits <strong>Tel Aviv</strong>, the bustling financial center filled with international businesses, ports, and tech companies.</p>
+</blockquote>
+<h3>1B. Geographic Compass Map (4 min)</h3>
+<pre><code>                              [ NORTH ]
+                               Lebanon
+                                  │
+    [ WEST ]                      │                      [ EAST ]
+Mediterranean Sea ◄───────  [ ISRAEL ]  ───────► Syria (Northeast) &amp; Jordan
+                                  │
+                                  │
+                                Egypt
+                              [ SOUTH ]
+</code></pre>
+<h3>1C. The B.O.R.D.E.R. memory formula (2 min)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Direction</th>
+<th style="text-align: left;">Border Country</th>
+<th style="text-align: left;">memory formula Anchor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>North</strong></td>
+<td style="text-align: left;"><strong>Lebanon</strong></td>
+<td style="text-align: left;"><strong>L</strong>ebanon in the north</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Northeast</strong></td>
+<td style="text-align: left;"><strong>Syria</strong></td>
+<td style="text-align: left;"><strong>S</strong>yria on the horizon</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>East</strong></td>
+<td style="text-align: left;"><strong>Jordan</strong></td>
+<td style="text-align: left;"><strong>J</strong>ordan river to the east</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Southwest</strong></td>
+<td style="text-align: left;"><strong>Egypt</strong></td>
+<td style="text-align: left;"><strong>E</strong>gypt by the southern desert</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 2 — Economy, Technology &amp; Currency (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Repetition with variation through economic facts.</p>
+</blockquote>
+<h3>2A. Scene 2 — The "Startup Nation" &amp; The Shekel (5 min)</h3>
+<blockquote>
+<p>Israel is famous worldwide as the <strong>"Startup Nation"</strong>. Despite having a small land area and desert regions, it is a global leader in high-tech innovation, drip irrigation agriculture, water recycling, and modern supermarket logistics.  </p>
+<p>When Dilan works in Israel, he will be paid in the national currency: the <strong>New Israeli Shekel (NIS)</strong>.<br />
+- 1 Shekel is divided into 100 <em>Agorot</em>.<br />
+- A typical monthly salary for supermarket logistics workers ranges between <strong>7,000 to 8,000 NIS</strong>, which provides a strong financial upgrade to support his family in Sri Lanka.</p>
+</blockquote>
+<h3>2B. Key Economic Vocabulary Table (3 min)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">English Term</th>
+<th style="text-align: left;">Pronunciation</th>
+<th style="text-align: left;">Meaning in Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Currency</strong></td>
+<td style="text-align: left;">/ˈkʌrənsi/</td>
+<td style="text-align: left;">Official money used in a country (New Israeli Shekel)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Commercial Hub</strong></td>
+<td style="text-align: left;">/kəˈmɜːʃəl hʌb/</td>
+<td style="text-align: left;">Center of business, finance, and trade (Tel Aviv)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Startup Nation</strong></td>
+<td style="text-align: left;">/ˈstɑːtˌʌp ˈneɪʃən/</td>
+<td style="text-align: left;">Global nickname for Israel due to tech leadership</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Agriculture</strong></td>
+<td style="text-align: left;">/ˈæɡrɪˌkʌltʃər/</td>
+<td style="text-align: left;">Modern farming and greenhouse food production</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 3 — Culture, Faith &amp; Shabbat (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> High-frequency cultural awareness in realistic workplace context.</p>
+</blockquote>
+<h3>3A. Scene 3 — The Rhythm of Shabbat (5 min)</h3>
+<blockquote>
+<p>In Israel, the primary religion is <strong>Judaism</strong>, and the official language is <strong>Hebrew</strong>.  </p>
+<p>The Israeli workweek is different from Sri Lanka:<br />
+- The standard workweek runs from <strong>Sunday to Thursday</strong> (or Friday early afternoon).<br />
+- <strong>Shabbat (שַׁבָּת)</strong> is the Jewish holy day of rest.<br />
+- Shabbat begins at <strong>Friday sunset</strong> and ends at <strong>Saturday sunset</strong>.  </p>
+<p>During Shabbat, public transportation stops, and most government offices and retail stores close so families can rest together. Supermarket and logistics shifts are organized around this weekly cycle.</p>
+</blockquote>
+<h3>3B. The S.H.A.B.B.A.T. Anchor (3 min)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                  THE S.H.A.B.B.A.T. CYCLE                 │
+   │                                                           │
+   │   S ──► Sunset Friday (Beginning of Rest)                 │
+   │   H ──► Holy Day in Judaism                               │
+   │   A ──► All Public Offices Close                          │
+   │   B ──► Business Resumes Saturday Night                   │
+   │   B ──► Better Energy for New Week                        │
+   │   A ──► Always Sunday to Thursday Workweek                │
+   │   T ──► Time for Rest and Family                          │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Third encounter in direct Q&amp;A format using simple SVO architecture.</p>
+</blockquote>
+<h3>Q1: "Where is Israel located and what are its borders?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"Israel is located in the Middle East along the Mediterranean Sea, Sir.**  
+> It shares land borders with **Lebanon** in the north, **Syria** and **Jordan** in the east, and **Egypt** in the southwest."
+
+</details>
+
+<h3>Q2: "What is the capital city and what is the currency of Israel?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"The capital of Israel is Jerusalem, Sir.**  
+> The main commercial and financial city is **Tel Aviv**.  
+> The official currency is the **New Israeli Shekel (NIS)**."
+
+</details>
+
+<h3>Q3: "What do you know about Israel's economy and workweek?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"Israel is known globally as the 'Startup Nation' for its high-tech and modern agriculture.**  
+> The official language is **Hebrew**.  
+> The workweek runs from **Sunday to Thursday**, and **Shabbat** is the day of rest from Friday evening to Saturday evening."
+
+</details>
+
+<h3>Q4: "Why do you want to work in Israel specifically?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"I want to work in Israel because it is a developed country with advanced technology and high standards.**  
+> I want to gain valuable international work experience, earn a good income in Shekels, and build a secure economic future for my family."
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Gradual output release: Whisper drill → Cloze comprehension → Journal recording.</p>
+</blockquote>
+<h3>5A. The 3-Sentence Whisper Drill (3 min)</h3>
+<p>Whisper these 3 statements 5 times each with crisp pronunciation:<br />
+1. <em>"The capital of Israel is Jerusalem, and the currency is the Shekel."</em><br />
+2. <em>"Israel shares borders with Lebanon, Syria, Jordan, and Egypt."</em><br />
+3. <em>"The workweek runs from Sunday to Thursday, and Shabbat is the day of rest."</em></p>
+<h3>5B. Cloze Comprehension Check (3 min)</h3>
+<p>Fill in the blanks with the correct facts:</p>
+<ol>
+<li>The capital of Israel is <strong><em>_</em></strong><em>, while the main financial hub is <strong><em>_</em></strong></em> <strong><em>_</em></strong>_.<br />
+<em>(Choices: Jerusalem / Tel Aviv)</em></li>
+<li>The official currency of Israel is the New Israeli <strong><em>_</em></strong>_.<br />
+<em>(Choices: Shekel / Rupee)</em></li>
+<li>Shabbat begins on <strong><em>_</em></strong><em> evening and finishes on <strong><em>_</em></strong></em> evening.<br />
+<em>(Choices: Friday / Saturday)</em></li>
+</ol>
+<details>
+<summary><b>Click for Answer Key</b></summary>
+
+1. **Jerusalem** / **Tel Aviv**
+2. **Shekel**
+3. **Friday** / **Saturday**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (2 min)</h3>
+<p>Write these 3 words in your vocabulary notebook:<br />
+1. <strong>Currency</strong> /ˈkʌrənsi/ (Noun) = The money used in a country. <em>(Ex: "The official currency of Israel is the Shekel.")</em><br />
+2. <strong>Border</strong> /ˈbɔːdər/ (Noun) = The boundary dividing two countries. <em>(Ex: "Israel shares a border with Jordan.")</em><br />
+3. <strong>Shabbat</strong> /ʃəˈbɑːt/ (Noun) = Jewish holy day of rest from Friday sunset to Saturday sunset. <em>(Ex: "Stores close during Shabbat.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (within 2 hours):</strong> Skim the <strong>B.O.R.D.E.R.</strong> compass map and <strong>S.H.A.B.B.A.T.</strong> cycle (3 min).</li>
+<li>[ ] <strong>2nd Review (tomorrow morning):</strong> Whisper all 4 country Q&amp;A answers while standing upright (5 min).</li>
+<li>[ ] <strong>3rd Review (in 1 week):</strong> Practice answering Israel geography questions on phone voice recorder (10 min).</li>
+<li>[ ] <strong>4th Review (in 1 month):</strong> Comprehensive mock review before the interview board (15 min).</li>
+</ul>
+<hr />
+<h2>Optional Monitor Appendix (For Grammar Enthusiasts Only)</h2>
+<blockquote>
+<p><em>Note: Language acquisition happens naturally through understanding messages. Grammar rules below are for reference only.</em></p>
+</blockquote>
+<ul>
+<li><strong>Proper Nouns &amp; Capitalization:</strong> Always capitalize country names, cities, and specific cultural terms:</li>
+<li><em>Israel, Jerusalem, Tel Aviv, Mediterranean Sea, Hebrew, Judaism, Shabbat, Shekel.</em></li>
+<li><strong>Prepositions with Geography:</strong></li>
+<li><em>in</em> the Middle East, <em>along</em> the Mediterranean Sea, <em>with</em> Jordan, <em>from</em> Sunday <em>to</em> Thursday.</li>
+</ul></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0007 — Israel: Geography, Culture, Economy &amp; Shabbat Mastery: ඊශ්‍රායලය — භූගෝලය, සංස්කෘතිය, ආර්ථිකය සහ සබත් දිනය</h1>
+<blockquote>
+<p><strong>Mission link:</strong> ඊශ්‍රායල නියෝජිතයින් (recruiter panel) සෑම විටම පරීක්ෂා කරන්නේ අපේක්ෂකයා ඊශ්‍රායලය පිළිබඳ සැබෑ අවබෝධයකින් යුතුව අයදුම් කරන්නේද නැතහොත් කිසිවක් නොදැන අයදුම් කරන්නේද යන්නයි. ඔබ <strong>අගනුවර (Jerusalem)</strong>, <strong>මුදල් ඒකකය (New Israeli Shekel)</strong>, <strong>දේශසීමා (borders)</strong> හෝ <strong>සබත් දිනය (Shabbat)</strong> යනු කුමක්දැයි නොදන්නේ නම්, ඔබ තුළ උනන්දුවක් හෝ සංස්කෘතික ගැළපීමක් නොමැති බව ඔවුන් නිගමනය කරනු ඇත. මෙම පාඩම මඟින් රට ආශ්‍රිත සියලු ප්‍රශ්නවලට ඉතා පහසුවෙන් පිළිතුරු දීමට ඔබව සූදානම් කරයි.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> කතා දර්ශන 3ක් ඔස්සේ ඩිලාන් සමඟ ඊශ්‍රායලය ගවේෂණය කරන්න: කලාපීය සිතියම දෙස බැලීම, ටෙල් අවිව් (Tel Aviv) වාණිජ නගරය ගවේෂණය කිරීම සහ සබත් දිනයේ (Shabbat) සතිපතා චක්‍රය අත්විඳීම. කතා කිරීමට (output) පෙර අවබෝධය සහ දෘශ්‍යකරණය (visualization) සිදු වේ. Grammar සටහන් Optional Monitor Appendix එක තුළ ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, පදිංචිය <strong>පහලගොඩ, තංගල්ල</strong>, ශ්‍රී ලංකා - ඊශ්‍රායල නිල G2G ද්විපාර්ශ්වික ගිවිසුම යටතේ නීත්‍යානුකූල විදේශ රැකියාවක් සඳහා සූදානම් වේ.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>යාන්ත්‍රිකව කටපාඩම් කිරීමෙන් තොරව, Comprehensible Input මඟින්ම</strong> — ඔබට හැකිවනු ඇත:<br />
+1. ඊශ්‍රායලයේ භූගෝලීය පිහිටීම, මුහුදු තීරය සහ <strong>මායිම් රටවල් 4</strong> (Lebanon, Syria, Jordan, Egypt) නම් කිරීමට.<br />
+2. <strong>අගනුවර (Jerusalem)</strong>, <strong>ආර්ථික මධ්‍යස්ථානය (Tel Aviv)</strong> සහ <strong>මුදල් ඒකකය (New Israeli Shekel / NIS)</strong> හඳුනා ගැනීමට.<br />
+3. ඊශ්‍රායලයේ තාක්ෂණික සහ කෘෂිකාර්මික දියුණුව නිසා එය <strong>"Startup Nation"</strong> ලෙස හඳුන්වන්නේ ඇයිදැයි පැහැදිලි කිරීමට.<br />
+4. යුදෙව් විවේක දිනය වන <strong>සබත් දිනය (Shabbat)</strong> සහ ඊශ්‍රායල වැඩ සතිය (ඉරිදා සිට බ්‍රහස්පතින්දා දක්වා) විස්තර කිරීමට.<br />
+5. ප්‍රධාන සංස්කෘතික මතක ආධාරක (memory formulas) 2ක් මතකයේ රඳවා ගැනීමට: <strong>B.O.R.D.E.R.</strong> සහ <strong>S.H.A.B.B.A.T.</strong></p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ <strong>micro-blocks 5කට</strong> බෙදා ඇත.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — මූලික ලෝක භූගෝලීය දැනුම සම්මුඛ පරීක්ෂණයට ගැලපෙන <strong>කෙටි, නිවැරදි ඉංග්‍රීසි කරුණු (factual interview English)</strong> බවට පත් කිරීම.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §5 (Israel — Country, Culture, and Visa Regulations: Q1–Q4), §6 Q13, §8.1 Don't #4</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input Theory), Part I §3 (Spaced Repetition &amp; 1-1-1-1 Lock), Part II §2 (3-Words-a-Day)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — සිතියම සිතින් මවාගන්න / visualize the map)</h2>
+<blockquote>
+<p><em>The Israeli interviewer leans forward and asks:</em><br />
+<strong>"What can you tell me about Israel? What is its capital and what currency is used there?"</strong>  </p>
+<p><em>Dilan smiles calmly, looks into the camera, and answers clearly:</em><br />
+<strong>"Israel is located in the Middle East along the Mediterranean Sea, Sir. The capital is Jerusalem, and the main commercial hub is Tel Aviv. The currency is the New Israeli Shekel. Israel is known worldwide as the 'Startup Nation' for its advanced technology."</strong>  </p>
+<p><em>The panel nods approvingly. Dilan is knowledgeable, respectful, and prepared.</em></p>
+</blockquote>
+<p>ඔබ යන රට පිළිබඳව දැනුවත්ව සිටීම මඟින් ඔබගේ <strong>ගෞරවය, උනන්දුව සහ බුද්ධිමත්භාවය</strong> මනාව පෙන්නුම් කරයි.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> ඊශ්‍රායලයේ අගනුවර (Jerusalem), ප්‍රධාන වාණිජ නගරය (Tel Aviv), මුදල් ඒකකය (New Israeli Shekel - NIS), මායිම් රටවල් (Lebanon, Syria, Jordan, Egypt), සහ සබත් දිනය (Shabbat) පිළිබඳ මූලික දැනුම සම්මුඛ පරීක්ෂණයේදී අනිවාර්යයෙන්ම විමසනු ලැබේ.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Map of Israel (ඊශ්‍රායල සිතියම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> දෘශ්‍ය සිතියම්කරණය ඔස්සේ භාෂාව උකහා ගැනීම ($i+1$).</p>
+</blockquote>
+<h3>1A. Scene 1 — Exploring the Map (විනාඩි 4)</h3>
+<p>මෙම කතාව සෙමෙන් කියවන්න. සිතියම සිතින් මවාගන්න:</p>
+<blockquote>
+<p>Dilan looks at a map of the <strong>Middle East</strong>.<br />
+He sees Israel situated along the eastern coastline of the <strong>Mediterranean Sea</strong>.  </p>
+<p>He traces the four land borders surrounding Israel:<br />
+- To the <strong>North</strong>: <strong>Lebanon</strong><br />
+- To the <strong>Northeast</strong>: <strong>Syria</strong><br />
+- To the <strong>East</strong>: <strong>Jordan</strong><br />
+- To the <strong>Southwest</strong>: <strong>Egypt</strong></p>
+<p>In the center-east hills sits <strong>Jerusalem</strong>, the ancient historic capital.<br />
+Along the sunny western coast sits <strong>Tel Aviv</strong>, the bustling financial center filled with international businesses, ports, and tech companies.</p>
+</blockquote>
+<h3>1B. Geographic Compass Map (දිශානුගත සිතියම) (විනාඩි 4)</h3>
+<pre><code>                               [ NORTH / උතුර ]
+                                Lebanon (ලෙබනනය)
+                                       │
+      [ WEST / බටහිර ]                 │                 [ EAST / නැගෙනහිර ]
+Mediterranean Sea (මධ්‍යධරණී මුහුද) ◄─ [ ISRAEL ] ─► Syria (ඊසාන) &amp; Jordan (ජෝර්දානය)
+                                       │
+                                       │
+                                Egypt (ඊජිප්තුව)
+                               [ SOUTH / දකුණ ]
+</code></pre>
+<h3>1C. The B.O.R.D.E.R. memory formula (මතක ආධාරකය) (විනාඩි 2)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Direction (දිශාව)</th>
+<th style="text-align: left;">Border Country (මායිම් රට)</th>
+<th style="text-align: left;">memory formula Anchor (මතක තබාගන්නා ක්‍රමය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>North (උතුර)</strong></td>
+<td style="text-align: left;"><strong>Lebanon</strong></td>
+<td style="text-align: left;"><strong>L</strong>ebanon in the north</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Northeast (ඊසාන)</strong></td>
+<td style="text-align: left;"><strong>Syria</strong></td>
+<td style="text-align: left;"><strong>S</strong>yria on the horizon</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>East (නැගෙනහිර)</strong></td>
+<td style="text-align: left;"><strong>Jordan</strong></td>
+<td style="text-align: left;"><strong>J</strong>ordan river to the east</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Southwest (නිරිත)</strong></td>
+<td style="text-align: left;"><strong>Egypt</strong></td>
+<td style="text-align: left;"><strong>E</strong>gypt by the southern desert</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 2 — Economy, Technology &amp; Currency (ආර්ථිකය, තාක්ෂණය සහ මුදල් ඒකකය) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> ආර්ථික තොරතුරු ඔස්සේ භාෂාව නැවත භාවිතය.</p>
+</blockquote>
+<h3>2A. Scene 2 — The "Startup Nation" &amp; The Shekel (විනාඩි 5)</h3>
+<blockquote>
+<p>Israel is famous worldwide as the <strong>"Startup Nation"</strong>. Despite having a small land area and desert regions, it is a global leader in high-tech innovation, drip irrigation agriculture, water recycling, and modern supermarket logistics.  </p>
+<p>When Dilan works in Israel, he will be paid in the national currency: the <strong>New Israeli Shekel (NIS)</strong>.<br />
+- 1 Shekel is divided into 100 <em>Agorot</em>.<br />
+- A typical monthly salary for supermarket logistics workers ranges between <strong>7,000 to 8,000 NIS</strong>, which provides a strong financial upgrade to support his family in Sri Lanka.</p>
+</blockquote>
+<h3>2B. Key Economic Vocabulary Table (ආර්ථික වචන මාලාව) (විනාඩි 3)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">English Term</th>
+<th style="text-align: left;">Pronunciation</th>
+<th style="text-align: left;">Meaning in Context (තේරුම සහ සන්දර්භය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Currency</strong></td>
+<td style="text-align: left;">/ˈkʌrənsi/</td>
+<td style="text-align: left;">රටක නිල මුදල් ඒකකය (New Israeli Shekel)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Commercial Hub</strong></td>
+<td style="text-align: left;">/kəˈmɜːʃəl hʌb/</td>
+<td style="text-align: left;">ව්‍යාපාරික, මූල්‍ය සහ වෙළඳ මධ්‍යස්ථානය (Tel Aviv)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Startup Nation</strong></td>
+<td style="text-align: left;">/ˈstɑːtˌʌp ˈneɪʃən/</td>
+<td style="text-align: left;">තාක්ෂණික නායකත්වය නිසා ඊශ්‍රායලයට කියන ගෝලීය නාමය</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Agriculture</strong></td>
+<td style="text-align: left;">/ˈæɡrɪˌkʌltʃər/</td>
+<td style="text-align: left;">නවීන කෘෂිකර්මාන්තය සහ හරිතාගාර වගාව</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 3 — Culture, Faith &amp; Shabbat (සංස්කෘතිය, ආගම සහ සබත් දිනය) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> රැකියා පරිසරයට අදාළ සංස්කෘතික දැනුවත්භාවය.</p>
+</blockquote>
+<h3>3A. Scene 3 — The Rhythm of Shabbat (විනාඩි 5)</h3>
+<blockquote>
+<p>In Israel, the primary religion is <strong>Judaism</strong>, and the official language is <strong>Hebrew</strong>.  </p>
+<p>The Israeli workweek is different from Sri Lanka:<br />
+- The standard workweek runs from <strong>Sunday to Thursday</strong> (or Friday early afternoon).<br />
+- <strong>Shabbat (שַׁבָּת)</strong> is the Jewish holy day of rest.<br />
+- Shabbat begins at <strong>Friday sunset</strong> and ends at <strong>Saturday sunset</strong>.  </p>
+<p>During Shabbat, public transportation stops, and most government offices and retail stores close so families can rest together. Supermarket and logistics shifts are organized around this weekly cycle.</p>
+</blockquote>
+<h3>3B. The S.H.A.B.B.A.T. Anchor (මතක ආධාරකය) (විනාඩි 3)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                  THE S.H.A.B.B.A.T. CYCLE                 │
+   │                                                           │
+   │   S ──► Sunset Friday (සිකුරාදා හිරු බැසීමෙන් ඇරඹේ)       │
+   │   H ──► Holy Day in Judaism (යුදෙව් ශුද්ධ විවේක දිනය)     │
+   │   A ──► All Public Offices Close (පොදු ආයතන වැසේ)        │
+   │   B ──► Business Resumes Saturday Night (සෙනසුරාදා රෑ විවෘත වේ) │
+   │   B ──► Better Energy for New Week (නව සතියට ශක්තිය)      │
+   │   A ──► Always Sunday to Thursday Workweek (ඉරිදා-බ්‍රහස්පතින්දා වැඩ සතිය) │
+   │   T ──► Time for Rest and Family (පවුල සහ විවේකය සඳහා කාලය) │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<blockquote>
+<p><strong>මතක තබා ගැනීමේ කෙටි ක්‍රමය:</strong> <strong>Shabbat</strong> = සිකුරාදා හිරු බැසීමෙන් ආරම්භ වී සෙනසුරාදා හිරු බැසීමෙන් අවසන් වන යුදෙව් නිවාඩු දිනයයි. වැඩ සතිය ආරම්භ වන්නේ ඉරිදා (Sunday) දිනකය.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (ප්‍රශ්නෝත්තර ආකෘති) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සරල SVO ආකෘතියෙන් සෘජු Q&amp;A පුහුණුව.</p>
+</blockquote>
+<h3>Q1: "Where is Israel located and what are its borders?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"Israel is located in the Middle East along the Mediterranean Sea, Sir.**  
+> It shares land borders with **Lebanon** in the north, **Syria** and **Jordan** in the east, and **Egypt** in the southwest."
+
+</details>
+
+<h3>Q2: "What is the capital city and what is the currency of Israel?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"The capital of Israel is Jerusalem, Sir.**  
+> The main commercial and financial city is **Tel Aviv**.  
+> The official currency is the **New Israeli Shekel (NIS)**."
+
+</details>
+
+<h3>Q3: "What do you know about Israel's economy and workweek?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"Israel is known globally as the 'Startup Nation' for its high-tech and modern agriculture.**  
+> The official language is **Hebrew**.  
+> The workweek runs from **Sunday to Thursday**, and **Shabbat** is the day of rest from Friday evening to Saturday evening."
+
+</details>
+
+<h3>Q4: "Why do you want to work in Israel specifically?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"I want to work in Israel because it is a developed country with advanced technology and high standards.**  
+> I want to gain valuable international work experience, earn a good income in Shekels, and build a secure economic future for my family."
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (කතා කිරීම සහ ස්වයං පරීක්ෂාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> මෘදු ප්‍රකාශන පියවර: Whisper කිරීම → Cloze අවබෝධය → Vocabulary සටහන් පොත.</p>
+</blockquote>
+<h3>5A. The 3-Sentence Whisper Drill (විනාඩි 3)</h3>
+<p>පහත වාක්‍ය 3 එකක් 5 වතාවක් බැගින් පැහැදිලි උච්චාරණයෙන් whisper කරන්න:<br />
+1. <em>"The capital of Israel is Jerusalem, and the currency is the Shekel."</em><br />
+2. <em>"Israel shares borders with Lebanon, Syria, Jordan, and Egypt."</em><br />
+3. <em>"The workweek runs from Sunday to Thursday, and Shabbat is the day of rest."</em></p>
+<h3>5B. Cloze Comprehension Check — හිස්තැන් පුරවන්න (විනාඩි 3)</h3>
+<p>නිවැරදි කරුණු යොදා හිස්තැන් පුරවන්න:</p>
+<ol>
+<li>The capital of Israel is <strong><em>_</em></strong><em>, while the main financial hub is <strong><em>_</em></strong></em> <strong><em>_</em></strong>_.<br />
+<em>(තෝරාගැනීම්: Jerusalem / Tel Aviv)</em></li>
+<li>The official currency of Israel is the New Israeli <strong><em>_</em></strong>_.<br />
+<em>(තෝරාගැනීම්: Shekel / Rupee)</em></li>
+<li>Shabbat begins on <strong><em>_</em></strong><em> evening and finishes on <strong><em>_</em></strong></em> evening.<br />
+<em>(තෝරාගැනීම්: Friday / Saturday)</em></li>
+</ol>
+<details>
+<summary><b>නිවැරදි පිළිතුරු (Answer Key)</b></summary>
+
+1. **Jerusalem** / **Tel Aviv**
+2. **Shekel**
+3. **Friday** / **Saturday**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (විනාඩි 2)</h3>
+<p>ඔබගේ සටහන් පොතට මෙම වචන 3 එකතු කරන්න:<br />
+1. <strong>Currency</strong> /ˈkʌrənsi/ (Noun) = රටක භාවිත වන මුදල් ඒකකය. <em>(Ex: "The official currency of Israel is the Shekel.")</em><br />
+2. <strong>Border</strong> /ˈbɔːdər/ (Noun) = රටවල් දෙකක් වෙන් කරන දේශසීමාව. <em>(Ex: "Israel shares a border with Jordan.")</em><br />
+3. <strong>Shabbat</strong> /ʃəˈbɑːt/ (Noun) = සිකුරාදා හිරු බැසීමේ සිට සෙනසුරාදා හිරු බැසීම දක්වා වන යුදෙව් විවේක දිනය. <em>(Ex: "Stores close during Shabbat.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (පැය 2ක් ඇතුළත):</strong> <strong>B.O.R.D.E.R.</strong> සිතියම සහ <strong>S.H.A.B.B.A.T.</strong> චක්‍රය විනාඩි 3ක් බලන්න.</li>
+<li>[ ] <strong>2nd Review (හෙට උදෑසන):</strong> ශරීරය කෙළින් තබාගෙන රට ආශ්‍රිත Q&amp;A පිළිතුරු 4 whisper කරන්න (විනාඩි 5).</li>
+<li>[ ] <strong>3rd Review (සතියකින්):</strong> Voice recorder එකට ඊශ්‍රායලයේ භූගෝලය විස්තර කර record කරන්න (විනාඩි 10).</li>
+<li>[ ] <strong>4th Review (මාසයකින්):</strong> සම්මුඛ පරීක්ෂණ මණ්ඩලය ඉදිරියේ පෙනී සිටීමේ සම්පූර්ණ mock review එකක් කරන්න (විනාඩි 15).</li>
+</ul>
+<hr />
+<h2>Optional Monitor Appendix (ව්‍යාකරණ කෙරෙහි උනන්දු අය සඳහා පමණි)</h2>
+<blockquote>
+<p><em>සටහන: භාෂාව උකහා ගැනීම සිදුවන්නේ පණිවිඩය අවබෝධ කරගැනීමෙනි. පහත ව්‍යාකරණ නීති ඇත්තේ අවශ්‍ය නම් බලාගැනීමට පමණි.</em></p>
+</blockquote>
+<ul>
+<li><strong>Proper Nouns &amp; Capitalization:</strong> රටවල්, නගර සහ විශේෂ සංස්කෘතික නම් සැමවිටම Capital අකුරින් ලියන්න:</li>
+<li><em>Israel, Jerusalem, Tel Aviv, Mediterranean Sea, Hebrew, Judaism, Shabbat, Shekel.</em></li>
+<li><strong>Prepositions with Geography:</strong></li>
+<li><em>in</em> the Middle East, <em>along</em> the Mediterranean Sea, <em>with</em> Jordan, <em>from</em> Sunday <em>to</em> Thursday.</li>
+</ul>
+<hr />
+<p><strong>End of Lesson 0007</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0007 — Israel: භූගෝලය, සංස්කෘතිය සහ සබත් දිනය [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> ඊශ්‍රායලය පිළිබඳ මූලික භූගෝලීය සහ සංස්කෘතික දැනුම interview එකේදී විශ්වාසයෙන් ඉදිරිපත් කිරීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li>ඊශ්‍රායලයේ අගනුවර, ප්‍රධාන නගරය සහ මුදල් ඒකකය හඳුනා ගැනීම.</li>
+<li>දේශසීමා සහ රටේ වැදගත්කම පැහැදිලි කිරීම.</li>
+<li>සබත් දිනය (Shabbat) සහ වැඩ සතිය පිළිබඳ දැනුවත් වීම.</li>
+</ol>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. දේශසීමා සූත්‍රය: <strong>B.O.R.D.E.R.</strong></h3>
+<p>ඊශ්‍රායලයේ මායිම් රටවල්:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">දිශාව</th>
+<th style="text-align: left;">රට</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>උතුර (North)</strong></td>
+<td style="text-align: left;"><strong>L</strong>ebanon (ලෙබනනය)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>ඊසාන (Northeast)</strong></td>
+<td style="text-align: left;"><strong>S</strong>yria (සිරියාව)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>නැගෙනහිර (East)</strong></td>
+<td style="text-align: left;"><strong>J</strong>ordan (ජෝර්දානය)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>නිරිත (Southwest)</strong></td>
+<td style="text-align: left;"><strong>E</strong>gypt (ඊජිප්තුව)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>2. සබත් දිනය: <strong>S.H.A.B.B.A.T. සූත්‍රය</strong></h3>
+<p>යුදෙව් නිවාඩු දිනය:<br />
+- <strong>S</strong>unset Friday (සිකුරාදා හිරු බැසීමෙන් ඇරඹේ).<br />
+- <strong>H</strong>oly Day (ශුද්ධ විවේක දිනය).<br />
+- <strong>A</strong>ll offices close (පොදු ආයතන වැසේ).<br />
+- <strong>B</strong>usiness resumes Saturday night (සෙනසුරාදා රෑ විවෘත වේ).<br />
+- <strong>B</strong>etter energy for new week (නව සතියට ශක්තිය).<br />
+- <strong>A</strong>lways Sunday to Thursday workweek (ඉරිදා-බ්‍රහස්පතින්දා වැඩ).<br />
+- <strong>T</strong>ime for rest and family (විවේකය).</p>
+<hr />
+<h2>ප්‍රධාන තොරතුරු සාරාංශය</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">විෂය</th>
+<th style="text-align: left;">තොරතුර</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Capital</strong></td>
+<td style="text-align: left;">Jerusalem</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Commercial Hub</strong></td>
+<td style="text-align: left;">Tel Aviv</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Currency</strong></td>
+<td style="text-align: left;">New Israeli Shekel (NIS)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Official Language</strong></td>
+<td style="text-align: left;">Hebrew</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Work Week</strong></td>
+<td style="text-align: left;">Sunday to Thursday</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>සිතියම් මවාගැනීම:</strong> ඉහත මායිම් රටවල් 4 මනසින් මවාගෙන නම් කරන්න.</li>
+<li><strong>සබත් දිනය පැහැදිලි කිරීම:</strong> සිකුරාදා සිට සෙනසුරාදා දක්වා සබත් දිනය පිළිබඳව පැහැදිලි කිරීම 3 වරක් whisper කරන්න.</li>
+<li><strong>ප්‍රශ්න පුහුණුව:</strong> රට ආශ්‍රිත ප්‍රශ්න 4ට උත්තර 2 වතාවක් හඬ නඟා කියන්න.</li>
+</ol>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Currency</strong> = මුදල් ඒකකය (<em>"The currency is the Shekel."</em>)</li>
+<li><strong>Border</strong> = දේශසීමාව (<em>"Israel shares borders with Egypt and Jordan."</em>)</li>
+<li><strong>Shabbat</strong> = සබත් දිනය (<em>"Stores close during Shabbat."</em>)</li>
+</ul></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0006-warehouse-logistics-machinery.html"><span aria-hidden="true">←</span><span>0006 · Warehouse Logistics</span></a>
+        <a class="next" href="0008-dugri-workplace-communication.html"><span aria-hidden="true">→</span><span>0008 · Direct Workplace Communication</span></a>
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>

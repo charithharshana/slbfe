@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Supermarket Operations: Learn the everyday language of stock rotation, safe shelves, cold storage, spills, and helpful service.">
+  <title>Lesson 0004 | Supermarket Operations</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0004</small><span>Supermarket Operations</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html" selected>0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">04 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0004</div>
+            <h1>Supermarket Operations</h1>
+            <p class="hero-lead">Learn the everyday language of stock rotation, safe shelves, cold storage, spills, and helpful service.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0004 — Supermarket Operations: FIFO &amp; Floor Safety Mastery</h1>
+<blockquote>
+<p><strong>Mission link:</strong> In Israeli supermarket interviews, recruiters immediately test your practical retail skills. If you cannot explain the <strong>FIFO method</strong> or how to handle a <strong>broken bottle / liquid spill</strong> in English, the interview panel will assume your retail experience is fake. This lesson equips you to answer technical retail questions with total confidence using simple, fluent sentences.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> You will experience a day on the supermarket floor with Dilan across three vivid story scenes. Input comes first (reading and listening to stories), followed by context-based comprehension, memory formulas for permanent storage, and gentle speaking drills at the end. Grammar rules are kept in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, with <strong>more than 5 years of supermarket and retail experience</strong> (including 3 months at Keells Supermarket and running his own retail grocery in Tangalle, plus forklift operator certification).</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>comprehensible input, not mechanical memorization</strong> — you will be able to:<br />
+1. <strong>Explain the FIFO principle</strong> (<em>First-In, First-Out</em>) clearly and demonstrate how to rotate products on shelves.<br />
+2. <strong>Describe step-by-step spill and hazard protocols</strong> using the <strong>S.P.I.L.L.</strong> method.<br />
+3. <strong>Detail supermarket restocking procedures</strong> from the warehouse (<em>machsan</em>) to display shelves using a pallet jack.<br />
+4. <strong>Apply the H.E.A.T. customer service framework</strong> when assisting shoppers.<br />
+5. <strong>Differentiate cleaning chemicals and PPE</strong> (surface sanitizers vs. heavy degreasers).<br />
+6. <strong>Hold 3 core operational memory formulas:</strong> <strong>F.I.F.O.</strong>, <strong>S.P.I.L.L.</strong>, and <strong>H.E.A.T.</strong></p>
+<p><strong>Estimated time:</strong> 40 minutes, split into <strong>5 micro-blocks</strong> of ~8 min each.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — you already understand supermarket work; this lesson provides the exact <strong>professional English phrases</strong> Israeli recruiters listen for.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §3 (Supermarket &amp; Retail Logistics Technical Q&amp;As: Q1, Q2, Q4, Q5, Q6, Q8, Q10), §8.1 Don'ts #3 &amp; #4, §10 (Vocabulary Bank &amp; Hebrew Loanwords)</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input &amp; Story-Based Acquisition), Part I §3 (Spaced Repetition &amp; Forgetting Curve), Part II §2 (3-Words-a-Day Journal)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — visualize the scene)</h2>
+<blockquote>
+<p><em>The Israeli interviewer leans toward his microphone and looks directly at Dilan. He asks with a firm voice:</em><br />
+<strong>"What does FIFO mean, and what do you do when new dairy milk boxes arrive?"</strong>  </p>
+<p><em>Dilan does not panic. He takes a steady breath, smiles subtly, and replies in clear, simple English:</em><br />
+<strong>"FIFO means First-In, First-Out, Sir. When new milk arrives, I check the expiration dates. I put the new milk at the back of the shelf and pull the older milk to the front. This prevents spoilage and keeps products fresh for customers."</strong>  </p>
+<p><em>The interviewer smiles, nods, and ticks the score sheet: "Solid retail knowledge. Excellent English."</em></p>
+</blockquote>
+<p>Answering technical questions does not require complex academic vocabulary. It requires <strong>exact, practical terms</strong> organized in clear <strong>Subject + Verb + Object (SVO)</strong> sentences.</p>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Morning Restock (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Pre-input immersion through structured story narrative ($i+1$). Absorb the language naturally by visualizing the action.</p>
+</blockquote>
+<h3>1A. Scene 1 — The Milk Aisle at 7:00 AM (4 min)</h3>
+<p>Read this story slowly. Picture Dilan working in the supermarket aisle:</p>
+<blockquote>
+<p>At 7:00 AM, Dilan enters the dairy aisle. A large trolley of fresh milk bottles has just arrived from the supplier.<br />
+Dilan checks the <strong>display shelf</strong>. There are 8 bottles of milk already on the shelf with an <strong>expiration date</strong> of October 12.<br />
+The new milk bottles in the delivery crate have an expiration date of October 18.  </p>
+<p>Dilan does not place the new milk directly in front. Instead, he systematically pulls the older bottles (October 12) forward to the <strong>front edge of the shelf</strong>.<br />
+Then, he stacks the newest bottles (October 18) neatly at the <strong>back of the shelf</strong>.  </p>
+<p>A customer walks down the aisle, reaches out, and takes a bottle from the front. The customer gets fresh milk, and the supermarket avoids <strong>spoilage and product shrink</strong>.</p>
+</blockquote>
+<h3>1B. Key Observations (4 min)</h3>
+<p>Notice the three simple action verbs Dilan used:<br />
+1. <strong>Check</strong> → <em>I check the expiration date.</em><br />
+2. <strong>Pull forward</strong> → <em>I pull older products to the front.</em><br />
+3. <strong>Place behind</strong> → <em>I place new stock at the back.</em></p>
+<pre><code>                     ┌────────────────────────┐
+                     │     DISPLAY SHELF      │
+                     │                        │
+       [ FRONT ] ───►│  Older Stock (Oct 12)  │───► Sold First to Customer
+                     │                        │
+       [  BACK ] ───►│  Newer Stock (Oct 18)  │───► Moves forward tomorrow
+                     └────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 2 — Story Context &amp; Hazard Protocol (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Repetition with variation. The vocabulary is recycled through an emergency incident on the retail floor.</p>
+</blockquote>
+<h3>2A. Scene 2 — The Glass Spill in Aisle 4 (5 min)</h3>
+<blockquote>
+<p>It is 11:30 AM. A customer accidentally knocks an olive oil glass bottle off the top shelf. The bottle crashes onto the tiled floor. Yellow oil and sharp glass shards scatter across the busy aisle.  </p>
+<p>Dilan is 10 meters away. He acts immediately according to safety rules:</p>
+<ol>
+<li><strong>Secure the area:</strong> Dilan stands near the spill and politely warns nearby shoppers: <em>"Please watch your step, Sir."</em>  </li>
+<li><strong>Place warning sign:</strong> He immediately places a bright yellow <strong>"CAUTION: WET FLOOR"</strong> warning cone in front of the spill.  </li>
+<li><strong>Sweep glass:</strong> Wearing heavy protective gloves (<strong>PPE</strong>), he sweeps up the broken glass shards with a dustpan and brush and disposes of them in a rigid bin.  </li>
+<li><strong>Mop the liquid:</strong> He takes a mop and uses a commercial floor <strong>degreaser (D10)</strong> to clean the slippery oil film.  </li>
+<li><strong>Leave clean:</strong> He allows the floor to dry completely before removing the caution sign.  </li>
+</ol>
+<p>The aisle is safe, zero customers slipped, and business continues smoothly.</p>
+</blockquote>
+<h3>2B. The S.P.I.L.L. Safety memory formula (3 min)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Letter</th>
+<th style="text-align: left;">Action</th>
+<th style="text-align: left;">Professional Interview Phrase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Secure</strong></td>
+<td style="text-align: left;"><em>"I immediately secure the area to protect customers."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Place Sign</strong></td>
+<td style="text-align: left;"><em>"I place a physical 'Caution: Wet Floor' warning sign."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>I</strong></td>
+<td style="text-align: left;"><strong>Isolate &amp; Sweep</strong></td>
+<td style="text-align: left;"><em>"I isolate the glass and sweep it up safely with PPE gloves."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Liquid Mop</strong></td>
+<td style="text-align: left;"><em>"I mop the oily floor with the correct cleaning chemical."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Leave Clean</strong></td>
+<td style="text-align: left;"><em>"I ensure the surface is dry before removing the sign."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 3 — Customer Service &amp; Hebrew Loanwords (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> High-frequency functional dialogue practice in realistic supermarket scenarios.</p>
+</blockquote>
+<h3>3A. Scene 3 — The Confused Hebrew-Speaking Customer (5 min)</h3>
+<blockquote>
+<p>An elderly Israeli customer approaches Dilan in Aisle 2. She speaks quickly in Hebrew:<br />
+<em>"סליחה, איפה השמן זית?" (Slicha, eifo ha-shemen zayit? / Excuse me, where is the olive oil?)</em>  </p>
+<p>Dilan does not know fluent Hebrew yet, but he stays calm and professional. He does not panic or run away.<br />
+He smiles politely, listens attentively, and catches the word <em>"Shemen"</em> (oil) or observes her gesturing toward cooking items.  </p>
+<p>Dilan applies the <strong>H.E.A.T.</strong> method:<br />
+- <strong>H (Hear):</strong> He listens carefully without interrupting.<br />
+- <strong>E (Empathize):</strong> He nods with a polite, friendly expression.<br />
+- <strong>A (Apologize/Assist):</strong> He says calmly: <em>"One moment please, Madam. Let me show you."</em><br />
+- <strong>T (Take Action):</strong> He walks with her to Aisle 4 and points directly to the olive oil shelf. If he cannot understand, he politely guides her to the Hebrew-speaking supervisor.</p>
+</blockquote>
+<h3>3B. Essential Israeli Supermarket Vocabulary &amp; Loanwords (3 min)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">English Term</th>
+<th style="text-align: left;">Pronunciation</th>
+<th style="text-align: left;">Hebrew Retail Word</th>
+<th style="text-align: left;">Meaning / Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Aisle</strong></td>
+<td style="text-align: left;"><code>/aɪl/</code> (s is silent!)</td>
+<td style="text-align: left;"><em>Ma'avar</em></td>
+<td style="text-align: left;">Customer walkway between shelves</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Back Storeroom</strong></td>
+<td style="text-align: left;"><code>/stɔːr-ruːm/</code></td>
+<td style="text-align: left;"><em>Machsan</em></td>
+<td style="text-align: left;">Warehouse area where extra stock sits</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Display Shelf</strong></td>
+<td style="text-align: left;"><code>/dɪˈspleɪ ʃɛlf/</code></td>
+<td style="text-align: left;"><em>Madaf</em></td>
+<td style="text-align: left;">Shelves where customers pick products</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Shopping Cart</strong></td>
+<td style="text-align: left;"><code>/ʃɒpɪŋ kɑːt/</code></td>
+<td style="text-align: left;"><em>Agala / Kuppa</em></td>
+<td style="text-align: left;">Wheeled cart used by shoppers</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pallet Jack</strong></td>
+<td style="text-align: left;"><code>/ˈpælət dʒæk/</code></td>
+<td style="text-align: left;"><em>Ramesh / Jack</em></td>
+<td style="text-align: left;">Hand hydraulic lifter to move wooden pallets</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Degreaser</strong></td>
+<td style="text-align: left;"><code>/diːˈɡriːsər/</code></td>
+<td style="text-align: left;"><em>D10 Chemical</em></td>
+<td style="text-align: left;">Heavy-duty kitchen/floor oil remover</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Third encounter with target language in direct interview Q&amp;A format. Simple SVO sentence structures.</p>
+</blockquote>
+<h3>Q1: "Explain the FIFO method and how you apply it."</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"FIFO stands for First-In, First-Out, Sir.**  
+> It is an inventory method where older items are sold first to prevent spoilage.  
+> When new stock arrives, I check the expiration dates.  
+> I put the new products at the **back** of the shelf and pull older products to the **front**.  
+> This ensures customers always receive fresh products and minimizes store shrink."
+
+</details>
+
+<h3>Q2: "What immediate steps do you take if a liquid bottle breaks in an aisle?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"My first priority is customer safety.**  
+> First, I secure the area and put up a **'Caution: Wet Floor'** warning sign.  
+> Next, I wear protective gloves and sweep up any broken glass.  
+> Then, I mop the liquid using the proper cleaning chemical and degreaser.  
+> I remove the warning sign only after the floor is completely dry."
+
+</details>
+
+<h3>Q3: "What would you do if a display shelf is completely empty?"</h3>
+<details>
+<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
+
+> **"I replenish the shelf immediately.**  
+> I go to the back storeroom (*machsan*) and bring the required stock using a pallet jack.  
+> If the item is completely out of stock in the warehouse, I immediately report it to my supervisor."
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Gentle output progression: Read silently → Whisper drill → Out loud recording.</p>
+</blockquote>
+<h3>5A. The 3-Sentence Whisper Drill (3 min)</h3>
+<p>Whisper these 3 exact sentences 5 times each with steady pacing:<br />
+1. <em>"FIFO means First-In, First-Out — older items go to the front."</em><br />
+2. <em>"I immediately place a warning sign to keep customers safe."</em><br />
+3. <em>"I use a pallet jack to bring stock from the back storeroom."</em></p>
+<h3>5B. Cloze Comprehension Check (3 min)</h3>
+<p>Fill in the missing technical words:</p>
+<ol>
+<li>When restocking dairy items, older products are pulled to the <strong><em>_</em></strong><em> and newer stock goes to the <strong><em>_</em></strong></em>.<br />
+<em>(Choices: front / back)</em></li>
+<li>In the event of a liquid spill, the very first step is to <strong><em>_</em></strong><em> the area and place a <strong><em>_</em></strong></em> sign.<br />
+<em>(Choices: secure / caution)</em></li>
+<li>To move heavy pallets from the back storeroom (<em>machsan</em>), workers use a <strong><em>_</em></strong><em> <strong><em>_</em></strong></em>.<br />
+<em>(Choices: pallet jack / shopping cart)</em></li>
+</ol>
+<details>
+<summary><b>Click for Answer Key</b></summary>
+
+1. **front** / **back**
+2. **secure** / **caution** (or *warning*)
+3. **pallet jack**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (2 min)</h3>
+<p>Add these 3 words into your personal physical vocabulary notebook:<br />
+1. <strong>Replenish</strong> <code>/rɪˈplɛnɪʃ/</code> (Verb) = Re-fill empty shelves. <em>(Ex: "I replenish empty display shelves every morning.")</em><br />
+2. <strong>Expiration Date</strong> <code>/ˌɛkspəˈreɪʃən deɪt/</code> (Noun) = Date when food spoils. <em>(Ex: "I always check expiration dates before stocking.")</em><br />
+3. <strong>Hazard</strong> <code>/ˈhæzəd/</code> (Noun) = Danger / Risk. <em>(Ex: "Broken glass is a serious slip hazard.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (within 2 hours):</strong> Skim the <strong>S.P.I.L.L.</strong> table and FIFO diagram (3 min).</li>
+<li>[ ] <strong>2nd Review (tomorrow morning):</strong> Whisper the 3 interview Q&amp;A answers while standing in front of a mirror (5 min).</li>
+<li>[ ] <strong>3rd Review (in 1 week):</strong> Practice answering Q1 and Q2 on smartphone voice recorder; check pronunciation of <em>aisle</em> and <em>replenish</em> (10 min).</li>
+<li>[ ] <strong>4th Review (in 1 month):</strong> Full mock rehearsal of technical questions before the interview board (15 min).</li>
+</ul>
+<hr />
+<h2>Pedagogical Mapping Table (<code>info_final.md</code> Alignment)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Learning Science Principle</th>
+<th style="text-align: left;">Location in <code>info_final.md</code></th>
+<th style="text-align: left;">Practical Implementation in Lesson 0004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Comprehensible Input ($i+1$)</strong></td>
+<td style="text-align: left;">Part I §7</td>
+<td style="text-align: left;">Introduced retail vocabulary inside 3 relatable story scenes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bloom's Taxonomy (Application)</strong></td>
+<td style="text-align: left;">Part I §2</td>
+<td style="text-align: left;">Moving beyond memorizing definitions to solving realistic floor crises.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desirable Difficulty (Retrieval)</strong></td>
+<td style="text-align: left;">Part I §6</td>
+<td style="text-align: left;"><code>&lt;details&gt;</code> dropdowns and minimal cloze checks force active recall.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cognitive Load Optimization</strong></td>
+<td style="text-align: left;">Part I §4</td>
+<td style="text-align: left;">Broken into 5 micro-blocks of ≤8 minutes with zero grammar jargon.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>memory formula Anchors</strong></td>
+<td style="text-align: left;">Part I §3</td>
+<td style="text-align: left;"><strong>F.I.F.O.</strong>, <strong>S.P.I.L.L.</strong>, and <strong>H.E.A.T.</strong> for stress-proof recall.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3-Words-a-Day Journal</strong></td>
+<td style="text-align: left;">Part II §2</td>
+<td style="text-align: left;">Specific vocabulary entries with phonetic transcription and usage.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Optional Monitor Appendix (For Grammar Enthusiasts Only)</h2>
+<blockquote>
+<p><em>Note: You do NOT need to study this to pass the interview. Krashen's CI method proves that language acquisition happens through understanding messages, not memorizing rules.</em></p>
+</blockquote>
+<ul>
+<li><strong>Action Sequence Connectors:</strong> When explaining procedures, use sequence markers: <em>First... Next... Then... Finally...</em></li>
+<li><em>"First, I secure the area. Next, I put up the sign. Then, I mop the floor. Finally, I remove the cone."</em></li>
+<li><strong>Silent Letters Alert:</strong> The word <strong>aisle</strong> is pronounced <code>/aɪl/</code> (the 's' is completely silent, just like 'island'). Never say "ice-le".</li>
+</ul></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0004 — Supermarket Operations: FIFO ක්‍රමය සහ සුපිරි වෙළඳසැල් ආරක්ෂාව (FIFO &amp; Floor Safety Mastery)</h1>
+<blockquote>
+<p><strong>Mission link:</strong> ඊශ්‍රායල සුපර්මාර්කට් සම්මුඛ පරීක්ෂණවලදී, recruiters ලා ඔබගේ ප්‍රායෝගික සිල්ලර වෙළඳසැල් දැනුම (practical retail skills) ක්ෂණිකව පරීක්ෂා කරයි. ඔබට <strong>FIFO ක්‍රමය</strong> හෝ <strong>බිඳුණු බෝතලයක් / බිම වැටුණු දියරයක් (liquid spill)</strong> හසුරුවන ආකාරය ඉංග්‍රීසියෙන් පැහැදිලි කිරීමට නොහැකි වුවහොත්, ඔබගේ පළපුරුද්ද ව්‍යාජ එකක් බව interview panel එක නිගමනය කරනු ඇත. මෙම පාඩම මඟින් සරල, චතුර වාක්‍ය භාවිතයෙන් පූර්ණ විශ්වාසයකින් යුතුව තාක්ෂණික සිල්ලර ප්‍රශ්නවලට පිළිතුරු දීමට ඔබව සූදානම් කරයි.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> සජීවී කතා දර්ශන 3ක් ඔස්සේ ඩිලාන් සමඟ සුපිරි වෙළඳසැලක දවසක් ඔබ අත්විඳිනු ඇත. පළමුව Input (කතා කියවීම සහ සවන්දීම), පසුව සන්දර්භය පදනම් කරගත් අවබෝධය (comprehension), ස්ථිර මතකය සඳහා මතක ආධාරක (memory formulas), සහ අවසානයේ මෘදු කතා කිරීමේ අභ්‍යාස (speaking drills) සිදු කෙරේ. Grammar නීති Optional Monitor Appendix එක තුළ දක්වා ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, supermarket සහ retail ක්ෂේත්‍රයේ <strong>වසර 5කට වැඩි පළපුරුද්ද</strong> (Keells Supermarket හි මාස 3ක සේවය සහ තංගල්ලේ retail store එකක් පවත්වාගෙන යාමේ පළපුරුද්ද මෙන්ම forklift operator සහතිකයද සහිතව).</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>යාන්ත්‍රිකව කටපාඩම් කිරීමෙන් තොරව, Comprehensible Input මඟින්ම</strong> — ඔබට හැකිවනු ඇත:<br />
+1. <strong>FIFO මූලධර්මය</strong> (<em>First-In, First-Out</em>) පැහැදිලිව විස්තර කිරීමට සහ රාක්කවල නිෂ්පාදන මාරු කරන (rotate කරන) ආකාරය පෙන්වීමට.<br />
+2. <strong>S.P.I.L.L.</strong> ක්‍රමය භාවිතයෙන් පියවරෙන් පියවර අනතුරු සහ දියර කාන්දුවීම් හැසිරවීමේ ක්‍රමවේදය <strong>විස්තර කිරීමට (Describe)</strong>.<br />
+3. Pallet jack එකක් භාවිතයෙන් ගබඩාවේ (<em>machsan</em>) සිට ප්‍රදර්ශන රාක්ක (display shelves) දක්වා භාණ්ඩ පිරවීමේ (restocking) ක්‍රියාවලිය <strong>විස්තර කිරීමට (Detail)</strong>.<br />
+4. පාරිභෝගිකයින්ට උපකාර කිරීමේදී <strong>H.E.A.T. පාරිභෝගික සේවා රාමුව</strong> යොදාගැනීමට.<br />
+5. පිරිසිදු කිරීමේ රසායනික ද්‍රව්‍ය සහ PPE උපකරණ <strong>වෙන්කර හඳුනා ගැනීමට (Differentiate)</strong> (මතුපිට විෂබීජ නාශක vs. තෙල් ඉවත් කරන degreasers).<br />
+6. මූලික මෙහෙයුම් මතක ආධාරක (memory formulas) 3ක් මතකයේ රඳවා ගැනීමට: <strong>F.I.F.O.</strong>, <strong>S.P.I.L.L.</strong>, සහ <strong>H.E.A.T.</strong></p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ <strong>micro-blocks 5කට</strong> බෙදා ඇත.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — සුපිරි වෙළඳසැල් වැඩ පිළිබඳව ඔබ දැනටමත් දනී; මෙම පාඩම මඟින් Israeli recruiters ලා බලාපොරොත්තු වන <strong>නිවැරදි වෘත්තීය ඉංග්‍රීසි යෙදුම් (professional English phrases)</strong> ලබාදෙයි.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §3 (Supermarket &amp; Retail Logistics Technical Q&amp;As: Q1, Q2, Q4, Q5, Q6, Q8, Q10), §8.1 Don'ts #3 &amp; #4, §10 (Vocabulary Bank &amp; Hebrew Loanwords)</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input &amp; Story-Based Acquisition), Part I §3 (Spaced Repetition &amp; Forgetting Curve), Part II §2 (3-Words-a-Day Journal)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — දර්ශනය සිතින් මවාගන්න / visualize the scene)</h2>
+<blockquote>
+<p><em>The Israeli interviewer leans toward his microphone and looks directly at Dilan. He asks with a firm voice:</em><br />
+<strong>"What does FIFO mean, and what do you do when new dairy milk boxes arrive?"</strong>  </p>
+<p><em>Dilan does not panic. He takes a steady breath, smiles subtly, and replies in clear, simple English:</em><br />
+<strong>"FIFO means First-In, First-Out, Sir. When new milk arrives, I check the expiration dates. I put the new milk at the back of the shelf and pull the older milk to the front. This prevents spoilage and keeps products fresh for customers."</strong>  </p>
+<p><em>The interviewer smiles, nods, and ticks the score sheet: "Solid retail knowledge. Excellent English."</em></p>
+</blockquote>
+<p>තාක්ෂණික ප්‍රශ්නවලට පිළිතුරු දීමට සංකීර්ණ උසස් වචන මාලාවක් අවශ්‍ය නොවේ. අවශ්‍ය වන්නේ පැහැදිලි <strong>Subject + Verb + Object (SVO)</strong> වාක්‍ය රටාවකින් සකස් වූ <strong>නිශ්චිත, ප්‍රායෝගික වචන (exact, practical terms)</strong> පමණි.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> ඊශ්‍රායල සුපර්මාර්කට් සම්මුඛ පරීක්ෂණයේදී තාක්ෂණික ප්‍රශ්න (FIFO ක්‍රමය, බිඳුණු බෝතල් පිරිසිදු කිරීම, රාක්ක පිරවීම) අනිවාර්යයෙන්ම අසයි. සංකීර්ණ ඉංග්‍රීසි අවශ්‍ය නැත; පැහැදිලි, සරල වාක්‍ය මඟින් ක්‍රියාවලිය පැහැදිලි කිරීම ප්‍රමාණවත් වේ.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Morning Restock (උදෑසන බඩු පිරවීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සැලසුම්ගත කතා සන්දර්භයක් ඔස්සේ භාෂාව උකහා ගැනීම ($i+1$). ක්‍රියාකාරකම සිතින් මවාගනිමින් භාෂාව ස්වභාවිකව අවශෝෂණය කරගන්න.</p>
+</blockquote>
+<h3>1A. Scene 1 — The Milk Aisle at 7:00 AM (විනාඩි 4)</h3>
+<p>මෙම කතාව සෙමෙන් කියවන්න. ඩිලාන් supermarket aisle එකේ වැඩ කරන අයුරු සිතින් මවාගන්න:</p>
+<blockquote>
+<p>At 7:00 AM, Dilan enters the dairy aisle. A large trolley of fresh milk bottles has just arrived from the supplier.<br />
+Dilan checks the <strong>display shelf</strong>. There are 8 bottles of milk already on the shelf with an <strong>expiration date</strong> of October 12.<br />
+The new milk bottles in the delivery crate have an expiration date of October 18.  </p>
+<p>Dilan does not place the new milk directly in front. Instead, he systematically pulls the older bottles (October 12) forward to the <strong>front edge of the shelf</strong>.<br />
+Then, he stacks the newest bottles (October 18) neatly at the <strong>back of the shelf</strong>.  </p>
+<p>A customer walks down the aisle, reaches out, and takes a bottle from the front. The customer gets fresh milk, and the supermarket avoids <strong>spoilage and product shrink</strong>.</p>
+</blockquote>
+<h3>1B. Key Observations — ප්‍රධාන නිරීක්ෂණ (විනාඩි 4)</h3>
+<p>ඩිලාන් භාවිතා කළ සරල ක්‍රියාපද (action verbs) 3 කෙරෙහි අවධානය යොමු කරන්න:<br />
+1. <strong>Check</strong> → <em>I check the expiration date.</em> (මම කල් ඉකුත්වීමේ දිනය පරීක්ෂා කරමි)<br />
+2. <strong>Pull forward</strong> → <em>I pull older products to the front.</em> (මම පැරණි භාණ්ඩ ඉදිරියට අදිමි)<br />
+3. <strong>Place behind</strong> → <em>I place new stock at the back.</em> (මම අලුත් තොග පිටුපසින් තබමි)</p>
+<pre><code>                     ┌────────────────────────┐
+                     │     DISPLAY SHELF      │
+                     │                        │
+        [ FRONT ] ───►│  Older Stock (Oct 12)  │───► Sold First to Customer
+                     │                        │
+        [  BACK ] ───►│  Newer Stock (Oct 18)  │───► Moves forward tomorrow
+                     └────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 2 — Story Context &amp; Hazard Protocol (හදිසි අනතුරු හැසිරවීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> Repetition with variation. හදිසි සිදුවීමක් සහිත කතාවක් ඔස්සේ වචන මාලාව නැවත භාවිතය.</p>
+</blockquote>
+<h3>2A. Scene 2 — The Glass Spill in Aisle 4 (විනාඩි 5)</h3>
+<blockquote>
+<p>It is 11:30 AM. A customer accidentally knocks an olive oil glass bottle off the top shelf. The bottle crashes onto the tiled floor. Yellow oil and sharp glass shards scatter across the busy aisle.  </p>
+<p>Dilan is 10 meters away. He acts immediately according to safety rules:</p>
+<ol>
+<li><strong>Secure the area:</strong> Dilan stands near the spill and politely warns nearby shoppers: <em>"Please watch your step, Sir."</em>  </li>
+<li><strong>Place warning sign:</strong> He immediately places a bright yellow <strong>"CAUTION: WET FLOOR"</strong> warning cone in front of the spill.  </li>
+<li><strong>Sweep glass:</strong> Wearing heavy protective gloves (<strong>PPE</strong>), he sweeps up the broken glass shards with a dustpan and brush and disposes of them in a rigid bin.  </li>
+<li><strong>Mop the liquid:</strong> He takes a mop and uses a commercial floor <strong>degreaser (D10)</strong> to clean the slippery oil film.  </li>
+<li><strong>Leave clean:</strong> He allows the floor to dry completely before removing the caution sign.  </li>
+</ol>
+<p>The aisle is safe, zero customers slipped, and business continues smoothly.</p>
+</blockquote>
+<h3>2B. The S.P.I.L.L. Safety memory formula (මතක ආධාරකය) (විනාඩි 3)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Letter</th>
+<th style="text-align: left;">Action (ක්‍රියාව)</th>
+<th style="text-align: left;">Professional Interview Phrase (සම්මුඛ පරීක්ෂණ වාක්‍යය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Secure</strong></td>
+<td style="text-align: left;"><em>"I immediately secure the area to protect customers."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Place Sign</strong></td>
+<td style="text-align: left;"><em>"I place a physical 'Caution: Wet Floor' warning sign."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>I</strong></td>
+<td style="text-align: left;"><strong>Isolate &amp; Sweep</strong></td>
+<td style="text-align: left;"><em>"I isolate the glass and sweep it up safely with PPE gloves."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Liquid Mop</strong></td>
+<td style="text-align: left;"><em>"I mop the oily floor with the correct cleaning chemical."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Leave Clean</strong></td>
+<td style="text-align: left;"><em>"I ensure the surface is dry before removing the sign."</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>මතක තබා ගැනීමේ කෙටි ක්‍රමය:</strong> <strong>S.P.I.L.L.</strong> = Secure (ආරක්ෂා කරන්න), Place sign (බෝඩ් එක තියන්න), Isolate/Sweep (වීදුරු අයින් කරන්න), Liquid mop (මොප් කරන්න), Leave clean (වේළුණු පසු බෝඩ් එක ඉවත් කරන්න).</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 3 — Customer Service &amp; Hebrew Loanwords (පාරිභෝගික සේවය සහ හෙබ්‍රෙව් වචන) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සුපිරි වෙළඳසැලක සැබෑ සංවාද පදනම් කරගත් පුහුණුව.</p>
+</blockquote>
+<h3>3A. Scene 3 — The Confused Hebrew-Speaking Customer (විනාඩි 5)</h3>
+<blockquote>
+<p>An elderly Israeli customer approaches Dilan in Aisle 2. She speaks quickly in Hebrew:<br />
+<em>"סליחה, איפה השמן זית?" (Slicha, eifo ha-shemen zayit? / Excuse me, where is the olive oil?)</em>  </p>
+<p>Dilan does not know fluent Hebrew yet, but he stays calm and professional. He does not panic or run away.<br />
+He smiles politely, listens attentively, and catches the word <em>"Shemen"</em> (oil) or observes her gesturing toward cooking items.  </p>
+<p>Dilan applies the <strong>H.E.A.T.</strong> method:<br />
+- <strong>H (Hear):</strong> බාධා නොකර හොඳින් සවන් දෙයි (He listens carefully without interrupting).<br />
+- <strong>E (Empathize):</strong> මිත්‍රශීලී මුහුණකින් හිස නමයි (He nods with a polite, friendly expression).<br />
+- <strong>A (Apologize/Assist):</strong> සන්සුන්ව පවසයි: <em>"One moment please, Madam. Let me show you."</em><br />
+- <strong>T (Take Action):</strong> ඔහු ඇය සමඟ 4 වන Aisle එකට ගොස් olive oil රාක්කය පෙන්වයි. තේරුම් ගැනීමට නොහැකි නම්, ඔහු ඇයව හෙබ්‍රෙව් කතා කරන supervisor වෙත ආචාරශීලීව යොමු කරයි.</p>
+</blockquote>
+<h3>3B. Essential Israeli Supermarket Vocabulary &amp; Loanwords (වචන මාලාව) (විනාඩි 3)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">English Term</th>
+<th style="text-align: left;">Pronunciation</th>
+<th style="text-align: left;">Hebrew Retail Word</th>
+<th style="text-align: left;">Meaning / Context (තේරුම සහ සන්දර්භය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Aisle</strong></td>
+<td style="text-align: left;"><code>/aɪl/</code> (s අකුර නිහඬයි!)</td>
+<td style="text-align: left;"><em>Ma'avar</em></td>
+<td style="text-align: left;">රාක්ක අතර පාරිභෝගිකයින් ඇවිදින මාවත</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Back Storeroom</strong></td>
+<td style="text-align: left;"><code>/stɔːr-ruːm/</code></td>
+<td style="text-align: left;"><em>Machsan</em></td>
+<td style="text-align: left;">අමතර බඩු තොග තබන පිටුපස ගබඩාව</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Display Shelf</strong></td>
+<td style="text-align: left;"><code>/dɪˈspleɪ ʃɛlf/</code></td>
+<td style="text-align: left;"><em>Madaf</em></td>
+<td style="text-align: left;">පාරිභෝගිකයින්ට බඩු තෝරාගැනීමට ඇති ප්‍රදර්ශන රාක්කය</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Shopping Cart</strong></td>
+<td style="text-align: left;"><code>/ʃɒpɪŋ kɑːt/</code></td>
+<td style="text-align: left;"><em>Agala / Kuppa</em></td>
+<td style="text-align: left;">පාරිභෝගිකයින් බඩු දමාගෙන යන රෝද සහිත කරත්තය</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pallet Jack</strong></td>
+<td style="text-align: left;"><code>/ˈpælət dʒæk/</code></td>
+<td style="text-align: left;"><em>Ramesh / Jack</em></td>
+<td style="text-align: left;">ලී පැලට් එසවීමට සහ ගෙනයාමට භාවිතා කරන අත් ජැක් එක</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Degreaser</strong></td>
+<td style="text-align: left;"><code>/diːˈɡriːsər/</code></td>
+<td style="text-align: left;"><em>D10 Chemical</em></td>
+<td style="text-align: left;">කුස්සියේ සහ බිම තෙල් පැල්ලම් ඉවත් කරන සැර රසායනිකය</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (ප්‍රශ්නෝත්තර ආකෘති) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සරල SVO වාක්‍ය රටා සහිතව සෘජු interview Q&amp;A ආකෘතියෙන් ඉලක්කගත භාෂාව තෙවන වරටත් හමුවීම.</p>
+</blockquote>
+<h3>Q1: "Explain the FIFO method and how you apply it."</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"FIFO stands for First-In, First-Out, Sir.**  
+> It is an inventory method where older items are sold first to prevent spoilage.  
+> When new stock arrives, I check the expiration dates.  
+> I put the new products at the **back** of the shelf and pull older products to the **front**.  
+> This ensures customers always receive fresh products and minimizes store shrink."
+
+</details>
+
+<h3>Q2: "What immediate steps do you take if a liquid bottle breaks in an aisle?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"My first priority is customer safety.**  
+> First, I secure the area and put up a **'Caution: Wet Floor'** warning sign.  
+> Next, I wear protective gloves and sweep up any broken glass.  
+> Then, I mop the liquid using the proper cleaning chemical and degreaser.  
+> I remove the warning sign only after the floor is completely dry."
+
+</details>
+
+<h3>Q3: "What would you do if a display shelf is completely empty?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer - SVO Structure)</b></summary>
+
+> **"I replenish the shelf immediately.**  
+> I go to the back storeroom (*machsan*) and bring the required stock using a pallet jack.  
+> If the item is completely out of stock in the warehouse, I immediately report it to my supervisor."
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (කතා කිරීම සහ ස්වයං පරීක්ෂාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> මෘදු ප්‍රකාශන පියවර: නිහඬව කියවීම → Whisper කිරීම → ශබ්ද නඟා පටිගත කිරීම.</p>
+</blockquote>
+<h3>5A. The 3-Sentence Whisper Drill (විනාඩි 3)</h3>
+<p>පහත වාක්‍ය 3 එකක් 5 වතාවක් බැගින් නිවැරදි වේගයෙන් whisper කරන්න:<br />
+1. <em>"FIFO means First-In, First-Out — older items go to the front."</em><br />
+2. <em>"I immediately place a warning sign to keep customers safe."</em><br />
+3. <em>"I use a pallet jack to bring stock from the back storeroom."</em></p>
+<h3>5B. Cloze Comprehension Check — හිස්තැන් පුරවන්න (විනාඩි 3)</h3>
+<p>අදාළ තාක්ෂණික වචන යොදා හිස්තැන් පුරවන්න:</p>
+<ol>
+<li>When restocking dairy items, older products are pulled to the <strong><em>_</em></strong><em> and newer stock goes to the <strong><em>_</em></strong></em>.<br />
+<em>(තෝරාගැනීම්: front / back)</em></li>
+<li>In the event of a liquid spill, the very first step is to <strong><em>_</em></strong><em> the area and place a <strong><em>_</em></strong></em> sign.<br />
+<em>(තෝරාගැනීම්: secure / caution)</em></li>
+<li>To move heavy pallets from the back storeroom (<em>machsan</em>), workers use a <strong><em>_</em></strong><em> <strong><em>_</em></strong></em>.<br />
+<em>(තෝරාගැනීම්: pallet jack / shopping cart)</em></li>
+</ol>
+<details>
+<summary><b>නිවැරදි පිළිතුරු (Answer Key)</b></summary>
+
+1. **front** / **back**
+2. **secure** / **caution** (or *warning*)
+3. **pallet jack**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (විනාඩි 2)</h3>
+<p>ඔබගේ පුද්ගලික සටහන් පොතට මෙම වචන 3 එකතු කරන්න:<br />
+1. <strong>Replenish</strong> <code>/rɪˈplɛnɪʃ/</code> (Verb) = හිස් වූ රාක්ක නැවත පිරවීම. <em>(Ex: "I replenish empty display shelves every morning.")</em><br />
+2. <strong>Expiration Date</strong> <code>/ˌɛkspəˈreɪʃən deɪt/</code> (Noun) = ආහාර කල් ඉකුත්වන දිනය. <em>(Ex: "I always check expiration dates before stocking.")</em><br />
+3. <strong>Hazard</strong> <code>/ˈhæzəd/</code> (Noun) = අනතුර / අවදානම. <em>(Ex: "Broken glass is a serious slip hazard.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (පැය 2ක් ඇතුළත):</strong> <strong>S.P.I.L.L.</strong> වගුව සහ FIFO රූප සටහන දෙස විනාඩි 3ක් බලන්න.</li>
+<li>[ ] <strong>2nd Review (හෙට උදෑසන):</strong> කැඩපතක් ඉදිරියේ සිටගෙන සම්මුඛ පරීක්ෂණ ප්‍රශ්න 3ට පිළිතුරු whisper කරන්න (විනාඩි 5).</li>
+<li>[ ] <strong>3rd Review (සතියකින්):</strong> Q1 සහ Q2 ප්‍රශ්නවලට පිළිතුරු smartphone voice recorder එකෙන් record කර, <em>aisle</em> සහ <em>replenish</em> උච්චාරණය පරීක්ෂා කරන්න (විනාඩි 10).</li>
+<li>[ ] <strong>4th Review (මාසයකින්):</strong> සම්මුඛ පරීක්ෂණ මණ්ඩලය ඉදිරියේ තාක්ෂණික ප්‍රශ්නවලට මුහුණ දීමේ සම්පූර්ණ mock rehearsal එකක් කරන්න (විනාඩි 15).</li>
+</ul>
+<hr />
+<h2>Pedagogical Mapping Table (<code>info_final.md</code> අනුකූලතාවය)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Learning Science Principle</th>
+<th style="text-align: left;">Location in <code>info_final.md</code></th>
+<th style="text-align: left;">Practical Implementation in Lesson 0004 (පාඩම තුළ භාවිතය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Comprehensible Input ($i+1$)</strong></td>
+<td style="text-align: left;">Part I §7</td>
+<td style="text-align: left;">සජීවී කතා දර්ශන 3ක් තුළින් retail වචන මාලාව හඳුන්වා දීම.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bloom's Taxonomy (Application)</strong></td>
+<td style="text-align: left;">Part I §2</td>
+<td style="text-align: left;">නිර්වචන පාඩම් කිරීමට වඩා සැබෑ සේවා ස්ථාන ගැටලු විසඳීම දක්වා ගමන් කිරීම.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desirable Difficulty (Retrieval)</strong></td>
+<td style="text-align: left;">Part I §6</td>
+<td style="text-align: left;"><code>&lt;details&gt;</code> dropdowns සහ cloze checks මඟින් මතකය සක්‍රීයව අවදි කිරීම.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cognitive Load Optimization</strong></td>
+<td style="text-align: left;">Part I §4</td>
+<td style="text-align: left;">ව්‍යාකරණ පීඩනයකින් තොරව විනාඩි 8 බැගින් වූ micro-blocks 5කට බෙදීම.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>memory formula Anchors</strong></td>
+<td style="text-align: left;">Part I §3</td>
+<td style="text-align: left;">පීඩනයකදීත් මතකයේ රැඳෙන <strong>F.I.F.O.</strong>, <strong>S.P.I.L.L.</strong>, සහ <strong>H.E.A.T.</strong> කෙටි යෙදුම්.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3-Words-a-Day Journal</strong></td>
+<td style="text-align: left;">Part II §2</td>
+<td style="text-align: left;">උච්චාරණය සහ භාවිතය සහිත නිශ්චිත වචන සටහන්.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Optional Monitor Appendix (ව්‍යාකරණ කෙරෙහි උනන්දු අය සඳහා පමණි)</h2>
+<blockquote>
+<p><em>සටහන: Interview එක සමත් වීමට ඔබ මෙය කටපාඩම් කිරීම අවශ්‍ය නොවේ. Krashen ගේ CI ක්‍රමය පෙන්වා දෙන්නේ නීති කටපාඩම් කිරීමට වඩා පණිවිඩය අවබෝධ කරගැනීමෙන් භාෂාව ස්වභාවිකව උකහා ගන්නා බවයි.</em></p>
+</blockquote>
+<ul>
+<li><strong>Action Sequence Connectors:</strong> ක්‍රියාවලියක් පියවරෙන් පියවර විස්තර කිරීමේදී අනුක්‍රමික වචන භාවිතා කරන්න: <em>First... Next... Then... Finally...</em></li>
+<li><em>"First, I secure the area. Next, I put up the sign. Then, I mop the floor. Finally, I remove the cone."</em></li>
+<li><strong>Silent Letters Alert:</strong> <strong>Aisle</strong> යන වචනය උච්චාරණය කරන්නේ <code>/aɪl/</code> ලෙසයි ('s' අකුර සම්පූර්ණයෙන්ම නිහඬය - island වචනයේ මෙන්). කිසි විටෙකත් "ice-le" ලෙස නොකියන්න.</li>
+</ul>
+<hr />
+<p><strong>End of Lesson 0004</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0004 — Supermarket Operations: FIFO සහ ආරක්ෂාව (FIFO &amp; Safety Mastery) [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> සුපිරි වෙළඳසැල් මෙහෙයුම් සම්බන්ධ තාක්ෂණික ප්‍රශ්නවලට සරල, පැහැදිලි සහ විශ්වාසනීය ඉංග්‍රීසි වාක්‍ය මඟින් පිළිතුරු දීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li><strong>FIFO ක්‍රමය</strong> යොදාගෙන රාක්ක පිරවීම පැහැදිලි කිරීම.</li>
+<li><strong>S.P.I.L.L.</strong> ක්‍රමය ඔස්සේ හදිසි කාන්දුවීම් හැසිරවීම.</li>
+<li>සුපර්මාර්කට් ආශ්‍රිත අත්‍යවශ්‍ය වචන මාලාව සහ උපකරණ හඳුනා ගැනීම.</li>
+</ol>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. FIFO ක්‍රමය: භාණ්ඩ කළමනාකරණය</h3>
+<p><em>FIFO</em> = <strong>First-In, First-Out</strong> (මුලින්ම ආ දේ මුලින්ම විකිණීම)<br />
+- <strong>ක්‍රියාවලිය:</strong><br />
+    - <strong>Check:</strong> කල් ඉකුත්වීමේ දිනය (Expiration date) පරීක්ෂා කරන්න.<br />
+    - <strong>Pull:</strong> පරණ භාණ්ඩ ඉදිරියට (front) අදින්න.<br />
+    - <strong>Place:</strong> අලුත් භාණ්ඩ පිටුපසින් (back) තබන්න.<br />
+- <strong>වාක්‍ය:</strong> <em>"I put new products at the back and pull older ones to the front. This prevents spoilage."</em></p>
+<hr />
+<h3>2. හදිසි අනතුරු හැසිරවීම: <strong>S.P.I.L.L. සූත්‍රය</strong></h3>
+<p>බිම කාන්දුවක් හෝ වීදුරු බිඳීමක් වූ විට:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">අකුර</th>
+<th style="text-align: left;">ක්‍රියාව</th>
+<th style="text-align: left;">ඉංග්‍රීසි වාක්‍යය</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Secure</strong></td>
+<td style="text-align: left;"><em>"I immediately secure the area."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Place Sign</strong></td>
+<td style="text-align: left;"><em>"I place a 'Caution: Wet Floor' warning sign."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>I</strong></td>
+<td style="text-align: left;"><strong>Isolate/Sweep</strong></td>
+<td style="text-align: left;"><em>"I sweep up the glass safely with gloves."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Liquid Mop</strong></td>
+<td style="text-align: left;"><em>"I mop the area with the correct cleaning chemical."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Leave Clean</strong></td>
+<td style="text-align: left;"><em>"I ensure the floor is dry before removing the sign."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>3. පාරිභෝගික සේවාව: <strong>H.E.A.T. සූත්‍රය</strong></h3>
+<p>පාරිභෝගිකයින්ට සහාය වීමට:<br />
+- <strong>H</strong>ear: බාධාවකින් තොරව සවන් දෙන්න.<br />
+- <strong>E</strong>mpathize: මිත්‍රශීලීව හිස නමන්න.<br />
+- <strong>A</strong>ssist: <em>"Let me show you"</em> ලෙස සහාය වන්න.<br />
+- <strong>T</strong>ake Action: භාණ්ඩය පෙන්වන්න හෝ supervisor වෙත යොමු කරන්න.</p>
+<hr />
+<h2>සුපිරි වෙළඳසැල් වචන මාලාව (Retail Vocabulary)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ඉංග්‍රීසි වචනය</th>
+<th style="text-align: center;">උච්චාරණය</th>
+<th style="text-align: left;">සිංහල අර්ථය</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Aisle</strong></td>
+<td style="text-align: center;"><code>/aɪl/</code></td>
+<td style="text-align: left;">රාක්ක පේළි අතර මාවත ('s' ශබ්දය නැත)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Machsan</strong></td>
+<td style="text-align: center;"><code>Mach-san</code></td>
+<td style="text-align: left;">පිටුපස ගබඩාව (Back storeroom)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Pallet Jack</strong></td>
+<td style="text-align: center;"><code>Pallet Jack</code></td>
+<td style="text-align: left;">බර බඩු ගෙනයන උපකරණය</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Degreaser</strong></td>
+<td style="text-align: center;"><code>De-greaser</code></td>
+<td style="text-align: left;">තෙල් පැල්ලම් මකන රසායනිකය</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>FIFO පැහැදිලි කිරීම:</strong> වීදුරු බිඳීමකදී ඔබ කරන දේ හඬ නඟා 3 වරක් පවසන්න.</li>
+<li><strong>අනතුරු හැසිරවීම:</strong> S.P.I.L.L. පියවර 5 මනසින් මවාගෙන එක් වරක් whisper කරන්න.</li>
+<li><strong>වචන පුහුණුව:</strong> <em>Aisle</em> යන්න උච්චාරණය කරන විට 's' ශබ්දය නොමැතිව "අයිල්" ලෙස නිවැරදිව පවසන්න.</li>
+</ol>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Replenish</strong> = නැවත පිරවීම (<em>"I replenish empty shelves every morning."</em>)</li>
+<li><strong>Expiration</strong> = කල් ඉකුත්වීම (<em>"I check the expiration date on every product."</em>)</li>
+<li><strong>Hazard</strong> = අනතුර (<em>"Spilled oil is a slip hazard."</em>)</li>
+</ul></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0003-number-power-precision.html"><span aria-hidden="true">←</span><span>0003 · Number Power and Precision</span></a>
+        <a class="next" href="0005-factory-operations-ppe-stamina.html"><span aria-hidden="true">→</span><span>0005 · Factory Operations</span></a>
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>

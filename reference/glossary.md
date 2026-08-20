@@ -1,64 +1,91 @@
-# Reference Glossary — Israel Interview Vocabulary Bank
+# Reference Glossary — Israel Interview Vocabulary Bank (Master Reference)
 
-> This is the **compressed reference** for all lessons. New words are added here as they are introduced; review before each new lesson. Each entry gives a short definition, a context example, and a Sinhala note where helpful.
+> This is the **authoritative, compressed reference** for all 12 lessons of the Israel Supermarket & Manufacturing English course. Use this cheat sheet for fast retrieval before each mock practice session.
 
-## A. Numbers (pronunciation-critical — drill in every lesson)
-| Word | Number | Pronunciation tip | Sinhala |
-| --- | --- | --- | --- |
-| thirteen | 13 | stress **THIR**-teen | දහතුන |
-| thirty | 30 | stress **THIR**-tee | තිහ |
-| fifteen | 15 | stress **FIF**-teen | පහලොස්ස |
-| fifty | 50 | stress **FIF**-tee | පනහ |
-| eighteen | 18 | stress **EYE**-teen | දහඅට |
-| eighty | 80 | stress **EYE**-tee | අසූව |
-| forty | 40 | stress **FOR**-tee (no "r") | හතළිහ |
-| fourteen | 14 | stress **FOR**-teen | දහහතර |
+---
 
-## B. Greeting & Polite Phrases
-| Phrase | When to use |
-| --- | --- |
-| Good morning, sir. | Before noon interview |
-| Good afternoon, sir/madam. | 12 pm – 5 pm |
-| Good evening, sir/madam. | After 5 pm |
-| May I come in, sir? | At the door |
-| May I sit, sir? / Can I sit? | Before sitting |
-| Thank you for giving me this chance/opportunity. | Opening + closing |
-| Pardon me, sir, could you please repeat the question? | When you don't hear/understand |
-| Sorry, sir, I did not hear clearly. Could you say that again? | Same — softer alternative |
-| That is all about me, thank you, sir. | Strong closing |
+## A. Critical Number Pairs (Pronunciation Fail-Triggers)
 
-## C. Personal Profile Words
-**name, age, marital status, married, single, hometown, country, Sri Lanka, family, children**
+| Number Type | Vowel Sound & Stress | Example Words | Phonetic Pattern | Meaning (Sinhala) |
+|:---|:---|:---|:---|:---|
+| **T.E.E.N. (13–19)** | Long "eeee" / Stress on **2nd syllable** | *thir-TEEN, fif-TEEN, six-TEEN* | `/ˌfɪfˈtiːn/` | දහතුන, පහලොස්ස, දහසය |
+| **T.Y. (30–90)** | Short "i" / Stress on **1st syllable** | *THIR-ty, FIF-ty, SIX-ty* | `/ˈfɪfti/` | තිහ, පනහ, හැට |
 
-## D. Work Experience Words
-**experience, years, supermarket, manufacturing, warehouse, packing, cashier, stock rotation, FIFO, customer service, machine operator, production line, quality control, fast learner, hard worker**
+---
 
-## E. Skills & Qualities
-**honest, disciplined, reliable, punctual, hardworking, physically fit, strong, healthy, fast learner, team player, customer communication, cold storage, long shifts, night shift, overtime**
+## B. Master Mnemonic Systems (Course Anchors)
 
-## F. Israel & Job-Specific Terms
-| Term | Definition |
-| --- | --- |
-| B1 visa | The legal work visa for Israel (max 5 years 3 months) |
-| SLBFE | Sri Lanka Bureau of Foreign Employment (sending agency) |
-| G2G | Government-to-Government program (manages your contract) |
-| Shabbat | Jewish day of rest — Friday evening to Saturday evening |
-| Dugri | Direct, honest Israeli communication style |
-| Startup Nation | Israel's nickname for its high-tech economy |
-| FIFO | First-In, First-Out — sell older stock first |
-| PPE | Personal Protective Equipment — helmet, gloves, safety shoes |
-| HEAT | Hear, Empathize, Apologize, Take Action (customer service) |
+```
+┌───────────────┬──────────────────────────────────────────────────────────────────────────┐
+│ Mnemonic      │ Expansion & Function                                                     │
+├───────────────┼──────────────────────────────────────────────────────────────────────────┤
+│ P.E.S.M.S.    │ Profile ➔ Experience ➔ Skills ➔ Motivation ➔ Sign-off (Self-Intro <60s)  │
+│ K.A.G.S.      │ Knock twice ➔ Ask permission ➔ Greet politely ➔ Sit when invited        │
+│ F.I.L.E.      │ Fast handover ➔ Intact originals ➔ Legitimate payslips ➔ Exact dates     │
+│ F.I.F.O.      │ First-In, First-Out (Older stock to FRONT, new delivery to BACK)         │
+│ S.P.I.L.L.    │ Secure area ➔ Place sign ➔ Isolate glass ➔ Liquid mop ➔ Leave clean      │
+│ H.E.A.T.      │ Hear actively ➔ Empathize ➔ Apologize politely ➔ Take action             │
+│ P.P.E.        │ Protect Person Everyday (Steel-toe shoes, helmet, gloves, goggles, plugs)│
+│ S.T.O.P.      │ Stop machine ➔ Tell supervisor ➔ Observe defect ➔ Prevent restart        │
+│ P.T.-50-2-11  │ 50 kg crate lift ➔ 200 m loaded carry ➔ 2 km run in 11 minutes           │
+│ L.O.A.D.      │ Lift safely ➔ Organize stock ➔ Align neatly ➔ Deliver & secure           │
+│ P.A.C.K.      │ Protect goods ➔ Align boxes ➔ Cover stretch wrap ➔ Keep balanced         │
+│ B.O.R.D.E.R.  │ Lebanon north, Syria/Jordan east, Egypt southwest (Compass map)          │
+│ S.H.A.B.B.A.T.│ Sunset Friday to Sunset Saturday = Holy Day of Rest in Judaism           │
+│ D.U.G.R.I.    │ Direct speech ➔ Understand meaning ➔ Grow ➔ Respect ➔ Implement fast     │
+│ C.A.L.M.      │ Composure ➔ Acknowledge question ➔ Logic over emotion ➔ Move forward     │
+│ A.D.A.P.T.    │ Adjust climate ➔ Discipline shifts ➔ Accommodate others ➔ Positive spirit│
+│ S.H.I.F.T.    │ Stay focused ➔ Healthy sleep ➔ Immediate punctuality ➔ Flexible schedule │
+│ B.1.-V.I.S.A. │ Bound to 1 sponsor ➔ Valid 5 years ➔ Illegal side jobs ➔ Save ➔ Always return│
+│ P.L.A.N.      │ Protect status ➔ Loyal service ➔ Accumulate capital ➔ New SL business    │
+│ P.A.S.S.      │ Purpose (Work) ➔ Address (Company) ➔ Stay (Visa) ➔ Screen (Declare)      │
+│ V.I.C.T.O.R.Y.│ Visual contact ➔ Instant file ➔ Clear SVO ➔ Tech precision ➔ Open smile │
+└───────────────┴──────────────────────────────────────────────────────────────────────────┘
+```
 
-## G. Hebrew Loanwords (commonly heard in stores)
-| Word | Meaning |
-| --- | --- |
-| Shorook | syrup / juice aisle |
-| Kuppa | shopping cart |
-| Madaf | warehouse / back store |
-| Machsan | stockroom |
+---
 
-## H. Mnemonic Anchors (memory aids carried across lessons)
-- **5-Finger Self-Intro**: Pinky→Thumb = **P**rofile → **E**xperience → **S**trengths → **M**otivation → **S**ign-off (**PESMS**).
-- **4-Review Schedule**: **1-Hour • 1-Day • 1-Week • 1-Month** ("**1-1-1-1** Lock").
-- **HEAT** = a kitchen you cook customer problems in.
-- **FIFO** = First In, First Out = "Front-In, Front-Out" — old goes front.
+## C. Domain Vocabulary & Technical Terms
+
+| Term | Part of Speech | Pronunciation | Context Definition |
+|:---|:---|:---|:---|
+| **Aisle** | Noun | `/aɪl/` (*s is silent!*) | Walkway between supermarket display shelves |
+| **Replenish** | Verb | `/rɪˈplɛnɪʃ/` | To refill empty display shelves with merchandise |
+| **Expiration Date** | Noun | `/ˌɛkspəˈreɪʃən deɪt/` | The printed date after which food spoils |
+| **Pallet Jack** | Noun | /ˈpælət dʒæk/ | Hydraulic hand pump tool to move heavy wooden pallets |
+| **Stretch Wrap** | Noun | /strɛtʃ ræp/ | Elastic plastic film used to bind boxes on pallets |
+| **Malfunction** | Noun/Verb | /mælˈfʌŋkʃən/ | Machine breakdown or mechanical failure |
+| **Defective** | Adjective | /dɪˈfɛktɪv/ | Faulty or damaged product that fails quality standards |
+| **Stamina** | Noun | /ˈstæmɪnə/ | Physical and mental endurance for long work shifts |
+| **Degreaser** | Noun | /diːˈɡriːsər/ | Heavy chemical cleaner (e.g., D10) for oily floors |
+| **Cold Storage** | Noun | /kəʊld ˈstɔːrɪdʒ/ | Refrigerated warehouse room for perishable food |
+| **Multicultural**| Adjective | /ˌmʌltiˈkʌltʃərəl/ | Comprising people from diverse nationalities and backgrounds |
+| **Compliance** | Noun | /kəmˈplaɪəns/ | Strict adherence to laws, visa conditions, and rules |
+| **Longevity** | Noun | /lɒnˈdʒɛvɪti/ | Long duration of stable employment under one sponsor |
+| **Entrepreneur** | Noun | /ˌɒntrəprəˈnɜːr/ | Business owner who invests capital and manages enterprise |
+| **Declaration** | Noun | /ˌdɛkləˈreɪʃən/ | Formal statement of carried goods at airport customs |
+
+---
+
+## D. Essential Hebrew Workplace Loanwords
+
+| Hebrew Word | Script | Meaning | Supermarket / Logistics Context |
+|:---|:---|:---|:---|
+| **Machsan** | מַחְסָן | Warehouse / Back Storeroom | Where extra pallet stock and backup goods sit |
+| **Madaf** | מַדָּף | Display Shelf | The retail shelf where customers pick items |
+| **Kuppa / Agala**| קֻפָּה / עֲגָלָה | Cash Register / Shopping Cart| Customer checkout and cart area |
+| **Shorook** | שׁוּרוּק | Beverage / Syrup Aisle | Juice and liquid grocery section |
+| **Toda Raba** | תּוֹדָה רַבָּה | Thank you very much | Standard polite closing |
+| **Shalom** | שָׁלוֹם | Hello / Goodbye / Peace | Universal greeting |
+| **Shabbat** | שַׁבָּת | Sabbath (Holy Rest Day) | Friday evening to Saturday evening |
+
+---
+
+## E. Gold Clarification Formulas (Never Stay Silent!)
+
+1. **Universal Standard:**  
+   👉 *"Pardon me, Sir. Could you please repeat the question?"*
+2. **When Audio/Acoustics Were Unclear:**  
+   👉 *"Sorry, Sir, I did not hear clearly. Could you say that again, please?"*
+3. **When Speed Was Too Fast:**  
+   👉 *"Could you please speak a little more slowly, Sir?"*

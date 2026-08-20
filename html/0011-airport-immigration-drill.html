@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Airport Immigration Drill: Rehearse the arrival conversation, immigration questions, document answers, and customs expectations.">
+  <title>Lesson 0011 | Airport Immigration Drill</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0011</small><span>Airport Immigration Drill</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html" selected>0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">11 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0011</div>
+            <h1>Airport Immigration Drill</h1>
+            <p class="hero-lead">Rehearse the arrival conversation, immigration questions, document answers, and customs expectations.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0011 — The Ben Gurion Airport Immigration Defense Drill</h1>
+<blockquote>
+<p><strong>Mission link:</strong> Passing the job interview in Colombo is only step one. When you land at <strong>Ben Gurion International Airport in Tel Aviv</strong>, Israeli border control and customs officers will subject you to a rigorous immigration screening. If you give vague answers, make nervous jokes (e.g., answering <em>"I want to stay forever"</em>), or carry undeclared fresh food, you can be detained or deported on the spot. This lesson trains you to pass border control smoothly, calmly, and professionally.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> Follow Dilan from the moment his flight touches down at Ben Gurion Airport, through baggage claim, and up to the Border Control booth. Comprehension precedes gentle speaking drills. Grammar rules are in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, traveling legally with an official G2G sponsorship letter, B1 work visa, valid passport, and company accommodation contract in Tel Aviv.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>comprehensible input, not mechanical memorization</strong> — you will be able to:<br />
+1. <strong>Answer the 4 critical immigration officer questions</strong> (Purpose, Accommodation, Duration, Customs Declaration) with zero hesitation.<br />
+2. <strong>Avoid the fatal jokes and vague replies</strong> that trigger border detention.<br />
+3. <strong>Present official travel documents within 2 seconds</strong> at the border control counter.<br />
+4. <strong>Follow international customs rules regarding undeclared agriculture/fresh food</strong>.<br />
+5. <strong>Hold 2 core border defense memory formulas:</strong> <strong>P.A.S.S.</strong> and <strong>B.O.R.D.E.R.</strong></p>
+<p><strong>Estimated time:</strong> 40 minutes, split into <strong>5 micro-blocks</strong> of ~8 min each.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — high-stakes immigration English formatted into <strong>foolproof, direct SVO answers</strong>.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §9 (Airport Immigration English Drill), §8.2 DO #3</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input &amp; Narrative Simulations), Part I §3 (Spaced Repetition &amp; 1-1-1-1 Lock), Part II §2 (3-Words-a-Day)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — visualize the airport terminal)</h2>
+<blockquote>
+<p><em>Dilan walks down the brightly lit arrival corridor of Ben Gurion Airport. He reaches the Border Control booth. A serious Israeli border officer in blue uniform looks at him and asks with a cold, firm voice:</em><br />
+<strong>"What is the purpose of your visit to Israel?"</strong>  </p>
+<p><em>Dilan does not stutter or say "I want to see the country." He smiles gently, hands over his passport, and replies directly:</em><br />
+<strong>"I am here to work under a legal government B1 work visa, Sir. Here is my official employment letter."</strong>  </p>
+<p><em>The officer checks the documents, stamps the entry slip, and hands it back: "Welcome to Israel. Next!"</em></p>
+</blockquote>
+<p>At airport immigration, <strong>short, factual, documented answers</strong> guarantee a fast, smooth entry.</p>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: Ben Gurion Arrival (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Pre-input immersion through situational flight arrival simulation ($i+1$).</p>
+</blockquote>
+<h3>1A. Scene 1 — Stepping Off the Aircraft (4 min)</h3>
+<p>Read this story slowly. Visualize yourself landing in Tel Aviv:</p>
+<blockquote>
+<p>The aircraft touches down smoothly at <strong>Ben Gurion International Airport (TLV)</strong> in Tel Aviv.<br />
+Dilan follows the signs for <strong>"Foreign Passports / Border Control"</strong>.  </p>
+<p>In his handy travel pouch, Dilan carries his physical document folder:<br />
+1. Valid <strong>Original Passport</strong> with B1 visa approval.<br />
+2. Official <strong>Employment Contract &amp; Sponsorship Letter</strong> from his Israeli employer.<br />
+3. Printed <strong>Company Accommodation Address</strong> in Tel Aviv.<br />
+4. SLBFE G2G clearance slip.</p>
+<p>Dilan takes a deep breath, stands straight in the queue, and maintains total composure.</p>
+</blockquote>
+<h3>1B. The 4 Golden Immigration Questions (4 min)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │             THE 4 CRITICAL BORDER CONTROL CHECKS          │
+   ├──────────────────────────┬────────────────────────────────┤
+   │ 1. Purpose of Visit      │ Legal B1 work visa employment  │
+   │ 2. Accommodation Address │ Company housing (letter ready) │
+   │ 3. Duration of Stay      │ Duration of legal work visa    │
+   │ 4. Customs Declaration   │ Declare packaged food / no fruit│
+   └──────────────────────────┴────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 2 — The 4 Border Question Blueprints (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> High-contrast comparison between dangerous mistakes and correct answers.</p>
+</blockquote>
+<h3>2A. Scene 2 — The Border Control Counter (5 min)</h3>
+<h4>Question 1: Purpose of Visit</h4>
+<ul>
+<li><strong>Fatal Mistake:</strong> <em>"I am here for fun / I want to travel around."</em> (Triggers suspicion of illegal tourist labor)</li>
+<li><strong>Correct Answer:</strong> <strong>"I am here to work under a legal government B1 visa, Sir."</strong></li>
+</ul>
+<h4>Question 2: Where will you stay?</h4>
+<ul>
+<li><strong>Fatal Mistake:</strong> <em>"I don't know, my agency knows."</em> (Shows complete unpreparedness)</li>
+<li><strong>Correct Answer:</strong> <strong>"I will stay at the employee accommodation provided by my company. Here is my official employment letter showing the address."</strong></li>
+</ul>
+<h4>Question 3: How long will you stay in Israel?</h4>
+<ul>
+<li><strong>Fatal Mistake:</strong> <em>"Forever!"</em> (Even as a joke, this causes immediate detention and investigation)</li>
+<li><strong>Correct Answer:</strong> <strong>"I will stay for the duration of my legal work visa, Sir."</strong></li>
+</ul>
+<h4>Question 4: Do you have anything to declare?</h4>
+<ul>
+<li><strong>Fatal Mistake:</strong> Bringing undeclared fresh fruits, plants, or meat in your luggage (leads to heavy fines and confiscation).</li>
+<li><strong>Correct Answer:</strong> <strong>"No, I have nothing to declare, Sir."</strong><br />
+<em>(If carrying sealed commercial Sri Lankan tea/spices, say: "Yes, I have some packaged dry food items to declare.")</em></li>
+</ul>
+<h3>2B. The P.A.S.S. Border Defense memory formula (3 min)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Letter</th>
+<th style="text-align: left;">Action</th>
+<th style="text-align: left;">Professional Border Reply</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Purpose = Work</strong></td>
+<td style="text-align: left;"><em>"I am here to work under a legal B1 visa."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>Address Ready</strong></td>
+<td style="text-align: left;"><em>"I stay at company housing; here is the letter."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Stay = Visa Time</strong></td>
+<td style="text-align: left;"><em>"I will stay for the duration of my legal visa."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Screen Declaration</strong></td>
+<td style="text-align: left;"><em>"I have nothing to declare / only packaged goods."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 3 — Customs &amp; Agriculture Protection (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Repetition with variation through customs compliance rules.</p>
+</blockquote>
+<h3>3A. Scene 3 — Baggage Claim &amp; Green/Red Customs Channel (5 min)</h3>
+<blockquote>
+<p>After passing the passport booth, Dilan collects his checked luggage from the baggage carousel.<br />
+He walks toward the exit channels:<br />
+- <strong>Green Channel:</strong> "Nothing to Declare" (No illegal goods, no fresh agricultural items).<br />
+- <strong>Red Channel:</strong> "Goods to Declare" (Carrying commercial items or declared goods).</p>
+<p>Israel has strict biosecurity laws to protect its modern agriculture. <strong>It is strictly forbidden to bring fresh fruit, raw vegetables, seeds, or unsealed meat.</strong><br />
+Dilan packed only sealed, commercially packaged tea and dry spices. He walks calmly through customs with zero violations.</p>
+</blockquote>
+<h3>3B. The B.O.R.D.E.R. Protocol memory formula (3 min)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                 THE B.O.R.D.E.R. DEFENSE DRILL            │
+   │                                                           │
+   │   B ──► Brevity (Give short, factual answers only)        │
+   │   O ──► Official Papers (Handover within 2 seconds)       │
+   │   R ──► Respect Officers (Maintain calm, polite posture)  │
+   │   D ──► Declare Honestly (No hidden fresh agricultural food│
+   │   E ──► Exact Dates (Match visa duration strictly)        │
+   │   R ──► Remain Calm (No nervous laughter or jokes)        │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Direct airport simulation using simple SVO architecture.</p>
+</blockquote>
+<h3>Simulation 1: Purpose Check</h3>
+<details>
+<summary><b>Officer: "What is the purpose of your visit?"</b></summary>
+
+> **"I am here to work under a legal government B1 visa, Sir."**  
+> *(Hand over passport and employment letter immediately).*
+
+</details>
+
+<h3>Simulation 2: Accommodation Check</h3>
+<details>
+<summary><b>Officer: "Where will you stay in Israel?"</b></summary>
+
+> **"I will stay at the employee accommodation provided by my company in Tel Aviv.**  
+> Here is my official letter with the exact address."
+
+</details>
+
+<h3>Simulation 3: Duration Check</h3>
+<details>
+<summary><b>Officer: "How long will you stay in Israel?"</b></summary>
+
+> **"I will stay for the duration of my legal work visa, Sir."**
+
+</details>
+
+<h3>Simulation 4: Customs Check</h3>
+<details>
+<summary><b>Officer: "Do you have anything to declare?"</b></summary>
+
+> **"No, Sir. I have nothing to declare."**  
+> *(Or: "Yes, Sir. I have some sealed, packaged tea to declare.")*
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Gradual output release: Whisper drill → Cloze comprehension → Journal recording.</p>
+</blockquote>
+<h3>5A. The 4-Sentence Whisper Drill (3 min)</h3>
+<p>Whisper these 4 statements 5 times each with steady confidence:<br />
+1. <em>"I am here to work under a legal government B1 visa."</em><br />
+2. <em>"I will stay at the company accommodation in Tel Aviv."</em><br />
+3. <em>"I will stay for the duration of my legal work visa."</em><br />
+4. <em>"I have nothing to declare."</em></p>
+<h3>5B. Cloze Comprehension Check (3 min)</h3>
+<p>Fill in the blanks with the correct airport terms:</p>
+<ol>
+<li>When asked for purpose of visit, candidates should state: <em>"I am here to <strong><em>_</em></strong>_ under a legal B1 visa."</em><br />
+<em>(Choices: work / holiday)</em></li>
+<li>Answering <em>"I will stay forever"</em> even as a joke will lead to immediate <strong><em>_</em></strong>_.<br />
+<em>(Choices: detention / promotion)</em></li>
+<li>Bringing unsealed fresh fruit or plants without declaring is strictly <strong><em>_</em></strong>_ in Israel.<br />
+<em>(Choices: forbidden / recommended)</em></li>
+</ol>
+<details>
+<summary><b>Click for Answer Key</b></summary>
+
+1. **work**
+2. **detention**
+3. **forbidden**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (2 min)</h3>
+<p>Write these 3 words in your vocabulary notebook:<br />
+1. <strong>Immigration</strong> /ˌɪmɪˈɡreɪʃən/ (Noun) = Government control for entering a country. <em>(Ex: "I passed through immigration smoothly.")</em><br />
+2. <strong>Accommodation</strong> /əˌkɒməˈdeɪʃən/ (Noun) = Housing or place to live. <em>(Ex: "My company provides clean accommodation.")</em><br />
+3. <strong>Declare</strong> /dɪˈklɛər/ (Verb) = To officially state goods at customs. <em>(Ex: "I have no items to declare.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (within 2 hours):</strong> Skim the <strong>P.A.S.S.</strong> and <strong>B.O.R.D.E.R.</strong> tables (3 min).</li>
+<li>[ ] <strong>2nd Review (tomorrow morning):</strong> Roleplay the 4 immigration questions aloud standing up (5 min).</li>
+<li>[ ] <strong>3rd Review (in 1 week):</strong> Practice answering airport questions on voice recorder (10 min).</li>
+<li>[ ] <strong>4th Review (in 1 month):</strong> Comprehensive mock review before traveling (15 min).</li>
+</ul>
+<hr />
+<h2>Optional Monitor Appendix (For Grammar Enthusiasts Only)</h2>
+<blockquote>
+<p><em>Note: Language acquisition happens naturally through understanding messages. Grammar rules below are for reference only.</em></p>
+</blockquote>
+<ul>
+<li><strong>Directness with Authority:</strong> Immigration officers do not want small talk. Keep answers to <strong>one single sentence</strong> containing the exact fact requested.</li>
+<li><strong>Document Handover Etiquette:</strong> Always hold your passport and visa letter in your right hand, ready to hand over the second you step up to the counter.</li>
+</ul></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0011 — The Ben Gurion Airport Immigration Defense Drill: බෙන් ගුරියන් ගුවන්තොටුපළ ආගමන විගමන පෙරහුරුව</h1>
+<blockquote>
+<p><strong>Mission link:</strong> කොළඹදී පැවැත්වෙන රැකියා සම්මුඛ පරීක්ෂණය සමත් වීම පළමු පියවර පමණි. ඔබ ටෙල් අවිව් හි <strong>බෙන් ගුරියන් ජාත්‍යන්තර ගුවන්තොටුපළට (Ben Gurion Airport - TLV)</strong> ගොඩබසින විට, ඊශ්‍රායල දේශසීමා පාලන (Border Control) සහ රේගු (Customs) නිලධාරීන් විසින් දැඩි ආගමන විගමන පරීක්ෂාවක් සිදු කරනු ඇත. ඔබ අපැහැදිලි පිළිතුරු දුන්නහොත්, කලබලයෙන් අනවශ්‍ය විහිළු කළහොත් (උදා: <em>"මම සදහටම ඉන්නවා"</em> වැනි), හෝ ප්‍රකාශ නොකළ නැවුම් ආහාර රැගෙන ආවහොත්, ඔබව එම ස්ථානයේදීම රඳවා තබා ගැනීමට හෝ ආපසු හරවා එවීමට (deport කිරීමට) ඉඩ ඇත. මෙම පාඩම මඟින් ඉතා සන්සුන්ව, වෘත්තීය මට්ටමින් දේශසීමා පරීක්ෂාවෙන් සමත් වීමට ඔබව පුහුණු කරයි.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> බෙන් ගුරියන් ගුවන්තොටුපළට ගුවන් යානය ගොඩබසින මොහොතේ සිට, බඩු බාහිරාදිය ලබාගෙන, Border Control කවුන්ටරය දක්වා ඩිලාන් ගමන් කරන ආකාරය පියවරෙන් පියවර අත්විඳින්න. කතා කිරීමට (output) පෙර අවබෝධය ගොඩනඟයි. Grammar සටහන් Optional Monitor Appendix එක තුළ ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, නිල G2G අනුග්‍රාහක ලිපිය (sponsorship letter), B1 රැකියා වීසා බලපත්‍රය, වලංගු විදේශ ගමන් බලපත්‍රය සහ ටෙල් අවිව් හි සමාගම් නවාතැන් ගිවිසුම සහිතව නීත්‍යානුකූලව ගමන් කරයි.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>යාන්ත්‍රිකව කටපාඩම් කිරීමෙන් තොරව, Comprehensible Input මඟින්ම</strong> — ඔබට හැකිවනු ඇත:<br />
+1. <strong>ආගමන විගමන නිලධාරියා අසන තීරණාත්මක ප්‍රශ්න 4ට</strong> (පැමිණීමේ අරමුණ, නවාතැන, රැඳී සිටින කාලය, රේගු ප්‍රකාශනය) කිසිදු පැකිලීමකින් තොරව පිළිතුරු දීමට.<br />
+2. දේශසීමා රැඳවුම් භාරයට (detention) පත්වීමට හේතුවන මාරාන්තික විහිළු සහ අපැහැදිලි පිළිතුරු වලින් වැළකී සිටීමට.<br />
+3. කවුන්ටරයේදී <strong>තත්පර 2ක් ඇතුළත නිල ගමන් ලියකියවිලි ඉදිරිපත් කිරීමට</strong>.<br />
+4. ප්‍රකාශ නොකළ කෘෂිකාර්මික/නැවුම් ආහාර සම්බන්ධ ජාත්‍යන්තර රේගු නීති අනුගමනය කිරීමට.<br />
+5. ප්‍රධාන දේශසීමා ආරක්ෂක මතක ආධාරක (memory formulas) 2ක් මතකයේ රඳවා ගැනීමට: <strong>P.A.S.S.</strong> සහ <strong>B.O.R.D.E.R.</strong></p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ <strong>micro-blocks 5කට</strong> බෙදා ඇත.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — තීරණාත්මක ගුවන්තොටුපළ ඉංග්‍රීසි භාෂාව <strong>වරදින්නේ නැති, සෘජු SVO පිළිතුරු</strong> බවට පත් කිරීම.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §9 (Airport Immigration English Drill), §8.2 DO #3</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input &amp; Narrative Simulations), Part I §3 (Spaced Repetition &amp; 1-1-1-1 Lock), Part II §2 (3-Words-a-Day)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — ගුවන්තොටුපළ සිතින් මවාගන්න / visualize the airport terminal)</h2>
+<blockquote>
+<p><em>Dilan walks down the brightly lit arrival corridor of Ben Gurion Airport. He reaches the Border Control booth. A serious Israeli border officer in blue uniform looks at him and asks with a cold, firm voice:</em><br />
+<strong>"What is the purpose of your visit to Israel?"</strong>  </p>
+<p><em>Dilan does not stutter or say "I want to see the country." He smiles gently, hands over his passport, and replies directly:</em><br />
+<strong>"I am here to work under a legal government B1 work visa, Sir. Here is my official employment letter."</strong>  </p>
+<p><em>The officer checks the documents, stamps the entry slip, and hands it back: "Welcome to Israel. Next!"</em></p>
+</blockquote>
+<p>ගුවන්තොටුපළ ආගමන විගමන පරීක්ෂාවේදී, <strong>කෙටි, ලේඛන සහිත, සත්‍ය පිළිතුරු (short, factual, documented answers)</strong> මඟින් කිසිදු ගැටලුවකින් තොරව රට තුළට වේගයෙන් ඇතුල්වීම තහවුරු කරයි.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> ඊශ්‍රායලයේ බෙන් ගුරියන් (Ben Gurion) ගුවන්තොටුපළේ ආගමන විගමන (Immigration) පරීක්ෂාවේදී නිවැරදි, කෙටි පිළිතුරු දිය යුතුය. කිසිවිටෙක විහිළු කිරීම හෝ "සදහටම ඉන්නවා" වැනි වැරදි ප්‍රකාශ නොකළ යුතුය.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: Ben Gurion Arrival (ගුවන්තොටුපළට පැමිණීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> ගුවන් ගමන අවසානයේ පැමිණීමේ සැබෑ අත්දැකීම ඔස්සේ භාෂාව උකහා ගැනීම ($i+1$).</p>
+</blockquote>
+<h3>1A. Scene 1 — Stepping Off the Aircraft (විනාඩි 4)</h3>
+<p>මෙම කතාව සෙමෙන් කියවන්න. ඔබ ටෙල් අවිව් නගරයට ගොඩබසින ආකාරය සිතින් මවාගන්න:</p>
+<blockquote>
+<p>The aircraft touches down smoothly at <strong>Ben Gurion International Airport (TLV)</strong> in Tel Aviv.<br />
+Dilan follows the signs for <strong>"Foreign Passports / Border Control"</strong>.  </p>
+<p>In his handy travel pouch, Dilan carries his physical document folder:<br />
+1. Valid <strong>Original Passport</strong> with B1 visa approval.<br />
+2. Official <strong>Employment Contract &amp; Sponsorship Letter</strong> from his Israeli employer.<br />
+3. Printed <strong>Company Accommodation Address</strong> in Tel Aviv.<br />
+4. SLBFE G2G clearance slip.</p>
+<p>Dilan takes a deep breath, stands straight in the queue, and maintains total composure.</p>
+</blockquote>
+<h3>1B. The 4 Golden Immigration Questions (ප්‍රධාන ප්‍රශ්න 4) (විනාඩි 4)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │             THE 4 CRITICAL BORDER CONTROL CHECKS          │
+   ├──────────────────────────┬────────────────────────────────┤
+   │ 1. Purpose of Visit      │ නීත්‍යානුකූල B1 රැකියා වීසාව සඳහා │
+   │ 2. Accommodation Address │ සමාගමේ නවාතැන (ලිපිය අතැතිව)   │
+   │ 3. Duration of Stay      │ නීත්‍යානුකූල වීසා කාලය පමණි    │
+   │ 4. Customs Declaration   │ ඇසුරුම් කළ කෑම ප්‍රකාශ කිරීම    │
+   └──────────────────────────┴────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 2 — The 4 Border Question Blueprints (ප්‍රශ්න 4ට නිවැරදි පිළිතුරු) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> වැරදි පිළිතුරු සහ නිවැරදි ආකෘති අතර සංසන්දනය.</p>
+</blockquote>
+<h3>2A. Scene 2 — The Border Control Counter (විනාඩි 5)</h3>
+<h4>Question 1: Purpose of Visit (පැමිණි අරමුණ)</h4>
+<ul>
+<li><strong>මාරාන්තික වැරැද්ද:</strong> <em>"I am here for fun / I want to travel around."</em> (නීතිවිරෝධී සංචාරක සේවකයෙකු බවට සැක ඇති කරයි)</li>
+<li><strong>නිවැරදි පිළිතුර:</strong> <strong>"I am here to work under a legal government B1 visa, Sir."</strong></li>
+</ul>
+<h4>Question 2: Where will you stay? (නවාතැන් ගන්නේ කොහේද?)</h4>
+<ul>
+<li><strong>මාරාන්තික වැරැද්ද:</strong> <em>"I don't know, my agency knows."</em> (කිසිදු සූදානමක් නැති බව පෙන්වයි)</li>
+<li><strong>නිවැරදි පිළිතුර:</strong> <strong>"I will stay at the employee accommodation provided by my company. Here is my official employment letter showing the address."</strong></li>
+</ul>
+<h4>Question 3: How long will you stay in Israel? (කොපමණ කාලයක් සිටිනවාද?)</h4>
+<ul>
+<li><strong>මාරාන්තික වැරැද්ද:</strong> <em>"Forever!"</em> (විහිළුවට කීවත් ක්ෂණිකව රඳවා තබාගෙන පරීක්ෂණ පවත්වයි)</li>
+<li><strong>නිවැරදි පිළිතුර:</strong> <strong>"I will stay for the duration of my legal work visa, Sir."</strong></li>
+</ul>
+<h4>Question 4: Do you have anything to declare? (රේගුවට ප්‍රකාශ කිරීමට යමක් තිබේද?)</h4>
+<ul>
+<li><strong>මාරාන්තික වැරැද්ද:</strong> ගමන් මල්ලේ ප්‍රකාශ නොකළ අලුත් පළතුරු, එළවළු හෝ මස් ගෙන ඒම (දැඩි දඩ සහ භාණ්ඩ රාජසන්තක කිරීමට හේතු වේ).</li>
+<li><strong>නිවැරදි පිළිතුර:</strong> <strong>"No, I have nothing to declare, Sir."</strong><br />
+<em>(සීල් කළ ශ්‍රී ලාංකික තේ/කුළුබඩු තිබේ නම් මෙසේ කියන්න: "Yes, I have some packaged dry food items to declare.")</em></li>
+</ul>
+<h3>2B. The P.A.S.S. Border Defense memory formula (මතක ආධාරකය) (විනාඩි 3)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Letter</th>
+<th style="text-align: left;">Action (ක්‍රියාව)</th>
+<th style="text-align: left;">Professional Border Reply (වෘත්තීය පිළිතුර)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>P</strong></td>
+<td style="text-align: left;"><strong>Purpose = Work</strong></td>
+<td style="text-align: left;"><em>"I am here to work under a legal B1 visa."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>Address Ready</strong></td>
+<td style="text-align: left;"><em>"I stay at company housing; here is the letter."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Stay = Visa Time</strong></td>
+<td style="text-align: left;"><em>"I will stay for the duration of my legal visa."</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Screen Declaration</strong></td>
+<td style="text-align: left;"><em>"I have nothing to declare / only packaged goods."</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>මතක තබා ගැනීමේ කෙටි ක්‍රමය:</strong> <strong>P.A.S.S.</strong> = Purpose (රැකියාව), Address (සමාගමේ නවාතැන), Stay (වීසා කාලය පමණි), Screen (තහනම් ද්‍රව්‍ය නැති බව ප්‍රකාශ කිරීම).</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 3 — Customs &amp; Agriculture Protection (රේගුව සහ කෘෂිකාර්මික ආරක්ෂාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> රේගු නීති පිළිබඳ සන්දර්භය ඔස්සේ භාෂාව නැවත භාවිතය.</p>
+</blockquote>
+<h3>3A. Scene 3 — Baggage Claim &amp; Green/Red Customs Channel (විනාඩි 5)</h3>
+<blockquote>
+<p>After passing the passport booth, Dilan collects his checked luggage from the baggage carousel.<br />
+He walks toward the exit channels:<br />
+- <strong>Green Channel (කොළ මාවත):</strong> "Nothing to Declare" (නීතිවිරෝධී භාණ්ඩ හෝ නැවුම් කෘෂිකාර්මික ද්‍රව්‍ය නොමැති විට).<br />
+- <strong>Red Channel (රතු මාවත):</strong> "Goods to Declare" (වාණිජ භාණ්ඩ හෝ ප්‍රකාශ කළ යුතු දෑ ඇති විට).</p>
+<p>Israel has strict biosecurity laws to protect its modern agriculture. <strong>It is strictly forbidden to bring fresh fruit, raw vegetables, seeds, or unsealed meat.</strong><br />
+Dilan packed only sealed, commercially packaged tea and dry spices. He walks calmly through customs with zero violations.</p>
+</blockquote>
+<h3>3B. The B.O.R.D.E.R. Protocol memory formula (මතක ආධාරකය) (විනාඩි 3)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                 THE B.O.R.D.E.R. DEFENSE DRILL            │
+   │                                                           │
+   │   B ──► Brevity (කෙටි, සත්‍ය පිළිතුරු පමණක් දීම)          │
+   │   O ──► Official Papers (තත්පර 2ක් තුළ ලියකියවිලි ලබාදීම) │
+   │   R ──► Respect Officers (ගෞරවනීය සහ සන්සුන් ඉරියව්ව)     │
+   │   D ──► Declare Honestly (නැවුම් කෑම සඟවන්නේ නැත)        │
+   │   E ──► Exact Dates (වීසා කාලයට හරියටම ගැලපීම)           │
+   │   R ──► Remain Calm (කලබලෙන් විහිළු නොකිරීම)             │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Micro-Block 4 — Interview Question &amp; Answer Blueprints (ප්‍රශ්නෝත්තර ආකෘති) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සරල SVO ආකෘතියෙන් සෘජු ගුවන්තොටුපළ අනුකරණය.</p>
+</blockquote>
+<h3>Simulation 1: Purpose Check (අරමුණ පරීක්ෂාව)</h3>
+<details>
+<summary><b>Officer: "What is the purpose of your visit?"</b></summary>
+
+> **"I am here to work under a legal government B1 visa, Sir."**  
+> *(පාස්පෝට් එක සහ රැකියා ලිපිය වහාම අතට දෙන්න).*
+
+</details>
+
+<h3>Simulation 2: Accommodation Check (නවාතැන පරීක්ෂාව)</h3>
+<details>
+<summary><b>Officer: "Where will you stay in Israel?"</b></summary>
+
+> **"I will stay at the employee accommodation provided by my company in Tel Aviv.**  
+> Here is my official letter with the exact address."
+
+</details>
+
+<h3>Simulation 3: Duration Check (කාලය පරීක්ෂාව)</h3>
+<details>
+<summary><b>Officer: "How long will you stay in Israel?"</b></summary>
+
+> **"I will stay for the duration of my legal work visa, Sir."**
+
+</details>
+
+<h3>Simulation 4: Customs Check (රේගු පරීක්ෂාව)</h3>
+<details>
+<summary><b>Officer: "Do you have anything to declare?"</b></summary>
+
+> **"No, Sir. I have nothing to declare."**  
+> *(නැතහොත්: "Yes, Sir. I have some sealed, packaged tea to declare.")*
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — Output &amp; Self-Verification Drills (කතා කිරීම සහ ස්වයං පරීක්ෂාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> මෘදු ප්‍රකාශන පියවර: Whisper කිරීම → Cloze අවබෝධය → Vocabulary සටහන් පොත.</p>
+</blockquote>
+<h3>5A. The 4-Sentence Whisper Drill (විනාඩි 3)</h3>
+<p>පහත ප්‍රකාශ 4 එකක් 5 වතාවක් බැගින් ස්ථිර හඬින් whisper කරන්න:<br />
+1. <em>"I am here to work under a legal government B1 visa."</em><br />
+2. <em>"I will stay at the company accommodation in Tel Aviv."</em><br />
+3. <em>"I will stay for the duration of my legal work visa."</em><br />
+4. <em>"I have nothing to declare."</em></p>
+<h3>5B. Cloze Comprehension Check — හිස්තැන් පුරවන්න (විනාඩි 3)</h3>
+<p>නිවැරදි ගුවන්තොටුපළ වචන යොදා හිස්තැන් පුරවන්න:</p>
+<ol>
+<li>When asked for purpose of visit, candidates should state: <em>"I am here to <strong><em>_</em></strong>_ under a legal B1 visa."</em><br />
+<em>(තෝරාගැනීම්: work / holiday)</em></li>
+<li>Answering <em>"I will stay forever"</em> even as a joke will lead to immediate <strong><em>_</em></strong>_.<br />
+<em>(තෝරාගැනීම්: detention / promotion)</em></li>
+<li>Bringing unsealed fresh fruit or plants without declaring is strictly <strong><em>_</em></strong>_ in Israel.<br />
+<em>(තෝරාගැනීම්: forbidden / recommended)</em></li>
+</ol>
+<details>
+<summary><b>නිවැරදි පිළිතුරු (Answer Key)</b></summary>
+
+1. **work**
+2. **detention**
+3. **forbidden**
+
+</details>
+
+<h3>5C. 3-Words-a-Day Journal Entries (විනාඩි 2)</h3>
+<p>ඔබගේ සටහන් පොතට මෙම වචන 3 එකතු කරන්න:<br />
+1. <strong>Immigration</strong> /ˌɪmɪˈɡreɪʃən/ (Noun) = රටකට ඇතුල්වීම පාලනය කරන ආගමන විගමන ක්‍රියාවලිය. <em>(Ex: "I passed through immigration smoothly.")</em><br />
+2. <strong>Accommodation</strong> /əˌkɒməˈdeɪʃən/ (Noun) = නවාතැන හෝ වාසස්ථානය. <em>(Ex: "My company provides clean accommodation.")</em><br />
+3. <strong>Declare</strong> /dɪˈklɛər/ (Verb) = රේගුවේදී තමන් සතු භාණ්ඩ නිල වශයෙන් ප්‍රකාශ කිරීම. <em>(Ex: "I have no items to declare.")</em></p>
+<hr />
+<h2>Spaced Repetition Review Schedule (1-1-1-1 Lock)</h2>
+<ul>
+<li>[ ] <strong>1st Review (පැය 2ක් ඇතුළත):</strong> <strong>P.A.S.S.</strong> සහ <strong>B.O.R.D.E.R.</strong> වගු විනාඩි 3ක් බලන්න.</li>
+<li>[ ] <strong>2nd Review (හෙට උදෑසන):</strong> කෙළින් සිටගෙන ආගමන විගමන ප්‍රශ්න 4ට ශබ්ද නඟා පිළිතුරු දෙන්න (විනාඩි 5).</li>
+<li>[ ] <strong>3rd Review (සතියකින්):</strong> Voice recorder එකට ගුවන්තොටුපළ ප්‍රශ්නවලට පිළිතුරු record කරන්න (විනාඩි 10).</li>
+<li>[ ] <strong>4th Review (මාසයකින්):</strong> ගුවන් ගමනට පෙර සම්පූර්ණ mock review එකක් කරන්න (විනාඩි 15).</li>
+</ul>
+<hr />
+<h2>Optional Monitor Appendix (ව්‍යාකරණ කෙරෙහි උනන්දු අය සඳහා පමණි)</h2>
+<blockquote>
+<p><em>සටහන: භාෂාව උකහා ගැනීම සිදුවන්නේ පණිවිඩය අවබෝධ කරගැනීමෙනි. පහත ව්‍යාකරණ නීති ඇත්තේ අවශ්‍ය නම් බලාගැනීමට පමණි.</em></p>
+</blockquote>
+<ul>
+<li><strong>Directness with Authority:</strong> ආගමන විගමන නිලධාරීන් අනවශ්‍ය කතාබස් (small talk) බලාපොරොත්තු නොවේ. ඉල්ලූ කරුණ පමණක් ඇතුළත් <strong>එක් තනි වාක්‍යයකින්</strong> පිළිතුරු දෙන්න.</li>
+<li><strong>Document Handover Etiquette:</strong> ඔබ කවුන්ටරය ඉදිරියට යන මොහොතේදීම ලබා දීමට හැකි වන පරිදි විදේශ ගමන් බලපත්‍රය සහ වීසා ලිපිය ඔබගේ දකුණු අතේ සූදානම්ව තබා ගන්න.</li>
+</ul>
+<hr />
+<p><strong>End of Lesson 0011</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0011 — ගුවන්තොටුපළ ආගමන විගමන පෙරහුරුව (Airport Immigration Defense) [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> ඊශ්‍රායල ගුවන්තොටුපළේ Border Control නිලධාරියා අසන ප්‍රශ්නවලට සන්සුන්ව සහ නීත්‍යානුකූලව පිළිතුරු දීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li>ආගමන විගමන නිලධාරියාගේ ප්‍රශ්න 4ට කෙටි, සත්‍ය පිළිතුරු දීම.</li>
+<li>දේශසීමා පාලනයේදී කළ යුතු සහ නොකළ යුතු දෑ (විහිළු තහළු නොකිරීම) අවබෝධ කර ගැනීම.</li>
+<li>ලියකියවිලි ක්‍ෂණිකව ලබා දීමට සූදානම් වීම (2-Second Handover).</li>
+</ol>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. Border Control ප්‍රශ්න 4: <strong>P.A.S.S. සූත්‍රය</strong></h3>
+<p>පැමිණි මොහොතේ නිලධාරියාට දිය යුතු පිළිතුරු:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">අකුර</th>
+<th style="text-align: left;">ප්‍රශ්නය</th>
+<th style="text-align: left;">වෘත්තීය පිළිතුර</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>P</strong></td>
+<td style="text-align: left;">Purpose (අරමුණ)</td>
+<td style="text-align: left;"><em>"I am here to work under a legal government B1 visa, Sir."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: left;">Address (නවාතැන)</td>
+<td style="text-align: left;"><em>"I will stay at my company accommodation in Tel Aviv."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;">Stay (කාලය)</td>
+<td style="text-align: left;"><em>"I will stay for the duration of my legal work visa, Sir."</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;">Screen (ප්‍රකාශනය)</td>
+<td style="text-align: left;"><em>"No, Sir. I have nothing to declare."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>2. ආරක්ෂිත දේශසීමා චර්යාව: <strong>B.O.R.D.E.R. සූත්‍රය</strong></h3>
+<ul>
+<li><strong>B</strong>revity: කෙටි, සත්‍ය පිළිතුරු පමණක් දෙන්න.</li>
+<li><strong>O</strong>fficial Papers: වීසා සහ රැකියා ලිපි අතේ සූදානම්ව තබා ගන්න.</li>
+<li><strong>R</strong>espect: ගෞරවනීය සහ සන්සුන් ඉරියව්ව.</li>
+<li><strong>D</strong>eclare: තහනම් භාණ්ඩ (නැවුම් කෑම) නැති බව සහතික වන්න.</li>
+<li><strong>E</strong>xact Dates: වීසා කාලයට ගැලපෙන පිළිතුරු දෙන්න.</li>
+<li><strong>R</strong>emain Calm: කිසිවිටෙකත් විහිළු නොකරන්න.</li>
+</ul>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>P.A.S.S. Drill:</strong> ඉහත ප්‍රශ්න 4ට නිවැරදි පිළිතුරු 3 වතාවක් හඬ නඟා පුහුණු වන්න.</li>
+<li><strong>සූදානම:</strong> ගුවන් ගමන් බලපත්‍රය සහ රැකියා ලිපිය ඕනෑම වෙලාවක ලබා දීමට හැකි වන පරිදි අතේ තබා ගන්න.</li>
+<li><strong>සන්සුන් බව:</strong> ඕනෑම පීඩනකාරී ප්‍රශ්නයකට සිනහමුසු මුහුණින් සන්සුන්ව පිළිතුරු දීමට මනස සකස් කර ගන්න.</li>
+</ol>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Immigration</strong> = ආගමන විගමන පරීක්ෂාව (<em>"I passed through immigration."</em>)</li>
+<li><strong>Accommodation</strong> = නවාතැන (<em>"I will stay at company accommodation."</em>)</li>
+<li><strong>Declare</strong> = ප්‍රකාශ කිරීම (<em>"I have nothing to declare."</em>)</li>
+</ul></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0010-visa-compliance-future-plans.html"><span aria-hidden="true">←</span><span>0010 · Visa Compliance and Plans</span></a>
+        <a class="next" href="0012-mock-interview.html"><span aria-hidden="true">→</span><span>0012 · Comprehensive Mock Interview</span></a>
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>

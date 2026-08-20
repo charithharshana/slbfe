@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comprehensive Mock Interview: Bring the course together with a full mock board interview and a final readiness checklist.">
+  <title>Lesson 0012 | Comprehensive Mock Interview</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0012</small><span>Comprehensive Mock Interview</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html" selected>0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">12 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0012</div>
+            <h1>Comprehensive Mock Interview</h1>
+            <p class="hero-lead">Bring the course together with a full mock board interview and a final readiness checklist.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0012 — The Full 30-Question Rapid-Fire Mock Board Rehearsal</h1>
+<blockquote>
+<p><strong>Mission link:</strong> This is your capstone mastery lesson. On interview day, Israeli representatives and SLBFE officers will ask a rapid sequence of questions across your personal profile, technical skills, Israeli culture, adaptability, and immigration compliance. You have only seconds to respond with clarity, upright posture, and direct camera eye contact. This lesson simulates the entire interview board so you enter the room with absolute confidence and zero anxiety.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> You will step into the complete interview simulation with Dilan. The lesson is organized into four distinct interview stages with interactive <code>&lt;details&gt;</code> disclosure blocks for instant self-checking. Grammar is placed in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, from <strong>Pahalagoda, Tangalle</strong>, 5+ years of retail/supermarket experience, forklift qualified, physically strong, 100% prepared to pass.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>comprehensive retrieval practice and simulated immersion</strong> — you will be able to:<br />
+1. <strong>Deliver the complete 60-second self-introduction</strong> without a single hesitation or time overrun.<br />
+2. <strong>Answer 30 core interview questions across all 4 course units</strong> using crisp, confident SVO sentences.<br />
+3. <strong>Execute the 17 DOs &amp; DON'Ts evaluation checklist</strong> with 100% compliance.<br />
+4. <strong>Demonstrate unshakeable mental composure</strong> under rapid-fire questioning.<br />
+5. <strong>Hold 2 capstone mastery memory formulas:</strong> <strong>M.O.C.K.-30</strong> and <strong>V.I.C.T.O.R.Y.</strong></p>
+<p><strong>Estimated time:</strong> 45 minutes, split into <strong>5 comprehensive micro-blocks</strong>.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — full integration of all vocabulary, structures, and delivery skills into <strong>active spoken fluency</strong>.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — Entire Guide (§1 to §10: 30 Q&amp;As, 17 DOs &amp; DON'Ts, Airport Drill, Vocabulary Bank)</li>
+<li><code>01/info_final.md</code> — Part I §6 (Retrieval Practice &amp; Desirable Difficulty), Part I §3 (Spaced Repetition), Part VI (Exam Anxiety Management &amp; Circle of Control)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — visualize the moment of victory)</h2>
+<blockquote>
+<p><em>The door opens. Dilan performs the K.A.G.S. entry sequence: knocks gently, asks permission, greets the panel, and sits straight. He looks directly into the camera lens with a subtle, confident smile.</em>  </p>
+<p><em>For 15 minutes, the Israeli representative fires questions: self-introduction, FIFO stocking, broken bottles, number verification, machine safety, Shabbat, sub-zero freezers, and B1 visa rules.</em>  </p>
+<p><em>Dilan does not pause. He does not guess. He uses clear SVO sentences, precise numbers, and respectful composure. At the end, the Israeli director stands up, smiles, and extends his hand:</em><br />
+<strong>"Congratulations, Dilan. You did an exceptional interview. Welcome to Israel!"</strong></p>
+</blockquote>
+<p>Mastery is not about luck — it is the result of <strong>structured preparation and deliberate practice</strong>.</p>
+<hr />
+<h2>Micro-Block 1 — Stage 1: Entry, Profile &amp; Number Precision (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> High-intensity active recall of foundational profile details.</p>
+</blockquote>
+<h3>Q1: "May I see your document file, and tell me your full name and age?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"Yes, Sir. Here is my complete document file.**  
+> My name is **Dilan Harshana**. I am **twenty-eight** years old, and I am from **Tangalle, Sri Lanka**."
+
+</details>
+
+<h3>Q2: "Deliver your full self-introduction." (Target: Under 60 seconds)</h3>
+<details>
+<summary><b>Click for Model Answer (P.E.S.M.S. Framework)</b></summary>
+
+> **"Good morning, Sir. Thank you for giving me this opportunity.**  
+> My name is **Dilan Harshana**. I am **twenty-eight years old**, single, and from **Tangalle, Sri Lanka**.  
+> I have **more than five years of experience** in the supermarket and retail sector, including work at Keells Supermarket and running my own retail grocery. In addition, I have completed a certified **forklift operator course** and practical technical training at David Pieris Motors.  
+> In my previous jobs, I was responsible for **stocking display shelves, applying the FIFO method, operating pallet jacks, and assisting customers**.  
+> I am **physically fit, hardworking, and highly reliable**. My height is **168 centimeters** and my weight is **60 kilograms**.  
+> I want to work in an Israeli supermarket to **gain valuable international experience, earn a good income in Shekels, and support my family's economy**.  
+> **That is all about me, Sir. Thank you very much."**
+
+</details>
+
+<h3>Q3: "How much was your previous monthly salary, and what were your weekly work hours?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"I earned sixty thousand rupees per month, Sir.**  
+> I regularly worked **fifty** hours per week, including overtime."
+
+</details>
+
+<hr />
+<h2>Micro-Block 2 — Stage 2: Technical Retail &amp; Factory Operations (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Technical procedural fluency under pressure.</p>
+</blockquote>
+<h3>Q4: "Explain the FIFO method and how you rotate dairy stock."</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"FIFO stands for First-In, First-Out, Sir.**  
+> When new dairy stock arrives, I check the expiration dates.  
+> I place the newest items at the **back** of the shelf and pull the older stock to the **front** to prevent spoilage and store shrink."
+
+</details>
+
+<h3>Q5: "What immediate steps do you take if an oil bottle breaks in a customer aisle?"</h3>
+<details>
+<summary><b>Click for Model Answer (S.P.I.L.L. Protocol)</b></summary>
+
+> **"Customer safety is my number one priority.**  
+> First, I secure the area and place a **'Caution: Wet Floor'** warning sign.  
+> Next, wearing PPE gloves, I sweep up broken glass.  
+> Then, I mop the oily floor with chemical degreaser (D10).  
+> I remove the warning sign only after the floor is completely dry."
+
+</details>
+
+<h3>Q6: "What is PPE, and what will you do if a machine jams on the line?"</h3>
+<details>
+<summary><b>Click for Model Answer (S.T.O.P. Protocol)</b></summary>
+
+> **"PPE stands for Personal Protective Equipment—including safety shoes, helmet, gloves, and goggles.**  
+> If a machine jams, I hit the **Emergency Stop button** immediately, set aside defective goods, and inform my supervisor and maintenance technician right away."
+
+</details>
+
+<h3>Q7: "Are you prepared for the 50 kg physical stamina test?"</h3>
+<details>
+<summary><b>Click for Model Answer (P.T.-50-2-11)</b></summary>
+
+> **"Yes, Sir! I am physically fit, strong, and healthy.**  
+> I am fully prepared to lift a 50 kg load, carry it for 200 meters, and complete the 2 km run in 11 minutes."
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — Stage 3: Israel Realities &amp; Cultural Adaptation (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Cultural knowledge and psychological resilience.</p>
+</blockquote>
+<h3>Q8: "Where is Israel located, what is the capital, and what is the currency?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"Israel is in the Middle East along the Mediterranean Sea, bordered by Lebanon, Syria, Jordan, and Egypt.**  
+> The capital is **Jerusalem**, the financial hub is **Tel Aviv**, and the currency is the **New Israeli Shekel (NIS)**."
+
+</details>
+
+<h3>Q9: "What is Shabbat, and how does the Israeli workweek run?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"Shabbat is the Jewish day of rest from Friday sunset to Saturday sunset.**  
+> The standard Israeli workweek runs from **Sunday to Thursday**."
+
+</details>
+
+<h3>Q10: "How will you handle Israeli supervisors who speak loudly and directly ('Dugri')?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"I respect the 'Dugri' communication style, Sir.**  
+> I do not take direct feedback personally. I stay calm, listen carefully, and execute instructions immediately."
+
+</details>
+
+<h3>Q11: "Can you work 10-hour night shifts and inside sub-zero (-18°C) freezer rooms?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"Yes, Sir. I am 100% comfortable with rotating night shifts and overtime.**  
+> I wear thermal protective gear and have no problem adapting to extreme climates or cold storage rooms."
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — Stage 4: Compliance, Longevity &amp; Immigration (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Legal certainty and immigration defense.</p>
+</blockquote>
+<h3>Q12: "Under what visa will you work, and what are the legal limits?"</h3>
+<details>
+<summary><b>Click for Model Answer (B.1.-V.I.S.A.)</b></summary>
+
+> **"I will work under a legal B1 work visa, valid for up to 5 years and 3 months.**  
+> I am bound to work only for my sponsor employer, and secondary part-time jobs are strictly illegal."
+
+</details>
+
+<h3>Q13: "What will you do when your 5-year visa expires?"</h3>
+<details>
+<summary><b>Click for Model Answer</b></summary>
+
+> **"I will strictly follow immigration laws and return to Sri Lanka.**  
+> I plan to use my savings and international retail experience to start my own supermarket business in Tangalle."
+
+</details>
+
+<h3>Q14: "At Tel Aviv airport, the immigration officer asks: 'What is the purpose of your visit?' What do you say?"</h3>
+<details>
+<summary><b>Click for Model Answer (P.A.S.S. Drill)</b></summary>
+
+> **"I am here to work under a legal government B1 visa, Sir. Here is my official employment letter and accommodation address."**
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — The 17 DOs &amp; DON'Ts Master Scorecard &amp; Drills (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Self-evaluation against official board grading rubrics.</p>
+</blockquote>
+<h3>5A. The 17 Rules Checklist</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Golden Rule</th>
+<th style="text-align: center;">Self-Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DO #1</strong></td>
+<td style="text-align: left;">Dress in clean white shirt, black trousers, polished black shoes</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #2</strong></td>
+<td style="text-align: left;">Keep documents organized in an English-labeled folder</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #3</strong></td>
+<td style="text-align: left;">Use short, simple SVO sentences (Subject + Verb + Object)</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #4</strong></td>
+<td style="text-align: left;">Pronounce numbers precisely (15 vs 50, 13 vs 30, 28, 60,000)</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #5</strong></td>
+<td style="text-align: left;">Maintain direct eye contact with the camera lens and subtle smile</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #6</strong></td>
+<td style="text-align: left;">Confirm 100% physical fitness, shift flexibility, and no injuries</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #7</strong></td>
+<td style="text-align: left;">Use <em>"Pardon me, Sir..."</em> if an instruction is unclear</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #1</strong></td>
+<td style="text-align: left;">Do NOT exceed 60 seconds on self-introduction</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #2</strong></td>
+<td style="text-align: left;">Do NOT stay silent when nervous</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #3</strong></td>
+<td style="text-align: left;">Do NOT put unverified information on your CV or service letter</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #4</strong></td>
+<td style="text-align: left;">Do NOT show zero knowledge of FIFO or retail duties</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #5</strong></td>
+<td style="text-align: left;">Do NOT display a scared, panicked, or weak persona</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #6</strong></td>
+<td style="text-align: left;">Do NOT dodge questions with personal sob stories</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #7</strong></td>
+<td style="text-align: left;">Do NOT slouch, fold arms, cross legs, or touch your face</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #8</strong></td>
+<td style="text-align: left;">Do NOT attend without verbal speaking practice at home</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #9</strong></td>
+<td style="text-align: left;">Do NOT complain about Sri Lanka or past employers</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #10</strong></td>
+<td style="text-align: left;">Do NOT ask inappropriate questions about food/overtime allowances</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+</tbody>
+</table>
+<h3>5B. The V.I.C.T.O.R.Y. Capstone memory formula</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                  THE V.I.C.T.O.R.Y. FORMULA               │
+   │                                                           │
+   │   V ──► Visual Eye Contact with the Camera Lens           │
+   │   I ──► Instant File Handover (Under 2 Seconds)           │
+   │   C ──► Clear, Crisp SVO Sentences                        │
+   │   T ──► Technical Precision (FIFO, PPE, S.T.O.P.)         │
+   │   O ──► Open, Confident Posture &amp; Subtle Smile            │
+   │   R ──► Resilient Mindset Under Pressure                  │
+   │   Y ──► Yield 100% Legal Compliance &amp; Return Vision       │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Final Course Graduation &amp; Spaced Repetition Lock</h2>
+<ul>
+<li>[ ] <strong>Daily Maintenance Drill (15 min):</strong> Whisper-drill the 60-second self-introduction and 5 random technical Q&amp;As every morning.</li>
+<li>[ ] <strong>Full Mock Rehearsal (Weekly):</strong> Record the complete 14-question board interview on your phone camera; verify eye contact, voice volume, and number precision.</li>
+<li>[ ] <strong>Night Before Interview:</strong> Complete the 17 DOs &amp; DON'Ts checklist, check your physical document folder, and rest with full confidence.</li>
+</ul>
+<hr />
+<h2>Final Message from Your Instructor</h2>
+<blockquote>
+<p><strong>Dilan, you have completed all 12 lessons of the Israel English Mastery Course.</strong><br />
+You possess the real work experience, the forklift certification, the physical fitness, the cultural knowledge, and the exact English sentences required to succeed. Walk into the interview room with pride, speak clearly, smile, and claim your international career opportunity in Israel!</p>
+</blockquote></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0012 — The Full 30-Question Rapid-Fire Mock Board Rehearsal: සම්පූර්ණ සම්මුඛ පරීක්ෂණ මණ්ඩල පෙරහුරුව</h1>
+<blockquote>
+<p><strong>Mission link:</strong> මෙය පාඨමාලාවේ අවසන් ප්‍රධාන ප්‍රවීණතා පාඩමයි (capstone mastery lesson). සම්මුඛ පරීක්ෂණ දිනයේදී, ඊශ්‍රායල නියෝජිතයින් සහ SLBFE නිලධාරීන් ඔබගේ පුද්ගලික තොරතුරු, තාක්ෂණික කුසලතා, ඊශ්‍රායල සංස්කෘතිය, අනුවර්තන හැකියාව සහ වීසා නීතිරීති ආවරණය කරමින් වේගවත් ප්‍රශ්න මාලාවක් අසනු ඇත. කෙළින් හිඳගෙන, කැමරාව දෙස සෘජුව බලාගෙන, පැහැදිලිව පිළිතුරු දීමට ඔබට ඇත්තේ තත්පර කිහිපයක් පමණි. මෙම පාඩම මඟින් සම්පූර්ණ සම්මුඛ පරීක්ෂණ මණ්ඩලයම අනුකරණය කරන අතර එමඟින් ඔබ කිසිදු බියක් හෝ ආතතියක් නොමැතිව පූර්ණ ආත්ම විශ්වාසයෙන් යුතුව කාමරයට ඇතුල් වනු ඇත.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> ඩිලාන් සමඟ සම්පූර්ණ සම්මුඛ පරීක්ෂණ අනුකරණයට ඔබ පිවිසෙනු ඇත. ක්ෂණික ස්වයං පරීක්ෂාව සඳහා interactive <code>&lt;details&gt;</code> කොටස් සහිතව සම්මුඛ පරීක්ෂණ අදියර 4කට මෙය බෙදා ඇත. Grammar සටහන් Optional Monitor Appendix එක තුළ ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, පදිංචිය <strong>පහලගොඩ, තංගල්ල</strong>, supermarket/retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්ද, forklift සුදුසුකම්, ශක්තිමත් ශාරීරික යෝග්‍යතාවය, සම්මුඛ පරීක්ෂණය 100% ක් සමත් වීමට සූදානම්.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>සවිස්තරාත්මක මතකය අවදි කිරීම (retrieval practice) සහ ප්‍රායෝගික පෙරහුරුව මඟින්</strong> — ඔබට හැකිවනු ඇත:<br />
+1. කාලය ඉක්මවා නොගොස් සහ කිසිදු පැකිලීමකින් තොරව <strong>තත්පර 60ක සම්පූර්ණ ස්වයං හැඳින්වීම (self-introduction)</strong> ඉදිරිපත් කිරීමට.<br />
+2. ප්‍රධාන පාඨමාලා ඒකක 4ම ආවරණය වන පරිදි ප්‍රධාන සම්මුඛ පරීක්ෂණ ප්‍රශ්නවලට විශ්වාසදායක <strong>SVO වාක්‍ය මඟින් පිළිතුරු දීමට</strong>.<br />
+3. <strong>17 DOs &amp; DON'Ts ඇගයීම් ලැයිස්තුව</strong> 100% ක් නිවැරදිව අනුගමනය කිරීමට.<br />
+4. වේගවත් ප්‍රශ්න මාලාව හමුවේ <strong>නොසැලෙන මානසික සංවරය සහ සන්සුන් බව (mental composure)</strong> පවත්වා ගැනීමට.<br />
+5. ප්‍රධාන සමාප්ති මතක ආධාරක (memory formulas) 2ක් මතකයේ රඳවා ගැනීමට: <strong>M.O.C.K.-30</strong> සහ <strong>V.I.C.T.O.R.Y.</strong></p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 45යි. පුළුල් <strong>micro-blocks 5කට</strong> බෙදා ඇත.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — සියලුම වචන මාලාවන්, ව්‍යුහයන් සහ ඉදිරිපත් කිරීමේ දක්ෂතා <strong>සක්‍රීය වාචික චතුරත්වයක් (spoken fluency)</strong> බවට පරිවර්තනය කිරීම.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — සම්පූර්ණ මාර්ගෝපදේශය (§1 සිට §10 දක්වා: ප්‍රශ්නෝත්තර, 17 DOs &amp; DON'Ts, ගුවන්තොටුපළ පෙරහුරුව, වචන මාලාව)</li>
+<li><code>01/info_final.md</code> — Part I §6 (Retrieval Practice), Part I §3 (Spaced Repetition), Part VI (Exam Anxiety Management &amp; Circle of Control)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — ජයග්‍රාහී මොහොත සිතින් මවාගන්න / visualize the moment of victory)</h2>
+<blockquote>
+<p><em>The door opens. Dilan performs the K.A.G.S. entry sequence: knocks gently, asks permission, greets the panel, and sits straight. He looks directly into the camera lens with a subtle, confident smile.</em>  </p>
+<p><em>For 15 minutes, the Israeli representative fires questions: self-introduction, FIFO stocking, broken bottles, number verification, machine safety, Shabbat, sub-zero freezers, and B1 visa rules.</em>  </p>
+<p><em>Dilan does not pause. He does not guess. He uses clear SVO sentences, precise numbers, and respectful composure. At the end, the Israeli director stands up, smiles, and extends his hand:</em><br />
+<strong>"Congratulations, Dilan. You did an exceptional interview. Welcome to Israel!"</strong></p>
+</blockquote>
+<p>විශිෂ්ට සාර්ථකත්වය යනු වාසනාව මත සිදුවන දෙයක් නොවේ — එය <strong>ක්‍රමවත් සූදානම සහ පුහුණුවේ (deliberate practice)</strong> සැබෑ ප්‍රතිඵලයයි.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> මෙම අවසාන පාඩම සම්පූර්ණ සම්මුඛ පරීක්ෂණය අනුකරණය කරයි. ප්‍රශ්න සඳහා කෙටි, සරල, සහ පැහැදිලි ඉංග්‍රීසි පිළිතුරු ලබා දීමට මෙමගින් පුහුණු වේ.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Stage 1: Entry, Profile &amp; Number Precision (පැමිණීම, පැතිකඩ සහ සංඛ්‍යා) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> මූලික පැතිකඩ තොරතුරු සක්‍රීයව මතක් කරගැනීම.</p>
+</blockquote>
+<h3>Q1: "May I see your document file, and tell me your full name and age?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"Yes, Sir. Here is my complete document file.**  
+> My name is **Dilan Harshana**. I am **twenty-eight** years old, and I am from **Tangalle, Sri Lanka**."
+
+</details>
+
+<h3>Q2: "Deliver your full self-introduction." (ඉලක්කය: තත්පර 60ට අඩුවෙන්)</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.E.S.M.S. Framework)</b></summary>
+
+> **"Good morning, Sir. Thank you for giving me this opportunity.**  
+> My name is **Dilan Harshana**. I am **twenty-eight years old**, single, and from **Tangalle, Sri Lanka**.  
+> I have **more than five years of experience** in the supermarket and retail sector, including work at Keells Supermarket and running my own retail grocery. In addition, I have completed a certified **forklift operator course** and practical technical training at David Pieris Motors.  
+> In my previous jobs, I was responsible for **stocking display shelves, applying the FIFO method, operating pallet jacks, and assisting customers**.  
+> I am **physically fit, hardworking, and highly reliable**. My height is **168 centimeters** and my weight is **60 kilograms**.  
+> I want to work in an Israeli supermarket to **gain valuable international experience, earn a good income in Shekels, and support my family's economy**.  
+> **That is all about me, Sir. Thank you very much."**
+
+</details>
+
+<h3>Q3: "How much was your previous monthly salary, and what were your weekly work hours?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"I earned sixty thousand rupees per month, Sir.**  
+> I regularly worked **fifty** hours per week, including overtime."
+
+</details>
+
+<hr />
+<h2>Micro-Block 2 — Stage 2: Technical Retail &amp; Factory Operations (තාක්ෂණික මෙහෙයුම්) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> පීඩනයක් යටතේ තාක්ෂණික ක්‍රියාපටිපාටි චතුර ලෙස ප්‍රකාශ කිරීම.</p>
+</blockquote>
+<h3>Q4: "Explain the FIFO method and how you rotate dairy stock."</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"FIFO stands for First-In, First-Out, Sir.**  
+> When new dairy stock arrives, I check the expiration dates.  
+> I place the newest items at the **back** of the shelf and pull the older stock to the **front** to prevent spoilage and store shrink."
+
+</details>
+
+<h3>Q5: "What immediate steps do you take if an oil bottle breaks in a customer aisle?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (S.P.I.L.L. Protocol)</b></summary>
+
+> **"Customer safety is my number one priority.**  
+> First, I secure the area and place a **'Caution: Wet Floor'** warning sign.  
+> Next, wearing PPE gloves, I sweep up broken glass.  
+> Then, I mop the oily floor with chemical degreaser (D10).  
+> I remove the warning sign only after the floor is completely dry."
+
+</details>
+
+<h3>Q6: "What is PPE, and what will you do if a machine jams on the line?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (S.T.O.P. Protocol)</b></summary>
+
+> **"PPE stands for Personal Protective Equipment—including safety shoes, helmet, gloves, and goggles.**  
+> If a machine jams, I hit the **Emergency Stop button** immediately, set aside defective goods, and inform my supervisor and maintenance technician right away."
+
+</details>
+
+<h3>Q7: "Are you prepared for the 50 kg physical stamina test?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.T.-50-2-11)</b></summary>
+
+> **"Yes, Sir! I am physically fit, strong, and healthy.**  
+> I am fully prepared to lift a 50 kg load, carry it for 200 meters, and complete the 2 km run in 11 minutes."
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — Stage 3: Israel Realities &amp; Cultural Adaptation (ඊශ්‍රායලය සහ සංස්කෘතිය) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සංස්කෘතික දැනුම සහ මානසික ශක්තිය.</p>
+</blockquote>
+<h3>Q8: "Where is Israel located, what is the capital, and what is the currency?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"Israel is in the Middle East along the Mediterranean Sea, bordered by Lebanon, Syria, Jordan, and Egypt.**  
+> The capital is **Jerusalem**, the financial hub is **Tel Aviv**, and the currency is the **New Israeli Shekel (NIS)**."
+
+</details>
+
+<h3>Q9: "What is Shabbat, and how does the Israeli workweek run?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"Shabbat is the Jewish day of rest from Friday sunset to Saturday sunset.**  
+> The standard Israeli workweek runs from **Sunday to Thursday**."
+
+</details>
+
+<h3>Q10: "How will you handle Israeli supervisors who speak loudly and directly ('Dugri')?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"I respect the 'Dugri' communication style, Sir.**  
+> I do not take direct feedback personally. I stay calm, listen carefully, and execute instructions immediately."
+
+</details>
+
+<h3>Q11: "Can you work 10-hour night shifts and inside sub-zero (-18°C) freezer rooms?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"Yes, Sir. I am 100% comfortable with rotating night shifts and overtime.**  
+> I wear thermal protective gear and have no problem adapting to extreme climates or cold storage rooms."
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — Stage 4: Compliance, Longevity &amp; Immigration (වීසා සහ ආගමන විගමන) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> නීතිමය ස්ථිරභාවය සහ දේශසීමා ආරක්ෂාව.</p>
+</blockquote>
+<h3>Q12: "Under what visa will you work, and what are the legal limits?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (B.1.-V.I.S.A.)</b></summary>
+
+> **"I will work under a legal B1 work visa, valid for up to 5 years and 3 months.**  
+> I am bound to work only for my sponsor employer, and secondary part-time jobs are strictly illegal."
+
+</details>
+
+<h3>Q13: "What will you do when your 5-year visa expires?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+
+> **"I will strictly follow immigration laws and return to Sri Lanka.**  
+> I plan to use my savings and international retail experience to start my own supermarket business in Tangalle."
+
+</details>
+
+<h3>Q14: "At Tel Aviv airport, the immigration officer asks: 'What is the purpose of your visit?' What do you say?"</h3>
+<details>
+<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.A.S.S. Drill)</b></summary>
+
+> **"I am here to work under a legal government B1 visa, Sir. Here is my official employment letter and accommodation address."**
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — The 17 DOs &amp; DON'Ts Master Scorecard &amp; Drills (ඇගයීම් ලැයිස්තුව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> නිල සම්මුඛ පරීක්ෂණ ඇගයීම් නිර්ණායක අනුව ස්වයං ඇගයීම.</p>
+</blockquote>
+<h3>5A. The 17 Rules Checklist</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Golden Rule (රන්වන් නීතිය)</th>
+<th style="text-align: center;">Self-Check (ස්වයං පරීක්ෂාව)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DO #1</strong></td>
+<td style="text-align: left;">සුදු කමිසය, කළු කලිසම, ඔප දැමූ කළු සපත්තු ඇඳීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #2</strong></td>
+<td style="text-align: left;">ඉංග්‍රීසි ලේබල් සහිත පිරිසිදු Folder එකක ලියකියවිලි තබාගැනීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #3</strong></td>
+<td style="text-align: left;">කෙටි, සරල SVO වාක්‍ය (Subject + Verb + Object) භාවිතා කිරීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #4</strong></td>
+<td style="text-align: left;">සංඛ්‍යා ඉතා පැහැදිලිව උච්චාරණය කිරීම (15 vs 50, 13 vs 30, 28, 60,000)</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #5</strong></td>
+<td style="text-align: left;">කැමරා කාචය දෙස කෙළින් බලා මඳ සිනහවක් පවත්වා ගැනීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #6</strong></td>
+<td style="text-align: left;">100% ශාරීරික සුවතාවය, වැඩ මුර සඳහා සූදානම තහවුරු කිරීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DO #7</strong></td>
+<td style="text-align: left;">අපැහැදිලි වූ විට <em>"Pardon me, Sir..."</em> කියා ආචාරශීලීව ඇසීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #1</strong></td>
+<td style="text-align: left;">ස්වයං හැඳින්වීම තත්පර 60 ඉක්මවා නොපැවසීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #2</strong></td>
+<td style="text-align: left;">කලබල වූ විට කිසිවිටෙකත් නිහඬව නොසිටීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #3</strong></td>
+<td style="text-align: left;">CV එකට හෝ සේවා සහතිකයට බොරු තොරතුරු ඇතුළත් නොකිරීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #4</strong></td>
+<td style="text-align: left;">FIFO හෝ රාක්ක පිරවීම නොදන්නා බවක් නොපෙන්වීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #5</strong></td>
+<td style="text-align: left;">බියගුලු හෝ දුර්වල පෙනුමක් ප්‍රදර්ශනය නොකිරීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #6</strong></td>
+<td style="text-align: left;">ප්‍රශ්නවලින් ලිස්සා යාමට පෞද්ගලික දුක් ගැනවිලි නොකීම</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #7</strong></td>
+<td style="text-align: left;">ඇඟ නවන්න, අත් බැඳගන්න, කකුල් පිට කකුල් දමන්න එපා</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #8</strong></td>
+<td style="text-align: left;">නිවසේදී කතා කර පුහුණු නොවී interview නොයන්න</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #9</strong></td>
+<td style="text-align: left;">ලංකාව හෝ පෙර සේවායෝජකයින් ගැන පැමිණිලි නොකරන්න</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DON'T #10</strong></td>
+<td style="text-align: left;">කෑම දීමනා හෝ අතිකාල මුදල් ගැන නුසුදුසු ප්‍රශ්න නොඅසන්න</td>
+<td style="text-align: center;">[ ]</td>
+</tr>
+</tbody>
+</table>
+<h3>5B. The V.I.C.T.O.R.Y. Capstone memory formula (මතක ආධාරකය)</h3>
+<pre><code>   ┌───────────────────────────────────────────────────────────┐
+   │                  THE V.I.C.T.O.R.Y. FORMULA               │
+   │                                                           │
+   │   V ──► Visual Eye Contact with the Camera Lens (කැමරාව දෙස බැලීම) │
+   │   I ──► Instant File Handover (තත්පර 2ක් තුළ File එක දීම) │
+   │   C ──► Clear, Crisp SVO Sentences (පැහැදිලි සරල වාක්‍ය)  │
+   │   T ──► Technical Precision (FIFO, PPE, S.T.O.P. නිරවද්‍යතාව) │
+   │   O ──► Open, Confident Posture &amp; Subtle Smile (කෙළින් ඉරියව්ව) │
+   │   R ──► Resilient Mindset Under Pressure (නොසැලෙන මානසිකත්වය) │
+   │   Y ──► Yield 100% Legal Compliance &amp; Return Vision (නීතිගරුක බව) │
+   └───────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>Final Course Graduation &amp; Spaced Repetition Lock (පාඨමාලා සමාප්තිය සහ පුනරීක්ෂණය)</h2>
+<ul>
+<li>[ ] <strong>Daily Maintenance Drill (දිනපතා විනාඩි 15):</strong> සෑම උදෑසනකම තත්පර 60 ස්වයං හැඳින්වීම සහ ඕනෑම තාක්ෂණික ප්‍රශ්න 5ක් whisper කරන්න.</li>
+<li>[ ] <strong>Full Mock Rehearsal (සතිපතා):</strong> දුරකථන කැමරාව ඉදිරියේ සම්පූර්ණ ප්‍රශ්න 14ම record කර, ඇස් බැලීම, කටහඬේ පරිමාව සහ සංඛ්‍යා පරීක්ෂා කරන්න.</li>
+<li>[ ] <strong>Night Before Interview (පෙර දින රාත්‍රියේ):</strong> 17 DOs &amp; DON'Ts ලැයිස්තුව සහ ලිපිගොනුව අවසන් වරට පරීක්ෂා කර, පූර්ණ විශ්වාසයෙන් යුතුව විවේක ගන්න.</li>
+</ul>
+<hr />
+<h2>Final Message from Your Instructor (ගුරුවරයාගෙන් අවසන් පණිවිඩය)</h2>
+<blockquote>
+<p><strong>ඩිලාන්, ඔබ ඊශ්‍රායල රැකියා ඉංග්‍රීසි පාඨමාලාවේ (Israel English Mastery Course) පාඩම් 12ම සාර්ථකව අවසන් කර ඇත.</strong><br />
+සැබෑ සේවා පළපුරුද්ද, forklift බලපත්‍රය, ශාරීරික යෝග්‍යතාවය, සංස්කෘතික දැනුම සහ ජයග්‍රහණයට අවශ්‍ය නිවැරදි ඉංග්‍රීසි වාක්‍ය ඔබ සතුව ඇත. ආඩම්බරයෙන් සම්මුඛ පරීක්ෂණ කාමරයට ඇතුල් වන්න, පැහැදිලිව කතා කරන්න, සිනහවකින් යුතුව ඔබේ ඊශ්‍රායල ජාත්‍යන්තර රැකියා අවස්ථාව දිනාගන්න!</p>
+</blockquote>
+<hr />
+<p><strong>End of Lesson 0012</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0012 — සම්මුඛ පරීක්ෂණ මණ්ඩල පෙරහුරුව (Mock Board Rehearsal) [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> සම්මුඛ පරීක්ෂණයේදී අසන සියලුම ප්‍රධාන ප්‍රශ්නවලට ආත්ම විශ්වාසයෙන්, කෙටි සහ පැහැදිලි පිළිතුරු ලබා දී සාර්ථක වීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li>තත්පර 60ක ස්වයං හැඳින්වීම (P.E.S.M.S.) චතුර ලෙස ඉදිරිපත් කිරීම.</li>
+<li>තාක්ෂණික සහ නීතිමය ප්‍රශ්නවලට සරල SVO වාක්‍යවලින් පිළිතුරු දීම.</li>
+<li>17 DOs &amp; DON'Ts ප්‍රමිති අනුගමනය කිරීම.</li>
+</ol>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. ජයග්‍රාහී සූත්‍රය: <strong>V.I.C.T.O.R.Y.</strong></h3>
+<p>සම්මුඛ පරීක්ෂණයේදී පවත්වාගත යුතු ප්‍රමිතිය:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">අකුර</th>
+<th style="text-align: left;">මූලධර්මය</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>V</strong></td>
+<td style="text-align: left;"><strong>Visual Eye Contact:</strong> කැමරාව/මණ්ඩලය දෙස බැලීම.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>I</strong></td>
+<td style="text-align: left;"><strong>Instant Handover:</strong> ලියකියවිලි ක්‍ෂණිකව දීම.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: left;"><strong>Clear SVO Sentences:</strong> පැහැදිලි සරල වාක්‍ය භාවිතය.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>T</strong></td>
+<td style="text-align: left;"><strong>Technical Precision:</strong> FIFO, PPE, S.T.O.P. නිරවද්‍යතාව.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>O</strong></td>
+<td style="text-align: left;"><strong>Open/Confident Posture:</strong> කෙළින් ඉරියව්ව.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>R</strong></td>
+<td style="text-align: left;"><strong>Resilient Mindset:</strong> පීඩනය හමුවේ සන්සුන් වීම.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Y</strong></td>
+<td style="text-align: left;"><strong>Yield Legal Compliance:</strong> නීතිගරුක බව තහවුරු කිරීම.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>Mock Rehearsal:</strong> දුරකථන කැමරාව ඉදිරියේ සම්පූර්ණ ප්‍රශ්න මාලාවම පිළිතුරු දී record කරන්න.</li>
+<li><strong>Review:</strong> තත්පර 60 ස්වයං හැඳින්වීම සහ ප්‍රශ්න 14ට දුන් පිළිතුරු පරීක්ෂා කර අඩුපාඩු හදන්න.</li>
+<li><strong>Mindset:</strong> "මම සූදානම්" යන ආකල්පය තහවුරු කරගෙන සම්මුඛ පරීක්ෂණයට යන්න.</li>
+</ol>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Compliance</strong> = නීති අනුකූලතාවය (<em>"I maintain 100% legal compliance."</em>)</li>
+<li><strong>Confidence</strong> = ආත්ම විශ්වාසය (<em>"I answered all questions with confidence."</em>)</li>
+<li><strong>Victory</strong> = ජයග්‍රහණය (<em>"Preparation leads to victory."</em>)</li>
+</ul>
+<hr />
+<h2>සමාප්තිය</h2>
+<p>ඔබ සියලු පාඩම් සම්පූර්ණ කර ඇත. දැන් ඔබ ඊශ්‍රායල රැකියා අවස්ථාව සඳහා පූර්ණ සූදානමින් සිටී. සාර්ථක වන්න!</p></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0011-airport-immigration-drill.html"><span aria-hidden="true">←</span><span>0011 · Airport Immigration Drill</span></a>
+        
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>

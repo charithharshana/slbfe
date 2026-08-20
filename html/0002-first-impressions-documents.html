@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="First Impressions: Prepare a professional appearance, organize your documents, and enter the interview room with control.">
+  <title>Lesson 0002 | First Impressions</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0002</small><span>First Impressions</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html" selected>0002 · First Impressions</option><option value="0003-number-power-precision.html">0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">02 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0002</div>
+            <h1>First Impressions</h1>
+            <p class="hero-lead">Prepare a professional appearance, organize your documents, and enter the interview room with control.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0002 — First Impressions: Dilan's Perfect File</h1>
+<blockquote>
+<p><strong>Mission link:</strong> The interview decision happens in the <strong>first 5 seconds</strong>. Before you speak a single word, recruiters evaluate your <strong>appearance, grooming, and document organization</strong>. This lesson makes you look like a professional who respects the opportunity.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> You will meet Dilan preparing for his interview in <strong>three different scenes</strong>. Each scene recycles the same vocabulary with variation. By the third scene, the words feel natural. Grammar explanation is in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, from <strong>Pahalagoda, Tangalle</strong>. He has a passport, NIC, birth certificate, school leaving certificates, and service letters from Keells Supermarket and his retail store in Tangalle.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>input, not memorization</strong> — you will be able to:<br />
+1. <strong>Recognize</strong> the mandatory G2G dress code and grooming standards (input).<br />
+2. <strong>Name</strong> the 7 mandatory documents in your physical file (vocabulary).<br />
+3. <strong>Explain</strong> why service letter verification matters and what details must match (comprehension).<br />
+4. <strong>Perform</strong> the 4-step entry ritual: K.A.G.S. (Knock, Ask, Greet, Sit) (skill).<br />
+5. <strong>Organize</strong> your own physical document file using the F.I.L.E. system (application).<br />
+6. <strong>Hold</strong> 2 memory formulas: <strong>K.A.G.S.</strong> and <strong>F.I.L.E.</strong></p>
+<p><strong>Estimated time:</strong> 40 minutes, split into <strong>5 micro-blocks</strong> of ~8 min each, with 5-min breaks.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — you already know how to dress formally; this lesson adds <strong>interview-specific standards</strong> that recruiters check.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §1.1 (Dress Code &amp; Grooming), §1.2 (Mandatory Documents), §1.3 (Service Letters &amp; Verification), §2.1 (Entry &amp; Greeting Phrases), §8.1 Don'ts #7 (Body Language), §8.2 DO #1–2</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input Theory, meaningful context)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — picture it in your head)</h2>
+<blockquote>
+<p><em>It is 7:30 AM. Dilan stands outside the interview building in Colombo. He arrived 30 minutes early. His white shirt is clean and ironed. His black shoes shine like mirrors. His hair is short and neat. His face is clean-shaved. In his hands, he holds a black folder with all his documents arranged in perfect order.</em></p>
+<p><em>He walks into the room. Before the recruiter looks at his CV, before she asks a single question, she has already made her first decision: "This man is professional. He respects this opportunity."</em></p>
+</blockquote>
+<p>Most candidates fail before they speak. They arrive late, sweating. Their shirt is wrinkled. Their documents are in a plastic bag, crumpled and torn. When the recruiter asks <em>"Give me your file,"</em> they spend two minutes searching through loose papers.</p>
+<p>In this lesson, you will learn how to <strong>look ready</strong> before you <strong>sound ready</strong>.</p>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Mirror Check (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Week 1 of the 4-Week Plan = pure observation. <strong>Watch first, then practice.</strong></p>
+</blockquote>
+<h3>1A. Watch — The Professional Look (5 min)</h3>
+<p>Go to YouTube and search for:<br />
+- <strong>"Israel job interview Sri Lanka dress code"</strong><br />
+- <strong>"SLBFE interview dress code"</strong><br />
+- <strong>"Professional interview appearance"</strong></p>
+<p>Pick <strong>one</strong> video (3–5 minutes). Watch how candidates dress. Notice:<br />
+- Shirt color (white)<br />
+- Trouser color (black)<br />
+- Shoes (polished black)<br />
+- Hair (short, neat)<br />
+- Face (clean-shaved)</p>
+<p><strong>Do not take notes yet.</strong> Just <strong>observe</strong>.</p>
+<h3>1B. Notice (3 min)</h3>
+<p>After watching, look at yourself in a mirror. Ask these questions:</p>
+<ul>
+<li><strong>Is my shirt clean and ironed?</strong></li>
+<li><strong>Are my trousers black and clean?</strong></li>
+<li><strong>Are my shoes polished?</strong></li>
+<li><strong>Is my hair short and neat?</strong></li>
+<li><strong>Am I clean-shaved?</strong></li>
+</ul>
+<p>Write down <strong>3 things you need to prepare</strong> for your interview day.</p>
+<details>
+<summary>Why appearance matters (The 5-Second Rule)</summary>
+
+Research shows that interviewers form their first impression within **5 seconds** of seeing a candidate. This judgment is based entirely on **visual cues** — not your skills, not your experience, just your appearance. If you look unprofessional in the first 5 seconds, the interviewer assumes you will be unprofessional on the job. This is called the **Halo Effect** in psychology — one positive trait (neat appearance) makes the interviewer assume you have other positive traits (reliability, discipline, respect for rules).
+
+</details>
+
+<hr />
+<h2>Micro-Block 2 — Meet Dilan: The Morning Routine (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> New language is presented in <strong>meaningful context</strong> — a story about preparing for the interview, with actions you will do yourself.</p>
+</blockquote>
+<h3>2A. Dilan's Morning (Read or Listen) (6 min)</h3>
+<blockquote>
+<p><strong>Read this story out loud slowly.</strong> This is what <strong>you</strong> will do on interview day. Picture yourself doing each action.</p>
+</blockquote>
+<p><strong>6:00 AM — Wake Up</strong><br />
+Dilan wakes up at 6:00 AM. His interview is at 9:00 AM, but he wants to arrive <strong>30 minutes early</strong>. He takes a shower, shaves his face carefully, and combs his hair.</p>
+<p><strong>6:30 AM — The Dress Code</strong><br />
+Dilan puts on his <strong>clean white long-sleeve shirt</strong>. He ironed it last night, so there are no wrinkles. He wears <strong>black trousers</strong> — not blue, not gray, <strong>black</strong>. He polishes his <strong>black shoes</strong> until they shine. He looks in the mirror. He looks <strong>professional</strong>.</p>
+<p><strong>7:00 AM — The Document File</strong><br />
+Dilan opens his black folder. Inside, he has arranged his documents in order:</p>
+<ol>
+<li><strong>Passport</strong> (original + color copy)</li>
+<li><strong>NIC</strong> (original + color copy)</li>
+<li><strong>Birth certificate</strong> (original + color copy)</li>
+<li><strong>School leaving certificates</strong> (original + color copy)</li>
+<li><strong>Service letter from Keells Supermarket</strong> — signed and stamped by the HR Manager</li>
+<li><strong>Service letter from his retail store</strong> — signed and stamped by the store owner</li>
+<li><strong>Six payslips</strong> from his previous jobs — spread across different months to prove his salary history</li>
+</ol>
+<p>Each document is clean, not torn, not crumpled. He can pull out any document <strong>instantly</strong> when the recruiter asks for it.</p>
+<p><strong>7:30 AM — Arrive Early</strong><br />
+Dilan leaves home at 7:30 AM. The interview is at 9:00 AM, but he wants to arrive by <strong>8:30 AM</strong>. Why? Because arriving early means:<br />
+- No rushing, no sweating<br />
+- Time to use the bathroom<br />
+- Time to calm his mind<br />
+- Time to review his self-introduction one last time</p>
+<p><strong>8:30 AM — Outside the Interview Room</strong><br />
+Dilan arrives at the building. He sits quietly outside the interview room. He is <strong>calm</strong>, <strong>ready</strong>, and <strong>confident</strong>.</p>
+<h3>2B. Picture This (2 min)</h3>
+<p>Close your eyes. Picture yourself on interview day:</p>
+<ul>
+<li>You wake up <strong>early</strong> (at least 3 hours before the interview)</li>
+<li>You <strong>shower</strong>, <strong>shave</strong>, and <strong>comb</strong> your hair</li>
+<li>You wear a <strong>clean white long-sleeve shirt</strong>, <strong>black trousers</strong>, <strong>polished black shoes</strong></li>
+<li>Your documents are in a <strong>neat black folder</strong>, organized in order</li>
+<li>You arrive <strong>30 minutes early</strong> — calm, ready, confident</li>
+</ul>
+<details>
+<summary>Why arriving early matters (The Calm Mind Principle)</summary>
+
+Arriving early is not just about punctuality — it is about **mental preparation**. When you rush, your body releases **cortisol** (the stress hormone), which makes your mind foggy and your voice shaky. When you arrive early, your **parasympathetic nervous system** activates, calming your heart rate and sharpening your focus. Israeli recruiters specifically note candidates who arrive late or sweating — it signals poor planning and low discipline.
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — The Mandatory Documents Checklist (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Repetition with variation</strong> — you have now heard about documents twice (in the Big Idea and in Dilan's Morning). This is the <strong>third encounter</strong>, with more detail.</p>
+</blockquote>
+<h3>3A. The 7 Mandatory Documents (5 min)</h3>
+<p>Read this checklist aloud. These are the <strong>exact documents</strong> you must bring to your interview:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Document</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Passport</strong> (original + color copy)</td>
+<td>Proves your identity and eligibility for a B1 work visa</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>NIC</strong> (original + color copy)</td>
+<td>Verifies that your passport details match your national ID</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Birth certificate</strong> (original + color copy)</td>
+<td>Confirms your date of birth and family details</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>School leaving certificates</strong> (original + color copy)</td>
+<td>Proves you completed 8–10 years of formal education (minimum requirement for manual labor visas)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Service letter(s)</strong> from previous employer(s)</td>
+<td><strong>CRITICAL:</strong> Must include company name, your full name, NIC number, exact job title, exact employment duration, company stamp/seal, and HR Manager or Store Manager signature</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Payslips</strong> (minimum 6, spread across employment timeline)</td>
+<td>Verifies your salary history and proves the service letter is authentic</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Marriage certificate</strong> (if applicable)</td>
+<td>Required if you are married and stated this in your application</td>
+</tr>
+</tbody>
+</table>
+<h3>3B. The Service Letter Trap (3 min)</h3>
+<p><strong>This is the #1 reason candidates are disqualified after passing the interview.</strong></p>
+<p>Your <strong>service letter</strong> must have these <strong>exact details</strong>:<br />
+-  Company name (letterhead with official logo)<br />
+-  Your full name (matching passport and NIC)<br />
+-  Your NIC number (matching exactly)<br />
+-  Your exact job title (e.g., <em>"Retail Sales Assistant"</em>, <em>"Packing Helper"</em>)<br />
+-  Your exact employment duration (e.g., <em>"From 01 January 2019 to 31 December 2023"</em>)<br />
+-  Company stamp/seal (official red or blue ink stamp)<br />
+-  HR Manager or Store Manager signature (with name and title printed below)</p>
+<p><strong>Why this matters:</strong><br />
+Israeli representatives and SLBFE officers <strong>call your previous employer</strong> to verify your service letter. They ask:<br />
+- <em>"Did Dilan Harshana work at your company?"</em><br />
+- <em>"What were his daily duties?"</em><br />
+- <em>"What was his salary?"</em><br />
+- <em>"Was he a reliable worker?"</em></p>
+<p><strong>If your interview answers do not match the manager's phone verification, you are disqualified immediately.</strong></p>
+<details>
+<summary>Real example of verification call failure</summary>
+
+**Candidate:** *"I worked as a machine operator for 5 years and earned Rs. 80,000 per month."*
+
+**Recruiter calls the factory. Manager says:** *"He worked for 2 years, not 5. His salary was Rs. 40,000, not Rs. 80,000. He was a general helper, not a machine operator."*
+
+**Result:** Candidate is disqualified for lying, even though he passed the English interview.
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — The K.A.G.S. Entry Ritual (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Skill practice</strong> through step-by-step rehearsal. You will practice this physically, not just read it.</p>
+</blockquote>
+<h3>4A. The 4-Step Entry Script (5 min)</h3>
+<p>When you enter the interview room, follow these <strong>exact steps</strong> in <strong>this exact order</strong>:</p>
+<h4><strong>K — Knock</strong></h4>
+<ul>
+<li>Stand outside the closed door</li>
+<li>Knock <strong>twice</strong> gently: <em>tap-tap</em></li>
+<li>Wait 2 seconds</li>
+</ul>
+<h4><strong>A — Ask Permission</strong></h4>
+<ul>
+<li>When you hear <em>"Come in"</em>, open the door slowly</li>
+<li>Stand in the doorway and say: <strong>"May I come in, Sir?"</strong> or <strong>"May I come in, Madam?"</strong></li>
+<li>Wait for the recruiter to say <em>"Yes, please"</em> or <em>"Come in"</em></li>
+</ul>
+<h4><strong>G — Greet</strong></h4>
+<ul>
+<li>Walk in calmly (do not rush)</li>
+<li>Stand in front of the chair and greet: <strong>"Good morning, Sir"</strong> / <strong>"Good afternoon, Madam"</strong> (use the correct time of day)</li>
+<li>Smile slightly (not a big smile, just a small, polite smile)</li>
+</ul>
+<h4><strong>S — Sit</strong></h4>
+<ul>
+<li>Do not sit yet! Wait for permission.</li>
+<li>Ask: <strong>"May I sit, Sir?"</strong> or <strong>"Can I sit, Sir?"</strong></li>
+<li>When the recruiter says <em>"Yes, please sit"</em>, sit down slowly</li>
+<li>Sit upright, back straight, hands on your lap</li>
+<li>Say: <strong>"Thank you, Sir"</strong> or <strong>"Thank you for giving me this opportunity"</strong></li>
+</ul>
+<h3>4B. Physical Rehearsal (3 min)</h3>
+<p><strong>Practice this NOW:</strong></p>
+<ol>
+<li>Stand up from your chair</li>
+<li>Walk to a door in your house</li>
+<li>Knock twice: <em>tap-tap</em></li>
+<li>Say out loud: <em>"May I come in, Sir?"</em></li>
+<li>Open the door and walk in</li>
+<li>Stand in front of a chair and say: <em>"Good morning, Sir. May I sit, Sir?"</em></li>
+<li>Sit down slowly and say: <em>"Thank you, Sir."</em></li>
+</ol>
+<p><strong>Repeat this 3 times</strong> until it feels natural.</p>
+<details>
+<summary>Why the K.A.G.S. ritual matters (Cultural Respect Signal)</summary>
+
+In Israeli and international professional culture, asking permission before entering and sitting demonstrates **respect for authority** and **professional discipline**. Recruiters interpret candidates who walk in and sit down without asking as **entitled** or **disrespectful**. The K.A.G.S. ritual is a universal signal: *"I respect this opportunity, and I respect you."*
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — The F.I.L.E. System: Organize Your Documents (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Application</strong> — you will now organize your own physical document file using the system Dilan uses.</p>
+</blockquote>
+<h3>5A. The F.I.L.E. memory formula (3 min)</h3>
+<p>Memorize this anchor for organizing your documents:</p>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Meaning</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F</strong></td>
+<td><strong>Fast Handover</strong></td>
+<td>You can hand over your file <strong>instantly</strong> when asked</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>Intact Originals</strong></td>
+<td>No torn pages, no coffee stains, no crumpled corners</td>
+</tr>
+<tr>
+<td><strong>L</strong></td>
+<td><strong>Legitimate Payslips</strong></td>
+<td>At least 6 payslips spread across your employment timeline</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td><strong>Exact Dates</strong></td>
+<td>Service letter dates match your interview answers <strong>exactly</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>5B. Organize Your File NOW (5 min)</h3>
+<p><strong>Take action NOW:</strong></p>
+<ol>
+<li><strong>Find a clean black or blue folder</strong> (not a plastic bag, not a manila envelope — a proper folder with a cover)</li>
+<li><strong>Gather your documents:</strong><br />
+   - Passport (original + color copy)<br />
+   - NIC (original + color copy)<br />
+   - Birth certificate (original + color copy)<br />
+   - School leaving certificates (original + color copy)<br />
+   - Service letters (original, with official stamp and signature)<br />
+   - Payslips (minimum 6, spread across your employment)<br />
+   - Marriage certificate (if applicable)</li>
+<li><strong>Arrange them in this order</strong> (from top to bottom):<br />
+   - Passport + copy<br />
+   - NIC + copy<br />
+   - Birth certificate + copy<br />
+   - School certificates + copies<br />
+   - Service letters (most recent first)<br />
+   - Payslips (chronological order, oldest first)<br />
+   - Marriage certificate + copy (if applicable)</li>
+<li><strong>Use clear plastic sleeves</strong> if possible, so each document stays clean and you can flip through them quickly</li>
+<li><strong>Label the outside of the folder</strong> with your name: <em>"Dilan Harshana — Interview Documents"</em></li>
+</ol>
+<details>
+<summary>Why document organization matters (The 2-Second Test)</summary>
+
+Israeli recruiters conduct what is called the **"2-Second Test"**: When they say *"Give me your file,"* they start a mental timer. If you hand it over instantly and it looks organized, you pass. If you spend 20 seconds searching through a plastic bag, pulling out crumpled papers, you fail. The 2-Second Test is not about documents — it is about **work habits**. Recruiters assume that if you cannot organize your own documents, you cannot organize a supermarket shelf or a factory workstation.
+
+</details>
+
+<hr />
+<h2>Retrieval Practice (Test Your Memory)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Retrieval practice</strong> (active recall) is 3x more effective than re-reading. Test yourself without looking back at the lesson.</p>
+</blockquote>
+<details>
+<summary><strong>Question 1:</strong> What is the mandatory dress code for the Israeli G2G interview?</summary>
+
+**Answer:** Clean **white long-sleeve shirt**, **black trousers**, and **polished black shoes**. Hair must be **short and neat**, and you must be **clean-shaved**. No strong perfumes.
+
+</details>
+
+<details>
+<summary><strong>Question 2:</strong> What does K.A.G.S. stand for?</summary>
+
+**Answer:**
+- **K** — Knock (tap-tap on the door)
+- **A** — Ask permission (*"May I come in, Sir?"*)
+- **G** — Greet (*"Good morning, Sir"*)
+- **S** — Sit (ask *"May I sit, Sir?"* before sitting)
+
+</details>
+
+<details>
+<summary><strong>Question 3:</strong> What 7 mandatory documents must be in your file?</summary>
+
+**Answer:**
+1. Passport (original + copy)
+2. NIC (original + copy)
+3. Birth certificate (original + copy)
+4. School leaving certificates (original + copies)
+5. Service letter(s) (with company stamp and signature)
+6. Payslips (minimum 6)
+7. Marriage certificate (if applicable)
+
+</details>
+
+<details>
+<summary><strong>Question 4:</strong> What does F.I.L.E. stand for?</summary>
+
+**Answer:**
+- **F** — Fast Handover
+- **I** — Intact Originals
+- **L** — Legitimate Payslips
+- **E** — Exact Dates
+
+</details>
+
+<details>
+<summary><strong>Question 5:</strong> Why do Israeli recruiters call your previous employer?</summary>
+
+**Answer:** To **verify** that your service letter is real and that your interview answers match your manager's verification. They ask about your job duties, salary, and work ethic. If your answers do not match, you are disqualified for lying.
+
+</details>
+
+<hr />
+<h2>Homework Assignment (15 minutes tonight)</h2>
+<h3>Task 1: The Physical K.A.G.S. Drill (5 min)</h3>
+<p>Before bed tonight, practice the K.A.G.S. ritual <strong>5 times</strong>:<br />
+1. Stand outside a closed door<br />
+2. Knock twice<br />
+3. Say: <em>"May I come in, Sir?"</em><br />
+4. Walk in and say: <em>"Good morning, Sir. May I sit, Sir?"</em><br />
+5. Sit down and say: <em>"Thank you, Sir."</em></p>
+<p>Do this until it feels <strong>automatic</strong> — like brushing your teeth.</p>
+<h3>Task 2: Organize Your Physical Document File (10 min)</h3>
+<p>Follow the F.I.L.E. system instructions in Micro-Block 5B. Arrange your documents in order, put them in a clean folder, and practice handing the folder to someone in your house. Can you do it in <strong>under 2 seconds</strong>?</p>
+<h3>Task 3: The 3-Word Vocabulary Journal (5 min)</h3>
+<p>Add these 3 words to your <strong>3-Words-a-Day Journal</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Definition</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>verification</strong> (noun)</td>
+<td>The process of checking that something is true or accurate</td>
+<td><em>"The recruiter will call my employer for verification."</em></td>
+</tr>
+<tr>
+<td><strong>intact</strong> (adjective)</td>
+<td>Complete and not damaged</td>
+<td><em>"My documents are clean and intact."</em></td>
+</tr>
+<tr>
+<td><strong>professional</strong> (adjective)</td>
+<td>Showing skill, good judgment, and respectful behavior</td>
+<td><em>"Dilan looks professional in his white shirt and black shoes."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Spaced Repetition Schedule</h2>
+<ul>
+<li><strong>1st Review:</strong> Within 2–3 hours after this lesson (skim your notes, 5 min)</li>
+<li><strong>2nd Review:</strong> Tomorrow morning (practice K.A.G.S. physically, 5 min)</li>
+<li><strong>3rd Review:</strong> Next weekend (organize your document file again, check for missing documents, 15 min)</li>
+<li><strong>4th Review:</strong> The night before your interview (final check: dress code, document file, K.A.G.S. ritual, 20 min)</li>
+</ul>
+<hr />
+<h2>Next Lesson Preview</h2>
+<p><strong>Lesson 0003 — Number Power: The 15-vs-50 Survival Drill</strong></p>
+<p>You will learn:<br />
+- The critical distinction between TEEN numbers (13, 14, 15, 16, 17, 18, 19) and TY numbers (30, 40, 50, 60, 70, 80, 90)<br />
+- Why saying <em>"I am fifteen years old"</em> when you mean <em>"fifty"</em> causes instant disqualification<br />
+- How to pronounce numbers with precision so recruiters never misunderstand your age, experience, or salary</p>
+<blockquote>
+<p><strong>Want to ask a question?</strong> I am your teacher. If anything in this lesson was unclear, ask me now. I will explain it in simpler words or give you more examples.</p>
+</blockquote>
+<hr />
+<h2>Optional Monitor Appendix — Grammar Notes (Open Only If Curious)</h2>
+<details>
+<summary><strong>Grammar Point 1:</strong> Why "May I" vs "Can I"</summary>
+
+**"May I"** = formal, polite permission (asking if you are **allowed**)  
+**"Can I"** = informal, asking if you are **able to**
+
+In a formal interview:
+-  *"May I come in, Sir?"* (correct — formal and polite)
+-  *"Can I sit, Sir?"* (acceptable — slightly less formal but still polite)
+-  *"I can come in?"* (incorrect — sounds like a statement, not a question)
+
+**Best practice:** Use **"May I"** for maximum formality and respect.
+
+</details>
+
+<details>
+<summary><strong>Grammar Point 2:</strong> Why "Good morning" vs "Good afternoon" vs "Good evening"</summary>
+
+English divides the day into three formal greeting periods:
+
+- **Good morning** = 6:00 AM to 11:59 AM
+- **Good afternoon** = 12:00 PM to 5:59 PM
+- **Good evening** = 6:00 PM to 11:59 PM
+
+**Common mistake:** Many Sri Lankan candidates say *"Good night"* when entering an evening interview. **"Good night"** is only used when **leaving** or going to sleep, not when arriving.
+
+**Correct:**
+-  Interview at 7:00 PM: *"Good evening, Sir."*
+-  Interview at 7:00 PM: *"Good night, Sir."* (wrong — this means "goodbye" or "sleep well")
+
+</details>
+
+<hr />
+<h2>Lesson Complete</h2>
+<p>You have completed <strong>Lesson 2 — First Impressions: Dilan's Perfect File</strong>.</p>
+<p><strong>Key memory formulas to remember:</strong> K.A.G.S. and F.I.L.E.</p>
+<p><strong>Next step:</strong> Complete the Homework Assignment tonight, then proceed to <strong>Lesson 3 — Number Power: The 15-vs-50 Survival Drill</strong> tomorrow.</p>
+<p><strong>Questions?</strong> Ask me now. I am here to help you pass this interview.</p>
+<hr />
+<p><strong>End of Lesson 0002</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0002 — First Impressions: ඩිලාන්ගේ පරිපූර්ණ ලිපිගොනුව (Dilan's Perfect File)</h1>
+<blockquote>
+<p><strong>Mission link:</strong> Interview එකක තීරණය ලැබෙන්නේ <strong>පළමු තත්පර 5 තුළදීය (first 5 seconds)</strong>. ඔබ එක වචනයක්වත් කතා කිරීමට පෙර, සම්මුඛ පරීක්ෂකයින් (recruiters) ඔබගේ <strong>පෙනුම (appearance), පිළිවෙළ (grooming), සහ ලිපිගොනුවේ සංවිධානාත්මක බව (document organization)</strong> තක්සේරු කරයි. මෙම පාඩම මඟින් මෙම අවස්ථාවට ගරු කරන වෘත්තීය මට්ටමේ පුද්ගලයෙකු (professional) ලෙස ඔබව සූදානම් කරයි.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> සම්මුඛ පරීක්ෂණය සඳහා සූදානම් වන ඩිලාන්ව ඔබ <strong>වෙනස් දර්ශන 3ක් (three different scenes)</strong> ඔස්සේ හමුවනු ඇත. සෑම දර්ශනයකදීම එම වචන මාලාවම වෙනස්කම් සහිතව නැවත මතක් කෙරේ. තුන්වන දර්ශනය වන විට, එම වචන ඔබට ඉතා ස්වභාවිකව දැනෙනු ඇත. Grammar පැහැදිලි කිරීම් Optional Monitor Appendix එක තුළ දක්වා ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, පදිංචිය <strong>පහලගොඩ, තංගල්ල</strong>. ඔහු සතුව passport, NIC, birth certificate, school leaving certificates, සහ Keells Supermarket මෙන්ම තංගල්ලේ retail store එකෙන් ලබාගත් service letters ඇත.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>කටපාඩම් කිරීමෙන් තොරව, Input මඟින්ම</strong> — ඔබට හැකිවනු ඇත:<br />
+1. අනිවාර්ය G2G dress code සහ grooming ප්‍රමිතීන් <strong>හඳුනා ගැනීමට (Recognize - input)</strong>.<br />
+2. ඔබගේ භෞතික ලිපිගොනුවේ (physical file) තිබිය යුතු අනිවාර්ය ලියකියවිලි 7 <strong>නම් කිරීමට (Name - vocabulary)</strong>.<br />
+3. Service letter verification වැදගත් වන්නේ ඇයිද සහ ගැලපිය යුතු තොරතුරු මොනවාදැයි <strong>පැහැදිලි කිරීමට (Explain - comprehension)</strong>.<br />
+4. පියවර 4ක සම්මුඛ පරීක්ෂණ කාමරයට ඇතුල්වීමේ පිළිවෙත: K.A.G.S. (Knock, Ask, Greet, Sit) <strong>ක්‍රියාත්මක කිරීමට (Perform - skill)</strong>.<br />
+5. F.I.L.E. ක්‍රමය භාවිතා කර ඔබගේම physical document file එක <strong>සංවිධානය කර ගැනීමට (Organize - application)</strong>.<br />
+6. මතක ආධාරක (memory formulas) 2ක් මතකයේ රඳවා ගැනීමට: <strong>K.A.G.S.</strong> සහ <strong>F.I.L.E.</strong></p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ <strong>micro-blocks 5කට</strong> බෙදා, අතරමැද මිනිත්තු 5ක විවේක (breaks) සහිතව.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — විධිමත්ව අඳින්නේ කෙසේදැයි ඔබ දැනටමත් දනී; මෙම පාඩම මඟින් recruiters පරීක්ෂා කරන <strong>interview-specific ප්‍රමිතීන්</strong> ඊට එකතු කරයි.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §1.1 (Dress Code &amp; Grooming), §1.2 (Mandatory Documents), §1.3 (Service Letters &amp; Verification), §2.1 (Entry &amp; Greeting Phrases), §8.1 Don'ts #7 (Body Language), §8.2 DO #1–2</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input Theory, meaningful context)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — සිතින් මවාගන්න / picture it in your head)</h2>
+<blockquote>
+<p><em>It is 7:30 AM. Dilan stands outside the interview building in Colombo. He arrived 30 minutes early. His white shirt is clean and ironed. His black shoes shine like mirrors. His hair is short and neat. His face is clean-shaved. In his hands, he holds a black folder with all his documents arranged in perfect order.</em></p>
+<p><em>He walks into the room. Before the recruiter looks at his CV, before she asks a single question, she has already made her first decision: "This man is professional. He respects this opportunity."</em></p>
+</blockquote>
+<p>බොහෝ අපේක්ෂකයින් කතා කිරීමටත් පෙරම අසාර්ථක වේ. ඔවුන් දහඩිය දමමින් ප්‍රමාද වී පැමිණේ. ඔවුන්ගේ කමිස රැලි වැටී ඇත. ඔවුන්ගේ ලියකියවිලි තියෙන්නේ පොලිතින් බෑගයක, පොඩි වී හෝ ඉරී ගොසිනි. Recruiter විසින් <em>"Give me your file"</em> කියා ඇසූ විට, ඔවුන් විනාඩි දෙකක් තිස්සේ විසිරුණු කොළ අතර ලිපි ලේඛන සොයති.</p>
+<p>මේ පාඩමේදී ඔබ ඉගෙන ගන්නේ <strong>කතා කිරීමට පෙර (sound ready වීමට පෙර) සූදානම් බව පෙනෙන්නට සලස්වන්නේ කෙසේද (look ready වන්නේ කෙසේද)</strong> යන්නයි.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> Interviewer ඔබව තක්සේරු කරන්නේ ඔබ කතා කරන්න පටන් ගැනීමටත් <strong>පෙරය</strong>. ඔබේ ඇඳුම, grooming (කොණ්ඩය/රැවුල කැපීම), සහ document file එක — මේ සියල්ල තීරණය කරන්නේ interview කරන අය ඔබව වෘත්තීය මට්ටමේ අයෙකු ලෙස සලකනවාද නැද්ද යන්නයි.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Pure Immersion: The Mirror Check (කැඩපත පරීක්ෂාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> 4-Week Plan හි සතිය 1 = Pure observation (නිරීක්ෂණය පමණි). <strong>මුලින්ම නරඹන්න, පසුව පුහුණු වන්න.</strong></p>
+</blockquote>
+<h3>1A. Watch — The Professional Look (විනාඩි 5)</h3>
+<p>YouTube වෙත ගොස් පහත දෑ search කරන්න:<br />
+- <strong>"Israel job interview Sri Lanka dress code"</strong><br />
+- <strong>"SLBFE interview dress code"</strong><br />
+- <strong>"Professional interview appearance"</strong></p>
+<p>කෙටි වීඩියෝවක් (මිනිත්තු 3–5) <strong>එකක්</strong> තෝරාගන්න. අපේක්ෂකයින් අඳින ආකාරය නරඹන්න. විශේෂයෙන් මේවා නිරීක්ෂණය කරන්න:<br />
+- Shirt color (white / සුදු පැහැය)<br />
+- Trouser color (black / කළු පැහැය)<br />
+- Shoes (polished black / ඔප දැමූ කළු සපත්තු)<br />
+- Hair (short, neat / කොටට, පිළිවෙළට කැපූ කොණ්ඩය)<br />
+- Face (clean-shaved / රැවුල සම්පූර්ණයෙන්ම කැපූ මුහුණ)</p>
+<p><strong>තවම සටහන් ලියන්න එපා.</strong> හොඳින් <strong>නිරීක්ෂණය කරන්න (observe)</strong> පමණි.</p>
+<h3>1B. Notice — නිරීක්ෂණය කරන්න (විනාඩි 3)</h3>
+<p>නැරඹීමෙන් පසු, කැඩපතක් ඉදිරියට ගොස් ඔබ දෙස බලන්න. මෙම ප්‍රශ්න ඔබෙන්ම අසන්න:</p>
+<ul>
+<li><strong>Is my shirt clean and ironed?</strong> (මගේ කමිසය පිරිසිදුද, මැද තිබේද?)</li>
+<li><strong>Are my trousers black and clean?</strong> (මගේ කලිසම කළු සහ පිරිසිදුද?)</li>
+<li><strong>Are my shoes polished?</strong> (මගේ සපත්තු ඔප දමා තිබේද?)</li>
+<li><strong>Is my hair short and neat?</strong> (මගේ කොණ්ඩය කොටට සහ පිළිවෙළට තිබේද?)</li>
+<li><strong>Am I clean-shaved?</strong> (මගේ රැවුල සම්පූර්ණයෙන්ම කපා තිබේද?)</li>
+</ul>
+<p>ඔබගේ interview දිනය සඳහා <strong>ඔබ සූදානම් කරගත යුතු කරුණු 3ක්</strong> ලියා තබන්න.</p>
+<details>
+<summary>පෙනුම (Appearance) මෙතරම් වැදගත් වීමට හේතුව (The 5-Second Rule)</summary>
+
+පර්යේෂණ පෙන්වා දෙන්නේ interviewers ලා අපේක්ෂකයෙකු දුටු සැනින් **පළමු තත්පර 5 තුළදී** ඔවුන් පිළිබඳ පළමු හැඟීම (first impression) ඇති කරගන්නා බවයි. මෙම තීරණය සම්පූර්ණයෙන්ම පදනම් වන්නේ **visual cues (දෘශ්‍ය සාධක)** මතය — ඔබේ හැකියාවන් හෝ පළපුරුද්ද මත නොවේ, ඔබේ බාහිර පෙනුම මත පමණි. ඔබ පළමු තත්පර 5 තුළ unprofessional ලෙස පෙනුනහොත්, රැකියාවේදීද ඔබ එවැනි අයෙකු වනු ඇතැයි interviewer නිගමනය කරයි. මනෝවිද්‍යාවේදී මෙය **Halo Effect** ලෙස හඳුන්වයි — එක් යහපත් ලක්ෂණයක් (පිළිවෙළකට සිටීම) දුටු විට, අනෙක් යහපත් ගුණාංගද (විශ්වාසවන්තභාවය, විනය, නීතිගරුක බව) ඔබ සතුව ඇතැයි ඔවුන් උපකල්පනය කරයි.
+
+</details>
+
+<hr />
+<h2>Micro-Block 2 — Meet Dilan: The Morning Routine (ඩිලාන්ගේ උදෑසන චර්යාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> නව භාෂාව ඉදිරිපත් කෙරෙන්නේ <strong>අර්ථවත් සන්දර්භයක් (meaningful context)</strong> තුළිනි — ඔබ විසින්ම සිදු කිරීමට නියමිත ක්‍රියාකාරකම් සහිතව interview එකට සූදානම් වන කතාවකි.</p>
+</blockquote>
+<h3>2A. Dilan's Morning (Read or Listen) (විනාඩි 6)</h3>
+<blockquote>
+<p><strong>මෙම කතාව සෙමෙන්, ශබ්ද නඟා කියවන්න.</strong> මෙය ඔබ interview දිනයේදී <strong>සිදු කළ යුතු දේය</strong>. ඔබ එක් එක් ක්‍රියාව කරන ආකාරය සිතින් මවාගන්න.</p>
+</blockquote>
+<p><strong>6:00 AM — Wake Up (අවදි වීම)</strong><br />
+Dilan wakes up at 6:00 AM. His interview is at 9:00 AM, but he wants to arrive <strong>30 minutes early</strong>. He takes a shower, shaves his face carefully, and combs his hair.</p>
+<p><strong>6:30 AM — The Dress Code (ඇඳුම් විලාසිතාව)</strong><br />
+Dilan puts on his <strong>clean white long-sleeve shirt</strong>. He ironed it last night, so there are no wrinkles. He wears <strong>black trousers</strong> — not blue, not gray, <strong>black</strong>. He polishes his <strong>black shoes</strong> until they shine. He looks in the mirror. He looks <strong>professional</strong>.</p>
+<p><strong>7:00 AM — The Document File (ලිපිගොනුව)</strong><br />
+Dilan opens his black folder. Inside, he has arranged his documents in order:</p>
+<ol>
+<li><strong>Passport</strong> (original + color copy)</li>
+<li><strong>NIC</strong> (original + color copy)</li>
+<li><strong>Birth certificate</strong> (original + color copy)</li>
+<li><strong>School leaving certificates</strong> (original + color copy)</li>
+<li><strong>Service letter from Keells Supermarket</strong> — signed and stamped by the HR Manager</li>
+<li><strong>Service letter from his retail store</strong> — signed and stamped by the store owner</li>
+<li><strong>Six payslips</strong> from his previous jobs — spread across different months to prove his salary history</li>
+</ol>
+<p>Each document is clean, not torn, not crumpled. He can pull out any document <strong>instantly</strong> when the recruiter asks for it.</p>
+<p><strong>7:30 AM — Arrive Early (කලින් පිටත්වීම)</strong><br />
+Dilan leaves home at 7:30 AM. The interview is at 9:00 AM, but he wants to arrive by <strong>8:30 AM</strong>. Why? Because arriving early means:<br />
+- No rushing, no sweating (කලබලයක් නැත, දහඩිය දැමීමක් නැත)<br />
+- Time to use the bathroom (වැසිකිළියට යාමට කාලය තිබේ)<br />
+- Time to calm his mind (මනස සන්සුන් කරගැනීමට කාලය තිබේ)<br />
+- Time to review his self-introduction one last time (ස්වයං හැඳින්වීම අවසන් වරටත් මතක් කරගැනීමට කාලය ඇත)</p>
+<p><strong>8:30 AM — Outside the Interview Room (කාමරයෙන් පිටත)</strong><br />
+Dilan arrives at the building. He sits quietly outside the interview room. He is <strong>calm</strong>, <strong>ready</strong>, and <strong>confident</strong>.</p>
+<h3>2B. Picture This — සිතින් මවාගන්න (විනාඩි 2)</h3>
+<p>ඔබේ ඇස් පියාගන්න. Interview දිනයේ ඔබ සිටින ආකාරය සිතින් මවාගන්න:</p>
+<ul>
+<li>ඔබ <strong>කලින්ම</strong> අවදි වේ (interview එකට අවම වශයෙන් පැය 3කට පෙර)</li>
+<li>ඔබ <strong>නා පිරිසිදු වී</strong>, <strong>රැවුල කපා</strong>, කොණ්ඩය පීරා ගනී</li>
+<li>ඔබ <strong>පිරිසිදු සුදු දිගු අත් කමිසයක් (white long-sleeve shirt)</strong>, <strong>කළු කලිසමක් (black trousers)</strong>, සහ <strong>ඔප දැමූ කළු සපත්තු (polished black shoes)</strong> අඳියි</li>
+<li>ඔබගේ ලියකියවිලි <strong>පිළිවෙළකට සකස් කළ කළු folder එකක</strong> පිළිවෙළට අසුරා ඇත</li>
+<li>ඔබ <strong>විනාඩි 30කට කලින්</strong> එම ස්ථානයට ළඟා වේ — සන්සුන්ව, සූදානම්ව, විශ්වාසයෙන් යුතුව (calm, ready, confident)</li>
+</ul>
+<details>
+<summary>කලින් පැමිණීම (Arriving Early) මෙතරම් වැදගත් වීමට හේතුව (The Calm Mind Principle)</summary>
+
+කලින් පැමිණීම යනු වේලාවට වැඩ කිරීම (punctuality) පමණක් නොවේ — එය **මානසික සූදානම (mental preparation)** සඳහා අත්‍යවශ්‍ය වේ. ඔබ කලබලයෙන් දුවගෙන එන විට, ශරීරයෙන් **cortisol** (ආතති හෝමෝනය) නිකුත් වන අතර, එය මනස අවුල් කර කටහඬ වෙව්ලීමට හේතු වේ. ඔබ කලින් පැමිණි විට, ඔබේ **parasympathetic nervous system** ක්‍රියාත්මක වී, හෘද ස්පන්දනය සන්සුන් කර අවධානය තියුණු කරයි. Israeli recruiters ලා ප්‍රමාද වී හෝ දහඩිය දමමින් පැමිණෙන අපේක්ෂකයින් කෙරෙහි විශේෂයෙන් සැලකිලිමත් වේ — එයින් දුර්වල සැලසුම්කරණය සහ විනය නොමැතිකම පෙන්නුම් කරයි.
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — The Mandatory Documents Checklist (අනිවාර්ය ලියකියවිලි පිරික්සුම් ලැයිස්තුව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> <strong>Repetition with variation</strong> — ලියකියවිලි පිළිබඳව ඔබ දැන් දෙවරක් අසා ඇත (Big Idea සහ Dilan's Morning තුළ). මෙය වඩාත් විස්තරාත්මකව සිදුවන <strong>තෙවන හමුවීමයි (third encounter)</strong>.</p>
+</blockquote>
+<h3>3A. The 7 Mandatory Documents (අනිවාර්ය ලියකියවිලි 7) (විනාඩි 5)</h3>
+<p>මෙම checklist එක ශබ්ද නඟා කියවන්න. මේවා ඔබගේ interview එකට අනිවාර්යයෙන්ම රැගෙන යා යුතු <strong>exact documents</strong> වේ:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Document (ලේඛනය)</th>
+<th>Why It Matters (වැදගත් වන හේතුව)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Passport</strong> (original + color copy)</td>
+<td>ඔබගේ අනන්‍යතාවය සහ B1 work visa සඳහා සුදුසුකම් සනාථ කරයි</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>NIC</strong> (original + color copy)</td>
+<td>ඔබගේ passport තොරතුරු ජාතික හැඳුනුම්පතට ගැලපෙන බව තහවුරු කරයි</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Birth certificate</strong> (original + color copy)</td>
+<td>උපන් දිනය සහ පවුලේ තොරතුරු තහවුරු කරයි</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>School leaving certificates</strong> (original + color copy)</td>
+<td>වසර 8–10 ක විධිමත් අධ්‍යාපනයක් ලබා ඇති බව සනාථ කරයි (manual labor visas සඳහා අවම අවශ්‍යතාවය)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Service letter(s)</strong> from previous employer(s)</td>
+<td><strong>අතිශය තීරණාත්මකයි (CRITICAL):</strong> ආයතනයේ නම, ඔබගේ සම්පූර්ණ නම, NIC අංකය, නිවැරදි තනතුර (job title), සේවා කාලය, ආයතනික මුද්‍රාව (stamp/seal), සහ HR Manager / Store Manager ගේ අත්සන තිබිය යුතුය</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Payslips</strong> (minimum 6, spread across employment timeline)</td>
+<td>ඔබගේ වැටුප් ඉතිහාසය තහවුරු කරන අතර service letter එක සත්‍ය බව සනාථ කරයි</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Marriage certificate</strong> (if applicable)</td>
+<td>ඔබ විවාහක නම් සහ අයදුම්පතේ ඒ බව සඳහන් කර ඇත්නම් පමණක් අවශ්‍ය වේ</td>
+</tr>
+</tbody>
+</table>
+<h3>3B. The Service Letter Trap (සේවා සහතිකයේ ඇති උගුල) (විනාඩි 3)</h3>
+<p><strong>Interview එක සමත් වීමෙන් පසුව පවා අපේක්ෂකයින් නුසුදුස්සන් වීමට (disqualified) බලපාන ප්‍රධානතම #1 හේතුව මෙයයි.</strong></p>
+<p>ඔබගේ <strong>service letter</strong> එකෙහි පහත සඳහන් <strong>exact details</strong> නිවැරදිව තිබිය යුතුය:<br />
+-  ආයතනයේ නම (Company name - නිල ලාංඡනය සහිත letterhead)<br />
+-  ඔබගේ සම්පූර්ණ නම (Passport සහ NIC එකට හරියටම සමාන විය යුතුය)<br />
+-  ඔබගේ NIC අංකය (අකුරක් නෑර නිවැරදිව)<br />
+-  ඔබගේ නිශ්චිත තනතුර (e.g., <em>"Retail Sales Assistant"</em>, <em>"Packing Helper"</em>)<br />
+-  ඔබගේ නිශ්චිත සේවා කාලය (e.g., <em>"From 01 January 2019 to 31 December 2023"</em>)<br />
+-  ආයතනික මුද්‍රාව (Company stamp/seal - නිල රතු හෝ නිල් තීන්ත මුද්‍රාව)<br />
+-  HR Manager හෝ Store Manager ගේ අත්සන (නම සහ තනතුර පැහැදිලිව සඳහන්ව)</p>
+<p><strong>මෙය වැදගත් වන්නේ ඇයි:</strong><br />
+Israeli නියෝජිතයින් සහ SLBFE නිලධාරීන් ඔබගේ service letter එක තහවුරු කරගැනීමට (verify කිරීමට) <strong>ඔබ සේවය කළ ආයතනයට දුරකථනයෙන් අමතයි (call previous employer)</strong>. ඔවුන් අසන්නේ:<br />
+- <em>"Did Dilan Harshana work at your company?"</em> (ඩිලාන් ඔබේ ආයතනයේ සේවය කළාද?)<br />
+- <em>"What were his daily duties?"</em> (ඔහුගේ දෛනික රාජකාරි මොනවාද?)<br />
+- <em>"What was his salary?"</em> (ඔහුගේ වැටුප කීයද?)<br />
+- <em>"Was he a reliable worker?"</em> (ඔහු විශ්වාසවන්ත සේවකයෙක්ද?)</p>
+<p><strong>ඔබ interview එකේදී දුන් පිළිතුරු සහ කළමනාකරු දුරකථනයෙන් දෙන තොරතුරු නොගැලපෙන්නේ නම්, ඔබව ක්ෂණිකවම ප්‍රතික්ෂේප කරනු ලැබේ (disqualified immediately).</strong></p>
+<details>
+<summary>දුරකථන පරීක්ෂාවේදී අසාර්ථක වූ සැබෑ උදාහරණයක් (Real example of verification call failure)</summary>
+
+**අපේක්ෂකයා:** *"I worked as a machine operator for 5 years and earned Rs. 80,000 per month."*
+
+**Recruiter කර්මාන්තශාලාවට අමතයි. Manager පවසන්නේ:** *"He worked for 2 years, not 5. His salary was Rs. 40,000, not Rs. 80,000. He was a general helper, not a machine operator."*
+
+**ප්‍රතිඵලය:** අපේක්ෂකයා English interview එක සමත් වී තිබියදීත්, බොරු කීම නිසා ක්ෂණිකවම ප්‍රතික්ෂේප (disqualified) වේ.
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — The K.A.G.S. Entry Ritual (කාමරයට ඇතුල්වීමේ චර්යාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> පියවරෙන් පියවර ප්‍රායෝගික පෙරහුරුව මඟින් <strong>දක්ෂතා ප්‍රගුණ කිරීම (Skill practice)</strong>. ඔබ මෙය හුදෙක් කියවීම පමණක් නොව ශාරීරිකවම පුහුණු විය යුතුය.</p>
+</blockquote>
+<h3>4A. The 4-Step Entry Script (ඇතුල්වීමේ පියවර 4) (විනාඩි 5)</h3>
+<p>Interview කාමරයට ඇතුල් වන විට, පහත <strong>exact steps</strong> අනුපිළිවෙලින්ම අනුගමනය කරන්න:</p>
+<h4><strong>K — Knock (දොරට තට්ටු කරන්න)</strong></h4>
+<ul>
+<li>වැසූ දොර පිටත සිටගන්න</li>
+<li>සෙමෙන් <strong>දෙවරක්</strong> තට්ටු කරන්න: <em>tap-tap</em></li>
+<li>තත්පර 2ක් රැඳී සිටින්න</li>
+</ul>
+<h4><strong>A — Ask Permission (අවසර ඉල්ලන්න)</strong></h4>
+<ul>
+<li><em>"Come in"</em> යන හඬ ඇසුණු විට, දොර සෙමෙන් විවෘත කරන්න</li>
+<li>දොරකඩ සිටගෙන මෙසේ පවසන්න: <strong>"May I come in, Sir?"</strong> හෝ <strong>"May I come in, Madam?"</strong></li>
+<li>Recruiter විසින් <em>"Yes, please"</em> හෝ <em>"Come in"</em> යැයි පවසන තෙක් රැඳී සිටින්න</li>
+</ul>
+<h4><strong>G — Greet (ආචාර කරන්න)</strong></h4>
+<ul>
+<li>කලබල නොවී සන්සුන්ව ඇතුළට යන්න</li>
+<li>පුටුව ඉදිරිපිට සිටගෙන ආචාර කරන්න: <strong>"Good morning, Sir"</strong> / <strong>"Good afternoon, Madam"</strong> (දිවා කාලයට ගැලපෙන ලෙස)</li>
+<li>මඳ සිනහවක් පාන්න (ලොකුවට සිනාසෙන්න එපා, විනීත කුඩා සිනහවක් ප්‍රමාණවත්ය)</li>
+</ul>
+<h4><strong>S — Sit (වාඩි වන්න)</strong></h4>
+<ul>
+<li>කෙළින්ම වාඩි වෙන්න එපා! අවසර ලැබෙන තෙක් රැඳී සිටින්න.</li>
+<li>මෙසේ අසන්න: <strong>"May I sit, Sir?"</strong> හෝ <strong>"Can I sit, Sir?"</strong></li>
+<li>Recruiter විසින් <em>"Yes, please sit"</em> යැයි කී පසු, සෙමෙන් වාඩි වන්න</li>
+<li>කොන්ද කෙළින් තබාගෙන, දෑත් උකුල මත තබා හිඳගන්න</li>
+<li>පවසන්න: <strong>"Thank you, Sir"</strong> හෝ <strong>"Thank you for giving me this opportunity"</strong></li>
+</ul>
+<h3>4B. Physical Rehearsal (ප්‍රායෝගික පෙරහුරුව) (විනාඩි 3)</h3>
+<p><strong>දැන්ම මෙය පුහුණු වන්න:</strong></p>
+<ol>
+<li>ඔබේ පුටුවෙන් නැගිටින්න</li>
+<li>ඔබේ නිවසේ දොරක් අසලට යන්න</li>
+<li>දොරට දෙවරක් තට්ටු කරන්න: <em>tap-tap</em></li>
+<li>ශබ්ද නඟා පවසන්න: <em>"May I come in, Sir?"</em></li>
+<li>දොර හැර ඇතුළට යන්න</li>
+<li>පුටුව ඉදිරිපිට සිටගෙන පවසන්න: <em>"Good morning, Sir. May I sit, Sir?"</em></li>
+<li>සෙමෙන් හිඳගෙන පවසන්න: <em>"Thank you, Sir."</em></li>
+</ol>
+<p>මෙය ස්වභාවිකව දැනෙන තුරු <strong>3 වතාවක් පුනරාවර්තනය කරන්න</strong>.</p>
+<blockquote>
+<p><strong>මතක තබා ගන්න:</strong> K.A.G.S. = <strong>Knock, Ask, Greet, Sit</strong>. මෙය recruiter ට ඔබේ පළමු විශිෂ්ට හැඟීම ලබාදෙයි.</p>
+</blockquote>
+<details>
+<summary>K.A.G.S. චර්යාව මෙතරම් වැදගත් ඇයි (Cultural Respect Signal)</summary>
+
+Israeli සහ ජාත්‍යන්තර වෘත්තීය සංස්කෘතිය තුළ, ඇතුල් වීමට සහ වාඩි වීමට පෙර අවසර ඉල්ලීම මඟින් **නායකත්වයට දක්වන ගෞරවය (respect for authority)** සහ **වෘත්තීය විනය (professional discipline)** පෙන්නුම් කෙරේ. අවසරයකින් තොරව ඇතුළට පැමිණ වාඩි වන අපේක්ෂකයින් විනයක් නැති (disrespectful) අය ලෙස සැලකේ. K.A.G.S. චර්යාව යනු විශ්වීය සංඥාවකි: *"මම මෙම අවස්ථාවට මෙන්ම ඔබටද ගරු කරමි."*
+
+</details>
+
+<hr />
+<h2>Micro-Block 5 — The F.I.L.E. System: Organize Your Documents (ලිපිගොනුව සකසා ගැනීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> <strong>Application (ප්‍රායෝගික භාවිතය)</strong> — ඩිලාන් භාවිතා කරන ක්‍රමවේදය යොදාගනිමින් ඔබගේම document file එක දැන් සකසා ගනු ඇත.</p>
+</blockquote>
+<h3>5A. The F.I.L.E. memory formula (මතක ආධාරකය) (විනාඩි 3)</h3>
+<p>ලිපිගොනුව පිළිවෙළට තබාගැනීම සඳහා මෙම කෙටි යෙදුම මතක තබාගන්න:</p>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Meaning</th>
+<th>What It Means (අදහස)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F</strong></td>
+<td><strong>Fast Handover</strong></td>
+<td>ඉල්ලූ සැනින් <strong>ක්ෂණිකව</strong> ලිපිගොනුව ලබාදිය හැකි විය යුතුය</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>Intact Originals</strong></td>
+<td>ඉරී ගිය පිටු, තේ/කෝපි පැල්ලම් හෝ පොඩි වූ කොන් නොතිබිය යුතුය</td>
+</tr>
+<tr>
+<td><strong>L</strong></td>
+<td><strong>Legitimate Payslips</strong></td>
+<td>සේවා කාලය පුරා විහිදුනු අවම වශයෙන් පඩිපත් (payslips) 6ක් තිබිය යුතුය</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td><strong>Exact Dates</strong></td>
+<td>Service letter හි දින සහ interview හි දෙන පිළිතුරු <strong>හරියටම සමාන</strong> විය යුතුය</td>
+</tr>
+</tbody>
+</table>
+<h3>5B. Organize Your File NOW (ඔබේ ලිපිගොනුව දැන්ම සකසන්න) (විනාඩි 5)</h3>
+<p><strong>දැන්ම ක්‍රියාත්මක වන්න:</strong></p>
+<ol>
+<li><strong>පිරිසිදු කළු හෝ නිල් පැහැති folder එකක් සොයාගන්න</strong> (පොලිතින් බෑග් හෝ කවර නැති ලියුම් කවර නොවේ — ආවරණයක් සහිත නිසි folder එකක්)</li>
+<li><strong>ඔබගේ සියලු ලියකියවිලි එක්රැස් කරන්න:</strong><br />
+   - Passport (original + color copy)<br />
+   - NIC (original + color copy)<br />
+   - Birth certificate (original + color copy)<br />
+   - School leaving certificates (original + color copy)<br />
+   - Service letters (මුද්‍රාව සහ අත්සන සහිත original පිටපත්)<br />
+   - Payslips (සේවා කාලය ආවරණය වන පරිදි අවම වශයෙන් 6ක්)<br />
+   - Marriage certificate (අදාළ නම් පමණක්)</li>
+<li><strong>පහත අනුපිළිවෙලට ඒවා අසුරන්න</strong> (ඉහළ සිට පහළට):<br />
+   - Passport + copy<br />
+   - NIC + copy<br />
+   - Birth certificate + copy<br />
+   - School certificates + copies<br />
+   - Service letters (වඩාත්ම මෑත එක මුලින්ම)<br />
+   - Payslips (කාලානුක්‍රමිකව - පැරණිතම එක මුලින්ම)<br />
+   - Marriage certificate + copy (අදාළ නම්)</li>
+<li>එක් එක් ලේඛනය පිරිසිදුව තබා ගැනීමට හැකි නම් <strong>clear plastic sleeves</strong> භාවිතා කරන්න</li>
+<li><strong>Folder එක පිටත ඔබගේ නම ලියන්න:</strong> <em>"Dilan Harshana — Interview Documents"</em></li>
+</ol>
+<details>
+<summary>ලිපිගොනුව පිළිවෙළට තිබීම වැදගත් වීමට හේතුව (The 2-Second Test)</summary>
+
+Israeli recruiters ලා **"2-Second Test"** නමින් පරීක්ෂාවක් සිදු කරයි: ඔවුන් *"Give me your file"* යැයි කියූ විට, ඔවුන්ගේ මනසින් තත්පර ගණනය කරයි. ඔබ එය තත්පර 2ක් ඇතුළත පිළිවෙළකට ලබා දෙන්නේ නම්, ඔබ සමත් වේ. ඔබ පොලිතින් බෑග් එකක් තුළ තත්පර 20ක් තිස්සේ පොඩි වූ කොළ අදිමින් සිටියහොත්, ඔබ අසමත් වේ. මෙම 2-Second Test එක ලිපිගොනුව ගැන පමණක් නොවේ — එය ඔබගේ **වැඩ කිරීමේ පුරුදු (work habits)** පිළිබඳ පරීක්ෂණයකි. තමන්ගේ ලිපිගොනුව පිළිවෙළකට තබාගත නොහැකි අයෙකුට supermarket එකක රාක්කයක් හෝ factory workstation එකක් පිළිවෙළට තබාගත නොහැකි බව ඔවුන් සිතයි.
+
+</details>
+
+<hr />
+<h2>Retrieval Practice — මතකය පරීක්ෂා කරමු (Test Your Memory)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සක්‍රීයව මතක් කිරීම (Active recall) නැවත කියවීමට වඩා 3 ගුණයකින් ප්‍රතිඵලදායක වේ. පාඩම දෙස නොබලා පහත ප්‍රශ්නවලට පිළිතුරු දෙන්න.</p>
+</blockquote>
+<details>
+<summary><strong>Question 1:</strong> Israeli G2G interview එක සඳහා අනිවාර්ය dress code එක කුමක්ද?</summary>
+
+**Answer:** පිරිසිදු **white long-sleeve shirt**, **black trousers**, සහ **polished black shoes**. කොණ්ඩය **short and neat** විය යුතු අතර මුහුණ **clean-shaved** විය යුතුය. සැර සුවඳ විලවුන් (strong perfumes) භාවිතා නොකළ යුතුය.
+
+</details>
+
+<details>
+<summary><strong>Question 2:</strong> K.A.G.S. යන්නෙන් අදහස් වන්නේ කුමක්ද?</summary>
+
+**Answer:**
+- **K** — Knock (දොරට දෙවරක් තට්ටු කිරීම)
+- **A** — Ask permission (*"May I come in, Sir?"* කියා අවසර ඉල්ලීම)
+- **G** — Greet (*"Good morning, Sir"* කියා ආචාර කිරීම)
+- **S** — Sit (වාඩි වීමට පෙර *"May I sit, Sir?"* කියා ඇසීම)
+
+</details>
+
+<details>
+<summary><strong>Question 3:</strong> ලිපිගොනුවේ තිබිය යුතු අනිවාර්ය ලේඛන 7 මොනවාද?</summary>
+
+**Answer:**
+1. Passport (original + copy)
+2. NIC (original + copy)
+3. Birth certificate (original + copy)
+4. School leaving certificates (original + copies)
+5. Service letter(s) (නිල මුද්‍රාව සහ අත්සන සහිතව)
+6. Payslips (අවම වශයෙන් 6ක්)
+7. Marriage certificate (අදාළ නම් පමණක්)
+
+</details>
+
+<details>
+<summary><strong>Question 4:</strong> F.I.L.E. යන්නෙන් අදහස් වන්නේ කුමක්ද?</summary>
+
+**Answer:**
+- **F** — Fast Handover (ක්ෂණිකව ලබා දීම)
+- **I** — Intact Originals (හානි නොවූ මුල් පිටපත්)
+- **L** — Legitimate Payslips (සත්‍ය පඩිපත්)
+- **E** — Exact Dates (හරියටම ගැලපෙන දින වකවානු)
+
+</details>
+
+<details>
+<summary><strong>Question 5:</strong> Israeli recruiters ලා ඔබ කලින් සේවය කළ ආයතනයට කතා කරන්නේ ඇයි?</summary>
+
+**Answer:** ඔබගේ service letter එක සත්‍ය බව **තහවුරු කරගැනීමට (verify කිරීමට)** සහ interview එකේදී ඔබ දුන් පිළිතුරු කළමනාකරුගේ තොරතුරු සමඟ ගැලපේදැයි බැලීමටය. ඔවුන් ඔබගේ රාජකාරි, වැටුප සහ විනය ගැන විමසයි. පිළිතුරු නොගැලපේ නම් ඔබව වහාම නුසුදුස්සෙකු කෙරේ.
+
+</details>
+
+<hr />
+<h2>Homework Assignment — අද රාත්‍රියට ගෙදර වැඩ (විනාඩි 15යි)</h2>
+<h3>Task 1: The Physical K.A.G.S. Drill (විනාඩි 5)</h3>
+<p>අද නින්දට යාමට පෙර, K.A.G.S. චර්යාව <strong>5 වතාවක්</strong> ප්‍රායෝගිකව පුහුණු වන්න:<br />
+1. වැසූ දොරක් පිටත සිටගන්න<br />
+2. දෙවරක් තට්ටු කරන්න<br />
+3. පවසන්න: <em>"May I come in, Sir?"</em><br />
+4. ඇතුළට ගොස් පවසන්න: <em>"Good morning, Sir. May I sit, Sir?"</em><br />
+5. වාඩි වී පවසන්න: <em>"Thank you, Sir."</em></p>
+<p>දත් මදිනවා මෙන් මෙය ඔබට <strong>ඉබේම කෙරෙන දෙයක් (automatic)</strong> වන තුරු පුහුණු වන්න.</p>
+<h3>Task 2: Organize Your Physical Document File (විනාඩි 10)</h3>
+<p>Micro-Block 5B හි ඇති F.I.L.E. උපදෙස් අනුව ඔබගේ ලියකියවිලි පිළිවෙළට සකසා folder එකක අසුරන්න. ඔබේ නිවසේ කෙනෙකුට එය <strong>තත්පර 2කට අඩු කාලයකින්</strong> අතට දීමට පුහුණු වන්න.</p>
+<h3>Task 3: The 3-Word Vocabulary Journal (විනාඩි 5)</h3>
+<p>ඔබගේ <strong>3-Words-a-Day Journal</strong> එකට මෙම වචන 3 එකතු කරගන්න:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Definition (තේරුම)</th>
+<th>Example Sentence (උදාහරණ වාක්‍යය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>verification</strong> (noun)</td>
+<td>යමක් සත්‍ය හෝ නිවැරදි දැයි පරීක්ෂා කිරීමේ ක්‍රියාවලිය</td>
+<td><em>"The recruiter will call my employer for verification."</em></td>
+</tr>
+<tr>
+<td><strong>intact</strong> (adjective)</td>
+<td>හානි නොවී සම්පූර්ණව සහ සුරක්ෂිතව පවතින</td>
+<td><em>"My documents are clean and intact."</em></td>
+</tr>
+<tr>
+<td><strong>professional</strong> (adjective)</td>
+<td>දක්ෂතාවය, මනා විනය සහ ගෞරවනීය හැසිරීම පෙන්නුම් කරන</td>
+<td><em>"Dilan looks professional in his white shirt and black shoes."</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Spaced Repetition Schedule — නැවත මතක් කිරීමේ කාලසටහන</h2>
+<ul>
+<li><strong>1st Review:</strong> මෙම පාඩමෙන් පැය 2–3ක් ඇතුළත (සටහන් දෙස විනාඩි 5ක් නිකමට බලන්න)</li>
+<li><strong>2nd Review:</strong> හෙට උදෑසන (K.A.G.S. ප්‍රායෝගිකව විනාඩි 5ක් පුහුණු වන්න)</li>
+<li><strong>3rd Review:</strong> ලබන සති අන්තයේ (ඔබේ document file එක නැවත පරීක්ෂා කරන්න, අඩුවැඩියා බලන්න, විනාඩි 15ක්)</li>
+<li><strong>4th Review:</strong> Interview එකට පෙර දින රාත්‍රියේ (අවසන් පරීක්ෂාව: ඇඳුම්, ලේඛන ගොනුව, K.A.G.S. චර්යාව, විනාඩි 20ක්)</li>
+</ul>
+<hr />
+<h2>Next Lesson Preview — මීළඟ පාඩම පිළිබඳ පෙරදසුන</h2>
+<p><strong>Lesson 0003 — Number Power: The 15-vs-50 Survival Drill</strong></p>
+<p>මීළඟ පාඩමේදී ඔබ ඉගෙන ගනු ඇත:<br />
+- TEEN සංඛ්‍යා (13, 14, 15, 16, 17, 18, 19) සහ TY සංඛ්‍යා (30, 40, 50, 60, 70, 80, 90) අතර තීරණාත්මක වෙනස<br />
+- "fifty" වෙනුවට <em>"I am fifteen years old"</em> යැයි පැවසීමෙන් ක්ෂණිකව interview එකෙන් ප්‍රතික්ෂේප විය හැකි හේතුව<br />
+- ඔබේ වයස, පළපුරුද්ද හෝ වැටුප recruiters ලාට කිසි විටෙකත් වැරදියට නොතේරෙන පරිදි සංඛ්‍යා පැහැදිලිව උච්චාරණය කරන ආකාරය</p>
+<blockquote>
+<p><strong>ප්‍රශ්නයක් ඇසීමට අවශ්‍යද?</strong> මම ඔබේ ගුරුවරයායි. මෙම පාඩමේ යම් දෙයක් අපැහැදිලි නම්, දැන්ම විමසන්න. මම එය වඩාත් සරල වචනවලින් හෝ වැඩිදුර උදාහරණ සමඟ පැහැදිලි කරන්නෙමි.</p>
+</blockquote>
+<hr />
+<h2>Optional Monitor Appendix — Grammar Notes (අවශ්‍ය නම් පමණක් බලන්න)</h2>
+<details>
+<summary><strong>Grammar Point 1:</strong> "May I" සහ "Can I" අතර වෙනස</summary>
+
+**"May I"** = විධිමත්, අතිශය ගෞරවනීය අවසර ඉල්ලීම (මට අවසර තිබේද යන්න විමසීම)  
+**"Can I"** = අවිධිමත්, මට එය කළ හැකිද යන්න විමසීම
+
+විධිමත් interview එකකදී:
+-  *"May I come in, Sir?"* (නිවැරදියි — formal සහ polite)
+-  *"Can I sit, Sir?"* (භාවිතා කළ හැක — තරමක් අඩු formal වුවත් ආචාරශීලීයි)
+-  *"I can come in?"* (වැරදියි — ප්‍රශ්නයක් නොව ප්‍රකාශයක් ලෙස ඇසේ)
+
+**හොඳම ක්‍රමය:** උපරිම ගෞරවය සහ විධිමත්භාවය සඳහා **"May I"** භාවිතා කරන්න.
+
+</details>
+
+<details>
+<summary><strong>Grammar Point 2:</strong> "Good morning" vs "Good afternoon" vs "Good evening"</summary>
+
+ඉංග්‍රීසි භාෂාවේදී දිනයේ වේලාව අනුව ආචාර කිරීම් 3කට බෙදේ:
+
+- **Good morning** = උදෑසන 6:00 සිට දහවල් 11:59 දක්වා
+- **Good afternoon** = දහවල් 12:00 සිට සවස 5:59 දක්වා
+- **Good evening** = සවස 6:00 සිට රාත්‍රී 11:59 දක්වා
+
+**සුලභ වැරැද්දක්:** බොහෝ ශ්‍රී ලාංකික අපේක්ෂකයින් සවස හෝ රාත්‍රී පැවැත්වෙන interview එකකට ඇතුල් වන විට *"Good night"* යැයි පවසති. **"Good night"** භාවිතා කරන්නේ **සමුගන්නා විට (leaving)** හෝ නින්දට යන විට පමණි.
+
+**නිවැරදි භාවිතය:**
+-  සවස 7:00 ට interview එකට යන විට: *"Good evening, Sir."*
+-  සවස 7:00 ට interview එකට යන විට: *"Good night, Sir."* (වැරදියි — මෙයින් අදහස් වන්නේ "බායි" හෝ "සුව නින්දක්" යන්නයි)
+
+</details>
+
+<hr />
+<h2>Lesson Complete</h2>
+<p>ඔබ <strong>Lesson 2 — First Impressions: Dilan's Perfect File</strong> සාර්ථකව අවසන් කළා.</p>
+<p><strong>මතක තබාගත යුතු ප්‍රධාන කෙටි යෙදුම්:</strong> K.A.G.S. සහ F.I.L.E.</p>
+<p><strong>මීළඟ පියවර:</strong> අද රාත්‍රියේ Homework Assignment එක සම්පූර්ණ කර, හෙට <strong>Lesson 3 — Number Power: The 15-vs-50 Survival Drill</strong> වෙත යන්න.</p>
+<hr />
+<p><strong>End of Lesson 0002</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0002 — First Impressions: ඩිලාන්ගේ පරිපූර්ණ ලිපිගොනුව (Dilan's Perfect File) [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> Interview එකට ඇතුල් වන පළමු තත්පර 5 තුළ ඔබේ පෙනුම, විනය සහ ලිපිගොනුවේ පිළිවෙළ මඟින් විශිෂ්ට පළමු හැඟීමක් (First Impression) ඇති කිරීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li>නිවැරදි G2G Dress Code සහ Grooming ප්‍රමිතීන් ආරක්ෂා කිරීම.</li>
+<li>අනිවාර්ය ලියකියවිලි 7 පිළිවෙළට සකස් කර ක්ෂණිකව ලබා දීම.</li>
+<li>සම්මුඛ පරීක්ෂණ කාමරයට ඇතුල් වීමේ සහ වාඩි වීමේ විධිමත් පියවර අනුගමනය කිරීම.</li>
+<li>සේවා සහතික සත්‍යාපනයේදී (Verification) වංචා සහ නොගැලපීම් වළක්වා ගැනීම.</li>
+</ol>
+<hr />
+<h2>වෘත්තීය පෙනුම සහ ඇඳුම් විලාසිතාව (Professional Dress Code)</h2>
+<ul>
+<li><strong>Shirt:</strong> සුදු දිගු අත් කමිසය (Clean white long-sleeve shirt - රැලි නැතිව හොඳින් මැද)</li>
+<li><strong>Trousers:</strong> කළු විධිමත් කලිසම (Black formal trousers)</li>
+<li><strong>Shoes:</strong> ඔප දැමූ කළු සම් සපත්තු (Polished black shoes)</li>
+<li><strong>Grooming:</strong> පිළිවෙළට කැපූ කොණ්ඩය (Short &amp; neat hair) + රැවුල සම්පූර්ණයෙන්ම කපා පිරිසිදු වීම (Clean-shaved face)</li>
+<li><strong>Arrival:</strong> විනාඩි 30කට කලින් පැමිණීම (Arrive 30 minutes early — සන්සුන් මනසක් සඳහා)</li>
+</ul>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. කාමරයට ඇතුල්වීමේ පියවර 4: <strong>K.A.G.S. සූත්‍රය</strong></h3>
+<p>කාමරයට ඇතුල්වීමේ සිට වාඩිවීම දක්වා පිළිවෙළ මතක තබා ගන්න:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">අකුර</th>
+<th style="text-align: left;">පියවර</th>
+<th style="text-align: left;">සිංහල අර්ථය</th>
+<th style="text-align: left;">ඉංග්‍රීසි වාක්‍යය / ක්‍රියාව</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>K</strong></td>
+<td style="text-align: left;"><strong>Knock</strong></td>
+<td style="text-align: left;">දොරට දෙවරක් තට්ටු කිරීම</td>
+<td style="text-align: left;"><em>Tap-tap (දෙවරක් සෙමෙන් තට්ටු කර රැඳී සිටින්න)</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>Ask Permission</strong></td>
+<td style="text-align: left;">ඇතුල් වීමට අවසර ඉල්ලීම</td>
+<td style="text-align: left;"><em>"May I come in, Sir / Madam?"</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>G</strong></td>
+<td style="text-align: left;"><strong>Greet</strong></td>
+<td style="text-align: left;">වේලාවට ගැලපෙන සේ ආචාර කිරීම</td>
+<td style="text-align: left;"><em>"Good morning, Sir"</em> / <em>"Good afternoon, Madam"</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;"><strong>Sit</strong></td>
+<td style="text-align: left;">වාඩි වීමට පෙර අවසර විමසීම</td>
+<td style="text-align: left;"><em>"May I sit, Sir?"</em> → අවසර ලැබුණු පසු: <em>"Thank you, Sir."</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>ආචාර කිරීමේ රීතිය:</strong><br />
+- උදෑසන 6:00 – දහවල් 11:59: <strong>Good morning</strong><br />
+- දහවල් 12:00 – සවස 5:59: <strong>Good afternoon</strong><br />
+- සවස 6:00 – රාත්‍රී කාලය: <strong>Good evening</strong> (<em>"Good night"</em> කියන්නේ සමුගන්නා විට පමණි!)</p>
+</blockquote>
+<hr />
+<h3>2. ලිපිගොනුව සකස් කිරීමේ රීතිය: <strong>F.I.L.E. සූත්‍රය</strong></h3>
+<p>Recruiter ඉල්ලූ සැනින් ලිපිගොනුව ලබා දීමේ ප්‍රමිතිය:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">අකුර</th>
+<th style="text-align: left;">මූලධර්මය</th>
+<th style="text-align: left;">වැදගත්කම</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>F</strong></td>
+<td style="text-align: left;"><strong>Fast Handover</strong></td>
+<td style="text-align: left;">තත්පර 2ක් ඇතුළත ලිපිගොනුව ඉදිරිපත් කිරීම (2-Second Rule).</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>I</strong></td>
+<td style="text-align: left;"><strong>Intact Originals</strong></td>
+<td style="text-align: left;">ඉරීම්, පැල්ලම් හෝ පොඩිවීම් නැති සුරක්ෂිත මුල් පිටපත්.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>L</strong></td>
+<td style="text-align: left;"><strong>Legitimate Payslips</strong></td>
+<td style="text-align: left;">සේවා කාලය සනාථ කරන අවම වශයෙන් වැටුප් පත් (payslips) 6ක්.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E</strong></td>
+<td style="text-align: left;"><strong>Exact Dates</strong></td>
+<td style="text-align: left;">සහතිකවල දින සහ interview එකේ දෙන පිළිතුරු හරියටම සමාන වීම.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>3. අනිවාර්ය ලියකියවිලි 7 (The 7 Mandatory Documents)</h3>
+<p>ලිපිගොනුවේ (Black folder) ඉහළ සිට පහළට අසුරන පිළිවෙළ:<br />
+1. <strong>Passport</strong> (Original + Color Copy)<br />
+2. <strong>NIC</strong> (Original + Color Copy)<br />
+3. <strong>Birth Certificate</strong> (Original + Color Copy)<br />
+4. <strong>School Leaving Certificates</strong> (Original + Color Copy)<br />
+5. <strong>Service Letters</strong> (Letterhead, Stamp, HR Manager Signature සහිතව)<br />
+6. <strong>Payslips</strong> (අවම වශයෙන් පඩිපත් 6ක්)<br />
+7. <strong>Marriage Certificate</strong> (විවාහක නම් පමණක්)</p>
+<hr />
+<h3>4. සේවා සහතික සත්‍යාපන අනතුරු ඇඟවීම (Verification Warning)</h3>
+<ul>
+<li>ආයතනයේ නම, ඔබගේ සම්පූර්ණ නම, NIC අංකය, තනතුර (Job Title), සහ සේවා කාලය (Duration) අකුරක් නෑර ගැලපිය යුතුය.</li>
+<li>Israeli නියෝජිතයින් ආයතනයට දුරකථන ඇමතුම් ලබා දී තොරතුරු පරීක්ෂා කරයි.</li>
+<li><strong>තොරතුරු නොගැලපුණහොත්:</strong> ක්ෂණිකව Disqualify වේ. සත්‍ය තොරතුරු පමණක් ලබා දෙන්න.</li>
+</ul>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Verification</strong> = සත්‍යතාව පරීක්ෂා කිරීම (<em>"The employer called for verification."</em>)</li>
+<li><strong>Intact</strong> = හානි නොවී සුරක්ෂිතව පවතින (<em>"My documents are clean and intact."</em>)</li>
+<li><strong>Professional</strong> = වෘත්තීය මට්ටමේ / පිළිවෙළකට සිටින (<em>"He looks professional in his white shirt."</em>)</li>
+</ul>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>K.A.G.S. Drill:</strong> නිවසේ දොරක් අසල සිට දොරට තට්ටු කර, අවසර ඉල්ලා, ආචාර කර, වාඩි වීමේ අභ්‍යාසය 3 වරක් හඬ නඟා කරන්න.</li>
+<li><strong>2-Second File Drill:</strong> ලිපිගොනුව අතට ගෙන ඉල්ලූ සැනින් තත්පර 2කින් දෙන ආකාරය පුහුණු වන්න.</li>
+</ol></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0001-self-introduction.html"><span aria-hidden="true">←</span><span>0001 · My First 60 Seconds</span></a>
+        <a class="next" href="0003-number-power-precision.html"><span aria-hidden="true">→</span><span>0003 · Number Power and Precision</span></a>
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>

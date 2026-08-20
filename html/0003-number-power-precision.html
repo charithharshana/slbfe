@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Number Power and Precision: Practice the numbers that matter in interviews, work instructions, dates, measurements, and salary conversations.">
+  <title>Lesson 0003 | Number Power and Precision</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'IBM Plex Sans', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-soft: #f1ece1;
+  --surface-recessed: #ebe5d9;
+  --border: rgba(32, 50, 58, .14);
+  --border-strong: rgba(32, 50, 58, .28);
+  --text: #20323a;
+  --text-dim: #687579;
+  --terracotta: #b45135;
+  --terracotta-soft: #f5e1d9;
+  --sage: #4f7668;
+  --sage-soft: #dfece6;
+  --gold: #ae741d;
+  --gold-soft: #f8ebc9;
+  --ink-deep: #182a31;
+  --shadow: 0 14px 34px rgba(33, 48, 49, .08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #182126;
+    --surface: #202c32;
+    --surface-soft: #26343a;
+    --surface-recessed: #121b20;
+    --border: rgba(246, 239, 224, .14);
+    --border-strong: rgba(246, 239, 224, .28);
+    --text: #f4efe5;
+    --text-dim: #a5b0ae;
+    --terracotta: #e18464;
+    --terracotta-soft: rgba(225, 132, 100, .16);
+    --sage: #82b19b;
+    --sage-soft: rgba(130, 177, 155, .16);
+    --gold: #e0ad59;
+    --gold-soft: rgba(224, 173, 89, .16);
+    --ink-deep: #0e171c;
+    --shadow: 0 18px 42px rgba(0, 0, 0, .2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text);
+  font: 16px/1.72 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.13), transparent 24%, transparent 76%, rgba(255,255,255,.08));
+  opacity: .55;
+  z-index: -1;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terracotta); }
+button, select, input { font: inherit; }
+button, select { cursor: pointer; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--surface);
+  background: var(--terracotta);
+  font: 600 12px var(--font-mono);
+}
+.brand-copy { min-width: 0; }
+.brand-copy small {
+  display: block;
+  color: var(--sage);
+  font: 500 10px/1.2 var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.brand-copy span { display: block; overflow-wrap: anywhere; }
+.top-actions, .lesson-actions, .mode-switch { display: flex; align-items: center; gap: 8px; }
+.top-actions { justify-content: flex-end; min-width: 0; }
+.button, .lesson-select, .mode-button {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--surface);
+}
+.button, .lesson-select { padding: 7px 10px; }
+.button { text-decoration: none; font-size: .9rem; }
+.button:hover { border-color: var(--terracotta); }
+.lesson-select { max-width: min(320px, 42vw); }
+.mode-bar {
+  position: sticky;
+  top: 53px;
+  z-index: 19;
+  padding: 10px max(18px, calc((100% - 1220px) / 2));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.mode-bar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 1220px; margin: auto; }
+.mode-switch { padding: 3px; background: var(--surface-soft); border: 1px solid var(--border); }
+.mode-button {
+  padding: 7px 12px;
+  border: 0;
+  color: var(--text-dim);
+  background: transparent;
+  font-size: .87rem;
+  white-space: nowrap;
+}
+.mode-button:hover { color: var(--text); }
+.mode-button.active { color: var(--surface); background: var(--sage); }
+.progress-label { color: var(--text-dim); font: 500 11px var(--font-mono); white-space: nowrap; }
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 820px);
+  gap: 0 42px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 38px 22px 90px;
+}
+.toc {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  max-height: calc(100dvh - 132px);
+  overflow-y: auto;
+  padding: 10px 0;
+}
+.toc-label, .eyebrow, .section-kicker, .index-kicker {
+  color: var(--terracotta);
+  font: 600 10px/1.3 var(--font-mono);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.toc-label { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.toc-links { display: grid; gap: 3px; margin-top: 10px; }
+.toc-links a {
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  color: var(--text-dim);
+  font-size: .84rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.toc-links a:hover, .toc-links a.active { color: var(--text); border-left-color: var(--terracotta); background: var(--surface-soft); }
+.toc-links a.sub { padding-left: 18px; font-size: .78rem; }
+.book-main { min-width: 0; }
+.hero { padding: 12px 0 44px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 22px; align-items: end; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; font-size: 4rem; font-weight: 700; }
+h2 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2rem); }
+h3 { margin: 25px 0 10px; font-size: 1.18rem; }
+h4 { margin: 20px 0 8px; font-size: 1rem; }
+.hero-lead { max-width: 690px; color: var(--text-dim); font-size: 1.08rem; }
+.lesson-meter { padding: 14px 0 14px 16px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.lesson-meter strong { display: block; color: var(--text); font: 600 2.2rem/1.1 var(--font-mono); }
+.version-panel { display: none; min-width: 0; }
+.version-panel.active { display: block; }
+.version-panel > h1:first-child { padding-bottom: 16px; border-bottom: 2px solid var(--border); }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { margin: 0 0 18px; padding-left: 25px; }
+.content li { margin-bottom: 5px; }
+.content hr { margin: 32px 0; border: 0; border-top: 1px solid var(--border); }
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--sage);
+  background: var(--sage-soft);
+}
+.content blockquote p:last-child { margin-bottom: 0; }
+.content strong { color: var(--text); }
+.content code, .content pre {
+  font-family: var(--font-mono);
+  font-size: .88em;
+}
+.content code { padding: 2px 5px; color: var(--terracotta); background: var(--terracotta-soft); }
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  color: #f5f1e8;
+  background: var(--ink-deep);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.content pre code { padding: 0; color: inherit; background: transparent; }
+.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content th { color: var(--text); background: var(--sage-soft); }
+.content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
+.content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
+.content summary { color: var(--sage); cursor: pointer; font-weight: 600; }
+.content details[open] summary { margin-bottom: 10px; }
+.content img { max-width: 100%; height: auto; }
+.content > h2 { padding-top: 25px; border-top: 1px solid var(--border); }
+.content > h2:first-of-type { margin-top: 34px; }
+.content h3 { color: var(--sage); }
+.content.si { font-family: 'Noto Sans Sinhala', 'IBM Plex Sans', sans-serif; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.panel-label {
+  display: none;
+  margin: 0 0 16px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--terracotta);
+  color: var(--terracotta);
+  background: var(--terracotta-soft);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.version-panel.active .panel-label { display: block; }
+.page-end { display: flex; justify-content: space-between; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+.page-end a { display: inline-flex; align-items: center; gap: 7px; max-width: 48%; color: var(--text); text-decoration: none; font-weight: 600; }
+.page-end a:hover { color: var(--terracotta); }
+.page-end .next { margin-left: auto; text-align: right; }
+
+.index-page { min-height: 100dvh; }
+.index-wrap { max-width: 1220px; margin: 0 auto; padding: 56px 22px 90px; }
+.index-hero { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: end; padding-bottom: 45px; }
+.index-hero h1 { max-width: 760px; margin: 10px 0 16px; }
+.index-intro { max-width: 720px; color: var(--text-dim); font-size: 1.08rem; }
+.index-count { padding: 14px 0 14px 17px; border-left: 3px solid var(--gold); color: var(--text-dim); }
+.index-count strong { display: block; color: var(--text); font: 600 3rem/1 var(--font-mono); }
+.index-tools { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.index-tools label { display: grid; gap: 5px; color: var(--text-dim); font: 500 10px var(--font-mono); letter-spacing: 1px; text-transform: uppercase; }
+.search { min-width: min(440px, 100%); padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--surface); outline: 0; }
+.search:focus { border-color: var(--terracotta); box-shadow: 0 0 0 3px var(--terracotta-soft); }
+.index-note { margin: 25px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); }
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 270px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sage);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.lesson-card:hover { transform: translateY(-3px); border-color: var(--terracotta); }
+.lesson-number { color: var(--gold); font: 600 11px var(--font-mono); letter-spacing: 1px; }
+.lesson-card h2 { margin: 14px 0 7px; font-size: 1.28rem; }
+.lesson-subtitle { color: var(--sage); font-size: .9rem; }
+.lesson-description { margin: 11px 0 20px; color: var(--text-dim); font-size: .93rem; }
+.lesson-card .button { display: inline-flex; align-items: center; justify-content: space-between; margin-top: auto; color: var(--surface); background: var(--sage); border-color: var(--sage); }
+.lesson-card .button:hover { color: var(--surface); background: var(--terracotta); border-color: var(--terracotta); }
+.no-results { display: none; margin: 30px 0; color: var(--text-dim); }
+.no-results.visible { display: block; }
+
+@media (max-width: 1000px) {
+  .book-layout { grid-template-columns: 1fr; padding-top: 0; }
+  .toc {
+    position: sticky;
+    top: 104px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: none;
+    max-height: none;
+    margin: 0 -22px;
+    padding: 9px 22px;
+    overflow-x: auto;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .toc-label { display: none; }
+  .toc-links { display: flex; gap: 4px; margin: 0; }
+  .toc-links a { flex: 0 0 auto; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .toc-links a.sub { padding-left: 8px; }
+  .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
+  .book-main { padding-top: 24px; }
+}
+@media (max-width: 760px) {
+  .topbar { align-items: flex-start; flex-wrap: wrap; }
+  .top-actions { width: 100%; justify-content: space-between; }
+  .lesson-select { max-width: none; flex: 1; }
+  .mode-bar { top: 91px; }
+  .mode-bar-inner { align-items: stretch; flex-direction: column; gap: 8px; }
+  .mode-switch { width: 100%; }
+  .mode-button { flex: 1; padding: 7px 5px; font-size: .78rem; }
+  .progress-label { align-self: flex-end; }
+  .hero-grid, .index-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 0; }
+  h1, .index-hero h1 { font-size: 2.8rem; }
+  .index-wrap { padding: 34px 16px 70px; }
+  .book-layout { padding-left: 16px; padding-right: 16px; }
+  .toc { margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .index-tools { align-items: stretch; flex-direction: column; }
+  .search { min-width: 0; width: 100%; }
+  .lesson-grid { grid-template-columns: 1fr; }
+  .content table { display: block; overflow-x: auto; }
+  .content th, .content td { min-width: 145px; }
+  .page-end { align-items: stretch; flex-direction: column; }
+  .page-end a { max-width: 100%; }
+  .page-end .next { margin-left: 0; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before, .topbar, .mode-bar, .toc, .page-end { display: none !important; }
+  .book-layout, .index-wrap { display: block; max-width: none; padding: 0; }
+  .hero { padding: 0 0 20px; }
+  .hero-grid, .index-hero { display: block; }
+  .lesson-meter, .index-count { margin-top: 10px; }
+  .version-panel, .version-panel.active { display: block !important; page-break-after: always; }
+  .version-panel:last-child { page-break-after: auto; }
+  .panel-label { display: block !important; }
+  .content h2 { break-after: avoid; }
+  .content pre, .content table, .content details { break-inside: avoid; }
+  .lesson-grid { grid-template-columns: 1fr 1fr; }
+  a { color: #111; }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to all lessons">
+      <span class="brand-mark" aria-hidden="true">IE</span>
+      <span class="brand-copy"><small>Lesson 0003</small><span>Number Power and Precision</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="button" href="index.html">All lessons</a>
+      <label class="sr-only" for="lessonSelect">Jump to another lesson</label>
+      <select class="lesson-select" id="lessonSelect" data-lesson-select aria-label="Jump to another lesson"><option value="0001-self-introduction.html">0001 · My First 60 Seconds</option><option value="0002-first-impressions-documents.html">0002 · First Impressions</option><option value="0003-number-power-precision.html" selected>0003 · Number Power and Precision</option><option value="0004-supermarket-fifo-merchandising.html">0004 · Supermarket Operations</option><option value="0005-factory-operations-ppe-stamina.html">0005 · Factory Operations</option><option value="0006-warehouse-logistics-machinery.html">0006 · Warehouse Logistics</option><option value="0007-israel-geography-culture-shabbat.html">0007 · Israel, Culture, and Shabbat</option><option value="0008-dugri-workplace-communication.html">0008 · Direct Workplace Communication</option><option value="0009-adaptability-shifts-living.html">0009 · Adaptability and Shifts</option><option value="0010-visa-compliance-future-plans.html">0010 · Visa Compliance and Plans</option><option value="0011-airport-immigration-drill.html">0011 · Airport Immigration Drill</option><option value="0012-mock-interview.html">0012 · Comprehensive Mock Interview</option></select>
+    </div>
+  </header>
+
+  <section class="mode-bar" aria-label="Reading versions">
+    <div class="mode-bar-inner">
+      <div class="mode-switch" role="tablist" aria-label="Choose a reading version">
+        <button class="mode-button active" type="button" role="tab" data-mode="english" aria-selected="true">Pure English</button>
+        <button class="mode-button" type="button" role="tab" data-mode="sinhala" aria-selected="false">සිංහල</button>
+        <button class="mode-button" type="button" role="tab" data-mode="recall" aria-selected="false">Recall guide</button>
+      </div>
+      <div class="progress-label">03 / 12</div>
+    </div>
+  </section>
+
+  <div class="book-layout">
+    <aside class="toc" aria-label="Lesson contents">
+      <div class="toc-label">In this lesson</div>
+      <nav class="toc-links" id="tocLinks"></nav>
+    </aside>
+    <main class="book-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Interview English · lesson 0003</div>
+            <h1>Number Power and Precision</h1>
+            <p class="hero-lead">Practice the numbers that matter in interviews, work instructions, dates, measurements, and salary conversations.</p>
+          </div>
+          <div class="lesson-meter"><strong>40 min</strong>book lesson<br>read · review · speak</div>
+        </div>
+      </section>
+
+      <section class="version-panel active" data-mode="english" role="tabpanel" aria-label="Pure English version">
+        <div class="panel-label">Pure English version</div>
+        <div class="content"><h1>Lesson 0003 — Number Power: The 15-vs-50 Survival Drill</h1>
+<blockquote>
+<p><strong>Mission link:</strong> Mispronouncing numbers is a <strong>documented fail-trigger</strong> in Israeli interviews. If you say <em>"I am </em><em>fifteen</em><em> years old"</em> when you mean <strong>fifty</strong>, or <em>"I worked for </em><em>thirteen</em><em> years"</em> when you mean <strong>thirty</strong>, the interviewer assumes you cannot understand basic work instructions. This lesson makes the distinction automatic.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> Pure listening and recognition drills first. Speaking practice comes <strong>only after</strong> your ear can distinguish the difference automatically. Grammar explanation is in the Optional Monitor Appendix.</p>
+<p><strong>Personal details used (real):</strong> <strong>Dilan Harshana</strong>, age <strong>28</strong>, <strong>5 years</strong> of supermarket experience, from <strong>Pahalagoda, Tangalle</strong>. His weight is <strong>60 kg</strong>, height <strong>168 cm</strong>, and his previous monthly salary was <strong>Rs. 60,000</strong>.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes</h2>
+<p>By the end of this lesson — through <strong>input, not memorization</strong> — you will be able to:<br />
+1. <strong>Distinguish</strong> 15 vs 50, 13 vs 30, 14 vs 40, 16 vs 60, 17 vs 70, 18 vs 80, 19 vs 90 <strong>by ear alone</strong> (input).<br />
+2. <strong>Recognize</strong> these number pairs in real interview contexts (weight, age, experience, salary).<br />
+3. <strong>Whisper-drill</strong> the 8 critical number sentences with correct stress patterns (gentle output).<br />
+4. <strong>Self-correct</strong> your own recordings by comparing them to native audio (retrieval practice).<br />
+5. <strong>Hold</strong> the <strong>T.E.E.N. vs. T.Y.</strong> memory formula that anchors all number distinction work.</p>
+<p><strong>Estimated time:</strong> 40 minutes, split into <strong>5 micro-blocks</strong> of ~8 min each, with 5-min breaks.<br />
+<strong>Comprehensible Input level:</strong> <em>i + 1</em> — you already know numbers 1–100 in English; this lesson trains your <strong>ear</strong> to catch the subtle vowel difference that decides interview pass/fail.</p>
+<hr />
+<h2>Source Material Covered</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §2.5 (Delivery Tips: Numerical Clarity), §6 Q2–Q4, §8.2 DO #4</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input, <em>i+1</em> level), Part II §2 (Pronunciation Tools, 5–7 repetitions aloud)</li>
+</ul>
+<hr />
+<h2>The Big Idea (read in English — picture it in your head)</h2>
+<blockquote>
+<p><em>The interview room is silent. The Israeli recruiter leans forward and asks:</em> <strong>"How old are you?"</strong><br />
+<em>Dilan answers:</em> <strong>"I am fifty years old."</strong><br />
+<em>The recruiter frowns. She looks at Dilan's face. He looks 28, not 50. She writes a note: "Cannot understand basic questions." The interview ends early.</em></p>
+</blockquote>
+<p><strong>What went wrong?</strong> Dilan <strong>meant</strong> to say <em>"I have </em><em>fifteen</em><em> years of experience"</em> later in the interview, but when nervous, his mouth said <strong>"fifty"</strong> instead of <strong>"fifteen"</strong>. The vowel sound was wrong by <strong>one tiny syllable</strong>, but it changed the entire meaning.</p>
+<p>In this lesson, you will <strong>train your ear first</strong>, then your mouth. By the end, the difference between <strong>TEEN</strong> (13, 14, 15, 16, 17, 18, 19) and <strong>TY</strong> (30, 40, 50, 60, 70, 80, 90) will be as obvious as the difference between a <strong>car</strong> and a <strong>bus</strong>.</p>
+<hr />
+<h2>Micro-Block 1 — Pure Listening: The Vowel Hunt (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> Before you speak, you must <strong>hear</strong> the difference. Your brain needs <strong>input</strong> (listening) before it can produce accurate <strong>output</strong> (speaking).</p>
+</blockquote>
+<h3>1A. Listen — The TEEN Sound (3 min)</h3>
+<p>Read these sentences aloud <strong>very slowly</strong>, and <strong>exaggerate</strong> the long "ee" sound in the middle:</p>
+<ol>
+<li>I am <strong>fif-TEEN</strong> years old. <em>(stretch the EE sound)</em></li>
+<li>I have <strong>thir-TEEN</strong> years of experience.</li>
+<li>My salary was <strong>four-TEEN</strong> thousand rupees.</li>
+<li>I worked for <strong>six-TEEN</strong> hours yesterday.</li>
+<li>The box weighs <strong>seven-TEEN</strong> kilograms.</li>
+</ol>
+<p><strong>Notice:</strong> TEEN numbers have a <strong>long, stretched "eeee"</strong> sound in the middle. It feels like you are holding the vowel for an extra half-second.</p>
+<p><strong>Phonetic pattern:</strong> <code>thir-TEEEEN</code> (stress on the second syllable, long vowel)</p>
+<h3>1B. Listen — The TY Sound (3 min)</h3>
+<p>Now read these sentences aloud, and notice the <strong>short, quick "tee"</strong> sound:</p>
+<ol>
+<li>I am <strong>FIF-ty</strong> years old. <em>(short, quick)</em></li>
+<li>I have <strong>THIR-ty</strong> years of experience.</li>
+<li>My salary was <strong>FOR-ty</strong> thousand rupees.</li>
+<li>I worked for <strong>SIX-ty</strong> hours this week.</li>
+<li>The box weighs <strong>SEVEN-ty</strong> kilograms.</li>
+</ol>
+<p><strong>Notice:</strong> TY numbers have a <strong>short, quick</strong> vowel sound, and the <strong>stress is on the first syllable</strong> (FIF-ty, THIR-ty, FOR-ty).</p>
+<p><strong>Phonetic pattern:</strong> <code>THIR-ty</code> (stress on the first syllable, short vowel)</p>
+<h3>1C. The memory formula — T.E.E.N. vs. T.Y. (2 min)</h3>
+<p>Memorize this anchor:</p>
+<table>
+<thead>
+<tr>
+<th>Number Type</th>
+<th>Vowel Sound</th>
+<th>Stress Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>T.E.E.N.</strong> (13–19)</td>
+<td><strong>Long "eeee"</strong> (hold it)</td>
+<td>Stress on <strong>second syllable</strong></td>
+<td>fif-<strong>TEEN</strong></td>
+</tr>
+<tr>
+<td><strong>T.Y.</strong> (30–90)</td>
+<td><strong>Short "i"</strong> (quick)</td>
+<td>Stress on <strong>first syllable</strong></td>
+<td><strong>FIF</strong>-ty</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Micro-Block 2 — Dilan's Number Story (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> New language is presented in <strong>meaningful context</strong>. Numbers aren't just abstract — they are <strong>facts about you</strong> that the interviewer will verify.</p>
+</blockquote>
+<h3>2A. Dilan's Number Facts (Read or Listen) (5 min)</h3>
+<blockquote>
+<p><strong>Read this story out loud slowly.</strong> This is <strong>your</strong> number story. Every number here is <strong>real</strong> and will appear in your interview.</p>
+</blockquote>
+<p><strong>Dilan's age:</strong> Dilan Harshana is <strong>twenty-eight</strong> years old. <em>(Not eighteen. Not eighty-eight. Twenty-eight.)</em></p>
+<p><strong>Dilan's experience:</strong> He has <strong>more than five years</strong> of experience in the supermarket and retail field. <em>(Not fifteen years. Five years.)</em></p>
+<p><strong>Dilan's previous salary:</strong> At his previous job, he earned <strong>sixty thousand rupees per month</strong>. <em>(Not sixteen thousand. Sixty thousand.)</em></p>
+<p><strong>Dilan's height:</strong> Dilan is <strong>one hundred sixty-eight centimeters</strong> tall. <em>(Not one hundred eighteen. One hundred sixty-eight.)</em></p>
+<p><strong>Dilan's weight:</strong> His weight is <strong>sixty kilograms</strong>. <em>(Not sixteen kilograms. Sixty kilograms.)</em></p>
+<p><strong>Dilan's address:</strong> He lives at <strong>47/1, Pahalagoda, Tangalle</strong>. <em>(Forty-seven, slash, one.)</em></p>
+<p><strong>Dilan's work hours:</strong> In his previous job, he sometimes worked <strong>fifty hours per week</strong>, including overtime. <em>(Not fifteen hours. Fifty hours.)</em></p>
+<p><strong>Israeli salary expectation:</strong> The average Israeli supermarket worker earns about <strong>seven thousand to eight thousand New Israeli Shekels per month</strong>. <em>(Not seventeen thousand. Seven to eight thousand.)</em></p>
+<h3>2B. Picture This (3 min)</h3>
+<p>Close your eyes. Picture yourself answering these questions in the interview room:</p>
+<ul>
+<li><strong>"How old are you?"</strong> → <em>"I am twenty-eight years old."</em></li>
+<li><strong>"How many years of experience do you have?"</strong> → <em>"I have more than five years of experience."</em></li>
+<li><strong>"What was your salary?"</strong> → <em>"I earned sixty thousand rupees per month."</em></li>
+<li><strong>"How tall are you?"</strong> → <em>"I am one hundred sixty-eight centimeters tall."</em></li>
+<li><strong>"What is your weight?"</strong> → <em>"My weight is sixty kilograms."</em></li>
+</ul>
+<details>
+<summary>Why context matters (Krashen's Comprehensible Input)</summary>
+
+Krashen showed that language acquisition happens fastest when the input is **meaningful** and **personally relevant**. These aren't random numbers — they are **facts about you** that the recruiter will verify against your documents. Your brain remembers them better because they are **your** story, not abstract practice.
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — Minimal Pairs Drill: Ear Training (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Desirable difficulty</strong> through discrimination drills. Your brain learns by <strong>noticing differences</strong>.</p>
+</blockquote>
+<h3>3A. The Listening Test (5 min)</h3>
+<p>I will give you <strong>8 sentence pairs</strong>. Each pair has <strong>one TEEN number and one TY number</strong>. Read both sentences aloud slowly, then <strong>close your eyes</strong> and ask someone to read one sentence at random. Can you tell which one they said?</p>
+<p><strong>Pair 1:</strong><br />
+- A: I am <strong>fifteen</strong> years old.<br />
+- B: I am <strong>fifty</strong> years old.</p>
+<p><strong>Pair 2:</strong><br />
+- A: I have <strong>thirteen</strong> years of experience.<br />
+- B: I have <strong>thirty</strong> years of experience.</p>
+<p><strong>Pair 3:</strong><br />
+- A: My salary was <strong>fourteen</strong> thousand.<br />
+- B: My salary was <strong>forty</strong> thousand.</p>
+<p><strong>Pair 4:</strong><br />
+- A: I worked <strong>sixteen</strong> hours yesterday.<br />
+- B: I worked <strong>sixty</strong> hours this week.</p>
+<p><strong>Pair 5:</strong><br />
+- A: The box weighs <strong>seventeen</strong> kilograms.<br />
+- B: The box weighs <strong>seventy</strong> kilograms.</p>
+<p><strong>Pair 6:</strong><br />
+- A: I can lift <strong>eighteen</strong> kilograms easily.<br />
+- B: I can lift <strong>eighty</strong> kilograms with help.</p>
+<p><strong>Pair 7:</strong><br />
+- A: The temperature is <strong>nineteen</strong> degrees.<br />
+- B: The temperature is <strong>ninety</strong> degrees.</p>
+<p><strong>Pair 8:</strong><br />
+- A: I worked at Keells for <strong>three months</strong>.<br />
+- B: I worked at Keells for <strong>thirty months</strong>.</p>
+<h3>3B. Self-Test (3 min)</h3>
+<p>Use <strong>Google Translate voice</strong> or <strong>YouTube pronunciation videos</strong>:<br />
+1. Type <em>"I am fifteen years old"</em> into Google Translate (English).<br />
+2. Click the speaker icon and listen 3 times.<br />
+3. Now type <em>"I am fifty years old"</em> and listen 3 times.<br />
+4. Can you hear the difference?</p>
+<p>Repeat this process for:<br />
+- thirteen / thirty<br />
+- fourteen / forty<br />
+- sixteen / sixty</p>
+<details>
+<summary>Why this works (Spaced Repetition + Retrieval Practice)</summary>
+
+Hermann Ebbinghaus's Forgetting Curve shows that **active discrimination practice** (choosing between two similar options) creates stronger memory traces than passive listening. By forcing your brain to **decide** which number you heard, you build long-term storage strength.
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — Dilan's Interview: The Critical Moment (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Recycling</strong> — you have now heard Dilan's story three times in three different ways. This is the <strong>fourth encounter</strong>. Each time, the language becomes more familiar.</p>
+</blockquote>
+<h3>4A. The Interview Script (Read Aloud, Slowly) (5 min)</h3>
+<blockquote>
+<p><strong>Instructions:</strong> Read this script out loud. Imagine you are Dilan. The words are <strong>your</strong> words. Read it <strong>three times</strong> — slower each time.</p>
+</blockquote>
+<hr />
+<p><strong>Interviewer:</strong> <em>"Good morning. Please, sit down. What is your name?"</em></p>
+<p><strong>Dilan:</strong> <em>"Good morning, sir. My name is Dilan Harshana."</em></p>
+<p><strong>Interviewer:</strong> <em>"How old are you, Dilan?"</em></p>
+<p><strong>Dilan:</strong> <em>"I am </em><em>twenty-eight</em><em> years old, sir."</em> <em>(Not eighteen. Not eighty. Twenty-eight.)</em></p>
+<p><strong>Interviewer:</strong> <em>"And where are you from?"</em></p>
+<p><strong>Dilan:</strong> <em>"I am from </em><em>Pahalagoda, Tangalle</em><em>, in the southern part of Sri Lanka, sir."</em></p>
+<p><strong>Interviewer:</strong> <em>"Good. How many years of experience do you have in the supermarket field?"</em></p>
+<p><strong>Dilan:</strong> <em>"I have </em><em>more than five</em><em> years of experience in supermarket and retail work, sir."</em> <em>(Not fifteen. Five.)</em></p>
+<p><strong>Interviewer:</strong> <em>"What was your salary at your previous job?"</em></p>
+<p><strong>Dilan:</strong> <em>"I earned </em><em>sixty thousand</em><em> rupees per month, sir."</em> <em>(Not sixteen thousand. Sixty thousand.)</em></p>
+<p><strong>Interviewer:</strong> <em>"And how many hours per week did you work?"</em></p>
+<p><strong>Dilan:</strong> <em>"I worked about </em><em>fifty</em><em> hours per week, including overtime, sir."</em> <em>(Not fifteen. Fifty.)</em></p>
+<p><strong>Interviewer:</strong> <em>"Can you tell me your height and weight?"</em></p>
+<p><strong>Dilan:</strong> <em>"My height is </em><em>one hundred sixty-eight</em><em> centimeters, and my weight is </em><em>sixty</em><em> kilograms, sir."</em> <em>(Not sixteen. Sixty.)</em></p>
+<p><strong>Interviewer:</strong> <em>"Very good. Thank you, Dilan."</em></p>
+<p><strong>Dilan:</strong> <em>"Thank you very much, sir."</em></p>
+<hr />
+<h3>4B. Whisper Practice (3 min)</h3>
+<p>Now <strong>whisper</strong> the interview script again. Whispering forces your mouth to pronounce each syllable clearly without the distraction of volume.</p>
+<p>Focus on these <strong>4 critical sentences</strong>:<br />
+1. <em>"I am </em><em>twenty-eight</em><em> years old."</em><br />
+2. <em>"I have </em><em>more than five</em><em> years of experience."</em><br />
+3. <em>"I earned </em><em>sixty thousand</em><em> rupees per month."</em><br />
+4. <em>"My height is </em><em>one hundred sixty-eight</em><em> centimeters, and my weight is </em><em>sixty</em><em> kilograms."</em></p>
+<hr />
+<h2>Micro-Block 5 — Output: Record &amp; Compare (8 min)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Output</strong> (speaking) comes <strong>last</strong>, after your brain has built the pattern through input. Now you are ready to speak.</p>
+</blockquote>
+<h3>5A. The Recording Drill (5 min)</h3>
+<p>Use your phone's voice recorder:</p>
+<ol>
+<li>
+<p><strong>Record yourself</strong> saying these 8 sentences clearly:<br />
+   - <em>"I am twenty-eight years old."</em><br />
+   - <em>"I have more than five years of experience."</em><br />
+   - <em>"I earned sixty thousand rupees per month."</em><br />
+   - <em>"I worked fifty hours per week."</em><br />
+   - <em>"My height is one hundred sixty-eight centimeters."</em><br />
+   - <em>"My weight is sixty kilograms."</em><br />
+   - <em>"I worked for three months at Keells Supermarket."</em><br />
+   - <em>"I am from Pahalagoda, Tangalle."</em></p>
+</li>
+<li>
+<p><strong>Listen back</strong> to your recording. Did you pronounce the numbers clearly? Did you stress the right syllables?</p>
+</li>
+<li>
+<p><strong>Compare</strong> your recording to Google Translate voice for the same sentences.</p>
+</li>
+<li>
+<p><strong>Record again</strong> if needed. Repeat until you are satisfied.</p>
+</li>
+</ol>
+<h3>5B. The 3-Word Vocabulary Journal (3 min)</h3>
+<p>Open your <strong>3-Words-a-Day Journal</strong> (from Lesson 1). Add these 3 words today:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Definition</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinguish</strong> (verb)</td>
+<td>To recognize the difference between two things</td>
+<td><em>"I can distinguish between fifteen and fifty."</em></td>
+</tr>
+<tr>
+<td><strong>precision</strong> (noun)</td>
+<td>Exactness and accuracy</td>
+<td><em>"Number precision is critical in the interview."</em></td>
+</tr>
+<tr>
+<td><strong>syllable</strong> (noun)</td>
+<td>A unit of sound in a word</td>
+<td><em>"The word 'fifteen' has two syllables: fif-teen."</em></td>
+</tr>
+</tbody>
+</table>
+<p>Write these by hand. <strong>Weekly revision:</strong> Review all 21 words at the end of the week.</p>
+<hr />
+<h2>Retrieval Practice (Test Your Memory)</h2>
+<blockquote>
+<p><strong>CI principle applied:</strong> <strong>Retrieval practice</strong> (active recall) is 3x more effective than re-reading. Test yourself without looking back at the lesson.</p>
+</blockquote>
+<details>
+<summary><strong>Question 1:</strong> What is the vowel sound difference between TEEN and TY numbers?</summary>
+
+**Answer:** TEEN numbers (13–19) have a **long "eeee" sound** and stress on the **second syllable** (fif-TEEN). TY numbers (30–90) have a **short "i" sound** and stress on the **first syllable** (FIF-ty).
+
+</details>
+
+<details>
+<summary><strong>Question 2:</strong> Dilan is 28 years old. He has _____ years of experience. What number goes in the blank?</summary>
+
+**Answer:** **More than five** years of experience. *(Not fifteen. Five.)*
+
+</details>
+
+<details>
+<summary><strong>Question 3:</strong> What was Dilan's previous monthly salary?</summary>
+
+**Answer:** **Sixty thousand rupees per month.** *(Not sixteen thousand. Sixty thousand.)*
+
+</details>
+
+<details>
+<summary><strong>Question 4:</strong> What is Dilan's height?</summary>
+
+**Answer:** **One hundred sixty-eight centimeters.** *(Not one hundred eighteen. One hundred sixty-eight.)*
+
+</details>
+
+<details>
+<summary><strong>Question 5:</strong> What is the T.E.E.N. vs. T.Y. memory formula?</summary>
+
+**Answer:**
+- **T.E.E.N.** (13–19): Long "eeee" sound, stress on second syllable (fif-TEEN).
+- **T.Y.** (30–90): Short "i" sound, stress on first syllable (FIF-ty).
+
+</details>
+
+<hr />
+<h2>Homework Assignment (10 minutes before bed tonight)</h2>
+<h3>Task 1: The 4-Sentence Night Drill (5 min)</h3>
+<p>Before you sleep tonight, <strong>whisper</strong> these 4 sentences <strong>7 times each</strong>:<br />
+1. <em>"I am twenty-eight years old."</em><br />
+2. <em>"I have more than five years of experience."</em><br />
+3. <em>"I earned sixty thousand rupees per month."</em><br />
+4. <em>"My weight is sixty kilograms."</em></p>
+<blockquote>
+<p><strong>Why 7 times?</strong> Ramindu Randeni's method: speaking aloud 5–7 times builds <strong>tongue and vocal muscle memory</strong> (<code>info_final.md</code> Part II §2).</p>
+</blockquote>
+<h3>Task 2: The Minimal Pairs Challenge (5 min)</h3>
+<p>Ask a family member or friend to read <strong>one sentence</strong> from each minimal pair (Micro-Block 3A) at random. Can you tell which one they said? If you get it wrong, repeat the drill tomorrow.</p>
+<hr />
+<h2>Spaced Repetition Schedule (From Forgetting Curve, <code>info_final.md</code> Part I §3)</h2>
+<ul>
+<li><strong>1st Review:</strong> Within 2–3 hours after this lesson (skim your notes, 5 min).</li>
+<li><strong>2nd Review:</strong> Tomorrow morning (review the 8 critical sentences, 5 min).</li>
+<li><strong>3rd Review:</strong> Next weekend (review all 3 lessons so far, 15 min).</li>
+<li><strong>4th Review:</strong> Before your interview (final check, 10 min).</li>
+</ul>
+<hr />
+<h2>Next Lesson Preview</h2>
+<p><strong>Lesson 0004 — Supermarket FIFO &amp; Display Shelf English</strong></p>
+<p>You will learn:<br />
+- The FIFO method (First-In, First-Out) and how to explain it in simple English.<br />
+- How to describe your daily supermarket duties (stocking, rotating, helping customers).<br />
+- The vocabulary: <em>display shelf, cold storage, expiration date, shrink, barcode scanner, pallet jack</em>.</p>
+<blockquote>
+<p><strong>Want to ask a question?</strong> I am your teacher. If anything in this lesson was unclear, ask me now. I will explain it in simpler words or give you more examples.</p>
+</blockquote>
+<hr />
+<h2>Optional Monitor Appendix — Grammar Notes (Open Only If Curious)</h2>
+<details>
+<summary><strong>Grammar Point 1:</strong> Why TEEN numbers stress the second syllable</summary>
+
+In English phonology, compound numbers ending in **-teen** (thirteen, fourteen, fifteen, etc.) historically derive from Old English *"tēne"* (meaning "ten"). The long vowel **"ē"** was preserved, and stress shifted to the second syllable for emphasis. In contrast, **-ty** numbers (thirty, forty, fifty) derive from Old English *"tig"* (meaning "group of ten"), with a short vowel and stress on the first syllable.
+
+**Modern result:**
+- **TEEN:** fif-**TEEN** (stress on second syllable, long vowel)
+- **TY:** **FIF**-ty (stress on first syllable, short vowel)
+
+This is why the distinction is **phonologically critical** — the vowel length and stress pattern carry the meaning.
+
+</details>
+
+<details>
+<summary><strong>Grammar Point 2:</strong> Why "sixty thousand" vs "sixteen thousand" matters in verification</summary>
+
+During the SLBFE background check, the Israeli recruiter will call your previous employer and ask: *"What was Dilan's salary?"* If your service letter says **"Rs. 60,000 per month"** but you said **"sixteen thousand"** in the interview, the recruiter assumes:
+1. You cannot read your own documents.
+2. You are lying about your salary.
+3. You cannot understand basic English numbers.
+
+**All three are automatic disqualifications.**
+
+</details>
+
+<hr />
+<h2>Lesson Complete</h2>
+<p>You have completed <strong>Lesson 3 — Number Power: The 15-vs-50 Survival Drill</strong>.</p>
+<p><strong>Key memory formula to remember:</strong> T.E.E.N. vs. T.Y.</p>
+<p><strong>Next step:</strong> Complete the Homework Assignment tonight, then proceed to <strong>Lesson 4 — Supermarket FIFO &amp; Display Shelf English</strong> tomorrow.</p>
+<p><strong>Questions?</strong> Ask me now. I am here to help you pass this interview.</p>
+<hr />
+<p><strong>End of Lesson 0003</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="sinhala" role="tabpanel" aria-label="Pure Sinhala version">
+        <div class="panel-label">Pure Sinhala version</div>
+        <div class="content si"><h1>Lesson 0003 — Number Power: 15 සහ 50 අතර වෙනස වෙන්කර හඳුනාගැනීම (The 15-vs-50 Survival Drill)</h1>
+<blockquote>
+<p><strong>Mission link:</strong> සංඛ්‍යා වැරදියට උච්චාරණය කිරීම (mispronouncing numbers) Israeli interviews වලදී <strong>ක්ෂණිකව අසමත් වීමට බලපාන ප්‍රධාන කරුණකි (documented fail-trigger)</strong>. ඔබ <strong>fifty (50)</strong> වෙනුවට <em>"I am </em><em>fifteen (15)</em><em> years old"</em> යැයි පැවසුවහොත්, නැතහොත් <strong>thirty (30)</strong> වෙනුවට <em>"I worked for </em><em>thirteen (13)</em><em> years"</em> යැයි පැවසුවහොත්, ඔබට සරල රැකියා උපදෙස් හෝ තේරුම් ගත නොහැකි බව interviewer නිගමනය කරයි. මෙම පාඩම මඟින් එම වෙනස ඔබට ඉබේම නිවැරදිව ප්‍රකාශ වන ලෙස පුහුණු කරයි.</p>
+<p><strong>Strict Comprehensible Input mode:</strong> පළමුව සවන්දීමේ සහ හඳුනාගැනීමේ අභ්‍යාස පමණි. ඔබේ කනට එම වෙනස ස්වභාවිකව වෙන්කර හඳුනාගත හැකි වූ <strong>පසුව පමණක්</strong> කතා කිරීමේ පුහුණුව (speaking practice) ආරම්භ කෙරේ. Grammar පැහැදිලි කිරීම් Optional Monitor Appendix එක තුළ ඇත.</p>
+<p><strong>භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):</strong> <strong>Dilan Harshana</strong>, වයස <strong>28</strong>, supermarket ක්ෂේත්‍රයේ <strong>වසර 5ක</strong> පළපුරුද්ද, පදිංචිය <strong>පහලගොඩ, තංගල්ල</strong>. ඔහුගේ බර <strong>60 kg</strong>, උස <strong>168 cm</strong>, සහ පෙර මාසික වැටුප <strong>රු. 60,000 කි</strong>.</p>
+</blockquote>
+<hr />
+<h2>Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)</h2>
+<p>මෙම පාඩම අවසානයේ — <strong>කටපාඩම් කිරීමෙන් තොරව, Input මඟින්ම</strong> — ඔබට හැකිවනු ඇත:<br />
+1. 15 සහ 50, 13 සහ 30, 14 සහ 40, 16 සහ 60, 17 සහ 70, 18 සහ 80, 19 සහ 90 අතර වෙනස <strong>කනට ඇසීමෙන්ම පමණක්</strong> වෙන්කර හඳුනා ගැනීමට (Distinguish - input).<br />
+2. සැබෑ interview සන්දර්භයන් තුළ (බර, වයස, පළපුරුද්ද, වැටුප) මෙම සංඛ්‍යා යුගල <strong>හඳුනා ගැනීමට (Recognize)</strong>.<br />
+3. නිවැරදි ශබ්ද අවධාරණය (stress patterns) සහිතව තීරණාත්මක සංඛ්‍යා වාක්‍ය 8 <strong>සෙමෙන් මිමිණීමට (Whisper-drill - gentle output)</strong>.<br />
+4. ඔබේම recordings ස්වභාවික ඉංග්‍රීසි ශබ්ද සමඟ සසඳා <strong>ස්වයං-නිවැරදි කරගැනීමට (Self-correct - retrieval practice)</strong>.<br />
+5. සියලුම සංඛ්‍යා වෙන්කර හඳුනාගැනීමේ පදනම වන <strong>T.E.E.N. vs. T.Y.</strong> කෙටි යෙදුම මතකයේ රඳවා ගැනීමට (Hold).</p>
+<p><strong>ගතවන ඇස්තමේන්තුගත කාලය:</strong> මිනිත්තු 40යි. මිනිත්තු 8 බැගින් වූ <strong>micro-blocks 5කට</strong> බෙදා, අතරමැද මිනිත්තු 5ක විවේක (breaks) සහිතව.<br />
+<strong>Comprehensible Input මට්ටම:</strong> <em>i + 1</em> — 1 සිට 100 දක්වා ඉංග්‍රීසි සංඛ්‍යා ඔබ දැනටමත් දනී; මෙම පාඩම මඟින් interview එකේ ජය/පරාජය තීරණය කරන <strong>සියුම් ස්වර වෙනස (subtle vowel difference)</strong> කනට හසුකර ගැනීමට පුහුණු කරයි.</p>
+<hr />
+<h2>ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)</h2>
+<ul>
+<li><code>01/interview_merged.md</code> — §2.5 (Delivery Tips: Numerical Clarity), §6 Q2–Q4, §8.2 DO #4</li>
+<li><code>01/info_final.md</code> — Part I §7 (Comprehensible Input, <em>i+1</em> level), Part II §2 (Pronunciation Tools, 5–7 repetitions aloud)</li>
+</ul>
+<hr />
+<h2>The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — සිතින් මවාගන්න / picture it in your head)</h2>
+<blockquote>
+<p><em>The interview room is silent. The Israeli recruiter leans forward and asks:</em> <strong>"How old are you?"</strong><br />
+<em>Dilan answers:</em> <strong>"I am fifty years old."</strong><br />
+<em>The recruiter frowns. She looks at Dilan's face. He looks 28, not 50. She writes a note: "Cannot understand basic questions." The interview ends early.</em></p>
+</blockquote>
+<p><strong>මෙහිදී සිදුවූ වරද කුමක්ද?</strong> ඩිලාන්ට <strong>අවශ්‍ය වූයේ</strong> interview එකේදී පසුව <em>"I have </em><em>fifteen</em><em> years of experience"</em> යැයි කීමට විය හැක, නමුත් කලබල වූ විට, ඔහුගේ මුඛයෙන් <strong>"fifteen"</strong> වෙනුවට <strong>"fifty"</strong> පිටවිය. ස්වර ශබ්දයේ වෙනස <strong>එක් කුඩා අක්ෂරයකට (one tiny syllable)</strong> පමණක් සීමා වුවද, එය මුළු අදහසම මුළුමනින්ම වෙනස් කළේය.</p>
+<p>මේ පාඩමේදී ඔබ <strong>පළමුව කන පුහුණු කරනු ඇත</strong>, පසුව මුඛය පුහුණු කරනු ඇත. පාඩම අවසානයේදී, <strong>TEEN</strong> (13, 14, 15, 16, 17, 18, 19) සහ <strong>TY</strong> (30, 40, 50, 60, 70, 80, 90) අතර වෙනස <strong>කාර් එකක් (car)</strong> සහ <strong>බස් එකක් (bus)</strong> අතර වෙනස මෙන් ඔබට ඉතා පැහැදිලි වනු ඇත.</p>
+<blockquote>
+<p><strong>කෙටි සිංහල පැහැදිලි කිරීම:</strong> මේ පාඩමේ අපි <strong>මුලින්ම අහනවා, පස්සේ කතා කරනවා</strong>. ඔබේ කණ සූදානම් වෙලා නැත්නම්, ඔබේ මුඛය නිවැරදිව කතා කරන්නේ නැහැ. Krashen කියන්නේ <strong>input before output</strong> කියලයි — මේක ඒ මූලධර්මයයි.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 1 — Pure Listening: The Vowel Hunt (ස්වර ශබ්දය සෙවීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> කතා කිරීමට පෙර, ඔබට වෙනස <strong>කනට ඇසී වටහාගත යුතුය (must hear the difference)</strong>. නිවැරදිව කතා කිරීමට (output) පෙර මොළයට හොඳින් සවන්දීම (input) අවශ්‍ය වේ.</p>
+</blockquote>
+<h3>1A. Listen — The TEEN Sound (විනාඩි 3)</h3>
+<p>පහත වාක්‍ය <strong>ඉතා සෙමෙන්</strong> ශබ්ද නඟා කියවන්න, මැද ඇති දිගු "ee" ශබ්දය <strong>ඇද උච්චාරණය කරන්න (exaggerate the long "ee" sound)</strong>:</p>
+<ol>
+<li>I am <strong>fif-TEEN</strong> years old. <em>(EE ශබ්දය දිගු කර අදින්න)</em></li>
+<li>I have <strong>thir-TEEN</strong> years of experience.</li>
+<li>My salary was <strong>four-TEEN</strong> thousand rupees.</li>
+<li>I worked for <strong>six-TEEN</strong> hours yesterday.</li>
+<li>The box weighs <strong>seven-TEEN</strong> kilograms.</li>
+</ol>
+<p><strong>නිරීක්ෂණය කරන්න:</strong> TEEN සංඛ්‍යාවල මැද <strong>දිගු, ඇදෙන "eeee"</strong> ශබ්දයක් ඇත. එය තත්පර භාගයක් පමණ වැඩිපුර රඳවා තබා ගන්නාක් මෙන් දැනේ.</p>
+<p><strong>Phonetic pattern:</strong> <code>thir-TEEEEN</code> (දෙවන අක්ෂරය මත වැඩි බරක් / stress එකක් තබමින් දිගු ස්වරය)</p>
+<h3>1B. Listen — The TY Sound (විනාඩි 3)</h3>
+<p>දැන් මෙම වාක්‍ය ශබ්ද නඟා කියවන්න, එහි ඇති <strong>කෙටි, වේගවත් "tee"</strong> ශබ්දය කෙරෙහි අවධානය යොමු කරන්න:</p>
+<ol>
+<li>I am <strong>FIF-ty</strong> years old. <em>(කෙටියෙන්, වේගවත්ව)</em></li>
+<li>I have <strong>THIR-ty</strong> years of experience.</li>
+<li>My salary was <strong>FOR-ty</strong> thousand rupees.</li>
+<li>I worked for <strong>SIX-ty</strong> hours this week.</li>
+<li>The box weighs <strong>SEVEN-ty</strong> kilograms.</li>
+</ol>
+<p><strong>නිරීක්ෂණය කරන්න:</strong> TY සංඛ්‍යාවල ඇත්තේ <strong>කෙටි, ඉක්මන්</strong> ස්වර ශබ්දයකි, සහ <strong>බර තබන්නේ (stress) පළමු අක්ෂරය මතයි</strong> (FIF-ty, THIR-ty, FOR-ty).</p>
+<p><strong>Phonetic pattern:</strong> <code>THIR-ty</code> (පළමු අක්ෂරය මත stress එක, කෙටි ස්වරය)</p>
+<h3>1C. The memory formula — T.E.E.N. vs. T.Y. (විනාඩි 2)</h3>
+<p>මෙම මතක ආධාරකය මතක තබාගන්න:</p>
+<table>
+<thead>
+<tr>
+<th>Number Type</th>
+<th>Vowel Sound (ස්වර ශබ්දය)</th>
+<th>Stress Pattern (අවධාරණය)</th>
+<th>Example (උදාහරණ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>T.E.E.N.</strong> (13–19)</td>
+<td><strong>Long "eeee"</strong> (අදින දිගු ස්වරය)</td>
+<td><strong>දෙවන අක්ෂරය (second syllable)</strong> මත</td>
+<td>fif-<strong>TEEN</strong></td>
+</tr>
+<tr>
+<td><strong>T.Y.</strong> (30–90)</td>
+<td><strong>Short "i"</strong> (ඉක්මන් කෙටි ස්වරය)</td>
+<td><strong>පළමු අක්ෂරය (first syllable)</strong> මත</td>
+<td><strong>FIF</strong>-ty</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>මතක තබා ගන්න:</strong> TEEN = දිග ස්වරය (eeee), TY = කෙටි ස්වරය. TEEN = දෙවන අක්ෂරයේ බලය, TY = පළමු අක්ෂරයේ බලය.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 2 — Dilan's Number Story (ඩිලාන්ගේ සංඛ්‍යා කතාව) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> නව භාෂාව ඉදිරිපත් කරනු ලබන්නේ <strong>අර්ථවත් සන්දර්භයක් (meaningful context)</strong> තුළිනි. සංඛ්‍යා යනු වියුක්ත දේවල් නොවේ — ඒවා interviewer විසින් ඔබගේ ලිපිගොනුව සමඟ සසඳන <strong>ඔබ පිළිබඳ සැබෑ තොරතුරුය</strong>.</p>
+</blockquote>
+<h3>2A. Dilan's Number Facts (Read or Listen) (විනාඩි 5)</h3>
+<blockquote>
+<p><strong>මෙම කතාව සෙමෙන්, ශබ්ද නඟා කියවන්න.</strong> මෙය <strong>ඔබේම</strong> සංඛ්‍යා කතාවයි. මෙහි ඇති සෑම අංකයක්ම <strong>සත්‍ය</strong> වන අතර ඔබගේ interview එකේදී මතුවනු ඇත.</p>
+</blockquote>
+<p><strong>Dilan's age (වයස):</strong> Dilan Harshana is <strong>twenty-eight</strong> years old. <em>(Not eighteen. Not eighty-eight. Twenty-eight.)</em></p>
+<p><strong>Dilan's experience (පළපුරුද්ද):</strong> He has <strong>more than five years</strong> of experience in the supermarket and retail field. <em>(Not fifteen years. Five years.)</em></p>
+<p><strong>Dilan's previous salary (පෙර වැටුප):</strong> At his previous job, he earned <strong>sixty thousand rupees per month</strong>. <em>(Not sixteen thousand. Sixty thousand.)</em></p>
+<p><strong>Dilan's height (උස):</strong> Dilan is <strong>one hundred sixty-eight centimeters</strong> tall. <em>(Not one hundred eighteen. One hundred sixty-eight.)</em></p>
+<p><strong>Dilan's weight (බර):</strong> His weight is <strong>sixty kilograms</strong>. <em>(Not sixteen kilograms. Sixty kilograms.)</em></p>
+<p><strong>Dilan's address (ලිපිනය):</strong> He lives at <strong>47/1, Pahalagoda, Tangalle</strong>. <em>(Forty-seven, slash, one.)</em></p>
+<p><strong>Dilan's work hours (වැඩ මුර කාලය):</strong> In his previous job, he sometimes worked <strong>fifty hours per week</strong>, including overtime. <em>(Not fifteen hours. Fifty hours.)</em></p>
+<p><strong>Israeli salary expectation (ඊශ්‍රායල වැටුප් බලාපොරොත්තුව):</strong> The average Israeli supermarket worker earns about <strong>seven thousand to eight thousand New Israeli Shekels per month</strong>. <em>(Not seventeen thousand. Seven to eight thousand.)</em></p>
+<h3>2B. Picture This — සිතින් මවාගන්න (විනාඩි 3)</h3>
+<p>ඔබේ ඇස් පියාගන්න. Interview කාමරයේදී ඔබ මෙම ප්‍රශ්නවලට පිළිතුරු දෙන අයුරු සිතින් මවාගන්න:</p>
+<ul>
+<li><strong>"How old are you?"</strong> → <em>"I am twenty-eight years old."</em></li>
+<li><strong>"How many years of experience do you have?"</strong> → <em>"I have more than five years of experience."</em></li>
+<li><strong>"What was your salary?"</strong> → <em>"I earned sixty thousand rupees per month."</em></li>
+<li><strong>"How tall are you?"</strong> → <em>"I am one hundred sixty-eight centimeters tall."</em></li>
+<li><strong>"What is your weight?"</strong> → <em>"My weight is sixty kilograms."</em></li>
+</ul>
+<details>
+<summary>සන්දර්භය මෙතරම් වැදගත් ඇයි (Krashen's Comprehensible Input)</summary>
+
+Krashen පෙන්වා දෙන්නේ භාෂාව උකහා ගැනීම (acquisition) වේගවත් වන්නේ input එක **අර්ථවත් (meaningful)** සහ **තමන්ට පෞද්ගලිකව අදාළ (personally relevant)** වන විට බවයි. මේවා නිකන්ම අංක නොවේ — මේවා recruiter විසින් ඔබේ ලියකියවිලි සමඟ සසඳන **ඔබේම තොරතුරුය**. වියුක්ත අභ්‍යාසවලට වඩා ඔබේම කතාව වන විට ඔබේ මොළය එය වඩාත් හොඳින් මතක තබා ගනී.
+
+</details>
+
+<hr />
+<h2>Micro-Block 3 — Minimal Pairs Drill: Ear Training (කන් පුහුණු කිරීමේ අභ්‍යාසය) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> කුඩා ශබ්ද වෙනස්කම් වෙන්කර හඳුනාගැනීම (discrimination drills). <strong>වෙනස්කම් හොඳින් නිරීක්ෂණය කිරීමෙන්</strong> මොළය ඉගෙන ගනී.</p>
+</blockquote>
+<h3>3A. The Listening Test (විනාඩි 5)</h3>
+<p>පහත දැක්වෙන්නේ <strong>වාක්‍ය යුගල 8කි (8 sentence pairs)</strong>. සෑම යුගලකම <strong>එක් TEEN සංඛ්‍යාවක් සහ එක් TY සංඛ්‍යාවක්</strong> ඇත. වාක්‍ය දෙකම සෙමෙන් ශබ්ද නඟා කියවන්න, ඉන්පසු <strong>ඇස් පියාගෙන</strong> ඔබේ මිතුරෙකුට හෝ ගෙදර කෙනෙකුට ඉන් එකක් අහඹු ලෙස කියවන්න කියන්න. ඔවුන් පැවසුවේ කුමක්දැයි ඔබට හඳුනාගත හැකිද?</p>
+<p><strong>Pair 1:</strong><br />
+- A: I am <strong>fifteen</strong> years old.<br />
+- B: I am <strong>fifty</strong> years old.</p>
+<p><strong>Pair 2:</strong><br />
+- A: I have <strong>thirteen</strong> years of experience.<br />
+- B: I have <strong>thirty</strong> years of experience.</p>
+<p><strong>Pair 3:</strong><br />
+- A: My salary was <strong>fourteen</strong> thousand.<br />
+- B: My salary was <strong>forty</strong> thousand.</p>
+<p><strong>Pair 4:</strong><br />
+- A: I worked <strong>sixteen</strong> hours yesterday.<br />
+- B: I worked <strong>sixty</strong> hours this week.</p>
+<p><strong>Pair 5:</strong><br />
+- A: The box weighs <strong>seventeen</strong> kilograms.<br />
+- B: The box weighs <strong>seventy</strong> kilograms.</p>
+<p><strong>Pair 6:</strong><br />
+- A: I can lift <strong>eighteen</strong> kilograms easily.<br />
+- B: I can lift <strong>eighty</strong> kilograms with help.</p>
+<p><strong>Pair 7:</strong><br />
+- A: The temperature is <strong>nineteen</strong> degrees.<br />
+- B: The temperature is <strong>ninety</strong> degrees.</p>
+<p><strong>Pair 8:</strong><br />
+- A: I worked at Keells for <strong>three months</strong>.<br />
+- B: I worked at Keells for <strong>thirty months</strong>.</p>
+<h3>3B. Self-Test — ස්වයං පරීක්ෂාව (විනාඩි 3)</h3>
+<p><strong>Google Translate voice</strong> හෝ <strong>YouTube pronunciation videos</strong> භාවිතා කරන්න:<br />
+1. Google Translate (English) වෙත <em>"I am fifteen years old"</em> යැයි type කරන්න.<br />
+2. Speaker icon එක click කර 3 වතාවක් සවන් දෙන්න.<br />
+3. දැන් <em>"I am fifty years old"</em> යැයි type කර 3 වතාවක් සවන් දෙන්න.<br />
+4. වෙනස ඔබේ කනට පැහැදිලිව ඇසේද?</p>
+<p>පහත වචන සඳහාද මෙය නැවත කරන්න:<br />
+- thirteen / thirty<br />
+- fourteen / forty<br />
+- sixteen / sixty</p>
+<details>
+<summary>මෙය සාර්ථක වීමට හේතුව (Spaced Repetition + Retrieval Practice)</summary>
+
+Hermann Ebbinghaus ගේ Forgetting Curve මඟින් පෙන්වන්නේ නිෂ්ක්‍රීයව සවන්දීමට වඩා **සක්‍රීයව වෙනස්කම් තෝරාගැනීමේ පුහුණුව (active discrimination practice)** මඟින් මතකයේ ශක්තිමත් සම්බන්ධතා ඇති කරන බවයි. ඔබට ඇසුණු අංකය කුමක්දැයි **තීරණය කිරීමට** මොළයට බලකිරීමෙන්, දිගුකාලීන මතකයේ (long-term memory) තැන්පත් වීම තහවුරු වේ.
+
+</details>
+
+<hr />
+<h2>Micro-Block 4 — Dilan's Interview: The Critical Moment (තීරණාත්මක මොහොත) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> <strong>Recycling (නැවත භාවිතය)</strong> — ඔබ දැන් ඩිලාන්ගේ කතාව විවිධ ආකාරයෙන් තුන් වරක් අසා ඇත. මෙය <strong>හතරවන හමුවීමයි (fourth encounter)</strong>. සෑම අවස්ථාවකදීම භාෂාව වඩාත් හුරුපුරුදු වේ.</p>
+</blockquote>
+<h3>4A. The Interview Script (Read Aloud, Slowly) (විනාඩි 5)</h3>
+<blockquote>
+<p><strong>උපදෙස්:</strong> මෙම script එක ශබ්ද නඟා කියවන්න. ඔබ ඩිලාන් යැයි සිතන්න. මේ වචන <strong>ඔබේම</strong> වචනයි. මෙය <strong>තුන් වතාවක්</strong> කියවන්න — සෑම අවස්ථාවකදීම පෙරට වඩා සෙමෙන්.</p>
+</blockquote>
+<hr />
+<p><strong>Interviewer:</strong> <em>"Good morning. Please, sit down. What is your name?"</em></p>
+<p><strong>Dilan:</strong> <em>"Good morning, sir. My name is Dilan Harshana."</em></p>
+<p><strong>Interviewer:</strong> <em>"How old are you, Dilan?"</em></p>
+<p><strong>Dilan:</strong> <em>"I am </em><em>twenty-eight</em><em> years old, sir."</em> <em>(Not eighteen. Not eighty. Twenty-eight.)</em></p>
+<p><strong>Interviewer:</strong> <em>"And where are you from?"</em></p>
+<p><strong>Dilan:</strong> <em>"I am from </em><em>Pahalagoda, Tangalle</em><em>, in the southern part of Sri Lanka, sir."</em></p>
+<p><strong>Interviewer:</strong> <em>"Good. How many years of experience do you have in the supermarket field?"</em></p>
+<p><strong>Dilan:</strong> <em>"I have </em><em>more than five</em><em> years of experience in supermarket and retail work, sir."</em> <em>(Not fifteen. Five.)</em></p>
+<p><strong>Interviewer:</strong> <em>"What was your salary at your previous job?"</em></p>
+<p><strong>Dilan:</strong> <em>"I earned </em><em>sixty thousand</em><em> rupees per month, sir."</em> <em>(Not sixteen thousand. Sixty thousand.)</em></p>
+<p><strong>Interviewer:</strong> <em>"And how many hours per week did you work?"</em></p>
+<p><strong>Dilan:</strong> <em>"I worked about </em><em>fifty</em><em> hours per week, including overtime, sir."</em> <em>(Not fifteen. Fifty.)</em></p>
+<p><strong>Interviewer:</strong> <em>"Can you tell me your height and weight?"</em></p>
+<p><strong>Dilan:</strong> <em>"My height is </em><em>one hundred sixty-eight</em><em> centimeters, and my weight is </em><em>sixty</em><em> kilograms, sir."</em> <em>(Not sixteen. Sixty.)</em></p>
+<p><strong>Interviewer:</strong> <em>"Very good. Thank you, Dilan."</em></p>
+<p><strong>Dilan:</strong> <em>"Thank you very much, sir."</em></p>
+<hr />
+<h3>4B. Whisper Practice (විනාඩි 3)</h3>
+<p>දැන් interview script එක නැවත <strong>whisper කරන්න (සෙමෙන් මිමිණීමට පුහුණු වන්න)</strong>. Whisper කිරීම මඟින් ශබ්දයේ බාධාවකින් තොරව සෑම අක්ෂරයක්ම පැහැදිලිව උච්චාරණය කිරීමට මුඛයේ මාංශ පේශි පුහුණු කරයි.</p>
+<p>පහත <strong>තීරණාත්මක වාක්‍ය 4 කෙරෙහි (4 critical sentences)</strong> විශේෂයෙන් අවධානය යොමු කරන්න:<br />
+1. <em>"I am </em><em>twenty-eight</em><em> years old."</em><br />
+2. <em>"I have </em><em>more than five</em><em> years of experience."</em><br />
+3. <em>"I earned </em><em>sixty thousand</em><em> rupees per month."</em><br />
+4. <em>"My height is </em><em>one hundred sixty-eight</em><em> centimeters, and my weight is </em><em>sixty</em><em> kilograms."</em></p>
+<blockquote>
+<p><strong>මතක තබා ගන්න:</strong> Whisper කිරීම ඔබේ මුඛය <strong>නිවැරදිව</strong> චලනය කරවයි. මෙය කතා කිරීමට බිය නැති කරන ඉතා ප්‍රබල උපක්‍රමයකි.</p>
+</blockquote>
+<hr />
+<h2>Micro-Block 5 — Output: Record &amp; Compare (පටිගත කර සංසන්දනය කිරීම) (විනාඩි 8)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> Input මඟින් මොළය තුළ රටාව ගොඩනැඟුණු පසු, <strong>Output (කතා කිරීම) පැමිණෙන්නේ අවසානයටයි</strong>. දැන් ඔබ කතා කිරීමට සූදානම්ය.</p>
+</blockquote>
+<h3>5A. The Recording Drill (විනාඩි 5)</h3>
+<p>ඔබගේ දුරකථනයේ voice recorder එක භාවිතා කරන්න:</p>
+<ol>
+<li>
+<p>පහත වාක්‍ය 8 පැහැදිලිව පවසමින් <strong>ඔබේ හඬ record කරගන්න</strong>:<br />
+   - <em>"I am twenty-eight years old."</em><br />
+   - <em>"I have more than five years of experience."</em><br />
+   - <em>"I earned sixty thousand rupees per month."</em><br />
+   - <em>"I worked fifty hours per week."</em><br />
+   - <em>"My height is one hundred sixty-eight centimeters."</em><br />
+   - <em>"My weight is sixty kilograms."</em><br />
+   - <em>"I worked for three months at Keells Supermarket."</em><br />
+   - <em>"I am from Pahalagoda, Tangalle."</em></p>
+</li>
+<li>
+<p>ඔබේ recording එකට <strong>නැවත සවන් දෙන්න</strong>. ඔබ අංක පැහැදිලිව උච්චාරණය කළාද? නිවැරදි අක්ෂරවලට බර තැබුවාද (stress කළාද)?</p>
+</li>
+<li>
+<p>මෙම වාක්‍ය සඳහා Google Translate voice එක සමඟ ඔබේ හඬ <strong>සංසන්දනය කරන්න</strong>.</p>
+</li>
+<li>
+<p>අවශ්‍ය නම් <strong>නැවත record කරන්න</strong>. ඔබට සෑහීමකට පත්වන තුරු පුහුණු වන්න.</p>
+</li>
+</ol>
+<h3>5B. The 3-Word Vocabulary Journal (විනාඩි 3)</h3>
+<p>ඔබගේ <strong>3-Words-a-Day Journal</strong> එක විවෘත කරන්න. අද දින සඳහා මෙම වචන 3 එකතු කරන්න:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Definition (තේරුම)</th>
+<th>Example Sentence (උදාහරණ වාක්‍යය)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinguish</strong> (verb)</td>
+<td>දේවල් දෙකක් අතර වෙනස හඳුනා ගැනීම</td>
+<td><em>"I can distinguish between fifteen and fifty."</em></td>
+</tr>
+<tr>
+<td><strong>precision</strong> (noun)</td>
+<td>ඉතා නිවැරදි සහ පැහැදිලි බව</td>
+<td><em>"Number precision is critical in the interview."</em></td>
+</tr>
+<tr>
+<td><strong>syllable</strong> (noun)</td>
+<td>වචනයක ඇති ශබ්ද ඒකකයක් (අක්ෂර ශබ්දය)</td>
+<td><em>"The word 'fifteen' has two syllables: fif-teen."</em></td>
+</tr>
+</tbody>
+</table>
+<p>මේවා අතින් ලියන්න. <strong>සතිපතා පුනරීක්ෂණය:</strong> සතිය අවසානයේ වචන 21ම නැවත මතක් කරන්න.</p>
+<hr />
+<h2>Retrieval Practice — මතකය පරීක්ෂා කරමු (Test Your Memory)</h2>
+<blockquote>
+<p><strong>භාවිතා වන CI මූලධර්මය (CI principle applied):</strong> සක්‍රීයව මතක් කිරීම (Active recall) නැවත කියවීමට වඩා 3 ගුණයකින් ප්‍රතිඵලදායක වේ. පාඩම දෙස නොබලා පිළිතුරු දෙන්න.</p>
+</blockquote>
+<details>
+<summary><strong>Question 1:</strong> TEEN සහ TY සංඛ්‍යා අතර ස්වර ශබ්දයේ වෙනස කුමක්ද?</summary>
+
+**Answer:** TEEN සංඛ්‍යා (13–19) සතුව **දිගු "eeee" ශබ්දයක්** සහ **දෙවන අක්ෂරය (second syllable)** මත stress එකක් ඇත (fif-TEEN). TY සංඛ්‍යා (30–90) සතුව **කෙටි "i" ශබ්දයක්** සහ **පළමු අක්ෂරය (first syllable)** මත stress එකක් ඇත (FIF-ty).
+
+</details>
+
+<details>
+<summary><strong>Question 2:</strong> ඩිලාන්ට වයස 28යි. ඔහුට වසර _____ ක පළපුරුද්දක් ඇත. හිස්තැනට සුදුසු අංකය කුමක්ද?</summary>
+
+**Answer:** **More than five** (වසර 5කට වැඩි). *(Not fifteen. Five.)*
+
+</details>
+
+<details>
+<summary><strong>Question 3:</strong> ඩිලාන්ගේ පෙර මාසික වැටුප කීයද?</summary>
+
+**Answer:** **Sixty thousand rupees per month.** *(Not sixteen thousand. Sixty thousand.)*
+
+</details>
+
+<details>
+<summary><strong>Question 4:</strong> ඩිලාන්ගේ උස කීයද?</summary>
+
+**Answer:** **One hundred sixty-eight centimeters.** *(Not one hundred eighteen. One hundred sixty-eight.)*
+
+</details>
+
+<details>
+<summary><strong>Question 5:</strong> T.E.E.N. vs. T.Y. මතක ආධාරකය කුමක්ද?</summary>
+
+**Answer:**
+- **T.E.E.N.** (13–19): දිගු "eeee" ශබ්දය, stress එක දෙවන අක්ෂරය මත (fif-TEEN).
+- **T.Y.** (30–90): කෙටි "i" ශබ්දය, stress එක පළමු අක්ෂරය මත (FIF-ty).
+
+</details>
+
+<hr />
+<h2>Homework Assignment — අද රාත්‍රියට ගෙදර වැඩ (විනාඩි 10යි)</h2>
+<h3>Task 1: The 4-Sentence Night Drill (විනාඩි 5)</h3>
+<p>අද රාත්‍රියේ නින්දට පෙර, මෙම වාක්‍ය 4 <strong>එකක් 7 වතාවක් බැගින් whisper කරන්න</strong>:<br />
+1. <em>"I am twenty-eight years old."</em><br />
+2. <em>"I have more than five years of experience."</em><br />
+3. <em>"I earned sixty thousand rupees per month."</em><br />
+4. <em>"My weight is sixty kilograms."</em></p>
+<blockquote>
+<p><strong>7 වතාවක් ඇයි?</strong> Ramindu Randeni ගේ ක්‍රමවේදය: 5–7 වතාවක් ශබ්ද නඟා හෝ whisper කර පැවසීමෙන් <strong>දිව සහ කටහඬේ මාංශ පේශි මතකය (muscle memory)</strong> ගොඩනැගේ (<code>info_final.md</code> Part II §2).</p>
+</blockquote>
+<h3>Task 2: The Minimal Pairs Challenge (විනාඩි 5)</h3>
+<p>Micro-Block 3A හි ඇති minimal pair වාක්‍යවලින් එකක් අහඹු ලෙස කියවීමට ඔබේ පවුලේ කෙනෙකුට හෝ මිතුරෙකුට පවසන්න. ඔවුන් කීවේ කුමක්දැයි වෙන්කර හඳුනාගන්න. වැරදුනහොත් හෙට නැවත පුහුණු වන්න.</p>
+<hr />
+<h2>Spaced Repetition Schedule — නැවත මතක් කිරීමේ කාලසටහන</h2>
+<ul>
+<li><strong>1st Review:</strong> මෙම පාඩමෙන් පැය 2–3ක් ඇතුළත (සටහන් දෙස විනාඩි 5ක් බලන්න).</li>
+<li><strong>2nd Review:</strong> හෙට උදෑසන (තීරණාත්මක වාක්‍ය 8 නැවත බලන්න, විනාඩි 5ක්).</li>
+<li><strong>3rd Review:</strong> ලබන සති අන්තයේ (දැනට කර ඇති පාඩම් 3ම නැවත මතක් කරන්න, විනාඩි 15ක්).</li>
+<li><strong>4th Review:</strong> Interview එකට පෙර (අවසන් පරීක්ෂාව, විනාඩි 10ක්).</li>
+</ul>
+<hr />
+<h2>Next Lesson Preview — මීළඟ පාඩම පිළිබඳ පෙරදසුන</h2>
+<p><strong>Lesson 0004 — Supermarket FIFO &amp; Display Shelf English</strong></p>
+<p>මීළඟ පාඩමේදී ඔබ ඉගෙන ගනු ඇත:<br />
+- FIFO ක්‍රමය (First-In, First-Out) සහ එය සරල ඉංග්‍රීසියෙන් පැහැදිලි කරන ආකාරය.<br />
+- සුපිරි වෙළඳසැලක ඔබේ දෛනික රාජකාරි විස්තර කරන ආකාරය (stocking, rotating, helping customers).<br />
+- අත්‍යවශ්‍ය වචන මාලාව: <em>display shelf, cold storage, expiration date, shrink, barcode scanner, pallet jack</em>.</p>
+<blockquote>
+<p><strong>ප්‍රශ්නයක් ඇසීමට අවශ්‍යද?</strong> මම ඔබගේ ගුරුවරයායි. යමක් අපැහැදිලි නම් දැන්ම විමසන්න.</p>
+</blockquote>
+<hr />
+<h2>Optional Monitor Appendix — Grammar Notes (අවශ්‍ය නම් පමණක් බලන්න)</h2>
+<details>
+<summary><strong>Grammar Point 1:</strong> TEEN සංඛ්‍යාවල දෙවන අක්ෂරය stress වීමට හේතුව</summary>
+
+ඉංග්‍රීසි භාෂාවේ ඉතිහාසය අනුව **-teen** වලින් අවසන් වන සංඛ්‍යා (thirteen, fourteen, fifteen ආදිය) පැරණි ඉංග්‍රීසි *"tēne"* ("දසය" යන අර්ථය) වෙතින් බිඳී ආ ඒවාය. එහි තිබූ දිගු **"ē"** ස්වරය ආරක්ෂා වී, අවධාරණය දෙවන අක්ෂරයට මාරු විය. ඊට ප්‍රතිවිරුද්ධව, **-ty** සංඛ්‍යා (thirty, forty, fifty) බිඳී ආවේ *"tig"* ("දසයේ කාණ්ඩය") වෙතින් වන අතර, එහි ඇත්තේ කෙටි ස්වරයක් සහ පළමු අක්ෂරයේ stress එකකි.
+
+**වර්තමාන ප්‍රතිඵලය:**
+- **TEEN:** fif-**TEEN** (දෙවන අක්ෂරයේ stress එක, දිගු ස්වරය)
+- **TY:** **FIF**-ty (පළමු අක්ෂරයේ stress එක, කෙටි ස්වරය)
+
+ස්වරයේ දිග සහ stress pattern එක අනුව අර්ථය තීරණය වන නිසා මෙම වෙනස කනට හඳුනාගැනීම අතිශය තීරණාත්මක වේ.
+
+</details>
+
+<details>
+<summary><strong>Grammar Point 2:</strong> Service verification වලදී "sixty thousand" සහ "sixteen thousand" වැදගත් වන්නේ ඇයි?</summary>
+
+SLBFE පසුබිම් පරීක්ෂාවේදී, Israeli recruiter ඔබ සේවය කළ ආයතනයට අමතා *"ඩිලාන්ගේ වැටුප කීයද?"* කියා අසනු ඇත. ඔබේ service letter එකේ **"Rs. 60,000 per month"** කියා සඳහන්ව තිබියදී ඔබ interview එකේදී **"sixteen thousand"** (16,000) යැයි පැවසුවහොත්, recruiter උපකල්පනය කරන්නේ:
+1. ඔබට ඔබේම ලියකියවිලි කියවාගත නොහැකි බව.
+2. ඔබ වැටුප ගැන බොරු කියන බව.
+3. ඔබට සරල ඉංග්‍රීසි සංඛ්‍යා හෝ තේරුම් ගත නොහැකි බව.
+
+**මේ තුනෙන් ඕනෑම එකක් ක්ෂණිකව interview එකෙන් ප්‍රතික්ෂේප වීමට (automatic disqualification) හේතු වේ.**
+
+</details>
+
+<hr />
+<h2>Lesson Complete</h2>
+<p>ඔබ <strong>Lesson 3 — Number Power: The 15-vs-50 Survival Drill</strong> සාර්ථකව අවසන් කළා.</p>
+<p><strong>මතක තබාගත යුතු ප්‍රධාන කෙටි යෙදුම:</strong> T.E.E.N. vs. T.Y.</p>
+<p><strong>මීළඟ පියවර:</strong> අද රාත්‍රියේ Homework Assignment එක සම්පූර්ණ කර, හෙට <strong>Lesson 4 — Supermarket FIFO &amp; Display Shelf English</strong> වෙත යන්න.</p>
+<hr />
+<p><strong>End of Lesson 0003</strong></p></div>
+      </section>
+      <section class="version-panel" data-mode="recall" role="tabpanel" aria-label="Recall guide version">
+        <div class="panel-label">Recall guide version</div>
+        <div class="content si"><h1>Lesson 0003 — Number Power: 15 සහ 50 අතර වෙනස (The 15-vs-50 Survival Drill) [කෙටි සාරාංශය සහ මතක සූත්‍ර]</h1>
+<blockquote>
+<p><strong>ඉලක්කය:</strong> ඉංග්‍රීසි අංකවල සියුම් ස්වර වෙනස නිවැරදිව හඳුනාගෙන, Interview එකේදී වැරදි අංක ප්‍රකාශ කිරීම නිසා සිදුවන ක්ෂණික ප්‍රතික්ෂේප වීම් වළක්වා ගැනීම.</p>
+</blockquote>
+<hr />
+<h2>ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)</h2>
+<ol>
+<li><strong>Teen vs. Ty</strong> අතර වෙනස කනට ඇසීමෙන්ම වෙන්කර හඳුනා ගැනීම.</li>
+<li>වයස, පළපුරුද්ද, වැටුප වැනි තීරණාත්මක තොරතුරු පැහැදිලිව ප්‍රකාශ කිරීම.</li>
+<li>නිවැරදි Stress Pattern (අවධාරණය) භාවිතා කරමින් අංක උච්චාරණය කිරීම.</li>
+</ol>
+<hr />
+<h2>ප්‍රධාන මතක සූත්‍ර (Memory Keys &amp; Formulas)</h2>
+<h3>1. සංඛ්‍යා වෙන් කිරීමේ සූත්‍රය: <strong>TEEN vs. TY</strong></h3>
+<p>සෑම විටම මතක තබා ගන්න: <strong>TEEN (ළමයා) vs. TY (වැඩිහිටියා)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">කාණ්ඩය</th>
+<th style="text-align: center;">සංඛ්‍යා</th>
+<th style="text-align: left;">ස්වර ශබ්දය (Vowel Sound)</th>
+<th style="text-align: left;">අවධාරණය (Stress)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>TEEN</strong></td>
+<td style="text-align: center;">13, 14, 15, 16, 17, 18, 19</td>
+<td style="text-align: left;">දිගු <strong>"eeee"</strong> (අදින ශබ්දය)</td>
+<td style="text-align: left;"><strong>දෙවන අක්ෂරය</strong> මත (fif-<strong>TEEN</strong>)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TY</strong></td>
+<td style="text-align: center;">30, 40, 50, 60, 70, 80, 90</td>
+<td style="text-align: left;">කෙටි <strong>"i"</strong> (ඉක්මන් ශබ්දය)</td>
+<td style="text-align: left;"><strong>පළමු අක්ෂරය</strong> මත (<strong>FIF</strong>-ty)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>කෙටි සටහන:</strong><br />
+- <strong>TEEN</strong> = දිගු ශබ්දය (TEEEEN) - අවසාන අක්ෂරයට බලය දීම.<br />
+- <strong>TY</strong> = කෙටි ශබ්දය (تی) - පළමු අක්ෂරයට බලය දීම.</p>
+</blockquote>
+<hr />
+<h2>තීරණාත්මක සංඛ්‍යා පුහුණුව (Critical Number Sentences)</h2>
+<p>නිවැරදි උච්චාරණය සහිතව හඬ නඟා කියවන්න:</p>
+<ul>
+<li><strong>වයස:</strong> "I am <strong>twenty-eight</strong> (28) years old."</li>
+<li><strong>පළපුරුද්ද:</strong> "I have <strong>more than five</strong> (5) years of experience."</li>
+<li><strong>වැටුප:</strong> "I earned <strong>sixty thousand</strong> (60,000) rupees per month."</li>
+<li><strong>උස:</strong> "I am <strong>one hundred sixty-eight</strong> (168) centimeters tall."</li>
+<li><strong>බර:</strong> "My weight is <strong>sixty</strong> (60) kilograms."</li>
+<li><strong>වැඩ මුර කාලය:</strong> "I worked about <strong>fifty</strong> (50) hours per week."</li>
+</ul>
+<hr />
+<h2>ප්‍රායෝගික පුහුණුව (Action Drill)</h2>
+<ol>
+<li><strong>Ear Training (කන් පුහුණුව):</strong> Google Translate විවෘත කර "Fifteen" සහ "Fifty" වෙන වෙනම type කර speaker එකෙන් අසන්න. TEEN හි ඇති දිගු "ee" ශබ්දය සහ TY හි ඇති කෙටි "i" ශබ්දය හොඳින් හඳුනාගන්න.</li>
+<li><strong>Whisper Drill (මිමිණීම):</strong> ඉහත වාක්‍ය 6 උදෑසන අවදි වූ වහාම 3 වරක් රහසින් මෙන් මිමිණීමට පුහුණු වන්න. මෙය මුඛයේ මාංශ පේශි ස්වභාවික ඉංග්‍රීසි ශබ්දවලට හුරු කරවයි.</li>
+<li><strong>Contrast Drill (වෙනස හඳුනාගැනීම):</strong> අහඹු ලෙස අංක දෙකක් තෝරා ඒවා එකිනෙක උච්චාරණය කර වෙනස පරීක්ෂා කරන්න (උදා: 13 vs 30, 14 vs 40, 16 vs 60).</li>
+</ol>
+<hr />
+<h2>දෛනික නව වචන 3 (3 Words a Day)</h2>
+<ul>
+<li><strong>Experience</strong> = පළපුරුද්ද (<em>"I have 5 years of experience."</em>)</li>
+<li><strong>Previous</strong> = පෙර / පසුගිය (<em>"My previous job salary was 60,000."</em>)</li>
+<li><strong>Weight</strong> = බර (<em>"My weight is 60 kilograms."</em>)</li>
+</ul>
+<hr />
+<h2>ස්ථිර මතක සමාලෝචනය (Review Routine)</h2>
+<ul>
+<li><strong>පැය 1කට පසු:</strong> තීරණාත්මක වාක්‍ය 6 ශබ්ද නඟා කියවන්න.</li>
+<li><strong>පැය 24කට පසු:</strong> Teen/Ty වෙනස හඳුනාගැනීමේ අභ්‍යාසය (Contrast Drill) කරන්න.</li>
+<li><strong>දින 7කට පසු:</strong> interview එකකදී අසන ලෙස ඔබෙන්ම ප්‍රශ්න අසා පිළිතුරු දෙන්න.</li>
+</ul></div>
+      </section>
+
+      <nav class="page-end" aria-label="Lesson navigation">
+        <a class="previous" href="0002-first-impressions-documents.html"><span aria-hidden="true">←</span><span>0002 · First Impressions</span></a>
+        <a class="next" href="0004-supermarket-fifo-merchandising.html"><span aria-hidden="true">→</span><span>0004 · Supermarket Operations</span></a>
+      </nav>
+    </main>
+  </div>
+  <script>
+(() => {
+  const modeButtons = [...document.querySelectorAll('.mode-button[data-mode]')];
+  const panels = [...document.querySelectorAll('.version-panel')];
+  const toc = document.querySelector('#tocLinks');
+  const storageKey = 'lesson-reading-mode';
+
+  function refreshToc() {
+    if (!toc) return;
+    const active = document.querySelector('.version-panel.active');
+    if (!active) return;
+    toc.innerHTML = '';
+    const headings = [...active.querySelectorAll('h2, h3')];
+    headings.forEach((heading, index) => {
+      const id = `section-${active.dataset.mode}-${index}`;
+      heading.id = id;
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = heading.textContent.trim();
+      if (heading.tagName === 'H3') link.className = 'sub';
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+      toc.appendChild(link);
+    });
+    observeHeadings();
+  }
+
+  let observer;
+  function observeHeadings() {
+    if (observer) observer.disconnect();
+    const links = [...(toc ? toc.querySelectorAll('a') : [])];
+    const active = document.querySelector('.version-panel.active');
+    if (!active || !links.length) return;
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+        const current = links.find(link => link.classList.contains('active'));
+        if (current && window.innerWidth <= 1000) current.scrollIntoView({ block: 'nearest', inline: 'center' });
+      });
+    }, { rootMargin: '-12% 0px -78% 0px' });
+    [...active.querySelectorAll('h2, h3')].forEach(heading => observer.observe(heading));
+  }
+
+  function setMode(mode, updateHash = false) {
+    const safeMode = ['english', 'sinhala', 'recall'].includes(mode) ? mode : 'english';
+    modeButtons.forEach(button => {
+      const selected = button.dataset.mode === safeMode;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.mode === safeMode));
+    try { localStorage.setItem(storageKey, safeMode); } catch (error) {}
+    if (updateHash) history.replaceState(null, '', `#${safeMode}`);
+    refreshToc();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  modeButtons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
+  const savedMode = (() => { try { return localStorage.getItem(storageKey); } catch (error) { return null; } })();
+  const hashMode = location.hash.slice(1);
+  setMode(['english', 'sinhala', 'recall'].includes(hashMode) ? hashMode : (savedMode || 'english'));
+
+  document.querySelectorAll('[data-lesson-select]').forEach(select => {
+    select.addEventListener('change', event => {
+      if (event.target.value) window.location.href = event.target.value;
+    });
+  });
+})();
+</script>
+</body>
+</html>
