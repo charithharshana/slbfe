@@ -1,0 +1,39 @@
+# Local runtime and agent state
+.kilo/
+.kilocode/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+Icon?
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.pid
+*.pid.lock
+
+# Logs and generated caches
+*.log
+logs/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Large generated or archive files
+*.traineddata
+*.wasm
+*.map
+*.zip
+*.tar.gz
