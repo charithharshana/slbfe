@@ -1,4 +1,4 @@
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 import re
 
@@ -116,11 +116,42 @@ def markdown_to_html(source: str) -> str:
     )
     # Tables need their own scroll context on small screens. Without this,
     # browsers compress every column until words become unreadable.
-    return re.sub(
-        r"<table>([\s\S]*?)</table>",
-        r'<div class="table-scroll"><table>\1</table></div>',
-        rendered,
-    )
+    return responsive_tables(rendered)
+
+
+def responsive_tables(rendered: str) -> str:
+    """Add column labels so tables can become readable stacked cards on phones."""
+    table_pattern = re.compile(r"<table>([\s\S]*?)</table>")
+
+    def convert_table(match: re.Match[str]) -> str:
+        table = match.group(0)
+        header_match = re.search(r"<thead>[\s\S]*?<tr>([\s\S]*?)</tr>[\s\S]*?</thead>", table)
+        if not header_match:
+            return f'<div class="table-scroll">{table}</div>'
+
+        labels = [
+            re.sub(r"<[^>]+>", "", cell).strip()
+            for cell in re.findall(r"<th[^>]*>([\s\S]*?)</th>", header_match.group(1))
+        ]
+
+        def add_labels(row_match: re.Match[str]) -> str:
+            row = row_match.group(0)
+            cells = list(re.finditer(r"<td([^>]*)>([\s\S]*?)</td>", row))
+            for index, cell in reversed(list(enumerate(cells))):
+                if index >= len(labels):
+                    continue
+                old = cell.group(0)
+                attrs = cell.group(1)
+                value = cell.group(2)
+                label = escape(unescape(labels[index]), quote=True)
+                replacement = f'<td{attrs} data-label="{label}">{value}</td>'
+                row = row[:cell.start()] + replacement + row[cell.end():]
+            return row
+
+        table = re.sub(r"<tr>([\s\S]*?)</tr>", add_labels, table)
+        return f'<div class="table-scroll">{table}</div>'
+
+    return table_pattern.sub(convert_table, rendered)
 
 
 def english_markdown_to_html(source: str) -> str:
@@ -353,8 +384,12 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
 .table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
-.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content table { width: 100%; table-layout: auto; margin: 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: break-word; word-break: normal; }
+.content th:first-child, .content td:first-child { min-width: 58px; width: 7%; white-space: nowrap; }
+.content th:nth-child(2), .content td:nth-child(2) { min-width: 105px; width: 16%; }
+.content th:nth-child(3), .content td:nth-child(3) { min-width: 155px; width: 25%; }
+.content th:last-child, .content td:last-child { min-width: 260px; width: 52%; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
 .content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
@@ -452,7 +487,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .toc-links a.active { border-left: 0; border-bottom-color: var(--terracotta); }
   .book-main { padding-top: 24px; }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .topbar { align-items: flex-start; flex-wrap: wrap; }
   .top-actions { width: 100%; justify-content: space-between; }
   .lesson-select { max-width: none; flex: 1; }
@@ -470,8 +505,15 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .table-scroll { margin-left: 0; margin-right: 0; }
-  .content th, .content td { min-width: 145px; }
+  .table-scroll { margin-left: 0; margin-right: 0; overflow: visible; }
+  .content table, .content thead, .content tbody, .content tr, .content th, .content td { display: block; width: 100%; }
+  .content thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .content tr { margin: 0 0 12px; border: 1px solid var(--border); background: var(--surface); box-shadow: 0 5px 14px rgba(33, 48, 49, .05); }
+  .content td { display: grid; grid-template-columns: minmax(6.5rem, 34%) minmax(0, 1fr); gap: 10px; min-width: 0; width: 100% !important; padding: 10px 12px; border: 0; border-bottom: 1px solid var(--border); background: transparent !important; white-space: normal; }
+  .content td:first-child, .content td:nth-child(2), .content td:nth-child(3), .content td:last-child { min-width: 0; width: 100% !important; white-space: normal; }
+  .content th:first-child, .content td:first-child, .content th:nth-child(2), .content td:nth-child(2), .content th:nth-child(3), .content td:nth-child(3), .content th:last-child, .content td:last-child { width: 100%; }
+  .content td:last-child { border-bottom: 0; }
+  .content td::before { content: attr(data-label); color: var(--sage); font: 600 .72rem/1.4 var(--font-mono); letter-spacing: .3px; overflow-wrap: break-word; word-break: normal; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
   .page-end .next { margin-left: 0; text-align: left; }

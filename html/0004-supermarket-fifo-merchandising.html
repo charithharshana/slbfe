@@ -228,8 +228,12 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
 .table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
-.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.content table { width: 100%; table-layout: auto; margin: 0; border-collapse: collapse; font-size: .93rem; }
+.content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: break-word; word-break: normal; }
+.content th:first-child, .content td:first-child { min-width: 58px; width: 7%; white-space: nowrap; }
+.content th:nth-child(2), .content td:nth-child(2) { min-width: 105px; width: 16%; }
+.content th:nth-child(3), .content td:nth-child(3) { min-width: 155px; width: 25%; }
+.content th:last-child, .content td:last-child { min-width: 260px; width: 52%; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
 .content details { margin: 14px 0; padding: 12px 15px; border: 1px solid var(--border); background: var(--surface); }
@@ -345,8 +349,15 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .table-scroll { margin-left: 0; margin-right: 0; }
-  .content th, .content td { min-width: 145px; }
+  .table-scroll { margin-left: 0; margin-right: 0; overflow: visible; }
+  .content table, .content thead, .content tbody, .content tr, .content th, .content td { display: block; width: 100%; }
+  .content thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .content tr { margin: 0 0 12px; border: 1px solid var(--border); background: var(--surface); box-shadow: 0 5px 14px rgba(33, 48, 49, .05); }
+  .content td { display: grid; grid-template-columns: minmax(6.5rem, 34%) minmax(0, 1fr); gap: 10px; min-width: 0; width: 100% !important; padding: 10px 12px; border: 0; border-bottom: 1px solid var(--border); background: transparent !important; white-space: normal; }
+  .content td:first-child, .content td:nth-child(2), .content td:nth-child(3), .content td:last-child { min-width: 0; width: 100% !important; white-space: normal; }
+  .content th:first-child, .content td:first-child, .content th:nth-child(2), .content td:nth-child(2), .content th:nth-child(3), .content td:nth-child(3), .content th:last-child, .content td:last-child { width: 100%; }
+  .content td:last-child { border-bottom: 0; }
+  .content td::before { content: attr(data-label); color: var(--sage); font: 600 .72rem/1.4 var(--font-mono); letter-spacing: .3px; overflow-wrap: break-word; word-break: normal; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
   .page-end .next { margin-left: 0; text-align: left; }
@@ -618,29 +629,29 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><strong>S</strong></td>
-<td style="text-align: left;"><strong>Secure</strong></td>
-<td style="text-align: left;">Secure the area (ප්‍රදේශය ආරක්ෂිත කර පාරිභෝගිකයින් වළක්වන්න)</td>
+<td style="text-align: center;" data-label="අකුර"><strong>S</strong></td>
+<td style="text-align: left;" data-label="පියවර"><strong>Secure</strong></td>
+<td style="text-align: left;" data-label="ක්‍රියාව">Secure the area (ප්‍රදේශය ආරක්ෂිත කර පාරිභෝගිකයින් වළක්වන්න)</td>
 </tr>
 <tr>
-<td style="text-align: center;"><strong>P</strong></td>
-<td style="text-align: left;"><strong>Place sign</strong></td>
-<td style="text-align: left;">Place a warning sign ("Caution Wet Floor")</td>
+<td style="text-align: center;" data-label="අකුර"><strong>P</strong></td>
+<td style="text-align: left;" data-label="පියවර"><strong>Place sign</strong></td>
+<td style="text-align: left;" data-label="ක්‍රියාව">Place a warning sign ("Caution Wet Floor")</td>
 </tr>
 <tr>
-<td style="text-align: center;"><strong>I</strong></td>
-<td style="text-align: left;"><strong>Isolate glass</strong></td>
-<td style="text-align: left;">Wear gloves &amp; isolate broken glass safely</td>
+<td style="text-align: center;" data-label="අකුර"><strong>I</strong></td>
+<td style="text-align: left;" data-label="පියවර"><strong>Isolate glass</strong></td>
+<td style="text-align: left;" data-label="ක්‍රියාව">Wear gloves &amp; isolate broken glass safely</td>
 </tr>
 <tr>
-<td style="text-align: center;"><strong>L</strong></td>
-<td style="text-align: left;"><strong>Liquid mop</strong></td>
-<td style="text-align: left;">Mop the liquid with correct chemicals</td>
+<td style="text-align: center;" data-label="අකුර"><strong>L</strong></td>
+<td style="text-align: left;" data-label="පියවර"><strong>Liquid mop</strong></td>
+<td style="text-align: left;" data-label="ක්‍රියාව">Mop the liquid with correct chemicals</td>
 </tr>
 <tr>
-<td style="text-align: center;"><strong>L</strong></td>
-<td style="text-align: left;"><strong>Leave clean</strong></td>
-<td style="text-align: left;">Remove warning sign only when the floor is completely dry</td>
+<td style="text-align: center;" data-label="අකුර"><strong>L</strong></td>
+<td style="text-align: left;" data-label="පියවර"><strong>Leave clean</strong></td>
+<td style="text-align: left;" data-label="ක්‍රියාව">Remove warning sign only when the floor is completely dry</td>
 </tr>
 </tbody>
 </table></div>
