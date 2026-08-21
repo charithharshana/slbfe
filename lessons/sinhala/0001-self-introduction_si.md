@@ -4,7 +4,7 @@
 
 > **Strict Comprehensible Input mode:** මෙම පාඩම Stephen Krashen ගේ Input Hypothesis සහ 4-Week Plan අනුගමනය කරයි. **මුලින්ම තේරුම වටහා ගැනීම (Meaning first), Grammar බාධාවක් කර නොගැනීම, අඩු මානසික පීඩනය (low anxiety), උපරිම input ලබාගැනීම, කතා කිරීම (output) අවසානයේදී පමණක් සිදු කිරීම.** Grammar කොටස පහළ ඇති *Optional Monitor Appendix* එක තුළ වෙනම දක්වා ඇත — ඔබට අවශ්‍ය නම් පමණක් එය බලන්න, එය අනිවාර්ය නැත.
 
-> **භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):** **Dilan Harshana**, වයස **28**, අවිවාහකයි (not married, no children), පදිංචිය **47/1, පහලගොඩ, තංගල්ල, ශ්‍රී ලංකාව**. ඔහුට supermarket සහ retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්දක් (more than five years of experience) ඇත — මෙයට Keells Supermarket හි මාස 3ක සේවය සහ තංගල්ලේ retail supermarket එකක් පවත්වාගෙන යාමේ පළපුරුද්ද ඇතුළත් වේ. මීට අමතරව forklift operator course එකක් සම්පූර්ණ කර **David Pieris Motors Company (Bajaj)** හි පුහුණුව ලබා ඇත.
+> **භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):** **Dilan Harshana**, වයස **28**, අවිවාහකයි (not married), පදිංචිය **47/1, පහලගොඩ, තංගල්ල, ශ්‍රී ලංකාව**. ඔහුට supermarket සහ retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්දක් (more than five years of experience) ඇත — මෙයට Keells Supermarket හි මාස 3ක පුහුණුව සහ තංගල්ලේ retail supermarket එකක වසර 5කට වැඩි කාලයක් සේවය කිරීම ඇතුළත් වේ. මීට අමතරව forklift operator course එකක් සම්පූර්ණ කර **David Pieris Motors Company (Bajaj)** හි පුහුණුව ලබා ඇත.
 
 ---
 
@@ -79,7 +79,7 @@ YouTube වෙත ගොස් පහත සඳහන් දේවලින් �
 
 📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old** and **not married**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
 
-🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He worked at **Keells Supermarket for three months**, and he also ran a **retail supermarket in Tangalle**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
+🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
 
 💪 **What kind of man is Dilan?** He is **honest**, **hardworking**, and always **on time**. People say he is the **most reliable worker**. His body is **strong** — he can lift heavy things all day. He is comfortable in **cold storage** and with **long shifts**.
 

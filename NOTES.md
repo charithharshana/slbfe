@@ -5,11 +5,10 @@
 - **Age:** 28 years
 - **Address:** 47/1, Pahalagoda, Tangalle (Sri Lanka)
 - **Marital status:** Not married
-- **Children:** No children
 - **Professional field:** Supermarket and retail
 - **Experience:** More than 5 years in supermarket and retail work
 - **Keells Supermarket:** Worked there for 3 months
-- **Business experience:** Ran a retail supermarket in Tangalle
+- **Business experience:** Worked at a retail supermarket in Tangalle for more than 5 years
 - **Additional qualification:** Completed a forklift operator course
 - **Practical training:** Trained at David Pieris Motors Company (Bajaj)
 

@@ -12,7 +12,7 @@
 ---
 
 ## 👤 සැබෑ චරිත විස්තරය (Dilan's Profile)
-- **නම හා වයස:** Dilan Harshana, 28 years old (Not married, no children)
+- **නම හා වයස:** Dilan Harshana, 28 years old (Not married)
 - **ලිපිනය/ගම:** 47/1, Pahalagoda, Tangalle, Sri Lanka
 - **ක්ෂේත්‍රය හා පළපුරුද්ද:** More than 5 years in supermarket and retail field (Keells Supermarket - 3 months, Retail Supermarket in Tangalle)
 - **විශේෂ පුහුණුව:** Forklift Operator Course (David Pieris Motors Company - Bajaj)
@@ -28,7 +28,7 @@
 
 | අකුර | පියවර (Bone) | විස්තරය | උදාහරණ වාක්‍යය |
 |:---:|:---|:---|:---|
-| **P** | **Profile** | නම, වයස, විවාහක තත්ත්වය, ගම | *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, not married, and have no children. I am from Tangalle, Sri Lanka."* |
+| **P** | **Profile** | නම, වයස, විවාහක තත්ත්වය, ගම | *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, not married. I am from Tangalle, Sri Lanka."* |
 | **E** | **Experience** | පළපුරුද්ද සහ කළ රාජකාරි | *"I have more than five years of experience in supermarket and retail field. I trained at Keells for three months and worked at a retail supermarket in Tangalle for more than five years."* |
 | **S** | **Strengths** | පෞද්ගලික දක්ෂතා සහ ශක්තීන් | *"I am hardworking, honest, reliable, and physically fit. I am comfortable with heavy lifting and cold storage."* |
 | **M** | **Motivation** | රැකියාවට ඇති උනන්දුව | *"I want to work in Israel to gain international experience and develop my skills."* |
@@ -68,8 +68,8 @@ Interview එකේදී මනස සන්සුන්ව තබා ගැන
 ## 🗣️ සම්පූර්ණ තත්පර 60 කතාව (The Full 60-Second Speech)
 
 > *"Good morning, sir.  
-> My name is **Dilan Harshana**. I am **28 years old**, I am **not married**, and I have **no children**. I am from **Pahalagoda, Tangalle, in Sri Lanka**.  
-> I have **more than five years of experience** in the **supermarket and retail** field. I worked at **Keells Supermarket for three months**, and I also ran a **retail supermarket in Tangalle**.  
+> My name is **Dilan Harshana**. I am **28 years old** and I am **not married**. I am from **Pahalagoda, Tangalle, in Sri Lanka**.  
+> I have **more than five years of experience** in the **supermarket and retail** field. I trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**.  
 > My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**.  
 > I am **hardworking, honest, reliable, and physically fit**. I always arrive on time and work carefully.  
 > I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team.  
