@@ -227,7 +227,8 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   overflow-wrap: anywhere;
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
-.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
 .content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
@@ -344,7 +345,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .content table { display: block; overflow-x: auto; }
+  .table-scroll { margin-left: 0; margin-right: 0; }
   .content th, .content td { min-width: 145px; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
@@ -423,7 +424,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <p><strong>TY:</strong> stress the beginning and keep the ending short: <strong>FIF</strong>-ty, <strong>THIR</strong>-ty.</p>
 <p>memory formula: <strong>TEEN = long and strong at the end; TY = short and strong at the start.</strong></p>
 <h2>Personal Number Answers</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Question</th>
@@ -456,7 +457,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>“My weight is sixty kilograms.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Use the exact numbers in your documents. Do not use the sample numbers in this lesson if your records are different.</p>
 <h2>Comprehensible Input: The Verification Conversation</h2>
 <blockquote>
@@ -464,7 +465,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 </blockquote>
 <p>Read it twice. On the second reading, listen for the numbers. Cover the page and answer the three questions from memory.</p>
 <h2>Critical Sound Pairs</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Teen</th>
@@ -509,7 +510,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>temperature</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Pronunciation Drill</h3>
 <p>Say slowly, then normally:</p>
 <ul>
@@ -565,7 +566,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <p><strong>TY:</strong> මුල් කොටස ශක්තිමත් කර අවසානය කෙටියෙන් තබන්න (stress the beginning and keep the ending short): <strong>FIF</strong>-ty, <strong>THIR</strong>-ty.</p>
 <p>memory formula (මතක සූත්‍රය): <strong>TEEN = long and strong at the end; TY = short and strong at the start.</strong> (TEEN = අවසානයේ දිගු සහ බලවත්; TY = ආරම්භයේ කෙටි සහ බලවත්)</p>
 <h2>Personal Number Answers (පෞද්ගලික සංඛ්‍යා පිළිතුරු)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Question (ප්‍රශ්නය)</th>
@@ -598,7 +599,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>“My weight is sixty kilograms.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>ඔබේ documents වල ඇති exact numbersම භාවිතා කරන්න. ඔබේ ලේඛනවල ඇති අංක වෙනස් නම් මෙහි ඇති sample numbers භාවිතා නොකරන්න.</p>
 <h2>Comprehensible Input: The Verification Conversation (අවබෝධාත්මක Input: තහවුරු කිරීමේ සංවාදය)</h2>
 <blockquote>
@@ -606,7 +607,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 </blockquote>
 <p>දෙපාරක් කියවන්න. දෙවන වර කියවන විට සංඛ්‍යා වෙත සවන් දෙන්න. පිටුව වසා මතකයෙන් ප්‍රශ්න තුනට පිළිතුරු දෙන්න.</p>
 <h2>Critical Sound Pairs (තීරණාත්මක ශබ්ද යුගල)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Teen (-ටීන්)</th>
@@ -651,7 +652,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>temperature</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Pronunciation Drill (උච්චාරණ අභ්‍යාසය)</h3>
 <p>පළමුව හෙමින්, පසුව සාමාන්‍ය පරිදි පවසන්න:</p>
 <ul>
@@ -714,7 +715,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 </ul>
 <hr />
 <h2>සංඛ්‍යාත්මක ප්‍රශ්න සහ පිළිතුරු (Personal Number Answers)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Question</th>
@@ -747,13 +748,13 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>“My weight is sixty kilograms.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <blockquote>
 <p><strong>ලියකියවිලි රීතිය:</strong> ඔබ ප්‍රකාශ කරන සියලුම සංඛ්‍යා ඔබේ සේවා සහතික (Service letters), Payslips, සහ පස්පෝට් එකේ ඇති දත්ත සමඟ 100% ක් සමාන විය යුතුය.</p>
 </blockquote>
 <hr />
 <h2>තීරණාත්මක ශබ්ද යුගල (Critical Sound Pairs)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Teen (-ටීන්)</th>
@@ -798,7 +799,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>Temperature</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <blockquote>
 <p><strong>Tip:</strong> උච්චාරණය ගැන සැකයක් ආවොත් අංකය පමණක් නොකියා සම්පූර්ණ වාක්‍යයම පවසන්න (e.g., <em>"I earned sixty thousand rupees per month."</em>).</p>
 </blockquote>

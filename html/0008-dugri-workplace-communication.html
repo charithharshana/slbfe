@@ -227,7 +227,8 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   overflow-wrap: anywhere;
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
-.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
 .content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
@@ -344,7 +345,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .content table { display: block; overflow-x: auto; }
+  .table-scroll { margin-left: 0; margin-right: 0; }
   .content th, .content td { min-width: 145px; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
@@ -562,7 +563,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <hr />
 <h2>1. Dugri Culture &amp; Calmness: <strong>CALM සූත්‍රය</strong></h2>
 <p><strong>Dugri</strong> යනු කෙලින් සහ අවංකව (Direct &amp; Honest) කතා කිරීමයි. සුපර්වයිසර් උස් හඬින් හෝ කෙලින් කතා කිරීම පෞද්ගලික අපහාසයක් ලෙස නොසිතන්න.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th style="text-align: center;">අකුර</th>
@@ -592,7 +593,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td style="text-align: left;">Move forward &amp; fix the work (කාර්යය නිවැරදි කර ඉදිරියට යන්න)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <ul>
 <li><strong>Q:</strong> <em>"What is Dugri communication, and how will you handle it?"</em></li>
 <li><strong>A:</strong> <em>"Dugri means speaking directly and honestly. If my supervisor speaks loudly or directly, I will not take it personally. I will stay calm, listen carefully, and follow the instructions."</em></li>

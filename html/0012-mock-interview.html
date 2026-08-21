@@ -227,7 +227,8 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   overflow-wrap: anywhere;
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
-.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
 .content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
@@ -344,7 +345,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .content table { display: block; overflow-x: auto; }
+  .table-scroll { margin-left: 0; margin-right: 0; }
   .content th, .content td { min-width: 145px; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
@@ -487,7 +488,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <p>“I will follow immigration law and return to Sri Lanka. I plan to use my savings and experience for a retail business.”</p>
 </blockquote>
 <h2>Backup Questions</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Question</th>
@@ -528,7 +529,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>“I want to become a skilled retail professional and develop a business in Sri Lanka.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Final Memory Map</h2>
 <ul>
 <li><strong>PESMS:</strong> introduction</li>
@@ -645,7 +646,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <p>“I will follow immigration law and return to Sri Lanka. I plan to use my savings and experience for a retail business.”</p>
 </blockquote>
 <h2>Backup Questions (අතිරේක ප්‍රශ්න)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Question (ප්‍රශ්නය)</th>
@@ -686,7 +687,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>“I want to become a skilled retail professional and develop a business in Sri Lanka.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Final Memory Map (අවසාන මතක සිතියම)</h2>
 <ul>
 <li><strong>PESMS:</strong> introduction (ස්වයං හැඳින්වීම)</li>
@@ -737,7 +738,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 </blockquote>
 <hr />
 <h2>1. මුළු පාඨමාලාවේම මතක සිතියම (Master Memory Map)</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>ක්ෂේත්‍රය / මාතෘකාව</th>
@@ -812,7 +813,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
 <td>Purpose, Address, Stay, Screen declaration</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h2>2. ඉහළම ප්‍රමුඛතාව සහිත ප්‍රශ්න 15 (15 Priority Q&amp;A)</h2>
 <ol>

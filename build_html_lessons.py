@@ -110,9 +110,16 @@ def clean_memory_terms(text: str) -> str:
 
 def markdown_to_html(source: str) -> str:
     cleaned = clean_memory_terms(source)
-    return markdown.markdown(
+    rendered = markdown.markdown(
         cleaned,
         extensions=["tables", "fenced_code", "nl2br", "sane_lists"],
+    )
+    # Tables need their own scroll context on small screens. Without this,
+    # browsers compress every column until words become unreadable.
+    return re.sub(
+        r"<table>([\s\S]*?)</table>",
+        r'<div class="table-scroll"><table>\1</table></div>',
+        rendered,
     )
 
 
@@ -345,7 +352,8 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   overflow-wrap: anywhere;
 }
 .content pre code { padding: 0; color: inherit; background: transparent; }
-.content table { width: 100%; margin: 20px 0; border-collapse: collapse; font-size: .93rem; }
+.table-scroll { width: 100%; margin: 20px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.content table { width: max-content; min-width: 620px; margin: 0; border-collapse: collapse; font-size: .93rem; }
 .content th, .content td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .content th { color: var(--text); background: var(--sage-soft); }
 .content tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 75%, var(--surface-soft)); }
@@ -462,7 +470,7 @@ h4 { margin: 20px 0 8px; font-size: 1rem; }
   .index-tools { align-items: stretch; flex-direction: column; }
   .search { min-width: 0; width: 100%; }
   .lesson-grid { grid-template-columns: 1fr; }
-  .content table { display: block; overflow-x: auto; }
+  .table-scroll { margin-left: 0; margin-right: 0; }
   .content th, .content td { min-width: 145px; }
   .page-end { align-items: stretch; flex-direction: column; }
   .page-end a { max-width: 100%; }
