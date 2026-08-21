@@ -60,8 +60,8 @@ Mastery is not about luck — it is the result of **structured preparation and d
 <summary><b>Click for Model Answer (P.E.S.M.S. Framework)</b></summary>
 
 > **"Good morning, Sir. Thank you for giving me this opportunity.**  
-> My name is **Dilan Harshana**. I am **twenty-eight years old**, single, and from **Tangalle, Sri Lanka**.  
-> I have **more than five years of experience** in the supermarket and retail sector, including work at Keells Supermarket and running my own retail grocery. In addition, I have completed a certified **forklift operator course** and practical technical training at David Pieris Motors.  
+> My name is **Dilan Harshana**. I am **twenty-eight years old**, not married, and from **Tangalle, Sri Lanka**.  
+> I have **more than five years of experience** in the supermarket and retail sector, including three months of training at Keells Supermarket and more than five years working at a retail supermarket in Tangalle. In addition, I have completed a certified **forklift operator course** and practical technical training at David Pieris Motors.  
 > In my previous jobs, I was responsible for **stocking display shelves, applying the FIFO method, operating pallet jacks, and assisting customers**.  
 > I am **physically fit, hardworking, and highly reliable**. My height is **168 centimeters** and my weight is **60 kilograms**.  
 > I want to work in an Israeli supermarket to **gain valuable international experience, earn a good income in Shekels, and support my family's economy**.  

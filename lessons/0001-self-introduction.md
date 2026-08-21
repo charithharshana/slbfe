@@ -4,7 +4,7 @@
 
 > **Strict Comprehensible Input mode:** This lesson follows Stephen Krashen's Input Hypothesis and the 4-Week Plan from `01/info_final.md`. **Meaning first, grammar never as a barrier, low anxiety, lots of input, output only at the end.** The grammar section is hidden in an *Optional Monitor Appendix* at the bottom — open it only if you are curious, never required.
 
-> **Personal details used (real):** **Dilan Harshana**, age **28**, not married, with no children, from **47/1 Pahalagoda, Tangalle, Sri Lanka**. He has more than five years of experience in the supermarket and retail field, including three months at Keells Supermarket and experience running a retail supermarket in Tangalle. He has also completed a forklift operator course and trained at **David Pieris Motors Company (Bajaj)**.
+> **Personal details used (real):** **Dilan Harshana**, age **28**, not married, from **47/1 Pahalagoda, Tangalle, Sri Lanka**. He has more than five years of experience in the supermarket and retail field. He trained at Keells Supermarket for three months, and then worked at a retail supermarket in Tangalle for more than five years. He has also completed a forklift operator course and trained at **David Pieris Motors Company (Bajaj)**.
 
 ---
 
@@ -77,9 +77,9 @@ Your brain is already doing what Krashen calls **acquisition** — building neur
 
 > **Read this story out loud, slowly, like you are telling it to a friend.** This is **your** story. Don't translate. Don't analyze. Just feel.
 
-📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old**, **not married, and has no children**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
+📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old** and **not married**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
 
-🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He worked at **Keells Supermarket for three months**, and he also ran a **retail supermarket in Tangalle**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
+🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
 
 💪 **What kind of man is Dilan?** He is **honest**, **hardworking**, and always **on time**. People say he is the **most reliable worker**. His body is **strong** — he can lift heavy things all day. He is comfortable in **cold storage** and with **long shifts**.
 
@@ -112,19 +112,19 @@ When Krashen drew Mr. Spock while saying German words, listeners understood new 
 
 > *Read aloud once. Imagine you are saying this to the Israeli panel.*
 
-> *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, I am not married, and I have no children. I am from Pahalagoda, Tangalle, in Sri Lanka. I have more than five years of experience in the supermarket and retail field. I worked at Keells Supermarket for three months, and I also ran a retail supermarket in Tangalle. My responsibilities included helping customers, arranging and checking stock, keeping the supermarket clean and organized, and supporting the daily operation of the business. I have also completed a forklift operator course and trained at David Pieris Motors Company, which is a Bajaj company. I am hardworking, honest, reliable, and physically fit. I always try to arrive on time and complete my work carefully. I want to work in Israel to gain international experience and develop my skills. I am confident that my experience and positive attitude will contribute to your team. That is all about me. Thank you, sir."*
+> *"Good morning, sir. My name is Dilan Harshana. I am 28 years old and I am not married. I am from Pahalagoda, Tangalle, in Sri Lanka. I have more than five years of experience in the supermarket and retail field. I trained at Keells Supermarket for three months, and then worked at a retail supermarket in Tangalle for more than five years. My responsibilities included helping customers, arranging and checking stock, keeping the supermarket clean and organized, and supporting the daily operation of the business. I have also completed a forklift operator course and trained at David Pieris Motors Company, which is a Bajaj company. I am hardworking, honest, reliable, and physically fit. I always try to arrive on time and complete my work carefully. I want to work in Israel to gain international experience and develop my skills. I am confident that my experience and positive attitude will contribute to your team. That is all about me. Thank you, sir."*
 
 ### Encounter 2 — A Friend Describes Dilan
 
 > *Read this. It has the **same facts** but different words.*
 
-> *"So Dilan is my friend. He is 28 and comes from Pahalagoda, Tangalle, in southern Sri Lanka. He has more than five years of experience in supermarket and retail work. He worked at Keells Supermarket for three months and later ran a retail supermarket in Tangalle. He knows how to help customers, manage stock, keep a shop organized, and support daily business activities. He has also completed a forklift operator course and trained at David Pieris Motors Company, a Bajaj company. He is not married and has no children. He is hardworking, honest, and reliable, and he wants to go to Israel to gain international experience and develop his skills. That is Dilan."*
+> *"So Dilan is my friend. He is 28 and comes from Pahalagoda, Tangalle, in southern Sri Lanka. He has more than five years of experience in supermarket and retail work. He trained at Keells Supermarket for three months and later worked at a retail supermarket in Tangalle for more than five years. He knows how to help customers, manage stock, keep a shop organized, and support daily business activities. He has also completed a forklift operator course and trained at David Pieris Motors Company, a Bajaj company. He is not married. He is hardworking, honest, and reliable, and he wants to go to Israel to gain international experience and develop his skills. That is Dilan."*
 
 ### Encounter 3 — Dilan's CV (formal summary)
 
 > *Read this. Notice the same facts in 4 sentences.*
 
-> *"Dilan Harshana, 28, Pahalagoda, Tangalle, Sri Lanka. Not married, with no children. More than five years of supermarket and retail experience, including three months at Keells Supermarket and experience running a retail supermarket in Tangalle. Completed a forklift operator course and trained at David Pieris Motors Company (Bajaj). Strengths: hardworking, honest, reliable, physically fit, and experienced in customer service and stock handling. Objective: a supermarket or retail position in Israel to gain international experience and develop his skills."*
+> *"Dilan Harshana, 28, Pahalagoda, Tangalle, Sri Lanka. Not married. More than five years of supermarket and retail experience, including three months of training at Keells Supermarket and more than five years working at a retail supermarket in Tangalle. Completed a forklift operator course and trained at David Pieris Motors Company (Bajaj). Strengths: hardworking, honest, reliable, physically fit, and experienced in customer service and stock handling. Objective: a supermarket or retail position in Israel to gain international experience and develop his skills."*
 
 ### Comprehension Check (3 min)
 
@@ -189,7 +189,7 @@ Re-read Encounter 1 (Dilan's speech). Notice how his speech has **5 parts** that
 │   1. GREETING + PROFILE                                      │
 │   ──────────────────────                                     │
 │   "Good morning, sir. My name is Dilan Harshana.            │
-│    I am 28 years old, not married, and I have no children.    │
+│    I am 28 years old and I am not married.                   │
 │    children. I am from Pahalagoda, Tangalle, in Sri Lanka."  │
 │                                                              │
 │   2. EXPERIENCE                                              │
@@ -319,7 +319,7 @@ Now do it **with a sentence Dilan actually says**:
 
 Read the full speech aloud once, slowly. This version uses your real details.
 
-> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old**, **not married**, and I have **no children**. I am from **Pahalagoda, Tangalle**, in Sri Lanka. I have **more than five years of experience** in the **supermarket and retail** field. I worked at **Keells Supermarket for three months**, and I also ran a **retail supermarket in Tangalle**. My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**. I am a **hardworking, honest, reliable, and physically fit worker**. I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team. **That is all about me. Thank you, sir.**"*
+> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old** and I am **not married**. I am from **Pahalagoda, Tangalle**, in Sri Lanka. I have **more than five years of experience** in the **supermarket and retail** field. I trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**. My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**. I am a **hardworking, honest, reliable, and physically fit worker**. I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team. **That is all about me. Thank you, sir.**"*
 
 ### Step 2 — Whisper it (1 min)
 Whisper the speech once. Whispering is between silent reading and full speaking — your vocal cords warm up without the pressure of being heard.

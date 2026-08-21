@@ -77,7 +77,7 @@ YouTube වෙත ගොස් පහත සඳහන් දේවලින් �
 
 > **මෙම කතාව මිතුරෙකුට පවසන ආකාරයෙන් සෙමෙන්, ශබ්ද නඟා කියවන්න.** මෙය **ඔබේම** කතාවයි. පරිවර්තනය කිරීමට හෝ analyze කිරීමට උත්සාහ නොකරන්න. අදහස පමණක් දැනෙන්නට හරින්න.
 
-📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old**, **not married, and has no children**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
+📍 **A small town in southern Sri Lanka.** A young man named **Dilan Harshana** is packing his bag. He is **28 years old** and **not married**, from **47/1, Pahalagoda, Tangalle** — a coastal town in the south.
 
 🛒 **At his work.** Dilan has **more than five years of experience** in the **supermarket and retail** field. He worked at **Keells Supermarket for three months**, and he also ran a **retail supermarket in Tangalle**. Every day, he helped customers, arranged and checked stock, kept the supermarket clean and organized, and supported the daily operation of the business. He works carefully and quickly. When people need help, he helps them.
 
@@ -112,19 +112,19 @@ Krashen ජර්මානු වචන පවසමින් Mr. Spock ගේ �
 
 > *එක් වරක් ශබ්ද නඟා කියවන්න. ඔබ මෙය Israeli interview panel එකට පවසන ආකාරය සිතින් මවාගන්න.*
 
-> *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, I am not married, and I have no children. I am from Pahalagoda, Tangalle, in Sri Lanka. I have more than five years of experience in the supermarket and retail field. I worked at Keells Supermarket for three months, and I also ran a retail supermarket in Tangalle. My responsibilities included helping customers, arranging and checking stock, keeping the supermarket clean and organized, and supporting the daily operation of the business. I have also completed a forklift operator course and trained at David Pieris Motors Company, which is a Bajaj company. I am hardworking, honest, reliable, and physically fit. I always try to arrive on time and complete my work carefully. I want to work in Israel to gain international experience and develop my skills. I am confident that my experience and positive attitude will contribute to your team. That is all about me. Thank you, sir."*
+> *"Good morning, sir. My name is Dilan Harshana. I am 28 years old and I am not married. I am from Pahalagoda, Tangalle, in Sri Lanka. I have more than five years of experience in the supermarket and retail field. I trained at Keells Supermarket for three months, and then worked at a retail supermarket in Tangalle for more than five years. My responsibilities included helping customers, arranging and checking stock, keeping the supermarket clean and organized, and supporting the daily operation of the business. I have also completed a forklift operator course and trained at David Pieris Motors Company, which is a Bajaj company. I am hardworking, honest, reliable, and physically fit. I always try to arrive on time and complete my work carefully. I want to work in Israel to gain international experience and develop my skills. I am confident that my experience and positive attitude will contribute to your team. That is all about me. Thank you, sir."*
 
 ### Encounter 2 — A Friend Describes Dilan (මිතුරෙකු ඩිලාන් ගැන පවසන අයුරු)
 
 > *මෙය කියවන්න. මෙහි ඇත්තේ **එම කරුණුමයි (same facts)**, නමුත් වෙනස් වචන වලින්.*
 
-> *"So Dilan is my friend. He is 28 and comes from Pahalagoda, Tangalle, in southern Sri Lanka. He has more than five years of experience in supermarket and retail work. He worked at Keells Supermarket for three months and later ran a retail supermarket in Tangalle. He knows how to help customers, manage stock, keep a shop organized, and support daily business activities. He has also completed a forklift operator course and trained at David Pieris Motors Company, a Bajaj company. He is not married and has no children. He is hardworking, honest, and reliable, and he wants to go to Israel to gain international experience and develop his skills. That is Dilan."*
+> *"So Dilan is my friend. He is 28 and comes from Pahalagoda, Tangalle, in southern Sri Lanka. He has more than five years of experience in supermarket and retail work. He trained at Keells Supermarket for three months and later worked at a retail supermarket in Tangalle for more than five years. He knows how to help customers, manage stock, keep a shop organized, and support daily business activities. He has also completed a forklift operator course and trained at David Pieris Motors Company, a Bajaj company. He is not married. He is hardworking, honest, and reliable, and he wants to go to Israel to gain international experience and develop his skills. That is Dilan."*
 
 ### Encounter 3 — Dilan's CV (නිල සාරාංශය / formal summary)
 
 > *මෙය කියවන්න. එම කරුණුම වාක්‍ය 4කින් දක්වා ඇති ආකාරය නිරීක්ෂණය කරන්න.*
 
-> *"Dilan Harshana, 28, Pahalagoda, Tangalle, Sri Lanka. Not married, with no children. More than five years of supermarket and retail experience, including three months at Keells Supermarket and experience running a retail supermarket in Tangalle. Completed a forklift operator course and trained at David Pieris Motors Company (Bajaj). Strengths: hardworking, honest, reliable, physically fit, and experienced in customer service and stock handling. Objective: a supermarket or retail position in Israel to gain international experience and develop his skills."*
+> *"Dilan Harshana, 28, Pahalagoda, Tangalle, Sri Lanka. Not married. More than five years of supermarket and retail experience, including three months of training at Keells Supermarket and more than five years working at a retail supermarket in Tangalle. Completed a forklift operator course and trained at David Pieris Motors Company (Bajaj). Strengths: hardworking, honest, reliable, physically fit, and experienced in customer service and stock handling. Objective: a supermarket or retail position in Israel to gain international experience and develop his skills."*
 
 ### Comprehension Check — තේරුම් ගැනීම පරීක්ෂා කරමු (විනාඩි 3)
 
@@ -189,7 +189,7 @@ Encounter 1 (ඩිලාන්ගේ කතාව) නැවත කියවන
 │   1. GREETING + PROFILE                                      │
 │   ──────────────────────                                     │
 │   "Good morning, sir. My name is Dilan Harshana.            │
-│    I am 28 years old, not married, and I have no children.    │
+│    I am 28 years old and I am not married.                   │
 │    I am from Pahalagoda, Tangalle, in Sri Lanka."            │
 │                                                              │
 │   2. EXPERIENCE                                              │
@@ -319,7 +319,7 @@ Encounter 1 (ඩිලාන්ගේ කතාව) නැවත කියවන
 
 සම්පූර්ණ කතාව සෙමෙන්, එක් වරක් ශබ්ද නඟා කියවන්න. මෙම අනුවාදය ඔබේ සැබෑ තොරතුරු භාවිතා කරයි.
 
-> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old**, **not married**, and I have **no children**. I am from **Pahalagoda, Tangalle**, in Sri Lanka. I have **more than five years of experience** in the **supermarket and retail** field. I worked at **Keells Supermarket for three months**, and I also ran a **retail supermarket in Tangalle**. My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**. I am a **hardworking, honest, reliable, and physically fit worker**. I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team. **That is all about me. Thank you, sir.**"*
+> *"Good morning, sir. My name is **Dilan Harshana**. I am **28 years old** and I am **not married**. I am from **Pahalagoda, Tangalle**, in Sri Lanka. I have **more than five years of experience** in the **supermarket and retail** field. I trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**. My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**. I am a **hardworking, honest, reliable, and physically fit worker**. I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team. **That is all about me. Thank you, sir.**"*
 
 ### Step 2 — Whisper it: සෙමෙන් මිමිණීම (විනාඩි 1)
 කතාව එක් වරක් රහසින් මෙන් සෙමෙන් මිමිණන්න (whisper). Whispering යනු නිහඬව කියවීම සහ සම්පූර්ණයෙන් කතා කිරීම අතර පියවරකි — අන් අයට ඇසීමේ පීඩනයකින් තොරව ඔබේ කටහඬ ස්නායු (vocal cords) සූදානම් වේ.

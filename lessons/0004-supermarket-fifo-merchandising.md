@@ -4,7 +4,7 @@
 
 > **Strict Comprehensible Input mode:** You will experience a day on the supermarket floor with Dilan across three vivid story scenes. Input comes first (reading and listening to stories), followed by context-based comprehension, mnemonics for permanent storage, and gentle speaking drills at the end. Grammar rules are kept in the Optional Monitor Appendix.
 
-> **Personal details used (real):** **Dilan Harshana**, age **28**, with **more than 5 years of supermarket and retail experience** (including 3 months at Keells Supermarket and running his own retail grocery in Tangalle, plus forklift operator certification).
+> **Personal details used (real):** **Dilan Harshana**, age **28**, not married, with **more than 5 years of supermarket and retail experience** (including three months of training at Keells Supermarket and more than five years working at a retail supermarket in Tangalle, plus forklift operator certification).
 
 ---
 

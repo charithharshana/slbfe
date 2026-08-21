@@ -29,7 +29,7 @@
 | අකුර | පියවර (Bone) | විස්තරය | උදාහරණ වාක්‍යය |
 |:---:|:---|:---|:---|
 | **P** | **Profile** | නම, වයස, විවාහක තත්ත්වය, ගම | *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, not married, and have no children. I am from Tangalle, Sri Lanka."* |
-| **E** | **Experience** | පළපුරුද්ද සහ කළ රාජකාරි | *"I have more than five years of experience in supermarket and retail field. I worked at Keells and ran a retail supermarket."* |
+| **E** | **Experience** | පළපුරුද්ද සහ කළ රාජකාරි | *"I have more than five years of experience in supermarket and retail field. I trained at Keells for three months and worked at a retail supermarket in Tangalle for more than five years."* |
 | **S** | **Strengths** | පෞද්ගලික දක්ෂතා සහ ශක්තීන් | *"I am hardworking, honest, reliable, and physically fit. I am comfortable with heavy lifting and cold storage."* |
 | **M** | **Motivation** | රැකියාවට ඇති උනන්දුව | *"I want to work in Israel to gain international experience and develop my skills."* |
 | **S** | **Sign-off** | ගෞරවනීය අවසානය | *"That is all about me. Thank you, sir."* |
