@@ -1,56 +1,62 @@
-# Lesson 0005 — Factory Operations: ආරක්ෂාව සහ කාර්යසාධනය (Safety, PPE & Stamina) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0005 — Factory Safety, PPE, And Physical Fitness (කර්මාන්තශාලා ආරක්ෂාව, PPE සහ කායික යෝග්‍යතාව)
 
-> **ඉලක්කය:** කර්මාන්තශාලා පරිසරයක ආරක්ෂිතව වැඩ කිරීම, හදිසි අවස්ථාවන් හැසිරවීම සහ ශාරීරික යෝග්‍යතාවය සම්බන්ධ ප්‍රශ්නවලට විශ්වාසනීයව පිළිතුරු දීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. **PPE** ආරක්ෂක උපකරණ 6 හඳුනාගෙන භාවිතය විස්තර කිරීම.
-2. **S.T.O.P.** ක්‍රමය භාවිතයෙන් යන්ත්‍ර දෝෂ වහාම විසඳීම.
-3. ශාරීරික යෝග්‍යතා පරීක්ෂණය (Physical Stamina Test) සඳහා සූදානම පැහැදිලි කිරීම.
+> **ප්‍රධාන ඉලක්කය:** ආරක්ෂිත සේවා ක්‍රම, PPE භාවිතය, යන්ත්‍ර දෝෂ සඳහා නිවැරදි පියවර සහ කායික යෝග්‍යතාව තහවුරු කිරීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🛡️ 1. ආරක්ෂිත ඇඳුම්: **PPE සූත්‍රය**
 
-### 1. ආරක්ෂක උපකරණ: **P.P.E. සූත්‍රය**
-පළඳිය යුතු අනිවාර්ය උපකරණ:
-- **Hard Hat/Helmet:** හිස ආරක්ෂාව.
-- **Safety Goggles & Plugs:** ඇස් සහ කන් ආරක්ෂාව.
-- **Protective Gloves:** දෑත් වල ආරක්ෂාව.
-- **Steel-Toe Shoes:** පාද තැලීම් වලින් ආරක්ෂාව.
+- **PPE = Personal Protective Equipment**
+  - **Equipment:** Safety shoes, Helmet, Gloves, Goggles, Ear protection
+- **Q:** *"What is PPE, and why is it important?"*
+- **A:** *"PPE stands for Personal Protective Equipment. It includes safety shoes, a helmet, gloves, goggles, and ear protection. PPE protects workers from injuries, noise, chemicals, and machine hazards."*
 
 ---
 
-### 2. හදිසි දෝෂ හැසිරවීම: **S.T.O.P. සූත්‍රය**
-යන්ත්‍රයක දෝෂයක් (Malfunction) සිදු වූ විට:
+## ⚙️ 2. යන්ත්‍ර දෝෂ සඳහා පියවර: **STOP සූත්‍රය**
 
-| අකුර | ක්‍රියාව | ඉංග්‍රීසි වාක්‍යය |
+යන්ත්‍රයක් අක්‍රිය වූ විට හෝ දෝෂයක් ආ විට (Machine Malfunction):
+
+| අකුර | පියවර | ක්‍රියාව |
 |:---:|:---|:---|
-| **S** | **Stop** | *"I immediately press the emergency stop button."* |
-| **T** | **Tell** | *"I report the issue to my supervisor."* |
-| **O** | **Observe** | *"I isolate the defective products."* |
-| **P** | **Prevent** | *"I prevent restarting until maintenance clears it."* |
+| **S** | **Stop** | Stop the machine immediately (යන්ත්‍රය වහාම නවත්වන්න) |
+| **T** | **Tell supervisor** | Report to supervisor and maintenance team (තමන් තනිව සදන්න යන්න එපා) |
+| **O** | **Observe & isolate** | Observe and isolate defective products (දෝෂ සහිත නිෂ්පාදන වෙන් කරන්න) |
+| **P** | **Prevent restart** | Prevent restart until authorized (අවසර ලැබෙන තෙක් නැවත ස්ටාර්ට් වීම වළක්වන්න) |
+
+- **Q:** *"What do you do if a machine malfunctions?"*
+- **A:** *"I stop the machine immediately. I do not try to repair it myself. I set aside defective products and report the problem to my supervisor and the maintenance team."*
 
 ---
 
-### 3. ශාරීරික යෝග්‍යතාවය: **50-2-11 සූත්‍රය**
-G2G Stamina Test එක සඳහා:
-- **50:** කිලෝග්‍රෑම් 50ක බරක් එසවීම.
-- **2:** කිලෝමීටර් 2ක දුරක් දිවීම.
-- **11:** විනාඩි 11කින් දිවීම අවසන් කිරීම.
-- **වාක්‍යය:** *"I am physically fit, healthy, and fully prepared for heavy manual labor."*
+## 🏋️ 3. කායික යෝග්‍යතාව සහ පරීක්ෂණ (Physical Fitness)
+
+- **PT Benchmark (යොමු මානය):** 50 kg එසවීම, 200 m රැගෙන යාම, 2 km මිනිත්තු 11න් දිවීම.
+- **Q:** *"Are you physically fit and healthy?"*
+- **A:** *"Yes, Sir. I am physically fit and healthy. I have no back pain or physical injury, and I am ready for heavy manual work."*
+- **Q:** *"Can you work under pressure?"*
+- **A:** *"Yes, Sir. I stay calm and work systematically under pressure. I meet targets without compromising safety or quality."*
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **PPE පරීක්ෂාව:** ඔබ වැඩට යන විට අඳින උපකරණ 6 මනසින් මවාගෙන නම් කරන්න.
-2. **S.T.O.P. පුහුණුව:** යන්ත්‍රයක් ජෑම් වූ විට ඔබ ගන්නා පියවර 4 ශබ්ද නඟා 3 වරක් පවසන්න.
-3. **සූදානම පැවසීම:** "මම ශාරීරිකව සූදානම්" යන වාක්‍යය විශ්වාසයෙන් යුතුව 3 වතාවක් හඬ නඟා කියන්න.
+## 📦 4. නිෂ්පාදන හා ඇසුරුම් රාජකාරි (Duties & Packaging)
+
+- **Duties:** *"My duties include packing finished products, checking quality, keeping my workstation clean, and moving materials when required."*
+- **Packaging Materials:** Cardboard boxes, stretch wrap, bubble wrap, vacuum packing.
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Malfunction** = යන්ත්‍ර දෝෂය (*"I report any machine malfunction immediately."*)
-- **Defective** = දෝෂ සහිත (*"I separate defective products from good stock."*)
-- **Stamina** = විඳදරාගැනීමේ ශක්තිය (*"Long shifts require good physical stamina."*)
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Malfunction** (යන්ත්‍ර දෝෂ ඇතිවීම) — *"Report machine malfunction immediately."*
+- **Defective** (දෝෂ සහිත) — *"Set aside defective products."*
+- **Stamina** (කායික දරාගැනීමේ ශක්තිය) — *"I have good stamina for long shifts."*
+
+---
+
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** PPE සහ STOP සූත්‍ර මතකයෙන් පවසන්න.
+- **දිනකට පසු:** 1-6 ප්‍රශ්න සඳහා පිළිතුරු ශබ්ද නඟා කියන්න.
+- **සතියකට පසු:** Machine malfunction පියවර 4 පැහැදිලි කරන්න.
+- **Interview එකට පෙර:** Safety rules සහ Physical fitness පිළිතුරු නැවත ආවර්ජනය කරන්න.

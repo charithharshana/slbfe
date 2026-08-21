@@ -1,49 +1,56 @@
-# Lesson 0009 — පුද්ගලික අනුවර්තනය: දේශගුණය සහ වැඩ මුර (Adaptability: Climate, Shifts & Shared Living) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0009 — Adaptability: Shifts, Climate, Family, And Shared Living (නම්‍යශීලීභාවය)
 
-> **ඉලක්කය:** ඕනෑම පාරිසරික සහ සේවා කොන්දේසියකට (උණුසුම, ශීතල, රාත්‍රී මුර) හැඩගැසීමට ඇති හැකියාව සහ මානසික ශක්තිය විශ්වාසයෙන් තහවුරු කිරීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. පැය 10ක වැඩ මුර සහ රාත්‍රී වැඩ මුර සඳහා 100% කැමැත්ත ප්‍රකාශ කිරීම.
-2. අන්ත උෂ්ණත්වයන්ට (ගිම්හානය සහ -18°C ශීතල) හැඩගැසීමේ සූදානම පැහැදිලි කිරීම.
-3. විවිධ ජාතීන් සමඟ සහයෝගයෙන් ජීවත් වීමේ හැකියාව තහවුරු කිරීම.
+> **ප්‍රධාන ඉලක්කය:** සේවා මුර, කාලගුණය, පවුලෙන් වෙන්ව සිටීම, ආරක්ෂාව සහ හවුල් නවාතැන් වැනි අභියෝගාත්මක කොන්දේසිවලට ඔබ නම්‍යශීලීව සූදානම් බව තහවුරු කිරීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🌟 1. Adaptability Framework: **ADAPT සූත්‍රය**
 
-### 1. අනුවර්තනය වීමේ සූත්‍රය: **A.D.A.P.T.**
-කර්මාන්තශාලා පරිසරයට හැඩගැසීම:
-- **A**djust: අන්ත දේශගුණික තත්ත්වයන්ට අනුව හැඩගැසීම.
-- **D**iscipline: රාත්‍රී වැඩ මුර සහ කාලසටහන්වලට විනයගරුක වීම.
-- **A**ccommodate: වෙනත් ජාතීන් සමඟ සහයෝගයෙන් ජීවත් වීම.
-- **P**ositive: පැමිණිලි නොකර ධනාත්මකව වැඩ කිරීම.
-- **T**hrive: වසර 5ක ගිවිසුම සාර්ථකව අවසන් කිරීමට ඉලක්ක තබා ගැනීම.
-
-### 2. වැඩ මුර විනය: **S.H.I.F.T. සූත්‍රය**
-- **S**tay Focused: දිගු වේලාවක් වැඩ කළත් අවධානයෙන් සිටීම.
-- **H**ealthy Routine: නිසි පරිදි ආහාර සහ නින්ද ලබා ගැනීම.
-- **I**mmediate Punctuality: වේලාවට වැඩ ආරම්භ කිරීම.
-- **F**lexible Schedule: උදෑසන, සවස සහ රාත්‍රී වැඩ මුරවලට සූදානම් වීම.
-- **T**eam Support: කණ්ඩායම් හැඟීමෙන් අතිකාල වැඩ කිරීම.
+| අකුර | පියවර | අර්ථය |
+|:---:|:---|:---|
+| **A** | **Adjust climate** | Adjust to climate & working conditions (කාලගුණයට හැඩගැසීම) |
+| **D** | **Discipline shifts** | Discipline for long hours, night shifts & overtime (වැඩමුර විනය) |
+| **A** | **Accommodate others** | Accommodate & respect roommate cultures (අන් අයට අනුකූල වීම) |
+| **P** | **Positive attitude** | Positive attitude toward security & rules (ධනාත්මක ආකල්පය) |
+| **T** | **Thrive long-term** | Thrive & complete contract successfully (දීර්ඝකාලීනව සාර්ථක වීම) |
 
 ---
 
-## ❄️ උෂ්ණත්ව කළමනාකරණය: 50-2-11 ස්ථාවරය
-- **Physical Stamina Test:** කිලෝග්‍රෑම් 50ක් එසවීම, මීටර් 200ක් රැගෙන යාම, කිලෝමීටර් 2ක් විනාඩි 11කින් දිවීම.
-- **වාක්‍යය:** *"I am physically fit, healthy, strong, and ready for heavy manual labor in any temperature."*
+## 💬 2. Adaptability Q&A (අභියෝගාත්මක සේවා කොන්දේසි Q&A)
+
+1. **Long Hours / Night Shifts / Overtime:**
+   - **Q:** *"Can you work long hours, night shifts, and overtime?"*
+   - **A:** *"Yes, Sir. I am flexible and comfortable with rotating shifts, night work, long hours, and overtime."*
+
+2. **Weather & Cold Storage:**
+   - **Q:** *"Can you work in hot weather and cold storage?"*
+   - **A:** *"Yes, Sir. I am physically fit and healthy. I can adapt to hot weather and cold storage when I use the required protective clothing."*
+
+3. **Family Away:**
+   - **Q:** *"Can you stay away from your family?"*
+   - **A:** *"Yes, Sir. My family supports my decision. I am committed to completing my contract and supporting my family’s future."*
+
+4. **Shared Living & Multicultural Team:**
+   - **Q:** *"Are you comfortable sharing a room with workers from other countries?"*
+   - **A:** *"Yes, Sir. I respect different cultures. I am clean, cooperative, and comfortable with shared living."*
+
+5. **Security Situation:**
+   - **Q:** *"Israel has security problems. Are you afraid?"*
+   - **A:** *"No, Sir. I understand the situation and I am prepared to follow official safety instructions."*
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **සූදානම තහවුරු කිරීම:** ඉහත S.H.I.F.T. සූත්‍රය මනසින් මවාගෙන 3 වතාවක් whisper කරන්න.
-2. **ප්‍රශ්න පුහුණුව:** "රාත්‍රී මුරවල වැඩ කළ හැකිද?" සහ "ශීතාගාරවල වැඩ කළ හැකිද?" යන ප්‍රශ්නවලට සෘජු පිළිතුරු 3 වතාවක් පුහුණු වන්න.
-3. **පොදු අදහස:** කුමන දුෂ්කරතාවක් ආවත් "මම සූදානම්" යන ආකල්පය තහවුරු කරන්න.
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Flexible** (නම්‍යශීලී — Pronounced: "FLEK-suh-bul") — *"I am flexible with working hours."*
+- **Overtime** (අතිකාල වැඩ) — *"I am ready to work overtime."*
+- **Multicultural** (බහු-සංස්කෘතික — Pronounced: "mul-tee-KUL-chuh-rul") — *"I work well in a multicultural team."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Adaptable** = අනුවර්තනය විය හැකි (*"I am adaptable to shift work."*)
-- **Cold Storage** = ශීතාගාරය (*"I can work in cold storage rooms."*)
-- **Multicultural** = විවිධ සංස්කෘතීන්ගෙන් යුත් (*"I enjoy working in a multicultural team."*)
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** ADAPT සූත්‍රය සහ ප්‍රශ්න 5 සඳහා පිළිතුරු මතකයෙන් කියන්න.
+- **දිනකට පසු:** 1-5 ප්‍රශ්න සඳහා “Yes, Sir” සමඟ හේතුව පවසන්න.
+- **සතියකට පසු:** සන්සුන් ඉරියව්වෙන් Security & Family ප්‍රශ්නවලට පිළිතුරු දෙන්න.
+- **Interview එකට පෙර:** Adaptability Q&A සියල්ල ශබ්ද නඟා ආවර්ජනය කරන්න.

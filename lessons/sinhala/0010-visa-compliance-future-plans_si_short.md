@@ -1,48 +1,55 @@
-# Lesson 0010 — වීසා නීති සහ අනාගත අරමුණු (Visa Compliance & Future Plans) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0010 — Visa, Loyalty, Return, And Future Plans (Visas, පක්ෂපාතීත්වය, නැවත පැමිණීම සහ අනාගත සැලසුම්)
 
-> **ඉලක්කය:** වසර 5ක ගිවිසුමට ඇති කැපවීම, නීතිගරුකභාවය සහ අනාගත ව්‍යවසායකත්ව දැක්ම විශ්වාසයෙන් ප්‍රකාශ කිරීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. B1 වීසා බලපත්‍රයේ නීති පැහැදිලි කිරීම (වසර 5යි මාස 3යි, එකම සේවායෝජකයා).
-2. වසර 5ක ගිවිසුම සම්පූර්ණ කිරීමට ඇති 100% කැපවීම තහවුරු කිරීම.
-3. වීසා කාලය අවසන් වූ පසු නීත්‍යානුකූලව ශ්‍රී ලංකාවට පැමිණ ව්‍යාපාරයක් ඇරඹීමේ අරමුණ පැහැදිලි කිරීම.
+> **ප්‍රධාන ඉලක්කය:** නීතිගරුක බව (Legal compliance), යෝජකයාට පක්ෂපාතීත්වය (Loyalty to sponsor employer) සහ පැහැදිලි නැවත පැමිණීමේ සැලසුම (Return plan) තහවුරු කිරීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 📜 1. Future & Visa Framework: **PLAN සූත්‍රය**
 
-### 1. නීතිගරුකභාවය: **B.1.-V.I.S.A. සූත්‍රය**
-- **B**ound: එකම අනුග්‍රාහක සමාගමට බැඳී සිටීම.
-- **V**alid: උපරිම වසර 5යි මාස 3යි.
-- **I**llegal: අමතර රැකියා තහනම්.
-- **S**ave: Shekels වලින් මුදල් ඉතිරි කිරීම.
-- **A**lways Return: වීසා අවසානයේ නීත්‍යානුකූලව පැමිණීම.
-
-### 2. අනාගත දැක්ම: **P.L.A.N. සූත්‍රය**
-- **P**rotect: වීසා නීතිවලට ගරු කිරීම.
-- **L**oyal Service: වසර 5ක ගිවිසුම සාර්ථකව අවසන් කිරීම.
-- **A**ccumulate: දැනුම සහ ප්‍රාග්ධනය එකතු කරගැනීම.
-- **N**ew Business: ශ්‍රී ලංකාවේ නව ව්‍යාපාරයක් ඇරඹීම.
+| අකුර | පියවර | අර්ථය |
+|:---:|:---|:---|
+| **P** | **Protect legal status** | Protect B1 legal work visa status (නීතිමය තත්ත්වය ආරක්ෂා කිරීම) |
+| **L** | **Loyal service** | Loyal service to sponsor employer only (පක්ෂපාතී සේවය) |
+| **A** | **Accumulate savings** | Accumulate savings and retail skills (ඉතිරිකිරීම් සහ කුසලතා රැස්කිරීම) |
+| **N** | **New business** | New business startup in Sri Lanka upon return (ශ්‍රී ලංකාවේ නව ව්‍යාපාරයක්) |
 
 ---
 
-## 🗣️ සම්මුඛ පරීක්ෂණ පිළිතුරු (Interview Q&A)
-- **ගිවිසුම් කාලය:** *"I am 100% committed to working loyally for my sponsor company for the full 5 years."*
-- **අනාගත සැලසුම:** *"I plan to use my savings and retail experience to start my own business in Sri Lanka."*
-- **නීති අනුකූලතාව:** *"I will strictly follow immigration laws and never overstay my visa."*
+## 💬 2. Visa & Future Plans Q&A
+
+1. **Visa Type & Side Job:**
+   - **Q:** *"Under what visa will you work?"*
+   - **A:** *"I will work under a legal B1 work visa. I will work only for my sponsor employer and follow all visa conditions."*
+   - **Q:** *"Can you work for another employer or do a side job?"*
+   - **A:** *"No, Sir. I will work only for my sponsor employer. I will not do unauthorized part-time work."*
+
+2. **Company Loyalty & Contract Duration:**
+   - **Q:** *"Can you stay with the same company for the full contract?"*
+   - **A:** *"Yes, Sir. I am fully committed to loyal, long-term service and completing my contract."*
+
+3. **Visa Expiration & Return Plan:**
+   - **Q:** *"What will you do when your visa expires?"*
+   - **A:** *"I will follow immigration law and return to Sri Lanka. I will not overstay my visa."*
+
+4. **Future Ambition & Sri Lanka Plans:**
+   - **Q:** *"What are your future plans?"*
+   - **A:** *"I plan to use my savings and international retail experience to start or expand a retail business in Sri Lanka."*
+   - **Q:** *"What is your ambition?"*
+   - **A:** *"I want to become a skilled retail professional and eventually develop my own business in Sri Lanka."*
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **කැපවීම තහවුරු කිරීම:** "මම වසර 5ක් පක්ෂපාතීව වැඩ කරනවා" යන පොරොන්දුව විශ්වාසයෙන් 3 වතාවක් හඬ නඟා කියන්න.
-2. **අනාගත දැක්ම:** ලංකාවට ඇවිත් බිස්නස් කරන ආකාරය කෙටියෙන් විස්තර කරන්න.
-3. **නියමයන් මතක තබා ගැනීම:** B.1.-V.I.S.A. සහ P.L.A.N. යන මූලික නියමයන් 2 වතාවක් මනසින් මවාගන්න.
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Sponsor employer** (වීසා අනුග්‍රාහක රැකියා යෝජකයා) — *"I work only for my sponsor employer."*
+- **Overstay** (වීසා කාලය ඉක්මවා නීති විරෝධීව රැඳී සිටීම — Pronounced: "OH-ver-stay") — *"I will not overstay my visa."*
+- **Compliance** (නීති හා කොන්දේසි අනුගමනය — Pronounced: "kum-PLY-uhns") — *"I ensure 100% visa compliance."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Compliance** = නීතිවලට අනුකූල වීම (*"I maintain 100% visa compliance."*)
-- **Longevity** = දීර්ඝ කාලීන සේවය (*"My goal is contract longevity."*)
-- **Entrepreneur** = ව්‍යවසායකයා (*"I plan to become a retail entrepreneur."*)
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** B1 visa කොන්දේසි 4 සහ PLAN සූත්‍රය මතකයෙන් කියන්න.
+- **දිනකට පසු:** 1-6 ප්‍රශ්න සඳහා පිළිතුරු ශබ්ද නඟා පවසන්න.
+- **සතියකට පසු:** Overstay පිළිබඳ ප්‍රශ්නයට සහ Future business plan එකට නිවැරදිව පිළිතුරු දෙන්න.
+- **Interview එකට පෙර:** Visa compliance Q&A සියල්ල ආවර්ජනය කරන්න.

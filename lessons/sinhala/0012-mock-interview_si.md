@@ -1,261 +1,135 @@
-# Lesson 0012 — The Full 30-Question Rapid-Fire Mock Board Rehearsal: සම්පූර්ණ සම්මුඛ පරීක්ෂණ මණ්ඩල පෙරහුරුව
+# Lesson 0012 - Final Interview Question Bank (අවසන් සම්මුඛ පරීක්ෂණ ප්‍රශ්න බැංකුව)
 
-> **Mission link:** මෙය පාඨමාලාවේ අවසන් ප්‍රධාන ප්‍රවීණතා පාඩමයි (capstone mastery lesson). සම්මුඛ පරීක්ෂණ දිනයේදී, ඊශ්‍රායල නියෝජිතයින් සහ SLBFE නිලධාරීන් ඔබගේ පුද්ගලික තොරතුරු, තාක්ෂණික කුසලතා, ඊශ්‍රායල සංස්කෘතිය, අනුවර්තන හැකියාව සහ වීසා නීතිරීති ආවරණය කරමින් වේගවත් ප්‍රශ්න මාලාවක් අසනු ඇත. කෙළින් හිඳගෙන, කැමරාව දෙස සෘජුව බලාගෙන, පැහැදිලිව පිළිතුරු දීමට ඔබට ඇත්තේ තත්පර කිහිපයක් පමණි. මෙම පාඩම මඟින් සම්පූර්ණ සම්මුඛ පරීක්ෂණ මණ්ඩලයම අනුකරණය කරන අතර එමඟින් ඔබ කිසිදු බියක් හෝ ආතතියක් නොමැතිව පූර්ණ ආත්ම විශ්වාසයෙන් යුතුව කාමරයට ඇතුල් වනු ඇත.
+> **Main target (ප්‍රධාන ඉලක්කය):** Retrieve the most important interview answers in random order. මෙය සක්‍රීයව පුහුණු වීමට ඇති ප්‍රශ්න බැංකුවකි, නිකම් කියවා අතහැරීමට ඇති පාඩමක් නොවේ (This is a practice bank, not a chapter to read passively).
 
-> **Strict Comprehensible Input mode:** ඩිලාන් සමඟ සම්පූර්ණ සම්මුඛ පරීක්ෂණ අනුකරණයට ඔබ පිවිසෙනු ඇත. ක්ෂණික ස්වයං පරීක්ෂාව සඳහා interactive `<details>` කොටස් සහිතව සම්මුඛ පරීක්ෂණ අදියර 4කට මෙය බෙදා ඇත. Grammar සටහන් Optional Monitor Appendix එක තුළ ඇත.
+## How To Use This Lesson (මෙම පාඩම භාවිතා කරන්නේ කෙසේද)
 
-> **භාවිතා කර ඇති පුද්ගලික තොරතුරු (Real Details):** **Dilan Harshana**, වයස **28**, පදිංචිය **පහලගොඩ, තංගල්ල**, supermarket/retail ක්ෂේත්‍රයේ වසර 5කට වැඩි පළපුරුද්ද, forklift සුදුසුකම්, ශක්තිමත් ශාරීරික යෝග්‍යතාවය, සම්මුඛ පරීක්ෂණය 100% ක් සමත් වීමට සූදානම්.
+1. Cover the answers (පිළිතුරු වසාගන්න).
+2. Ask someone to read the questions in random order (අනෙකෙකු ලවා ප්‍රශ්න අහඹු ලෙස කියවන්න).
+3. Answer in simple sentences within 20-30 seconds, except the introduction, which must stay under 60 seconds (තත්පර 60ට අඩුවෙන් පවතින introduction එක හැර, අනෙක් ප්‍රශ්න සඳහා තත්පර 20-30ක් ඇතුළත සරල වාක්‍යවලින් පිළිතුරු දෙන්න).
+4. Check only after answering (පිළිතුරු දීමෙන් පසුව පමණක් පරීක්ෂා කරන්න).
 
----
+## The 15 Highest-Priority Questions (ඉහළම ප්‍රමුඛතාව සහිත ප්‍රශ්න 15)
 
-## Learning Outcomes (ඉගෙනුම් ප්‍රතිඵල)
-මෙම පාඩම අවසානයේ — **සවිස්තරාත්මක මතකය අවදි කිරීම (retrieval practice) සහ ප්‍රායෝගික පෙරහුරුව මඟින්** — ඔබට හැකිවනු ඇත:
-1. කාලය ඉක්මවා නොගොස් සහ කිසිදු පැකිලීමකින් තොරව **තත්පර 60ක සම්පූර්ණ ස්වයං හැඳින්වීම (self-introduction)** ඉදිරිපත් කිරීමට.
-2. ප්‍රධාන පාඨමාලා ඒකක 4ම ආවරණය වන පරිදි ප්‍රධාන සම්මුඛ පරීක්ෂණ ප්‍රශ්නවලට විශ්වාසදායක **SVO වාක්‍ය මඟින් පිළිතුරු දීමට**.
-3. **17 DOs & DON'Ts ඇගයීම් ලැයිස්තුව** 100% ක් නිවැරදිව අනුගමනය කිරීමට.
-4. වේගවත් ප්‍රශ්න මාලාව හමුවේ **නොසැලෙන මානසික සංවරය සහ සන්සුන් බව (mental composure)** පවත්වා ගැනීමට.
-5. ප්‍රධාන සමාප්ති මතක ආධාරක (mnemonics) 2ක් මතකයේ රඳවා ගැනීමට: **M.O.C.K.-30** සහ **V.I.C.T.O.R.Y.**
+### 1. Tell me about yourself.
 
-**ගතවන ඇස්තමේන්තුගත කාලය:** මිනිත්තු 45යි. පුළුල් **micro-blocks 5කට** බෙදා ඇත.  
-**Comprehensible Input මට්ටම:** *i + 1* — සියලුම වචන මාලාවන්, ව්‍යුහයන් සහ ඉදිරිපත් කිරීමේ දක්ෂතා **සක්‍රීය වාචික චතුරත්වයක් (spoken fluency)** බවට පරිවර්තනය කිරීම.
+> “Good morning, Sir. My name is Dilan Harshana. I am twenty-eight years old and from Tangalle, Sri Lanka. I have more than five years of supermarket and retail experience. My duties included helping customers and arranging stock. I have completed a forklift operator course. I am hardworking, honest, reliable, and physically fit. I want to gain international experience and develop my skills. That is all about me. Thank you, Sir.”
 
----
+### 2. How many years of experience do you have?
 
-## ආවරණය වන ප්‍රධාන මාතෘකා (Source Material Covered)
-- `01/interview_merged.md` — සම්පූර්ණ මාර්ගෝපදේශය (§1 සිට §10 දක්වා: ප්‍රශ්නෝත්තර, 17 DOs & DON'Ts, ගුවන්තොටුපළ පෙරහුරුව, වචන මාලාව)
-- `01/info_final.md` — Part I §6 (Retrieval Practice), Part I §3 (Spaced Repetition), Part VI (Exam Anxiety Management & Circle of Control)
+> “I have more than five years of experience in supermarket and retail work.”
 
----
+### 3. What are your main duties?
 
-## The Big Idea (ඉංග්‍රීසියෙන් කියවන්න — ජයග්‍රාහී මොහොත සිතින් මවාගන්න / visualize the moment of victory)
+> “I help customers, arrange stock, check products, and keep the work area clean and organized.”
 
-> *The door opens. Dilan performs the K.A.G.S. entry sequence: knocks gently, asks permission, greets the panel, and sits straight. He looks directly into the camera lens with a subtle, confident smile.*  
-> 
-> *For 15 minutes, the Israeli representative fires questions: self-introduction, FIFO stocking, broken bottles, number verification, machine safety, Shabbat, sub-zero freezers, and B1 visa rules.*  
-> 
-> *Dilan does not pause. He does not guess. He uses clear SVO sentences, precise numbers, and respectful composure. At the end, the Israeli director stands up, smiles, and extends his hand:*  
-> **"Congratulations, Dilan. You did an exceptional interview. Welcome to Israel!"**
+### 4. Why should we hire you?
 
-විශිෂ්ට සාර්ථකත්වය යනු වාසනාව මත සිදුවන දෙයක් නොවේ — එය **ක්‍රමවත් සූදානම සහ පුහුණුවේ (deliberate practice)** සැබෑ ප්‍රතිඵලයයි.
+> “I am hardworking, honest, reliable, physically fit, and ready to learn. I follow instructions and company rules.”
 
-> **කෙටි සිංහල පැහැදිලි කිරීම:** මෙම අවසාන පාඩම සම්පූර්ණ සම්මුඛ පරීක්ෂණය අනුකරණය කරයි. ප්‍රශ්න සඳහා කෙටි, සරල, සහ පැහැදිලි ඉංග්‍රීසි පිළිතුරු ලබා දීමට මෙමගින් පුහුණු වේ.
+### 5. Explain FIFO.
 
----
+> “FIFO means First-In, First-Out. I put new stock at the back and move older stock to the front after checking expiration dates.”
 
-## Micro-Block 1 — Stage 1: Entry, Profile & Number Precision (පැමිණීම, පැතිකඩ සහ සංඛ්‍යා) (විනාඩි 8)
+### 6. What do you do after a bottle breaks?
 
-> **භාවිතා වන CI මූලධර්මය (CI principle applied):** මූලික පැතිකඩ තොරතුරු සක්‍රීයව මතක් කරගැනීම.
+> “I secure the area, place a warning sign, remove the glass safely, mop the floor, and remove the sign only when the floor is dry.”
 
-### Q1: "May I see your document file, and tell me your full name and age?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+### 7. What is PPE?
 
-> **"Yes, Sir. Here is my complete document file.**  
-> My name is **Dilan Harshana**. I am **twenty-eight** years old, and I am from **Tangalle, Sri Lanka**."
+> “PPE means Personal Protective Equipment. It protects workers from injuries and workplace hazards.”
 
-</details>
+### 8. What do you do if a machine jams?
 
-### Q2: "Deliver your full self-introduction." (ඉලක්කය: තත්පර 60ට අඩුවෙන්)
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.E.S.M.S. Framework)</b></summary>
+> “I stop the machine, inform my supervisor, separate defective products, and prevent an unsafe restart.”
 
-> **"Good morning, Sir. Thank you for giving me this opportunity.**  
-> My name is **Dilan Harshana**. I am **twenty-eight years old**, not married, and from **Tangalle, Sri Lanka**.  
-> I have **more than five years of experience** in the supermarket and retail sector, including three months of training at Keells Supermarket and more than five years working at a retail supermarket in Tangalle. In addition, I have completed a certified **forklift operator course** and practical technical training at David Pieris Motors.  
-> In my previous jobs, I was responsible for **stocking display shelves, applying the FIFO method, operating pallet jacks, and assisting customers**.  
-> I am **physically fit, hardworking, and highly reliable**. My height is **168 centimeters** and my weight is **60 kilograms**.  
-> I want to work in an Israeli supermarket to **gain valuable international experience, earn a good income in Shekels, and support my family's economy**.  
-> **That is all about me, Sir. Thank you very much."**
+### 9. Are you physically fit for heavy work?
 
-</details>
+> “Yes, Sir. I am physically fit and healthy, and I am ready for heavy manual work.”
 
-### Q3: "How much was your previous monthly salary, and what were your weekly work hours?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+### 10. What do you know about Israel?
 
-> **"I earned sixty thousand rupees per month, Sir.**  
-> I regularly worked **fifty** hours per week, including overtime."
+> “Israel is in the Middle East along the Mediterranean Sea. The capital is Jerusalem, the currency is the New Israeli Shekel, and it is known for advanced technology.”
 
-</details>
+### 11. What is Shabbat?
 
----
+> “Shabbat is the Jewish day of rest from Friday evening to Saturday evening.”
 
-## Micro-Block 2 — Stage 2: Technical Retail & Factory Operations (තාක්ෂණික මෙහෙයුම්) (විනාඩි 8)
+### 12. How will you handle direct supervisors?
 
-> **භාවිතා වන CI මූලධර්මය (CI principle applied):** පීඩනයක් යටතේ තාක්ෂණික ක්‍රියාපටිපාටි චතුර ලෙස ප්‍රකාශ කිරීම.
+> “I will stay calm, listen carefully, and follow the instructions. I will not take direct feedback personally.”
 
-### Q4: "Explain the FIFO method and how you rotate dairy stock."
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+### 13. Can you work shifts and overtime?
 
-> **"FIFO stands for First-In, First-Out, Sir.**  
-> When new dairy stock arrives, I check the expiration dates.  
-> I place the newest items at the **back** of the shelf and pull the older stock to the **front** to prevent spoilage and store shrink."
+> “Yes, Sir. I am comfortable with rotating shifts, night work, long hours, and overtime.”
 
-</details>
+### 14. What are the B1 visa rules?
 
-### Q5: "What immediate steps do you take if an oil bottle breaks in a customer aisle?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (S.P.I.L.L. Protocol)</b></summary>
+> “I will work only for my sponsor employer and follow all visa conditions. I will not do unauthorized side work.”
 
-> **"Customer safety is my number one priority.**  
-> First, I secure the area and place a **'Caution: Wet Floor'** warning sign.  
-> Next, wearing PPE gloves, I sweep up broken glass.  
-> Then, I mop the oily floor with chemical degreaser (D10).  
-> I remove the warning sign only after the floor is completely dry."
+### 15. What will you do when the visa expires?
 
-</details>
+> “I will follow immigration law and return to Sri Lanka. I plan to use my savings and experience for a retail business.”
 
-### Q6: "What is PPE, and what will you do if a machine jams on the line?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (S.T.O.P. Protocol)</b></summary>
+## Backup Questions (අතිරේක ප්‍රශ්න)
 
-> **"PPE stands for Personal Protective Equipment—including safety shoes, helmet, gloves, and goggles.**  
-> If a machine jams, I hit the **Emergency Stop button** immediately, set aside defective goods, and inform my supervisor and maintenance technician right away."
+| Question (ප්‍රශ්නය) | Short answer (කෙටි පිළිතුර) |
+|---|---|
+| Can you share a room? | “Yes. I respect other cultures and cooperate with everyone.” |
+| Can you stay away from family? | “Yes. My family supports my decision and my contract.” |
+| Can you work in cold storage? | “Yes. I can adapt and use the required protective clothing.” |
+| What if you do not understand? | “Pardon me, Sir. Could you please repeat the question?” |
+| What if you make a mistake? | “I report it, fix it, and learn from it.” |
+| What if the shelf is empty? | “I replenish it or inform my supervisor if stock is unavailable.” |
+| What if you see theft? | “I report it to my supervisor and do not confront the person.” |
+| What is your future ambition? | “I want to become a skilled retail professional and develop a business in Sri Lanka.” |
 
-</details>
+## Final Memory Map (අවසාන මතක සිතියම)
 
-### Q7: "Are you prepared for the 50 kg physical stamina test?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.T.-50-2-11)</b></summary>
+- **PESMS:** introduction (ස්වයං හැඳින්වීම)
+- **KAGS:** entry (කාමරයට ඇතුළුවීම)
+- **TEEN/TY:** numbers (සංඛ්‍යා උච්චාරණය)
+- **FIFO/SPILL/HEAT:** supermarket (සුපිරි වෙළඳසැල් මෙහෙයුම්)
+- **PPE/STOP/PT-50-2-11:** factory (කර්මාන්තශාලා සහ ආරක්ෂාව)
+- **LOAD:** warehouse (ගබඩා මෙහෙයුම්)
+- **Dugri/CALM:** communication (සන්නිවේදනය)
+- **ADAPT:** difficult conditions (දුෂ්කර තත්ත්වයන්ට හැඩගැසීම)
+- **B1/PLAN:** legal future (නීතිමය සහ අනාගත සැලසුම්)
+- **PASS:** airport (ගුවන්තොටුපළ ආගමන විගමන)
 
-> **"Yes, Sir! I am physically fit, strong, and healthy.**  
-> I am fully prepared to lift a 50 kg load, carry it for 200 meters, and complete the 2 km run in 11 minutes."
+Do not memorize every acronym separately in one sitting. Use the map to choose the correct answer family. (සෑම මතක සංකේතයක්ම එකවර මතක තබා ගැනීමට යන්න එපා. නිවැරදි පිළිතුරු කාණ්ඩය තෝරා ගැනීමට මෙම මතක සිතියම භාවිතා කරන්න.)
 
-</details>
+## Final Comprehensible Input Cycle (අවසාන අවබෝධාත්මක Input වටය)
 
----
+Read one question and model answer. Imagine the real scene. Read it again with one phrase hidden. Close the page and answer. This is **meaning first, repetition with variation, retrieval, then speaking**. (එක් ප්‍රශ්නයක් සහ ආදර්ශ පිළිතුරක් කියවන්න. සැබෑ අවස්ථාව සිතින් මවාගන්න. එක් කොටසක් වසා නැවත කියවන්න. පිටුව වසා පිළිතුරු දෙන්න. මෙය **පළමුව අර්ථය, වෙනස්කම් සහිතව නැවත පැවසීම, මතකයෙන් නැවත ලබාගැනීම, සහ අවසානයේ කතා කිරීම** වේ.)
 
-## Micro-Block 3 — Stage 3: Israel Realities & Cultural Adaptation (ඊශ්‍රායලය සහ සංස්කෘතිය) (විනාඩි 8)
+## Mock Interview Scorecard (සම්මුඛ පරීක්ෂණ ඇගයීම් ලැයිස්තුව)
 
-> **භාවිතා වන CI මූලධර්මය (CI principle applied):** සංස්කෘතික දැනුම සහ මානසික ශක්තිය.
+- [ ] Introduction under 60 seconds (ස්වයං හැඳින්වීම තත්පර 60ට අඩුයි)
+- [ ] Personal facts match documents (පෞද්ගලික තොරතුරු ලේඛන සමඟ ගැළපේ)
+- [ ] Answers are short and direct (පිළිතුරු කෙටි සහ ඍජුයි)
+- [ ] FIFO is explained correctly (FIFO ක්‍රමය නිවැරදිව පැහැදිලි කර ඇත)
+- [ ] Safety answers are ordered (ආරක්ෂිත පියවර අනුපිළිවෙලට ඇත)
+- [ ] Numbers are clear (සංඛ්‍යා පැහැදිලියි)
+- [ ] You can ask for repetition (නැවත අසන ලෙස ඉල්ලා සිටිය හැක)
+- [ ] You express shift and physical readiness (වැඩමුර සහ ශාරීරික සූදානම ප්‍රකාශ කර ඇත)
+- [ ] You state legal B1 compliance and return plan (නීතිමය B1 අනුකූලතාව සහ ආපසු ඒමේ සැලසුම ප්‍රකාශ කර ඇත)
+- [ ] You maintain eye contact and upright posture (ඇස් බැලීම සහ ඍජු ඉරියව්ව පවත්වා ගනී)
 
-### Q8: "Where is Israel located, what is the capital, and what is the currency?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+## Sinhala Clarification (සිංහල පැහැදිලි කිරීම)
 
-> **"Israel is in the Middle East along the Mediterranean Sea, bordered by Lebanon, Syria, Jordan, and Egypt.**  
-> The capital is **Jerusalem**, the financial hub is **Tel Aviv**, and the currency is the **New Israeli Shekel (NIS)**."
+මෙය කියවා පමණක් අවසන් නොකරන්න. ප්‍රශ්නයක් random order එකෙන් අසා, පිළිතුර වසාගෙන කියන්න. Interview එකේ ප්‍රධාන ඉලක්කය **short, clear, truthful answers** ය.
 
-</details>
+## Review Lock: 1-1-1-1 (සමාලෝචන අනුපිළිවෙල)
 
-### Q9: "What is Shabbat, and how does the Israeli workweek run?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+- [ ] **Daily (දිනපතා):** Introduction plus five random questions, 15 minutes maximum (ස්වයං හැඳින්වීම සහ අහඹු ප්‍රශ්න 5ක්, විනාඩි 15යි).
+- [ ] **Weekly (සතිපතා):** Full random mock with a timer and recording (ටයිමරයක් සහ record කිරීමක් සමඟ සම්පූර්ණ mock interview එක).
+- [ ] **One month / before interview (මසකට පසු / interview එකට පෙර):** Review only the question cards, document facts, number drill, and delivery checklist (ප්‍රශ්න කාඩ්පත්, ලේඛන තොරතුරු, සංඛ්‍යා පුහුණුව සහ ඉදිරිපත් කිරීමේ ලැයිස්තුව පමණක් සමාලෝචනය කරන්න).
 
-> **"Shabbat is the Jewish day of rest from Friday sunset to Saturday sunset.**  
-> The standard Israeli workweek runs from **Sunday to Thursday**."
+## Course Completion Criterion (පාඨමාලා සම්පූර්ණ කිරීමේ නිර්ණායකය)
 
-</details>
+You are ready for a mock board when you can answer at least 12 of the 15 priority questions clearly, keep the introduction under 60 seconds, and recover with a clarification phrase when needed. (ප්‍රමුඛතා ප්‍රශ්න 15න් අවම වශයෙන් 12කට පැහැදිලිව පිළිතුරු දීමට, ස්වයං හැඳින්වීම තත්පර 60ට අඩුවෙන් තබා ගැනීමට, සහ අවශ්‍ය වූ විට පැහැදිලි කර ගැනීමේ වාක්‍යයක් භාවිතා කිරීමට හැකි වූ විට ඔබ mock board එකකට සූදානම්ය.)
 
-### Q10: "How will you handle Israeli supervisors who speak loudly and directly ('Dugri')?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
+**Source:** `01/interview_merged.md`, Sections 1-10. Learning method: `01/info_final.md` and the `teach-md` workflow.
 
-> **"I respect the 'Dugri' communication style, Sir.**  
-> I do not take direct feedback personally. I stay calm, listen carefully, and execute instructions immediately."
-
-</details>
-
-### Q11: "Can you work 10-hour night shifts and inside sub-zero (-18°C) freezer rooms?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
-
-> **"Yes, Sir. I am 100% comfortable with rotating night shifts and overtime.**  
-> I wear thermal protective gear and have no problem adapting to extreme climates or cold storage rooms."
-
-</details>
-
----
-
-## Micro-Block 4 — Stage 4: Compliance, Longevity & Immigration (වීසා සහ ආගමන විගමන) (විනාඩි 8)
-
-> **භාවිතා වන CI මූලධර්මය (CI principle applied):** නීතිමය ස්ථිරභාවය සහ දේශසීමා ආරක්ෂාව.
-
-### Q12: "Under what visa will you work, and what are the legal limits?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (B.1.-V.I.S.A.)</b></summary>
-
-> **"I will work under a legal B1 work visa, valid for up to 5 years and 3 months.**  
-> I am bound to work only for my sponsor employer, and secondary part-time jobs are strictly illegal."
-
-</details>
-
-### Q13: "What will you do when your 5-year visa expires?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (Model Answer)</b></summary>
-
-> **"I will strictly follow immigration laws and return to Sri Lanka.**  
-> I plan to use my savings and international retail experience to start my own supermarket business in Tangalle."
-
-</details>
-
-### Q14: "At Tel Aviv airport, the immigration officer asks: 'What is the purpose of your visit?' What do you say?"
-<details>
-<summary><b>ආදර්ශ පිළිතුර බැලීමට ක්ලික් කරන්න (P.A.S.S. Drill)</b></summary>
-
-> **"I am here to work under a legal government B1 visa, Sir. Here is my official employment letter and accommodation address."**
-
-</details>
-
----
-
-## Micro-Block 5 — The 17 DOs & DON'Ts Master Scorecard & Drills (ඇගයීම් ලැයිස්තුව) (විනාඩි 8)
-
-> **භාවිතා වන CI මූලධර්මය (CI principle applied):** නිල සම්මුඛ පරීක්ෂණ ඇගයීම් නිර්ණායක අනුව ස්වයං ඇගයීම.
-
-### 5A. The 17 Rules Checklist
-
-| Category | Golden Rule (රන්වන් නීතිය) | Self-Check (ස්වයං පරීක්ෂාව) |
-|:---|:---|:---:|
-| **DO #1** | සුදු කමිසය, කළු කලිසම, ඔප දැමූ කළු සපත්තු ඇඳීම | [ ] |
-| **DO #2** | ඉංග්‍රීසි ලේබල් සහිත පිරිසිදු Folder එකක ලියකියවිලි තබාගැනීම | [ ] |
-| **DO #3** | කෙටි, සරල SVO වාක්‍ය (Subject + Verb + Object) භාවිතා කිරීම | [ ] |
-| **DO #4** | සංඛ්‍යා ඉතා පැහැදිලිව උච්චාරණය කිරීම (15 vs 50, 13 vs 30, 28, 60,000) | [ ] |
-| **DO #5** | කැමරා කාචය දෙස කෙළින් බලා මඳ සිනහවක් පවත්වා ගැනීම | [ ] |
-| **DO #6** | 100% ශාරීරික සුවතාවය, වැඩ මුර සඳහා සූදානම තහවුරු කිරීම | [ ] |
-| **DO #7** | අපැහැදිලි වූ විට *"Pardon me, Sir..."* කියා ආචාරශීලීව ඇසීම | [ ] |
-| **DON'T #1** | ස්වයං හැඳින්වීම තත්පර 60 ඉක්මවා නොපැවසීම | [ ] |
-| **DON'T #2** | කලබල වූ විට කිසිවිටෙකත් නිහඬව නොසිටීම | [ ] |
-| **DON'T #3** | CV එකට හෝ සේවා සහතිකයට බොරු තොරතුරු ඇතුළත් නොකිරීම | [ ] |
-| **DON'T #4** | FIFO හෝ රාක්ක පිරවීම නොදන්නා බවක් නොපෙන්වීම | [ ] |
-| **DON'T #5** | බියගුලු හෝ දුර්වල පෙනුමක් ප්‍රදර්ශනය නොකිරීම | [ ] |
-| **DON'T #6** | ප්‍රශ්නවලින් ලිස්සා යාමට පෞද්ගලික දුක් ගැනවිලි නොකීම | [ ] |
-| **DON'T #7** | ඇඟ නවන්න, අත් බැඳගන්න, කකුල් පිට කකුල් දමන්න එපා | [ ] |
-| **DON'T #8** | නිවසේදී කතා කර පුහුණු නොවී interview නොයන්න | [ ] |
-| **DON'T #9** | ලංකාව හෝ පෙර සේවායෝජකයින් ගැන පැමිණිලි නොකරන්න | [ ] |
-| **DON'T #10**| කෑම දීමනා හෝ අතිකාල මුදල් ගැන නුසුදුසු ප්‍රශ්න නොඅසන්න | [ ] |
-
-### 5B. The V.I.C.T.O.R.Y. Capstone Mnemonic (මතක ආධාරකය)
-
-```
-   ┌───────────────────────────────────────────────────────────┐
-   │                  THE V.I.C.T.O.R.Y. FORMULA               │
-   │                                                           │
-   │   V ──► Visual Eye Contact with the Camera Lens (කැමරාව දෙස බැලීම) │
-   │   I ──► Instant File Handover (තත්පර 2ක් තුළ File එක දීම) │
-   │   C ──► Clear, Crisp SVO Sentences (පැහැදිලි සරල වාක්‍ය)  │
-   │   T ──► Technical Precision (FIFO, PPE, S.T.O.P. නිරවද්‍යතාව) │
-   │   O ──► Open, Confident Posture & Subtle Smile (කෙළින් ඉරියව්ව) │
-   │   R ──► Resilient Mindset Under Pressure (නොසැලෙන මානසිකත්වය) │
-   │   Y ──► Yield 100% Legal Compliance & Return Vision (නීතිගරුක බව) │
-   └───────────────────────────────────────────────────────────┘
-```
-
----
-
-## Final Course Graduation & Spaced Repetition Lock (පාඨමාලා සමාප්තිය සහ පුනරීක්ෂණය)
-- [ ] **Daily Maintenance Drill (දිනපතා විනාඩි 15):** සෑම උදෑසනකම තත්පර 60 ස්වයං හැඳින්වීම සහ ඕනෑම තාක්ෂණික ප්‍රශ්න 5ක් whisper කරන්න.
-- [ ] **Full Mock Rehearsal (සතිපතා):** දුරකථන කැමරාව ඉදිරියේ සම්පූර්ණ ප්‍රශ්න 14ම record කර, ඇස් බැලීම, කටහඬේ පරිමාව සහ සංඛ්‍යා පරීක්ෂා කරන්න.
-- [ ] **Night Before Interview (පෙර දින රාත්‍රියේ):** 17 DOs & DON'Ts ලැයිස්තුව සහ ලිපිගොනුව අවසන් වරට පරීක්ෂා කර, පූර්ණ විශ්වාසයෙන් යුතුව විවේක ගන්න.
-
----
-
-## Final Message from Your Instructor (ගුරුවරයාගෙන් අවසන් පණිවිඩය)
-
-> **ඩිලාන්, ඔබ ඊශ්‍රායල රැකියා ඉංග්‍රීසි පාඨමාලාවේ (Israel English Mastery Course) පාඩම් 12ම සාර්ථකව අවසන් කර ඇත.**  
-> සැබෑ සේවා පළපුරුද්ද, forklift බලපත්‍රය, ශාරීරික යෝග්‍යතාවය, සංස්කෘතික දැනුම සහ ජයග්‍රහණයට අවශ්‍ය නිවැරදි ඉංග්‍රීසි වාක්‍ය ඔබ සතුව ඇත. ආඩම්බරයෙන් සම්මුඛ පරීක්ෂණ කාමරයට ඇතුල් වන්න, පැහැදිලිව කතා කරන්න, සිනහවකින් යුතුව ඔබේ ඊශ්‍රායල ජාත්‍යන්තර රැකියා අවස්ථාව දිනාගන්න!
-
----
-
-**End of Lesson 0012**
+**Previous:** [Lesson 0011 - Airport Immigration Answers](0011-airport-immigration-drill_si.md)

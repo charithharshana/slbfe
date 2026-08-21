@@ -1,69 +1,70 @@
-# Lesson 0004 — Supermarket Operations: FIFO සහ ආරක්ෂාව (FIFO & Safety Mastery) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0004 — Supermarket Questions: FIFO, Safety, And Customers (සුපර්මාර්කට් ප්‍රශ්න)
 
-> **ඉලක්කය:** සුපිරි වෙළඳසැල් මෙහෙයුම් සම්බන්ධ තාක්ෂණික ප්‍රශ්නවලට සරල, පැහැදිලි සහ විශ්වාසනීය ඉංග්‍රීසි වාක්‍ය මඟින් පිළිතුරු දීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. **FIFO ක්‍රමය** යොදාගෙන රාක්ක පිරවීම පැහැදිලි කිරීම.
-2. **S.P.I.L.L.** ක්‍රමය ඔස්සේ හදිසි කාන්දුවීම් හැසිරවීම.
-3. සුපර්මාර්කට් ආශ්‍රිත අත්‍යවශ්‍ය වචන මාලාව සහ උපකරණ හඳුනා ගැනීම.
+> **ප්‍රධාන ඉලක්කය:** Retail / Supermarket ක්ෂේත්‍රයේ ප්‍රායෝගික ප්‍රශ්න (Stock, Safety, Customer Service) සඳහා සාර්ථකව පිළිතුරු දීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 📦 1. Stock Rotation: **FIFO සූත්‍රය**
 
-### 1. FIFO ක්‍රමය: භාණ්ඩ කළමනාකරණය
-*FIFO* = **First-In, First-Out** (මුලින්ම ආ දේ මුලින්ම විකිණීම)
-- **ක්‍රියාවලිය:**
-    - **Check:** කල් ඉකුත්වීමේ දිනය (Expiration date) පරීක්ෂා කරන්න.
-    - **Pull:** පරණ භාණ්ඩ ඉදිරියට (front) අදින්න.
-    - **Place:** අලුත් භාණ්ඩ පිටුපසින් (back) තබන්න.
-- **වාක්‍ය:** *"I put new products at the back and pull older ones to the front. This prevents spoilage."*
+- **FIFO = First-In, First-Out**
+  - **Old stock:** Front (පැරණි තොග ඉදිරියට)
+  - **New stock:** Back (අලුත් තොග පිටුපසට)
+- **Q:** *"What is FIFO, and how do you use it?"*
+- **A:** *"FIFO stands for First-In, First-Out. I check the expiration dates. I put new products at the back and move older products to the front. This keeps products fresh and reduces waste."*
 
 ---
 
-### 2. හදිසි අනතුරු හැසිරවීම: **S.P.I.L.L. සූත්‍රය**
-බිම කාන්දුවක් හෝ වීදුරු බිඳීමක් වූ විට:
+## 🧹 2. Accident & Spill Handling: **SPILL සූත්‍රය**
 
-| අකුර | ක්‍රියාව | ඉංග්‍රීසි වාක්‍යය |
+වීදුරු බෝතලයක් / දියරයක් බිම වැටුණහොත් ක්‍රියාත්මක වන පියවර 5:
+
+| අකුර | පියවර | ක්‍රියාව |
 |:---:|:---|:---|
-| **S** | **Secure** | *"I immediately secure the area."* |
-| **P** | **Place Sign** | *"I place a 'Caution: Wet Floor' warning sign."* |
-| **I** | **Isolate/Sweep** | *"I sweep up the glass safely with gloves."* |
-| **L** | **Liquid Mop** | *"I mop the area with the correct cleaning chemical."* |
-| **L** | **Leave Clean** | *"I ensure the floor is dry before removing the sign."* |
+| **S** | **Secure** | Secure the area (ප්‍රදේශය ආරක්ෂිත කර පාරිභෝගිකයින් වළක්වන්න) |
+| **P** | **Place sign** | Place a warning sign ("Caution Wet Floor") |
+| **I** | **Isolate glass** | Wear gloves & isolate broken glass safely |
+| **L** | **Liquid mop** | Mop the liquid with correct chemicals |
+| **L** | **Leave clean** | Remove warning sign only when the floor is completely dry |
+
+- **Q:** *"What do you do if a bottle breaks in a busy aisle?"*
+- **A:** *"Customer safety is my first priority. I secure the area and place a warning sign. I wear gloves and remove the broken glass safely. Then I mop the liquid with the correct chemical. I remove the sign only when the floor is dry."*
 
 ---
 
-### 3. පාරිභෝගික සේවාව: **H.E.A.T. සූත්‍රය**
-පාරිභෝගිකයින්ට සහාය වීමට:
-- **H**ear: බාධාවකින් තොරව සවන් දෙන්න.
-- **E**mpathize: මිත්‍රශීලීව හිස නමන්න.
-- **A**ssist: *"Let me show you"* ලෙස සහාය වන්න.
-- **T**ake Action: භාණ්ඩය පෙන්වන්න හෝ supervisor වෙත යොමු කරන්න.
+## 🤝 3. Customer Service & Complaints: **HEAT සූත්‍රය**
+
+පාරිභෝගික පැමිණිලි විසඳන පියවර 4:
+- **H - Hear:** Listen without interrupting (නොකඩා සවන්දෙන්න)
+- **E - Empathize:** Show empathy (අනුකම්පාව දක්වන්න)
+- **A - Apologize:** Apologize for the inconvenience (සමාව ඉල්ලන්න)
+- **T - Take action:** Take action or call supervisor (ක්‍රියාමාර්ග ගන්න හෝ superior ට පවසන්න)
+
+- **Q:** *"How do you help a customer when you cannot understand the language?"*
+- **A:** *"I stay calm and polite. I try to understand what the customer needs. If I cannot help, I find a Hebrew-speaking supervisor or manager."*
 
 ---
 
-## 🛠️ සුපිරි වෙළඳසැල් වචන මාලාව (Retail Vocabulary)
+## 📋 4. වෙනත් අත්‍යවශ්‍ය Supermarket Q&A
 
-| ඉංග්‍රීසි වචනය | උච්චාරණය | සිංහල අර්ථය |
-|:---:|:---:|:---|
-| **Aisle** | `/aɪl/` | රාක්ක පේළි අතර මාවත ('s' ශබ්දය නැත) |
-| **Machsan** | `Mach-san` | පිටුපස ගබඩාව (Back storeroom) |
-| **Pallet Jack** | `Pallet Jack` | බර බඩු ගෙනයන උපකරණය |
-| **Degreaser** | `De-greaser` | තෙල් පැල්ලම් මකන රසායනිකය |
-
----
-
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **FIFO පැහැදිලි කිරීම:** වීදුරු බිඳීමකදී ඔබ කරන දේ හඬ නඟා 3 වරක් පවසන්න.
-2. **අනතුරු හැසිරවීම:** S.P.I.L.L. පියවර 5 මනසින් මවාගෙන එක් වරක් whisper කරන්න.
-3. **වචන පුහුණුව:** *Aisle* යන්න උච්චාරණය කරන විට 's' ශබ්දය නොමැතිව "අයිල්" ලෙස නිවැරදිව පවසන්න.
+1. **Empty Display Shelf:** *"I replenish the shelf immediately from the back storeroom. If out of stock, I inform my supervisor."*
+2. **Chemical Safety:** *"The correct chemical prevents accidents. I wear protective gloves and follow chemical instructions."*
+3. **Long Shifts:** *"I stay focused and keep a steady pace so shelves stay full, organized, and accurate."*
+4. **Theft:** *"I report it to my supervisor immediately. I do not confront the person myself."*
+5. **Mistakes:** *"I report it immediately, fix it quickly, and learn from it."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Replenish** = නැවත පිරවීම (*"I replenish empty shelves every morning."*)
-- **Expiration** = කල් ඉකුත්වීම (*"I check the expiration date on every product."*)
-- **Hazard** = අනතුර (*"Spilled oil is a slip hazard."*)
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Aisle** (භාණ්ඩ අතර ඇති පටු මග — Pronounced: "айл") — *"Keep the aisle clean."*
+- **Replenish** (නැවත පුරවනවා) — *"I replenish empty shelves."*
+- **Supervisor** (පරීක්ෂක / සුපර්වයිසර්) — *"I report theft to my supervisor."*
+
+---
+
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** FIFO, SPILL, සහ HEAT සූත්‍ර මතකයෙන් කියන්න.
+- **දිනකට පසු:** 1-5 ප්‍රශ්න සඳහා පිළිතුරු ශබ්ද නඟා පවසන්න.
+- **සතියකට පසු:** SPILL පියවර 5 මවාගනිමින් පැහැදිලි කරන්න.
+- **Interview එකට පෙර:** Supermarket Q&A 9ම තත්පර 30 බැගින් කාලය මැන පුහුණු වන්න.

@@ -1,246 +1,84 @@
-# Lesson 0009 — Personal Adaptability: Climate, 10-Hour Shifts & Shared Living
+# Lesson 0009 - Adaptability: Shifts, Climate, Family, And Shared Living
 
-> **Mission link:** Recruiters reject candidates who appear emotionally weak, physically fragile, or unable to handle Israeli life. Interviewers will aggressively ask: *"Can you work 10-hour night shifts?", "Can you work inside freezing cold storage?", "Can you share a room with foreigners?", "Are you afraid of war?"* If you hesitate or tell personal sob stories, you will fail. This lesson gives you powerful, positive, and direct English responses that prove you are tough and adaptable.
+> **Main target:** Show that you are ready for the working and living conditions of the contract.
 
-> **Strict Comprehensible Input mode:** Follow Dilan through three realistic scenarios of life in Israel: working inside a cold room after a hot summer morning, resting after a 10-hour shift, and sharing an apartment with multicultural coworkers. Comprehension precedes gentle speaking drills. Grammar rules are in the Optional Monitor Appendix.
+## Remember First
 
-> **Personal details used (real):** **Dilan Harshana**, age **28**, healthy, single, accustomed to hard work, overtime, physical tasks, and positive teamwork.
+Answer positively, briefly, and honestly. Do not give a long personal story.
 
----
+**ADAPT = Adjust climate - Discipline shifts - Accommodate others - Positive attitude - Thrive long-term.**
 
-## Learning Outcomes
-By the end of this lesson — through **comprehensible input, not mechanical memorization** — you will be able to:
-1. **Express 100% readiness for 10-hour shifts, rotating schedules, and overtime** without hesitation.
-2. **Explain your physical comfort working in extreme temperatures** (summer heat and sub-zero cold rooms).
-3. **Describe positive attitudes toward shared accommodation and multicultural coworkers**.
-4. **Answer the security/war and family separation questions** with confidence and emotional maturity.
-5. **Hold 2 core adaptability mnemonics:** **A.D.A.P.T.** and **S.H.I.F.T.**
+## Interview Questions And Model Answers
 
-**Estimated time:** 40 minutes, split into **5 micro-blocks** of ~8 min each.  
-**Comprehensible Input level:** *i + 1* — mindset questions answered through **clear, high-impact SVO statements**.
+### 1. “Can you work long hours, night shifts, and overtime?”
 
----
+> “Yes, Sir. I am flexible and comfortable with rotating shifts, night work, long hours, and overtime.”
 
-## Source Material Covered
-- `01/interview_merged.md` — §6 (Personal Adaptability Q&As: Q11, Q14–Q18, Q21–Q23), §8.1 Don'ts #5 & #6, §8.2 DO #6
-- `01/info_final.md` — Part I §7 (Comprehensible Input & Low Anxiety), Part I §3 (Spaced Repetition & 1-1-1-1 Lock), Part II §2 (3-Words-a-Day)
+### 2. “Can you work in hot weather and cold storage?”
 
----
+> “Yes, Sir. I am physically fit and healthy. I can adapt to hot weather and cold storage when I use the required protective clothing.”
 
-## The Big Idea (read in English — visualize the interview room)
+### 3. “Can you stay away from your family?”
 
-> *The interviewer leans forward and asks sharply:*  
-> **"Israel has very hot summers and cold winters. We also have sub-zero freezer rooms. Can you work inside a minus 18-degree cold room for hours?"**  
->
-> *Dilan does not flinch. He sits straight, smiles with calm confidence, and replies:*  
-> **"Yes, Sir! I am physically fit, strong, and healthy. I wear thermal PPE in cold storage rooms and have no problem adapting to extreme temperatures."**  
->
-> *The panel writes a top score: "Physically resilient. Ready for tough operational realities."*
+> “Yes, Sir. My family supports my decision. I am committed to completing my contract and supporting my family’s future.”
 
-Recruiters do not want long excuses or complaints. They look for **energy, stamina, and a positive mindset**.
+### 4. “Are you comfortable sharing a room with workers from other countries?”
 
-> **කෙටි සිංහල පැහැදිලි කිරීම:** ඊශ්‍රායලයේ දැඩි ග්‍රීෂ්ම කාලය, ශීත ඍතුව, සුපර්මාර්කට් ශීතාගාර (Cold rooms), පැය 10ක රාත්‍රී මුර (Night shifts), සහ වෙනත් රටවල සේවකයන් සමඟ කාමර බෙදාගෙන ජීවත් වීම පිළිබඳ ප්‍රශ්න අසනු ලැබේ. මෙහිදී පුද්ගලික දුක් ගැනවිලි නොකියා, ආත්ම විශ්වාසයෙන් හා සරලව පිළිතුරු දිය යුතුය.
+> “Yes, Sir. I respect different cultures. I am clean, cooperative, and comfortable with shared living.”
 
----
+### 5. “Israel has security problems. Are you afraid?”
 
-## Micro-Block 1 — Pure Immersion: Temperature & Cold Storage (8 min)
+> “No, Sir. I understand the situation and I am prepared to follow official safety instructions.”
 
-> **CI principle applied:** Pre-input immersion through environmental contrast ($i+1$).
+### 6. “Can you work with people from different countries?”
 
-### 1A. Scene 1 — The Sub-Zero Freezer & Summer Shift (4 min)
+> “Yes, Sir. I respect different cultures and cooperate well with multicultural teams.”
 
-Read this story slowly. Visualize Dilan adapting to different environments:
+## Comprehensible Input: One Difficult Day
 
-> In Israel, temperatures can reach 35°C in the summer. At the same time, supermarket logistics hubs operate giant **cold storage rooms** and deep freezers at **minus 18°C (-18°C)** to preserve frozen meat and dairy.  
-> 
-> Dilan handles both environments easily:
-> - Outside in the sun, he drinks plenty of water and wears lightweight breathable clothing.
-> - Inside the sub-zero freezer, he wears a heavy **thermal winter jacket, insulated gloves, and warm boots**.
-> - He moves briskly, picks the stock systematically, and never complains.  
-> 
-> When asked about climate, Dilan states clearly:  
-> *"I am healthy, physically strong, and accustomed to working in both hot and sub-zero conditions."*
+> Dilan works a long shift. In the morning, the weather is hot. Later, he enters cold storage and wears protective clothing. At night, he works with people from different countries. He stays polite, follows the schedule, and supports his team. His family supports his legal work opportunity.
 
-### 1B. Environmental Adaptability Matrix (4 min)
+Read the story twice. Then cover it and remember **shift - climate - team - family**.
 
-```
-       ┌────────────────────────────────────────────────────────┐
-       │             ISRAEL ENVIRONMENTAL REALITIES             │
-       ├──────────────────────────┬─────────────────────────────┤
-       │ Summer Heat (30°C–38°C)  │ Hydrate well, stay active   │
-       │ Cold Storage (0°C to 4°C)│ Dairy/vegetable cold rooms  │
-       │ Deep Freezer (-18°C)     │ Thermal jacket, warm gloves │
-       │ 10-Hour Shift Routine    │ Consistent working pacing   │
-       └──────────────────────────┴─────────────────────────────┘
-```
+## Pronunciation And Vocabulary
 
----
+- **flexible:** FLEK-suh-bul
+- **overtime:** OH-ver-time
+- **adapt:** uh-DAPT
+- **multicultural:** mul-tee-KUL-chuh-rul
+- **accommodation:** uh-kom-uh-DAY-shun
 
-## Micro-Block 2 — Shift Work & Physical Stamina (8 min)
+## Retrieval Check
 
-> **CI principle applied:** Repetition with variation through work schedule adaptability.
+<details><summary>What answer pattern works for difficult conditions?</summary>Yes, I am ready; give one practical reason.</details>
 
-### 2A. Scene 2 — The 10-Hour Night Shift (5 min)
+<details><summary>What must you show about shared living?</summary>Respect, cleanliness, cooperation, and cultural awareness.</details>
 
-> In Israeli logistics and supermarkets, operations run 24 hours. Dilan works on **rotating shifts**: morning shifts, evening shifts, and **night shifts**.  
-> 
-> Dilan manages his shift routine with discipline:
-> 1. He gets 7 to 8 hours of solid sleep during the day when working night shifts.
-> 2. He arrives 15 minutes before his shift begins.
-> 3. He welcomes overtime opportunities because overtime allows him to earn extra Shekels to support his family.
-> 
-> When the interviewer asks: *"Can you work long hours and night shifts?"*  
-> Dilan answers directly:  
-> **"Yes, Sir. I am 100% flexible and comfortable with rotating shifts, night work, and overtime."**
+<details><summary>What should you avoid?</summary>Fearful hesitation, complaints, and unnecessary personal stories.</details>
 
-### 2B. The S.H.I.F.T. Discipline Mnemonic (3 min)
+## Practice
 
-| Letter | Action | Professional Interview Phrase |
-|:---|:---|:---|
-| **S** | **Stay Focused** | *"I maintain concentration throughout long shifts."* |
-| **H** | **Healthy Routine** | *"I eat well, rest properly, and maintain good stamina."* |
-| **I** | **Immediate Punctuality**| *"I always arrive on time before every shift."* |
-| **F** | **Flexible Schedule** | *"I am ready for morning, evening, or night rotations."* |
-| **T** | **Team Support** | *"I support my coworkers during busy overtime hours."* |
+- [ ] Answer the six questions in random order.
+- [ ] Add one truthful reason to each “Yes” answer.
+- [ ] Practise “No, Sir” for the security question with calm posture.
+- [ ] Say **rotating shifts**, **cold storage**, and **multicultural team** clearly.
 
----
+## Sinhala Clarification
 
-## Micro-Block 3 — Shared Living & Multicultural Harmony (8 min)
+මෙම ප්‍රශ්නවල අරමුණ ඔබේ adaptability පරීක්ෂා කිරීමයි. “Yes, Sir” කියා, සත්‍ය practical reason එකක් එක් කරන්න. බිය, පැමිණිලි, හෝ දිගු දුක් කතා නොකියන්න.
 
-> **CI principle applied:** High-frequency social cohesion and cultural adaptability in context.
+## Review Lock: 1-1-1-1
 
-### 3A. Scene 3 — The Worker Apartment in Tel Aviv (5 min)
+- [ ] **Within 1 hour:** Recite ADAPT and the six short answers.
+- [ ] **After 1 day:** Answer shift, climate, and shared-living questions.
+- [ ] **After 1 week:** Mix these with Dugri and safety questions.
+- [ ] **Before interview:** Check that every health statement is truthful.
 
-> In Israel, foreign workers live together in company-provided shared apartments. Dilan shares a clean apartment with workers from Sri Lanka, Thailand, the Philippines, and India.  
-> 
-> Dilan creates a harmonious home environment:
-> - He keeps his personal bed area neat and clean.
-> - He cleans up immediately after cooking in the shared kitchen.
-> - He respects different cultures, languages, and religions.
-> - He communicates politely with a smile.
-> 
-> When asked: *"Are you comfortable sharing a room with people from other countries?"*  
-> Dilan replies warmly:  
-> **"Yes, Sir. I respect other cultures and adapt easily to shared living. I am friendly, clean, and cooperative."**
+## Progress Criterion
 
-### 3B. The A.D.A.P.T. Mindset Mnemonic (3 min)
+Move on when you can answer difficult-condition questions positively without sounding uncertain or exaggerating.
 
-```
-   ┌───────────────────────────────────────────────────────────┐
-   │                  THE A.D.A.P.T. FRAMEWORK                 │
-   │                                                           │
-   │   A ──► Adjust to climate and temperatures easily         │
-   │   D ──► Discipline across all shift rotations             │
-   │   A ──► Accommodate and respect multicultural roommates   │
-   │   P ──► Positive attitude without complaining             │
-   │   T ──► Thrive long-term to complete the 5-year contract  │
-   └───────────────────────────────────────────────────────────┘
-```
+**Source:** `01/interview_merged.md`, Section 6 Q11 and Q14-Q23.
 
----
-
-## Micro-Block 4 — Interview Question & Answer Blueprints (8 min)
-
-> **CI principle applied:** Third encounter in direct Q&A format using crisp SVO architecture.
-
-### Q1: "Can you work long hours, 10-hour night shifts, and overtime?"
-<details>
-<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
-
-> **"Yes, Sir. I am completely flexible and comfortable with rotating shifts.**  
-> I can work morning, evening, night shifts, and overtime.  
-> I am physically strong and have no problem adjusting to different working hours."
-
-</details>
-
-### Q2: "Israel has extreme temperatures and cold storage rooms. Can you handle these conditions?"
-<details>
-<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
-
-> **"Yes, Sir. I am physically healthy, strong, and fit.**  
-> I have no difficulty adapting to extreme climates or working inside cold storage rooms with proper PPE."
-
-</details>
-
-### Q3: "Are you comfortable living and sharing a room with people from other countries?"
-<details>
-<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
-
-> **"Yes, Sir. I am very comfortable in shared living environments.**  
-> I respect different cultures, maintain personal hygiene, and cooperate warmly with everyone."
-
-</details>
-
-### Q4: "Israel has security issues and war situations. Are you afraid to go?"
-<details>
-<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
-
-> **"No, Sir. I am not afraid.**  
-> I am confident about the security system in Israel and trust the government protection under the G2G program."
-
-</details>
-
-### Q5: "Can you stay away from your family for the full 5-year contract?"
-<details>
-<summary><b>Click to reveal model answer (SVO Structure)</b></summary>
-
-> **"Yes, Sir. My family fully supports my decision.**  
-> This opportunity will secure our financial future, so I am 100% committed to completing my contract."
-
-</details>
-
----
-
-## Micro-Block 5 — Output & Self-Verification Drills (8 min)
-
-> **CI principle applied:** Gradual output release: Whisper drill → Cloze comprehension → Journal recording.
-
-### 5A. The 3-Sentence Whisper Drill (3 min)
-Whisper these 3 statements 5 times each with solid vocal strength:
-1. *"I am completely comfortable with 10-hour shifts, night work, and overtime."*
-2. *"I adapt easily to cold storage rooms and extreme weather."*
-3. *"I respect other cultures and adapt smoothly to shared living."*
-
-### 5B. Cloze Comprehension Check (3 min)
-
-Fill in the blanks with the correct adaptability terms:
-
-1. Supermarket freezer rooms can reach temperatures as low as minus ________ degrees Celsius.  
-   *(Choices: 18 / 80)*
-2. When asked about night shifts, candidates should express 100% ________ and readiness.  
-   *(Choices: flexibility / fear)*
-3. In shared housing, it is essential to maintain cleanliness and respect different ________.  
-   *(Choices: cultures / complaints)*
-
-<details>
-<summary><b>Click for Answer Key</b></summary>
-
-1. **18**
-2. **flexibility**
-3. **cultures**
-
-</details>
-
-### 5C. 3-Words-a-Day Journal Entries (2 min)
-Write these 3 words in your vocabulary notebook:
-1. **Adaptable** /əˈdæptəbəl/ (Adjective) = Able to adjust easily to new conditions. *(Ex: "Dilan is highly adaptable to shift work.")*
-2. **Cold Storage** /kəʊld ˈstɔːrɪdʒ/ (Noun) = Refrigerated warehouse room for perishable food. *(Ex: "I wear a jacket inside the cold storage room.")*
-3. **Multicultural** /ˌmʌltiˈkʌltʃərəl/ (Adjective) = Involving people of many different countries and backgrounds. *(Ex: "I enjoy working in a multicultural team.")*
-
----
-
-## Spaced Repetition Review Schedule (1-1-1-1 Lock)
-- [ ] **1st Review (within 2 hours):** Skim the **A.D.A.P.T.** and **S.H.I.F.T.** tables (3 min).
-- [ ] **2nd Review (tomorrow morning):** Whisper all 5 adaptability answers while maintaining straight posture (5 min).
-- [ ] **3rd Review (in 1 week):** Practice answering the cold storage and shift work questions on voice recorder (10 min).
-- [ ] **4th Review (in 1 month):** Comprehensive mock review before the interview board (15 min).
-
----
-
-## Optional Monitor Appendix (For Grammar Enthusiasts Only)
-> *Note: Language acquisition happens naturally through understanding messages. Grammar rules below are for reference only.*
-
-- **Expressing Strong Willingness:** Use *I am ready to...*, *I am comfortable with...*, *I have no problem with...*:
-  - *"I am ready to work night shifts."*
-  - *"I am comfortable with shared living."*
-- **Avoiding Negative Fillers:** Avoid saying *"I will try"* (sounds uncertain). Always say *"I can"* or *"I am fully prepared to"*.
+**Previous:** [Lesson 0008 - Direct Communication And Clarification](0008-dugri-workplace-communication.md)
+**Next:** [Lesson 0010 - Visa, Loyalty, Return, And Future Plans](0010-visa-compliance-future-plans.md)

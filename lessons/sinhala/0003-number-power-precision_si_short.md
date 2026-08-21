@@ -1,60 +1,62 @@
-# Lesson 0003 — Number Power: 15 සහ 50 අතර වෙනස (The 15-vs-50 Survival Drill) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0003 — Numbers That Must Be Clear (පැහැදිලි විය යුතු සංඛ්‍යා)
 
-> **ඉලක්කය:** ඉංග්‍රීසි අංකවල සියුම් ස්වර වෙනස නිවැරදිව හඳුනාගෙන, Interview එකේදී වැරදි අංක ප්‍රකාශ කිරීම නිසා සිදුවන ක්ෂණික ප්‍රතික්ෂේප වීම් වළක්වා ගැනීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. **Teen vs. Ty** අතර වෙනස කනට ඇසීමෙන්ම වෙන්කර හඳුනා ගැනීම.
-2. වයස, පළපුරුද්ද, වැටුප වැනි තීරණාත්මක තොරතුරු පැහැදිලිව ප්‍රකාශ කිරීම.
-3. නිවැරදි Stress Pattern (අවධාරණය) භාවිතා කරමින් අංක උච්චාරණය කිරීම.
+> **ප්‍රධාන ඉලක්කය:** වයස (age), පළපුරුද්ද (experience), වැටුප (salary), උස (height), බර (weight), සහ වැඩ කරන පැය ගණන පිළිබඳ සංඛ්‍යාත්මක තොරතුරු නිවැරදිව හා පැහැදිලිව ලබාදීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🔊 අංක උච්චාරණ රීතිය: **TEEN vs TY සූත්‍රය**
 
-### 1. සංඛ්‍යා වෙන් කිරීමේ සූත්‍රය: **TEEN vs. TY**
-සෑම විටම මතක තබා ගන්න: **TEEN (ළමයා) vs. TY (වැඩිහිටියා)**
+අංක උච්චාරණයේදී සිදුවන වැරදි වළක්වා ගැනීමට පහත රටාව මතක තබා ගන්න:
 
-| කාණ්ඩය | සංඛ්‍යා | ස්වර ශබ්දය (Vowel Sound) | අවධාරණය (Stress) |
-|:---:|:---:|:---|:---|
-| **TEEN** | 13, 14, 15, 16, 17, 18, 19 | දිගු **"eeee"** (අදින ශබ්දය) | **දෙවන අක්ෂරය** මත (fif-**TEEN**) |
-| **TY** | 30, 40, 50, 60, 70, 80, 90 | කෙටි **"i"** (ඉක්මන් ශබ්දය) | **පළමු අක්ෂරය** මත (**FIF**-ty) |
-
-> 💡 **කෙටි සටහන:**
-> - **TEEN** = දිගු ශබ්දය (TEEEEN) - අවසාන අක්ෂරයට බලය දීම.
-> - **TY** = කෙටි ශබ්දය (تی) - පළමු අක්ෂරයට බලය දීම.
+- **TEEN (13 - 19):** **Long and Strong at the END** (අවසානය දිගට හා ශක්තිමත්ව අදින්න)
+  - *fif-**TEEN**, thir-**TEEN**, six-**TEEN***
+- **TY (30, 40, 50, 60...):** **Short and Strong at the START** (ආරම්භය ශක්තිමත් කර අවසානය කෙටි කරන්න)
+  - ***FIF**-ty, **THIR**-ty, **SIX**-ty*
 
 ---
 
-## 🗣️ තීරණාත්මක සංඛ්‍යා පුහුණුව (Critical Number Sentences)
+## 📊 සංඛ්‍යාත්මක ප්‍රශ්න සහ පිළිතුරු (Personal Number Answers)
 
-නිවැරදි උච්චාරණය සහිතව හඬ නඟා කියවන්න:
+| Question | Model Answer |
+|---|---|
+| “How old are you?” | “I am twenty-eight years old.” |
+| “How many years of experience do you have?” | “I have more than five years of experience.” |
+| “How long did you train at Keells?” | “I trained at Keells Supermarket for three months.” |
+| “What was your salary?” | “I earned sixty thousand rupees per month.” |
+| “What is your height?” | “I am one hundred sixty-eight centimeters tall.” |
+| “What is your weight?” | “My weight is sixty kilograms.” |
 
-- **වයස:** "I am **twenty-eight** (28) years old."
-- **පළපුරුද්ද:** "I have **more than five** (5) years of experience."
-- **වැටුප:** "I earned **sixty thousand** (60,000) rupees per month."
-- **උස:** "I am **one hundred sixty-eight** (168) centimeters tall."
-- **බර:** "My weight is **sixty** (60) kilograms."
-- **වැඩ මුර කාලය:** "I worked about **fifty** (50) hours per week."
-
----
-
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **Ear Training (කන් පුහුණුව):** Google Translate විවෘත කර "Fifteen" සහ "Fifty" වෙන වෙනම type කර speaker එකෙන් අසන්න. TEEN හි ඇති දිගු "ee" ශබ්දය සහ TY හි ඇති කෙටි "i" ශබ්දය හොඳින් හඳුනාගන්න.
-2. **Whisper Drill (මිමිණීම):** ඉහත වාක්‍ය 6 උදෑසන අවදි වූ වහාම 3 වරක් රහසින් මෙන් මිමිණීමට පුහුණු වන්න. මෙය මුඛයේ මාංශ පේශි ස්වභාවික ඉංග්‍රීසි ශබ්දවලට හුරු කරවයි.
-3. **Contrast Drill (වෙනස හඳුනාගැනීම):** අහඹු ලෙස අංක දෙකක් තෝරා ඒවා එකිනෙක උච්චාරණය කර වෙනස පරීක්ෂා කරන්න (උදා: 13 vs 30, 14 vs 40, 16 vs 60).
+> ⚠️ **ලියකියවිලි රීතිය:** ඔබ ප්‍රකාශ කරන සියලුම සංඛ්‍යා ඔබේ සේවා සහතික (Service letters), Payslips, සහ පස්පෝට් එකේ ඇති දත්ත සමඟ 100% ක් සමාන විය යුතුය.
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Experience** = පළපුරුද්ද (*"I have 5 years of experience."*)
-- **Previous** = පෙර / පසුගිය (*"My previous job salary was 60,000."*)
-- **Weight** = බර (*"My weight is 60 kilograms."*)
+## ⚡ තීරණාත්මක ශබ්ද යුගල (Critical Sound Pairs)
+
+| Teen (-ටීන්) | Ty (-ටී) | Context in Interview |
+|---|---|---|
+| thirteen | thirty | Age / Experience |
+| fourteen | forty | Salary / Quantity |
+| fifteen | fifty | Work hours / Age |
+| sixteen | sixty | Salary / Weight |
+| seventeen | seventy | Weight / Quantity |
+| eighteen | eighty | Quantity |
+| nineteen | ninety | Temperature |
+
+> 💡 **Tip:** උච්චාරණය ගැන සැකයක් ආවොත් අංකය පමණක් නොකියා සම්පූර්ණ වාක්‍යයම පවසන්න (e.g., *"I earned sixty thousand rupees per month."*).
 
 ---
 
-## 🔄 ස්ථිර මතක සමාලෝචනය (Review Routine)
-- **පැය 1කට පසු:** තීරණාත්මක වාක්‍ය 6 ශබ්ද නඟා කියවන්න.
-- **පැය 24කට පසු:** Teen/Ty වෙනස හඳුනාගැනීමේ අභ්‍යාසය (Contrast Drill) කරන්න.
-- **දින 7කට පසු:** interview එකකදී අසන ලෙස ඔබෙන්ම ප්‍රශ්න අසා පිළිතුරු දෙන්න.
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Exact** (තත්‍ය / නිවැරදිම) — *"My exact age is twenty-eight."*
+- **Salary** (වැටුප) — *"My basic salary was sixty thousand rupees."*
+- **Experience** (පළපුරුද්ද) — *"I have five years of experience."*
+
+---
+
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** Teen vs Ty උච්චාරණ යුගල 4 ශබ්ද නඟා කියවන්න.
+- **දිනකට පසු:** ලියකියවිලි නොබලා ඔබේ පෞද්ගලික සංඛ්‍යාත්මක පිළිතුරු 6 පවසන්න.
+- **සතියකට පසු:** Verification dialogue එකක් record කර උච්චාරණය check කරන්න.
+- **Interview එකට පෙර:** වයස, කාලසීමාවන්, වැටුප, උස සහ බර ලේඛන සමඟ සසඳන්න.

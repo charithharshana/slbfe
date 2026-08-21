@@ -1,52 +1,51 @@
-# Lesson 0008 — Dugri සන්නිවේදනය සහ වෘත්තීය ප්‍රතිචාර [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0008 — Direct Communication And Clarification (ඍජු සන්නිවේදනය සහ පැහැදිලි කර ගැනීම)
 
-> **ඉලක්කය:** ඊශ්‍රායලයේ සෘජු (Direct) සන්නිවේදන ක්‍රමය තේරුම් ගෙන, පීඩනය යටතේ පවා සන්සුන්ව සහ පැහැදිලිව සන්නිවේදනය කිරීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. **Dugri** (කෙලින් කතා කිරීමේ) සංස්කෘතිය තේරුම් ගැනීම.
-2. නොතේරෙන කරුණු නැවත විමසීමට වෘත්තීය වාක්‍ය ඛණ්ඩ භාවිතය.
-3. විවේචන හෝ උස් හඬින් දෙන උපදෙස් සන්සුන්ව භාර ගැනීම.
+> **ප්‍රධාන ඉලක්කය:** ඍජු සන්නිවේදනය හමුවේ සන්සුන්ව සිටීම සහ නොතේරෙන ප්‍රශ්නයකදී අනුමාන නොකර පැහැදිලිව නැවත අසා දැනගැනීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🗣️ 1. Dugri Culture & Calmness: **CALM සූත්‍රය**
 
-### 1. සන්නිවේදන සූත්‍රය: **D.U.G.R.I.**
-කෙලින් සහ සෘජුව කතා කිරීම:
-- **D**irect: බිය නොවී අවංකව කතා කරන්න.
-- **U**nderstand: අපැහැදිලි නම් නැවත අසන්න.
-- **G**row: විවේචන ඉගෙනුම් අවස්ථාවක් කරගන්න.
-- **R**espect: ආයතනික නීතිවලට ගරු කරන්න.
-- **I**mplement: වැරදි වහාම නිවැරදි කරන්න.
+**Dugri** යනු කෙලින් සහ අවංකව (Direct & Honest) කතා කිරීමයි. සුපර්වයිසර් උස් හඬින් හෝ කෙලින් කතා කිරීම පෞද්ගලික අපහාසයක් ලෙස නොසිතන්න.
 
-### 2. පීඩනය හමුවේ සන්සුන් වීම: **C.A.L.M. සූත්‍රය**
-පීඩනයක් දැනෙන විට:
-- **C**omposure: ගැඹුරු හුස්මක් ගෙන සන්සුන් වන්න.
-- **A**cknowledge: තර්ක නොකර *"Yes, Sir"* යැයි පිළිගන්න.
-- **L**ogic: කෙටි, සරල කරුණු සහිත පිළිතුරක් දෙන්න.
-- **M**ove Forward: විසඳුම දෙසට යොමු වන්න.
+| අකුර | පියවර | අර්ථය |
+|:---:|:---|:---|
+| **C** | **Composure** | Keep composure & stay calm (සන්සුන්ව සිටින්න) |
+| **A** | **Acknowledge** | Acknowledge the feedback (කරුණ පිළිගන්න) |
+| **L** | **Logic** | Focus on work logic (රාජකාරියේ තර්කය කෙරෙහි අවධානය යොමු කරන්න) |
+| **M** | **Move forward** | Move forward & fix the work (කාර්යය නිවැරදි කර ඉදිරියට යන්න) |
+
+- **Q:** *"What is Dugri communication, and how will you handle it?"*
+- **A:** *"Dugri means speaking directly and honestly. If my supervisor speaks loudly or directly, I will not take it personally. I will stay calm, listen carefully, and follow the instructions."*
 
 ---
 
-## 🗣️ වෘත්තීය ප්‍රශ්න කිරීමේ වාක්‍ය (Clarification Formulas)
-නිහඬව සිටීම හෝ වැරදි අනුමාන කිරීම පරාජයට මඟකි. මෙය භාවිතා කරන්න:
+## ❓ 2. අත්‍යවශ්‍ය Clarification වාක්‍ය ඛණ්ඩ 3 (Clarification Phrases)
+
+අනුමාන කර වැරදි පිළිතුරු දීමෙන් වළකින්න. ප්‍රශ්නය නූනුණොත් හෝ නොතේරුණොත් මෙම වාක්‍ය 3න් එකක් භාවිතා කරන්න:
 
 1. *"Pardon me, Sir. Could you please repeat the question?"*
-2. *"Sorry, Sir, I did not hear clearly. Could you say that again?"*
+2. *"Sorry, Sir. I did not hear clearly. Could you say that again, please?"*
 3. *"Could you please speak a little more slowly, Sir?"*
 
----
-
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **Clarification Drill:** ඉහත වාක්‍ය 3 මනසින් මවාගෙන හඬ නඟා 3 වතාවක් පුහුණු වන්න.
-2. **C.A.L.M. සූත්‍රය:** සම්මුඛ පරීක්ෂණයකදී අසීරු ප්‍රශ්නයක් ආ විට ඔබ සන්සුන් වන ආකාරය මවාගන්න.
-3. **නිහඬ නොවන්න:** "අපැහැදිලි නම් අසන්න" යන මූලධර්මය තදින් මතක තබා ගන්න.
+- **Q:** *"What will you do if you do not understand an instruction?"*
+- **A:** *"I will not guess. I will politely ask for clarification. I will say, ‘Pardon me, Sir. Could you please repeat the question?’ Then I will complete the task correctly."*
+- **Q:** *"What will you do if you make a mistake?"*
+- **A:** *"I will report it immediately, take responsibility, and fix it. I will learn from the mistake."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Clarification** = පැහැදිලි කිරීමක් ඉල්ලීම (*"I asked for clarification on the instructions."*)
-- **Composure** = සන්සුන්කම (*"He maintained his composure during the interview."*)
-- **Feedback** = ප්‍රතිචාරය / අදහස් දැක්වීම (*"I welcome direct feedback."*)
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Clarification** (පැහැදිලි කර ගැනීම — Pronounced: "clar-i-fi-KAY-shun") — *"Ask politely for clarification."*
+- **Composure** (මානසික සන්සුන් බව — Pronounced: "kum-POH-zhur") — *"Keep your composure."*
+- **Instruction** (උපදෙස් / ආඥාව — Pronounced: "in-STRUK-shun") — *"Follow supervisor instructions."*
+
+---
+
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** Clarification phrases 3 සහ CALM සූත්‍රය මතකයෙන් පවසන්න.
+- **දිනකට පසු:** ඉක්මනින් අසන ප්‍රශ්නයකට Clarification phrase එකක් භාවිතයෙන් පිළිතුරු දෙන්න.
+- **සතියකට පසු:** Dugri සන්නිවේදනය සහ Mistake Handling Q&A පුහුණු වන්න.
+- **Interview එකට පෙර:** එක Clarification phrase එකක් මතකයේ ස්ථිර කරගන්න.

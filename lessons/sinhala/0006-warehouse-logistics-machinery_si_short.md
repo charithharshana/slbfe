@@ -1,58 +1,58 @@
-# Lesson 0006 — Warehouse Logistics: ගබඩා සහ ප්‍රවාහන මෙහෙයුම් (Warehouse Logistics & Handling) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0006 — Warehouse, Forklift, And Packing Questions (ගබඩාව, Forklift සහ ඇසුරුම් ප්‍රශ්න)
 
-> **ඉලක්කය:** ගබඩා මෙහෙයුම්, forklift භාවිතය, පැලට් හැසිරවීම සහ ඇසුරුම්කරණය පිළිබඳ තාක්ෂණික ප්‍රශ්නවලට චතුර ලෙස පිළිතුරු දීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. භාණ්ඩ ලැබීමේදී (Receiving) සිදුකරන පියවර හඳුනා ගැනීම.
-2. Pallet Jack සහ Forklift ආරක්ෂිතව හැසිරවීම.
-3. ප්‍රධාන ඇසුරුම් ක්‍රම සහ උපකරණ විස්තර කිරීම.
+> **ප්‍රධාන ඉලක්කය:** Forklift පුහුණුව සහ ගබඩා තොග හසුරුවීමේ (warehouse & stock handling) පළපුරුද්ද පැහැදිලිව interview panel එකට ඉදිරිපත් කිරීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🏗️ 1. Safe Pallet Movement: **LOAD සූත්‍රය**
 
-### 1. භාණ්ඩ හැසිරවීම: **L.O.A.D. සූත්‍රය**
-පැලට් එකක් එසවීමේ සිට ගබඩා කිරීම දක්වා:
+Pallet එකක් ආරක්ෂිතව ගෙනයාමේ පියවර 4:
 
-| අකුර | ක්‍රියාව | ඉංග්‍රීසි වාක්‍යය |
+| අකුර | පියවර | ක්‍රියාව |
 |:---:|:---|:---|
-| **L** | **Lift** | *"I insert the forks fully and lift the load smoothly."* |
-| **O** | **Organize** | *"I arrange pallets systematically according to item codes."* |
-| **A** | **Align** | *"I align the boxes squarely so they do not fall."* |
-| **D** | **Deliver** | *"I deliver the pallet to the designated storage rack."* |
+| **L** | **Lift safely** | Lift safely after inspecting load & pallet |
+| **O** | **Organize stock** | Organize stock and secure boxes |
+| **A** | **Align neatly** | Insert forks completely & align load neatly |
+| **D** | **Deliver and secure** | Move at safe speed, deliver & secure in storage |
+
+- **Q:** *"How do you move a heavy pallet safely?"*
+- **A:** *"First, I inspect the pallet and the load. Next, I secure the boxes. Then, I insert the forks completely and move at a safe speed. Finally, I place the pallet in the correct storage area."*
 
 ---
 
-### 2. ඇසුරුම්කරණය: **P.A.C.K. සූත්‍රය**
-භාණ්ඩ ආරක්ෂා කිරීමේ පියවර:
-- **P**rotect: *Bubble wrap* මඟින් බිඳෙන සුළු භාණ්ඩ ආරක්ෂා කරන්න.
-- **A**lign: පෙට්ටි දාර සමාන්තරව (squarely) අසුරන්න.
-- **C**over: *Stretch wrap* මඟින් තදින් ඔතන්න.
-- **K**eep: පැලට් එක සමබරව (balanced) තබන්න.
+## 📦 2. Deliveries Handling: **IC-S-DR සූත්‍රය**
+
+නව භාණ්ඩ තොගයක් පැමිණි විට (Receiving Goods):
+1. **Invoice:** Check the invoice (ඉන්වොයිසිය පරීක්ෂා කිරීම)
+2. **Count:** Count the boxes (පෙට්ටි ගණන් කිරීම)
+3. **Scan:** Scan barcodes (බාර්කෝඩ් സ്කෑන් කිරීම)
+4. **Damage Report:** Inspect & report damage before storing (හානි ඇත්නම් වාර්තා කිරීම)
+
+- **Q:** *"What do you do when goods arrive?"*
+- **A:** *"I check the invoice, count the goods, inspect the boxes, scan the barcodes, and report any damage before storing the stock."*
+- **Q:** *"What do you do if a delivery box is damaged?"*
+- **A:** *"I do not place damaged goods into active stock. I mark the damage, note it on the delivery record, and inform my supervisor."*
 
 ---
 
-## 🏗️ ගබඩා වචන මාලාව (Warehouse Vocabulary)
+## 🚜 3. Forklift & Warehouse Equipment Experience
 
-| වචනය | උච්චාරණය | සිංහල අර්ථය |
-|:---:|:---:|:---|
-| **Aisle** | `/aɪl/` | රාක්ක පේළි අතර මාවත ('s' ශබ්දය නැත) |
-| **Machsan** | `Mach-san` | පිටුපස ගබඩාව (Back storeroom) |
-| **Pallet Jack** | `Pallet Jack` | පැලට් එසවීමේ අත් ජැක් එක |
-| **Scanner** | `Scan-ner` | භාණ්ඩ කේත කියවන යන්ත්‍රය |
+- **Q:** *"What experience do you have with warehouse equipment?"*
+- **A:** *"I have experience with stock handling and warehouse operations. I have completed a forklift operator course and received practical training at David Pieris Motors Company. I understand safe loading, unloading, pallet movement, and stock organization."*
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **L.O.A.D. Drill:** බඩු පැලට් එකක් ගෙනයන පියවර 4 මනසින් මවාගෙන 3 වතාවක් හඬ නඟා කියන්න.
-2. **ඇසුරුම්කරණය:** පැලට් එකක් ඔතන ආකාරය (P.A.C.K.) වචනවලින් විස්තර කරන්න.
-3. **ප්‍රශ්න පුහුණුව:** Forklift පළපුරුද්ද සහ ඇසුරුම් ද්‍රව්‍ය ගැන අසන ප්‍රශ්න 3ට උත්තර 2 වතාවක් whisper කරන්න.
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Loading dock** (භාණ්ඩ පටවන / බාන ස්ථානය) — *"Deliveries arrive at the loading dock."*
+- **Pallet** (ලී / ප්ලාස්ටික් තට්ටුව — Pronounced: "PAL-it") — *"Move the pallet safely."*
+- **Invoice** (ඉන්වොයිසිය — Pronounced: "IN-voys") — *"Check the invoice against the boxes."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Malfunction** = යන්ත්‍ර දෝෂය (*"I report any machine malfunction immediately."*)
-- **Replenish** = නැවත පිරවීම (*"I replenish stock from the storeroom."*)
-- **Invoice** = බිල්පත / ලැබුණු භාණ්ඩ ලැයිස්තුව (*"I check deliveries against the invoice."*)
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** LOAD සූත්‍රය සහ Goods Receiving පියවර 4 මතකයෙන් කියන්න.
+- **දිනකට පසු:** 1-5 ප්‍රශ්න සඳහා පිළිතුරු ශබ්ද නඟා පවසන්න.
+- **සතියකට පසු:** Pallet movement sequence එක සිතින් මවාගනිමින් පැහැදිලි කරන්න.
+- **Interview එකට පෙර:** Forklift training විස්තර සැබෑ සහතිකය සමඟ සසඳන්න.

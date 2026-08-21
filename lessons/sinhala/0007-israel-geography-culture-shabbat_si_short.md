@@ -1,62 +1,57 @@
-# Lesson 0007 — Israel: භූගෝලය, සංස්කෘතිය සහ සබත් දිනය [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0007 — Israel Facts You Need For The Interview (ඊශ්‍රායලය පිළිබඳ තොරතුරු)
 
-> **ඉලක්කය:** ඊශ්‍රායලය පිළිබඳ මූලික භූගෝලීය සහ සංස්කෘතික දැනුම interview එකේදී විශ්වාසයෙන් ඉදිරිපත් කිරීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. ඊශ්‍රායලයේ අගනුවර, ප්‍රධාන නගරය සහ මුදල් ඒකකය හඳුනා ගැනීම.
-2. දේශසීමා සහ රටේ වැදගත්කම පැහැදිලි කිරීම.
-3. සබත් දිනය (Shabbat) සහ වැඩ සතිය පිළිබඳ දැනුවත් වීම.
+> **ප්‍රධාන ඉලක්කය:** ඊශ්‍රායලයේ පිහිටීම, ප්‍රධාන නගර, මුදල් ඒකකය, සංස්කෘතිය සහ Shabbat නිවාඩු දිනය පිළිබඳ නිවැරදි පැහැදිලි පිළිතුරු ලබාදීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## 🗺️ 1. Geography & Boundaries: **MEM-LSE සූත්‍රය**
 
-### 1. දේශසීමා සූත්‍රය: **B.O.R.D.E.R.**
-ඊශ්‍රායලයේ මායිම් රටවල්:
-
-| දිශාව | රට |
-|:---:|:---|
-| **උතුර (North)** | **L**ebanon (ලෙබනනය) |
-| **ඊසාන (Northeast)** | **S**yria (සිරියාව) |
-| **නැගෙනහිර (East)** | **J**ordan (ජෝර්දානය) |
-| **නිරිත (Southwest)** | **E**gypt (ඊජිප්තුව) |
+- **Location:** Middle East along the **Mediterranean Sea**
+- **Borders (දේශසීමා 4):** **L**ebanon, **S**yria, **J**ordan, **E**gypt (LSJE)
+- **Q:** *"Where is Israel located?"*
+- **A:** *"Israel is located in the Middle East along the Mediterranean Sea. It shares borders with Lebanon, Syria, Jordan, and Egypt."*
 
 ---
 
-### 2. සබත් දිනය: **S.H.A.B.B.A.T. සූත්‍රය**
-යුදෙව් නිවාඩු දිනය:
-- **S**unset Friday (සිකුරාදා හිරු බැසීමෙන් ඇරඹේ).
-- **H**oly Day (ශුද්ධ විවේක දිනය).
-- **A**ll offices close (පොදු ආයතන වැසේ).
-- **B**usiness resumes Saturday night (සෙනසුරාදා රෑ විවෘත වේ).
-- **B**etter energy for new week (නව සතියට ශක්තිය).
-- **A**lways Sunday to Thursday workweek (ඉරිදා-බ්‍රහස්පතින්දා වැඩ).
-- **T**ime for rest and family (විවේකය).
+## 🏙️ 2. Capital, Hub & Currency: **JTN සූත්‍රය**
+
+- **Capital:** Jerusalem (අගනුවර)
+- **Main Hub:** Tel Aviv (ප්‍රධාන මුල්‍ය හා තාක්ෂණික මධ්‍යස්ථානය)
+- **Currency:** New Israeli Shekel / NIS (මුදල් ඒකකය)
+- **Q:** *"What is the capital and currency?"*
+- **A:** *"The capital is Jerusalem. Tel Aviv is the main financial and technology hub. The currency is the New Israeli Shekel, or NIS."*
 
 ---
 
-## 🌍 ප්‍රධාන තොරතුරු සාරාංශය
+## 🕍 3. Shabbat & Workweek Culture
 
-| විෂය | තොරතුර |
-|:---:|:---|
-| **Capital** | Jerusalem |
-| **Commercial Hub** | Tel Aviv |
-| **Currency** | New Israeli Shekel (NIS) |
-| **Official Language** | Hebrew |
-| **Work Week** | Sunday to Thursday |
+- **Shabbat:** Friday evening to Saturday evening (යූදෙව් නිවාඩු සහ ශුද්ධ වූ දිනය)
+- **Workweek:** Sunday to Thursday or Friday afternoon (වැඩ සතිය ආරම්භ වන්නේ ඉරිදා දිනයේදීය)
+- **Q:** *"What is Shabbat?"*
+- **A:** *"Shabbat is the Jewish day of rest. It starts on Friday evening and ends on Saturday evening. The normal workweek starts on Sunday."*
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **සිතියම් මවාගැනීම:** ඉහත මායිම් රටවල් 4 මනසින් මවාගෙන නම් කරන්න.
-2. **සබත් දිනය පැහැදිලි කිරීම:** සිකුරාදා සිට සෙනසුරාදා දක්වා සබත් දිනය පිළිබඳව පැහැදිලි කිරීම 3 වරක් whisper කරන්න.
-3. **ප්‍රශ්න පුහුණුව:** රට ආශ්‍රිත ප්‍රශ්න 4ට උත්තර 2 වතාවක් හඬ නඟා කියන්න.
+## 🎯 4. Target Reason Q&A
+
+- **Q:** *"What do you know about Israel?"*
+- **A:** *"Israel is known as the Startup Nation because of its advanced technology and modern agriculture. The official language is Hebrew."*
+- **Q:** *"Why do you want to work in Israel?"*
+- **A:** *"I want to gain international experience, develop my professional skills, earn a good income, and support my family."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Currency** = මුදල් ඒකකය (*"The currency is the Shekel."*)
-- **Border** = දේශසීමාව (*"Israel shares borders with Egypt and Jordan."*)
-- **Shabbat** = සබත් දිනය (*"Stores close during Shabbat."*)
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Currency** (මුදල් ඒකකය — Pronounced: "KUR-un-see") — *"The currency of Israel is NIS."*
+- **Hub** (ප්‍රධාන මධ්‍යස්ථානය) — *"Tel Aviv is a business hub."*
+- **Rest day** (නිවාඩු දිනය) — *"Shabbat is the day of rest."*
+
+---
+
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** පිහිටීම, දේශසීමා 4, නගර 2, මුදල් ඒකකය සහ Shabbat දිනය මතකයෙන් කියන්න.
+- **දිනකට පසු:** 1-5 ප්‍රශ්න සඳහා පිළිතුරු ශබ්ද නඟා පවසන්න.
+- **සතියකට පසු:** ඊශ්‍රායලයේ සේවා සතිය සහ Shabbat සංකල්පය පැහැදිලි කරන්න.
+- **Interview එකට පෙර:** Fact-based Q&A පමණක් ආවර්ජනය කරන්න.

@@ -1,48 +1,51 @@
-# Lesson 0011 — ගුවන්තොටුපළ ආගමන විගමන පෙරහුරුව (Airport Immigration Defense) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0011 — Airport Immigration Answers (ගුවන් තොටුපළ ආගමන විගමන පිළිතුරු)
 
-> **ඉලක්කය:** ඊශ්‍රායල ගුවන්තොටුපළේ Border Control නිලධාරියා අසන ප්‍රශ්නවලට සන්සුන්ව සහ නීත්‍යානුකූලව පිළිතුරු දීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. ආගමන විගමන නිලධාරියාගේ ප්‍රශ්න 4ට කෙටි, සත්‍ය පිළිතුරු දීම.
-2. දේශසීමා පාලනයේදී කළ යුතු සහ නොකළ යුතු දෑ (විහිළු තහළු නොකිරීම) අවබෝධ කර ගැනීම.
-3. ලියකියවිලි ක්‍ෂණිකව ලබා දීමට සූදානම් වීම (2-Second Handover).
+> **ප්‍රධාන ඉලක්කය:** Ben Gurion Airport (ගුවන් තොටුපළ) ආගමන විගමන නිලධාරීන් හමුවේ කෙටි, සත්‍ය පිළිතුරු දීම සහ අදාළ ලේඛන පෙන්වීම.
 
 ---
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
+## ✈️ 1. Airport Immigration Framework: **PASS සූත්‍රය**
 
-### 1. Border Control ප්‍රශ්න 4: **P.A.S.S. සූත්‍රය**
-පැමිණි මොහොතේ නිලධාරියාට දිය යුතු පිළිතුරු:
-
-| අකුර | ප්‍රශ්නය | වෘත්තීය පිළිතුර |
+| අකුර | පියවර | අර්ථය |
 |:---:|:---|:---|
-| **P** | Purpose (අරමුණ) | *"I am here to work under a legal government B1 visa, Sir."* |
-| **A** | Address (නවාතැන) | *"I will stay at my company accommodation in Tel Aviv."* |
-| **S** | Stay (කාලය) | *"I will stay for the duration of my legal work visa, Sir."* |
-| **S** | Screen (ප්‍රකාශනය) | *"No, Sir. I have nothing to declare."* |
+| **P** | **Purpose** | Purpose of visit (නීත්‍යානුකූල B1 වැඩ වීසා බලපත්‍රය යටතේ පැමිණීම) |
+| **A** | **Address** | Accommodation address (සමාගමේ නවාතැන් ලිපිනය පෙන්වීම) |
+| **S** | **Stay duration** | Stay for the legal visa period (නීත්‍යානුකූල වීසා කාලසීමාව සඳහා පමණක් රැඳී සිටීම) |
+| **S** | **Screen declaration** | Screen & declare customs items accurately (රේගු ප්‍රකාශනයන් නිවැරදිව කිරීම) |
 
 ---
 
-### 2. ආරක්ෂිත දේශසීමා චර්යාව: **B.O.R.D.E.R. සූත්‍රය**
-- **B**revity: කෙටි, සත්‍ය පිළිතුරු පමණක් දෙන්න.
-- **O**fficial Papers: වීසා සහ රැකියා ලිපි අතේ සූදානම්ව තබා ගන්න.
-- **R**espect: ගෞරවනීය සහ සන්සුන් ඉරියව්ව.
-- **D**eclare: තහනම් භාණ්ඩ (නැවුම් කෑම) නැති බව සහතික වන්න.
-- **E**xact Dates: වීසා කාලයට ගැලපෙන පිළිතුරු දෙන්න.
-- **R**emain Calm: කිසිවිටෙකත් විහිළු නොකරන්න.
+## 💬 2. The 4 Essential Airport Q&A
+
+1. **Purpose of Visit:**
+   - **Q:** *"What is the purpose of your visit?"*
+   - **A:** *"I am here to work under a legal government B1 visa. Here is my employment letter."*
+
+2. **Accommodation Address:**
+   - **Q:** *"Where will you stay?"*
+   - **A:** *"I will stay at the employee accommodation provided by my company. Here is the official address."*
+
+3. **Duration of Stay:**
+   - **Q:** *"How long will you stay?"*
+   - **A:** *"I will stay for the duration of my legal work visa."*
+
+4. **Customs Declaration:**
+   - **Q:** *"Do you have anything to declare?"*
+   - **A:** *"No, Sir. I have nothing to declare."* (තහනම්/අස්වාභාවික ද්‍රව්‍ය ගෙන නොයන්න; අවසර ලත් ආහාර තිබේ නම් සත්‍ය ප්‍රකාශ කරන්න)
 
 ---
 
-## ⚡ ප්‍රායෝගික පුහුණුව (Action Drill)
-1. **P.A.S.S. Drill:** ඉහත ප්‍රශ්න 4ට නිවැරදි පිළිතුරු 3 වතාවක් හඬ නඟා පුහුණු වන්න.
-2. **සූදානම:** ගුවන් ගමන් බලපත්‍රය සහ රැකියා ලිපිය ඕනෑම වෙලාවක ලබා දීමට හැකි වන පරිදි අතේ තබා ගන්න.
-3. **සන්සුන් බව:** ඕනෑම පීඩනකාරී ප්‍රශ්නයකට සිනහමුසු මුහුණින් සන්සුන්ව පිළිතුරු දීමට මනස සකස් කර ගන්න.
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Immigration** (ආගමන විගමනය — Pronounced: "im-i-GRAY-shun") — *"Pass through airport immigration."*
+- **Accommodation** (නවාතැන් ලිපිනය — Pronounced: "uh-kom-uh-DAY-shun") — *"Here is my company accommodation address."*
+- **Duration** (කාල සීමාව — Pronounced: "dyoo-RAY-shun") — *"For the duration of my work visa."*
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Immigration** = ආගමන විගමන පරීක්ෂාව (*"I passed through immigration."*)
-- **Accommodation** = නවාතැන (*"I will stay at company accommodation."*)
-- **Declare** = ප්‍රකාශ කිරීම (*"I have nothing to declare."*)
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** PASS සූත්‍රය සහ ප්‍රශ්න 4 සඳහා පිළිතුරු මතකයෙන් කියන්න.
+- **දිනකට පසු:** Immigration Counter role-play එකක් සිදු කරන්න.
+- **සතියකට පසු:** Passport & Employment letter සුමටව ලබාදෙමින් පිළිතුරු දෙන්න.
+- **ගමන් කිරීමට පෙර:** Passport, Visa, Employment letter, Address & Customs instructions නැවත check කරගන්න.

@@ -1,97 +1,77 @@
-# Lesson 0001 — My First 60 Seconds: ඩිලාන්ගේ කතාව (Dilan's Story) [කෙටි සාරාංශය සහ මතක සූත්‍ර]
+# Lesson 0001 — Your 60-Second Introduction (තත්පර 60 කෙටි මතක පාඩම)
 
-> **ඉලක්කය:** Interview එකේ පළමු තත්පර 60 තුළ ඔබේ self-introduction එක කිසිදු බියකින් හෝ පැකිලීමකින් තොරව, විශ්වාසයෙන් යුතුව ඉදිරිපත් කිරීම.
-
----
-
-## 🎯 ප්‍රධාන ඉගෙනුම් ඉලක්ක (Core Goals)
-1. තත්පර 60 කතාවේ ප්‍රධාන පියවර 5 චතුර ලෙස හඳුනාගෙන ප්‍රකාශ කිරීම.
-2. අංක පැටලීමකින් තොරව (විශේෂයෙන් Teen vs Ty) පැහැදිලිව උච්චාරණය කිරීම.
-3. ස්වභාවික සරල වාක්‍ය රටා මඟින් ඔබේ පළපුරුද්ද හා ශක්තීන් සන්නිවේදනය කිරීම.
+> **ප්‍රධාන ඉලක්කය:** මිනිත්තුවකට (තත්පර 45-60) වඩා අඩු කාලයකින් "Tell me about yourself" ප්‍රශ්නයට පැහැදිලිව, සත්‍ය තොරතුරු පමණක් ඇතුළත් කර පිළිතුරු දීම.
 
 ---
 
-## 👤 සැබෑ චරිත විස්තරය (Dilan's Profile)
-- **නම හා වයස:** Dilan Harshana, 28 years old (Not married)
-- **ලිපිනය/ගම:** 47/1, Pahalagoda, Tangalle, Sri Lanka
-- **ක්ෂේත්‍රය හා පළපුරුද්ද:** More than 5 years in supermarket and retail field (Keells Supermarket - 3 months, Retail Supermarket in Tangalle)
-- **විශේෂ පුහුණුව:** Forklift Operator Course (David Pieris Motors Company - Bajaj)
-- **පෞද්ගලික ගුණාංග:** Hardworking, honest, reliable, physically fit (comfortable in cold storage & long shifts)
-- **අරමුණ (Motivation):** To gain international experience and develop skills in Israel
+## 🎯 core Structure: PESMS සූත්‍රය (පියවර 5)
 
----
+ඔබේ self-introduction එක තට්ටු 5ක shelf එකක් මෙන් පහත පිළිවෙලට සැකසේ:
 
-## 🔑 ප්‍රධාන මතක සූත්‍ර (Memory Keys & Formulas)
-
-### 1. තත්පර 60 සැකිල්ල: **PESMS සූත්‍රය** (පියවර 5)
-සෑම interview එකකදීම ඔබේ කතාව ගලා යා යුතු ස්වභාවික අනුපිළිවෙල මතක තබා ගන්න:
-
-| අකුර | පියවර (Bone) | විස්තරය | උදාහරණ වාක්‍යය |
+| අකුර | පියවර | අර්ථය | උදාහරණ වාක්‍යය |
 |:---:|:---|:---|:---|
-| **P** | **Profile** | නම, වයස, විවාහක තත්ත්වය, ගම | *"Good morning, sir. My name is Dilan Harshana. I am 28 years old, not married. I am from Tangalle, Sri Lanka."* |
-| **E** | **Experience** | පළපුරුද්ද සහ කළ රාජකාරි | *"I have more than five years of experience in supermarket and retail field. I trained at Keells for three months and worked at a retail supermarket in Tangalle for more than five years."* |
-| **S** | **Strengths** | පෞද්ගලික දක්ෂතා සහ ශක්තීන් | *"I am hardworking, honest, reliable, and physically fit. I am comfortable with heavy lifting and cold storage."* |
-| **M** | **Motivation** | රැකියාවට ඇති උනන්දුව | *"I want to work in Israel to gain international experience and develop my skills."* |
-| **S** | **Sign-off** | ගෞරවනීය අවසානය | *"That is all about me. Thank you, sir."* |
+| **P** | **Profile** | නම, වයස, විවාහක තත්ත්වය, ගම | *"Good morning, Sir. Thank you for giving me this opportunity. My name is Dilan Harshana. I am twenty-eight years old, not married, and I am from Tangalle, Sri Lanka."* |
+| **E** | **Experience** | පළපුරුද්ද, පුහුණුව සහ රාජකාරි | *"I have more than five years of experience in supermarket and retail work. I trained at Keells Supermarket for three months and worked at a retail supermarket in Tangalle for more than five years. My duties included helping customers, arranging stock, and keeping the supermarket clean and organized. I have also completed a forklift operator course and trained at David Pieris Motors Company."* |
+| **S** | **Strengths** | පෞද්ගලික ගුණාංග | *"I am hardworking, honest, reliable, and physically fit."* |
+| **M** | **Motivation** | රැකියාවට ඇති අරමුණ | *"I want to work in Israel to gain international experience and develop my skills."* |
+| **S** | **Sign-off** | ගෞරවනීය අවසානය | *"That is all about me. Thank you, Sir."* |
 
 ---
 
-### 2. අතේ ඇඟිලි 5 ආධාරකය (The 5-Finger Technique)
-Interview එකේදී මනස සන්සුන්ව තබා ගැනීමට අතේ ඇඟිලි 5 මවාගන්න:
+## 🖐️ අතේ ඇඟිලි 5 මතක ක්‍රමය (5-Finger Memory Trick)
+
+Interview එකේදී මතකය අවදි කරගැනීමට ඇඟිලි 5 මවාගන්න:
 1. **සුළැඟිල්ල (Pinky):** **P**rofile (මම කවුද)
-2. **වෙදැඟිල්ල (Ring):** **E**xperience (මම කළ දේ)
-3. **මැදඟිල්ල (Middle):** **S**trengths (මගේ දක්ෂතා)
-4. **දබරැඟිල්ල (Index):** **M**otivation (මම එන්නේ ඇයි)
-5. **මාපටැඟිල්ල (Thumb):** **S**ign-off (ස්තූති කර අවසන් කිරීම)
+2. **වෙදැඟිල්ල (Ring):** **E**xperience (මගේ පළපුරුද්ද)
+3. **මැදඟිල්ල (Middle):** **S**trengths (මගේ ශක්තීන්)
+4. **දබරැඟිල්ල (Index):** **M**otivation (මගේ අරමුණ)
+5. **මාපටැඟිල්ල (Thumb):** **S**ign-off (අවසාන ස්තූතිය)
 
 ---
 
-### 3. රාජකාරි 3 මතක සූත්‍රය (The 3-Duty Badge)
-සුපර්මාකට් රාජකාරි පැහැදිලි කිරීමට ක්‍රියාපද 3ක් මතක තබා ගන්න: **Help • Arrange • Clean**
-- **Help:** *"Helping customers"* (පාරිභෝගිකයින්ට සහාය වීම)
-- **Arrange:** *"Arranging and checking stock"* (තොග පිළියෙල කිරීම සහ පරීක්ෂා කිරීම)
-- **Clean:** *"Keeping the supermarket clean and organized"* (සුපිරි වෙළඳසැල පිරිසිදුව හා පිළිවෙළට තබා ගැනීම)
+## 🔑 රාජකාරි 3 මතක යතුර: **H-A-C (Hac) සූත්‍රය**
+
+Supermarket රාජකාරි පැහැදිලි කිරීමට **H-A-C** මතක තබා ගන්න:
+- **H - Help:** *"Helping customers"* (පාරිභෝගිකයින්ට සහාය වීම)
+- **A - Arrange:** *"Arranging stock"* (තොග පිළියෙල කිරීම)
+- **C - Clean:** *"Keeping clean and organized"* (පිරිසිදුව හා පිළිවෙළට තබා ගැනීම)
 
 ---
 
-### 4. අංක පැටලීම වළක්වන මතක යතුර: **Teen vs Ty**
-- **Teen (-ටීන්):** ළමයෙකු මෙන් **ඉහළට ඇදෙන, තියුණු ශබ්දයකි (N ශබ්දය)**.
-  - *13 (Thirteen), 14 (Fourteen), 15 (Fifteen), 18 (Eighteen)*
-- **Ty (-ටී):** වැඩිහිටියෙකු මෙන් **කෙටි, බර, පහළට වැටෙන ශබ්දයකි (T ශබ්දය)**.
-  - *30 (Thirty), 40 (Forty), 50 (Fifty), 80 (Eighty)*
-- **ශබ්ද අභ්‍යාසය:**
-  - *"I worked **fifteen** (15) hours."* (දිගු ශබ්දය)
-  - *"The box weighs **fifty** (50) kilograms."* (කෙටි ශබ්දය)
+## 🗣️ අංක උච්චාරණ රහස: **Teen vs Ty Rule**
+
+- **-Teen (-ටීන්):** ළමයෙකු මෙන් **ඉහළට ඇදෙන දිගු ශබ්දය** (13-19) — *e.g., twenty-eight, fifteen (15)*
+- **-Ty (-ටී):** වැඩිහිටියෙකු මෙන් **කෙටි බර ශබ්දය** (30, 40, 50) — *e.g., fifty (50)*
+- **Delivery Tip:** සෑම PESMS කොටසකටම පසුව කුඩා pause එකක් ගන්න. Key words stress කරන්න: **five years**, **retail**, **forklift**, **reliable**, **Israel**.
 
 ---
 
-## 🗣️ සම්පූර්ණ තත්පර 60 කතාව (The Full 60-Second Speech)
+## ❓ අත්‍යවශ්‍ය අනුගමන ප්‍රශ්න (Essential Follow-Up Q&A)
 
-> *"Good morning, sir.  
-> My name is **Dilan Harshana**. I am **28 years old** and I am **not married**. I am from **Pahalagoda, Tangalle, in Sri Lanka**.  
-> I have **more than five years of experience** in the **supermarket and retail** field. I trained at **Keells Supermarket for three months**, and then worked at a **retail supermarket in Tangalle for more than five years**.  
-> My responsibilities included **helping customers, arranging and checking stock, and keeping the supermarket clean and organized**. I have also completed a **forklift operator course** and trained at **David Pieris Motors Company (Bajaj)**.  
-> I am **hardworking, honest, reliable, and physically fit**. I always arrive on time and work carefully.  
-> I want to work in Israel to **gain international experience and develop my skills**. I am confident that my experience and positive attitude will contribute to your team.  
-> **That is all about me. Thank you, sir.**"*
-
----
-
-## ⚡ ප්‍රායෝගික පුහුණු පියවර 3 (3-Step Output Drill)
-1. **Step 1 - කියවන්න (Read):** ඉහත කතාව හඬ නඟා සෙමෙන් 2 වරක් කියවන්න.
-2. **Step 2 - මිමිණීම (Whisper):** කිසිදු මානසික පීඩනයකින් තොරව රහසින් මෙන් මුමුණන්න.
-3. **Step 3 - ප්‍රකාශ කරන්න (Speak):** සිනහමුසු මුහුණින්, සෘජු බැල්මකින් තත්පර 60 තුළ කියා නිම කරන්න.
+| Interviewer asks | Safe Answer |
+|---|---|
+| “What is your name?” | “My name is Dilan Harshana.” |
+| “How old are you?” | “I am twenty-eight years old.” |
+| “Where are you from?” | “I am from Tangalle, Sri Lanka.” |
+| “What is your occupation?” | “I work in supermarket and retail operations.” |
+| “How many years of experience do you have?” | “I have more than five years of experience in supermarket and retail work.” |
+| “What are your duties?” | “I help customers, arrange stock, and keep the supermarket clean and organized.” |
+| “Why do you want this job?” | “I want to gain international experience and develop my skills.” |
+| “Why should we hire you?” | “I am hardworking, honest, reliable, physically fit, and ready to learn.” |
 
 ---
 
-## 📝 දෛනික නව වචන 3 (3 Words a Day)
-- **Reliable** = විශ්වාසදායක (*"I am a reliable worker."*)
-- **Responsible for** = වගකීම භාරව සිටින (*"I was responsible for stock checking."*)
-- **Cold storage** = ශීතාගාරය (*"I am comfortable working in cold storage."*)
+## 📚 දෛනික වැදගත් වචන 3 (3 Key Words)
+
+- **Reliable** (විශ්වාසදායක) — *"I am reliable."*
+- **Responsibility** (වගකීම / රාජකාරිය) — *"My responsibilities included arranging stock."*
+- **Opportunity** (අවස්ථාව) — *"Thank you for this opportunity."*
 
 ---
 
-## 🔄 ස්ථිර මතක සමාලෝචනය (Review Routine)
-- **පැය 1කට පසු:** කතාව එක් වරක් කියවන්න.
-- **පැය 24කට පසු:** කතාව 2 වරක් හඬ නඟා කියන්න.
-- **දින 7කට පසු:** තත්පර 60ක කාලය මැන බලමින් කියා නිම කරන්න.
+## 🔄 1-1-1-1 මතක සමාලෝචනය (Spaced Review Routine)
+
+- **පැයක් ඇතුළත:** PESMS සහ කරුණු 5 මතකයෙන් පවසන්න.
+- **දිනකට පසු:** Introduction එක 2 පාරක් කියා time කරගන්න (තත්පර 45-60).
+- **සතියකට පසු:** Follow-up questions 8ට පිළිවෙලක් නැතිව පිළිතුරු දෙන්න.
+- **මසකට පසු / Interview එකට පෙර:** Camera එක ඉදිරියේ full introduction එක record කරන්න.
